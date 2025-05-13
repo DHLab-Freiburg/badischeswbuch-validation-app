@@ -1,0 +1,513 @@
+:root {
+  --primary: #2c3e50;
+  --accent: #3498db;
+  --success: #2ecc71;
+  --warn: #f39c12;
+  --danger: #e74c3c;
+  --bg: #f5f7fa;
+  --radius: 4px;
+  --shadow: 0 1px 3px rgba(0,0,0,.1);
+  --ipa-font: "Times New Roman", serif;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--primary);
+  padding: 1rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.input-block label {
+  font-weight: 700;
+  margin-bottom: .25rem;
+  display: block;
+}
+
+textarea {
+  width: 100%;
+  height: 12rem;
+  padding: .5rem;
+  border: 1px solid #ccc;
+  border-radius: var(--radius);
+  font-family: monospace;
+}
+
+.btn-group {
+  margin: 1rem 0;
+  display: flex;
+  gap: .5rem;
+  justify-content: center;
+}
+
+button {
+  padding: .5rem 1rem;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+.results {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 1rem;
+}
+
+#entry-list {
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: auto;
+  max-height: 70vh;
+  list-style-type: none;
+}
+
+.sidebar-row {
+  padding: .5rem .75rem;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.2s ease;
+}
+
+.sidebar-row:hover {
+  background: #f0f3f7;
+}
+
+.sidebar-row.pass {
+  color: var(--success);
+}
+
+.sidebar-row.fail {
+  color: var(--danger);
+}
+
+.sidebar-row .idx {
+  width: 30px;
+  text-align: center;
+  color: var(--primary);
+}
+
+.sidebar-row .lemma {
+  flex-grow: 1;
+  padding: 0 10px;
+  font-weight: 600;
+}
+
+.sidebar-row .perc {
+  font-weight: bold;
+}
+
+#preview-pane {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#dictionary-content, 
+#stats-content {
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  overflow: auto;
+}
+
+/* Dictionary Entry Styling */
+.entry {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border: 1px solid #eee;
+  border-radius: var(--radius);
+  transition: box-shadow 0.2s ease;
+}
+
+.entry:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.entry-header {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #eee;
+}
+
+.entry-header .lemma {
+  font-size: 1.6em;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.entry-header .grammar {
+  font-size: 1.1em;
+  font-style: italic;
+  color: #666;
+}
+
+.entry-header .grammar::before {
+  content: "–";
+  margin: 0 0.5rem;
+  color: #999;
+}
+
+.pos {
+  font-variant: small-caps;
+  font-weight: 600;
+}
+
+.pos[data-gender]::after {
+  content: attr(data-gender);
+  font-size: 0.7em;
+  vertical-align: super;
+}
+
+.markers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.marker {
+  padding: 0.2rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.85em;
+  background: #f0f3f7;
+}
+
+.marker[data-type="reg"] { background: #e8f5e9; }
+.marker[data-type="geo"] { background: #e3f2fd; }
+.marker[data-type="hom"] { background: #fff3e0; }
+.marker[data-type="time"] { background: #f3e5f5; }
+
+.pronunciations {
+  margin: 1rem 0;
+  font-family: var(--ipa-font);
+  color: #666;
+  line-height: 1.6;
+}
+
+.variant {
+  display: block;
+  margin: 0.25rem 0;
+}
+
+.variant .phon {
+  font-style: italic;
+}
+
+.variant .geo {
+  color: #666;
+}
+
+.variant .geo::before { content: "⟨"; }
+.variant .geo::after { content: "⟩"; }
+
+.senses {
+  margin: 1.5rem 0;
+}
+
+.sense {
+  margin: 1rem 0;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.sense-number {
+  position: absolute;
+  left: 0;
+  font-weight: 700;
+  color: #666;
+}
+
+.definition {
+  line-height: 1.6;
+}
+
+.examples {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.example {
+  margin: 0.5rem 0;
+  font-style: italic;
+  color: #555;
+}
+
+.example::before {
+  content: "•";
+  margin-left: -1rem;
+  margin-right: 0.5rem;
+  color: #999;
+}
+
+.attestations {
+  margin: 1rem 0;
+}
+
+.attestation {
+  margin: 0.5rem 0;
+}
+
+.attestation .date {
+  font-variant: small-caps;
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+.subsenses {
+  margin: 1rem 0 1rem 2rem;
+}
+
+.etymology,
+.references,
+.bibliography {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+  color: #666;
+}
+
+.etymology .lang {
+  font-variant: small-caps;
+  font-weight: 600;
+}
+
+.etymology .term {
+  font-style: italic;
+}
+
+.etymology .meaning {
+  quotes: """ """;
+}
+
+.etymology .meaning::before { content: open-quote; }
+.etymology .meaning::after { content: close-quote; }
+
+.references {
+  font-size: 0.9em;
+}
+
+.bibliography {
+  font-size: 0.9em;
+  line-height: 1.6;
+}
+
+.problems {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: var(--radius);
+  background: #fff3e0;
+  display: none;
+}
+
+.problems[data-visible="true"] {
+  display: block;
+}
+
+.problem {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: var(--radius);
+}
+
+.problem[data-severity="info"] { background: #e3f2fd; }
+.problem[data-severity="warning"] { background: #fff3e0; }
+.problem[data-severity="error"] { background: #ffebee; }
+
+/* Inline elements */
+.inline-phon {
+  font-family: var(--ipa-font);
+  font-style: italic;
+}
+
+.inline-phon::before { content: "/"; }
+.inline-phon::after { content: "/"; }
+
+.term[data-type="scientific"] {
+  font-weight: 700;
+}
+
+.term[data-lang]::after {
+  content: attr(data-lang);
+  font-size: 0.7em;
+  vertical-align: super;
+  margin-left: 0.2em;
+}
+
+.cross-ref {
+  color: var(--accent);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.cross-ref::after {
+  content: "🔗";
+  font-size: 0.8em;
+  margin-left: 0.2em;
+}
+
+/* Stats Panel */
+.card {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.card .val {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card .lbl {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.card.bad .val {
+  color: var(--danger);
+}
+
+.card.warn .val {
+  color: var(--warn);
+}
+
+.pillbox {
+  margin: 10px 0;
+}
+
+.pill {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin: 3px;
+  font-size: 0.85rem;
+}
+
+.pill.bad {
+  background: var(--danger);
+  color: white;
+}
+
+.pill.warn {
+  background: var(--warn);
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Textarea enhancements - add to main.css */
+
+.textarea-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.copy-btn {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.copy-btn:hover {
+  background-color: #e9e9e9;
+}
+
+.copy-btn:active {
+  background-color: #ddd;
+}
+
+.copy-btn.copied {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  color: #155724;
+}
+
+.copy-icon {
+  margin-right: 5px;
+  font-size: 0.9rem;
+}
+
+.code-container {
+  position: relative;
+  height: 100%;
+}
+
+/* Styling for highlighted code */
+.CodeMirror {
+  height: 300px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* XML Syntax Highlighting */
+.cm-s-default .cm-tag {
+  color: #22863a;
+}
+
+.cm-s-default .cm-attribute {
+  color: #6f42c1;
+}
+
+.cm-s-default .cm-string {
+  color: #032f62;
+}
+
+.cm-s-default .cm-bracket {
+  color: #24292e;
+}
+
+.cm-s-default .cm-comment {
+  color: #6a737d;
+}

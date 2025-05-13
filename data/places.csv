@@ -1,0 +1,1761 @@
+lfd;Kurzform;Ortsname_BadWB;Lat;Lon
+1;Aach;Aach;47.8441308;8.8519587
+2;Aach-Linz;Aach-Linz;47.9107959;9.2025271
+3;Aasen;Aasen;47.9814048;8.5540881
+4;Achd.;Achdorf;47.8372519;8.5007404
+5;Achern;Achern;48.63115;8.07607
+6;Achkarren;Achkarren;48.0676579;7.6258617
+7;Adelhsn;Adelhausen;47.6136076;7.7595581
+8;Adelsbg;Adelsberg;47.7178982;7.8368646
+9;Adelshm;Adelsheim;49.4053706;9.3903482
+10;Adelshfn;Adelshofen;49.16888;8.8911
+11;Adersb.;Adersbach;49.2630032;8.955414
+12;Affent.;Affental;48.7067705;8.1605392
+13;Aftersteg;Aftersteg;47.8431922;7.9250039
+14;Aftholderbg;Aftholderberg;47.8984569;9.2425825
+15;Aglasterhsn;Aglasterhausen;49.3555418;8.9888513
+16;Aha;Aha;47.8333468;8.133505
+17;Ahsn;Ahausen;47.7251067;9.323063
+18;Aichen;Aichen;47.6756422;8.2617198
+19;Aitern;Aitern;47.8017981;7.9011657
+20;Albbruck;Albbruck;47.5943254;8.1336893
+21;Allemühl;Allemühl;49.4260725;8.9565852
+22;Allensb.;Allensbach;47.7168668;9.0687005
+23;Allf.;Allfeld;49.3239666;9.2400849
+24;Allmannsd.;Allmannsdorf;47.6833627;9.2000867
+25;Allmannsw.;Allmannsweier;48.3671735;7.7834976
+26;Allmendshfn;Allmendshofen;47.9400244;8.5005812
+27;Altd.;Altdorf;48.2654;7.81591
+28;Altenb.;Altenbach;49.4870474;8.7387907
+29;Altenburg;Altenburg;47.6561688;8.6029299
+30;Altenhm;Altenheim;48.46532;7.81765
+31;Altenschwand;Altenschwand;47.6368641;7.9758651
+32;Altenweg;Altenweg;47.90947;8.15142
+33;Altglashütte;Altglashütte;48.00102;8.13796
+34;Altglashütten;Altglashütten;47.85602;8.1113
+35;Althm (Buchen);Altheim (Buchen);49.52055;9.44333
+36;Althm (Meßk.);Altheim (Meßk.);47.99521;9.03437
+36;Althm (Meßk.);Altheim (Meßk.);47.99521;9.03437
+37;Althm (Überlgn);Altheim (Überlgn);47.82636;9.25463
+38;Altlußhm;Altlußheim;49.3004929;8.4981809
+39;Altneud.;Altneudorf;49.4618062;8.8065793
+40;Altschw.;Altschweier;48.6999219;8.1623893
+41;Altsimonswald;Altsimonswald;48.1016573;8.0590437
+42;Altwiesloch;Altwiesloch;49.2987053;8.7128046
+43;Amertsf.;Amertsfeld;47.7974734;8.2299823
+44;Amoltern;Amoltern;48.1271863;7.6793545
+45;Amrigschwand;Amrigschwand;47.7195789;8.1853187
+46;Andelshfn;Andelshofen;47.779693;9.1870934
+47;Angeltürn;Angeltürn;49.4866693;9.5973744
+48;Anselfgn;Anselfingen;47.8458898;8.7628951
+49;Appenw.;Appenweier;48.5387171;7.9802666
+50;Arlen;Arlen;47.7252888;8.8464937
+51;Asb.;Asbach;49.34118;9.02513
+52;Aselfgn;Aselfingen;47.8404288;8.4874896
+53;Aspich;Aspich;48.6552404;8.1379658
+54;Assamst.;Assamstadt;49.4271724;9.6872392
+55;Atd.;Atdorf;47.6491192;7.9551758
+56;Attlisbg;Attlisberg;47.7225959;8.167902
+57;Atzenb.;Atzenbach;47.7140377;7.8719793
+58;Au (Freib.);Au (Freib.);47.95;7.83333
+59;Au (Murgt.);Au (Murgt.);48.72104;8.36068
+60;Au (Pforzh.);Au (Pforzh.);48.87899;8.74164
+61;Au a. Rh.;Au a. Rh.;48.9516939;8.2380728
+62;Aue;Aue;48.9927576;8.4610709
+63;Auenhm;Auenheim;48.6056968;7.8342137
+64;Auerb. (Durlach);Auerbach (Durlach);48.91438;8.53051
+65;Auerb. (Mosb.);Auerbach (Mosb.);49.40043;9.21957
+66;Aufen;Aufen;47.9632817;8.4728848
+67;Auggen;Auggen;47.7864318;7.5970495
+68;Äule;Äule;47.8309102;8.0989531
+69;Aulfgn;Aulfingen;47.8875112;8.6598343
+70;Ay;Ay;47.6735079;8.176091
+71;Babst.;Babstadt;49.241912;9.0586682
+72;Bachhm;Bachheim;47.8595312;8.4015165
+73;Baden-B.;Baden-Baden;48.7610716;8.239959
+74;Badenscheuern;Badenscheuern;48.76667;8.21667
+75;Badenwlr;Badenweiler;47.8025477;7.6739717
+76;Bahlgn;Bahlingen;48.12165075;7.7438928
+77;Bahnbr.;Bahnbrücken;49.118189;8.786195
+78;Baiert.;Baiertal;49.3025174;8.7376747
+79;Balg;Balg;48.7888389;8.2243535
+80;Ballenbg;Ballenberg;49.4009;9.552959
+81;Ballrechten;Ballrechten;47.8601923;7.7018433
+82;Balm;Balm;47.6328875;8.5938912
+83;Balsb.;Balsbach;49.4788267;9.1738051
+84;Baltersweil;Baltersweil;47.6371834;8.5110377
+85;Balzf.;Balzfeld;49.2693244;8.7890828
+86;Balzhsn;Balzhausen;47.8148044;8.2279711
+87;Balzhfn;Balzhofen;48.712718;8.093968
+88;Bambergen;Bambergen;47.793768;9.2006614
+89;Bamlach;Bamlach;47.7173049;7.5473468
+90;Bamment.;Bammental;49.3556982;8.7760658
+91;Bankholzen;Bankholzen;47.7092571;8.9299378
+92;Bannholz;Bannholz;47.67594;8.16393
+93;Bärent.;Bärental;47.86987;8.09546
+94;Bargen (Mosb.);Bargen (Mosb.);49.3067;9.02266
+95;Bargen (Engen);Bargen (Engen);47.88304;8.76402
+96;Bauerb.;Bauerbach;49.073597;8.74309
+97;Bauschlott;Bauschlott;48.967915;8.7249403
+98;Bechtersbohl;Bechtersbohl;47.6029503;8.3475762
+99;Beckstein;Beckstein;49.5460014;9.7041526
+100;Behla;Behla;47.896537;8.5146184
+101;Beierthm;Beiertheim;48.993349;8.3889974
+102;Bellgn;Bellingen;47.7308736;7.5569211
+103;Berau;Berau;47.695685;8.2587575
+104;Bergach;Bergach;48.3813296;8.03785
+105;Bergalgn;Bergalingen;47.6135213;7.9585
+106;Berghaupten;Berghaupten;48.4075544;7.9867552
+107;Berghsn;Berghausen;49.0035346;8.5287483
+108;Bergöschgn;Bergöschingen;47.5952455;8.4202747
+109;Bermatgn;Bermatingen;47.7290884;9.3491605
+110;Bermersb. (Rast.);Bermersbach (Rast.);48.69225;8.34586
+111;Bermersb. (Offb.);Bermersbach (Offb.);48.38517;7.98919
+112;Bernau;Bernau;47.8099674;8.0331712
+113;Berolzhm;Berolzheim;49.4745988;9.5384674
+114;Berwangen;Berwangen;49.1844535;8.9815364
+115;Bestenheid;Bestenheid;49.78100515;9.503200277
+116;Betenbrunn;Betenbrunn;47.8199905;9.3461564
+117;Bettgn;Bettingen;49.7723275;9.5636677
+118;Bettmargn;Bettmaringen;47.7536237;8.3620669
+119;Betzenhsn;Betzenhausen;48.0075465;7.815501
+120;Beuggen;Beuggen;47.5823763;7.8061053
+121;Beuren (Salem);Beuren (Salem);47.801;9.32212
+122;Beuren a. Aach;Beuren a. Aach;47.7997086;8.875587
+123;Beuren a. Ried;Beuren a. Ried;47.7987282;8.6968052
+124;Biberach;Biberach;48.33839;8.03276
+125;Bickensohl;Bickensohl;48.0772614;7.6468589
+126;Biederb.;Biederbach;48.1976258;8.0382223
+127;Biengen;Biengen;47.9387636;7.6912304
+128;Bierbronnen;Bierbronnen;47.6754098;8.1898646
+129;Biesend.;Biesendorf;47.9132089;8.8123806
+130;Biesgn;Biesingen;47.9877427;8.5851547
+131;Bietighm;Bietigheim;48.9126152;8.2539859
+132;Bietgn (Konst.);Bietingen (Konst.);47.73852;8.73113
+133;Bietgn (Meßk.);Bietingen (Meßk.);47.97125;9.03216
+134;Biezighfn;Biezighofen;47.9403077;7.8192196
+135;Bilfgn;Bilfingen;48.9470879;8.6229305
+136;Billafgn;Billafingen;47.83156;9.14158
+137;Billighm;Billigheim;49.3486;9.25389
+138;Binau;Binau;49.3681375;9.0583418
+139;Binngn;Binningen;47.7941253;8.7256498
+140;Binzen;Binzen;47.6312281;7.6243455
+141;Binzgen;Binzgen;47.575811;8.0602539
+142;Birkend.;Birkendorf;47.7498721;8.3110503
+143;Birkgn;Birkingen;47.6252989;8.1485286
+144;Birnau;Birnau;47.7468082;9.2191414
+145;Birnd.;Birndorf;47.6240404;8.1331643
+146;Bischoffgn;Bischoffingen;48.1048352;7.6278081
+147;Bischw.;Bischweier;48.8386718;8.2843093
+148;Bittelbrunn;Bittelbrunn;47.8659319;8.8117396
+149;Blankenloch;Blankenloch;49.0663099;8.469876
+150;Blansgn;Blansingen;47.6909466;7.5409778
+151;Blasiwald;Blasiwald;47.7954083;8.1663379
+152;Bleib.;Bleibach;48.1224647;8.0083804
+153;Bleichhm;Bleichheim;48.2081174;7.8305159
+154;Blumbg;Blumberg;47.8401424;8.534081
+155;Blumegg;Blumegg;47.80785;8.49844
+156;Blumenf.;Blumenfeld;47.8150174;8.6824939
+157;Bobst.;Bobstadt;49.4654359;9.6729976
+158;Bodersw.;Bodersweier;48.6006939;7.8707271
+159;Bödighm;Bödigheim;49.4783262;9.315242
+160;Bodman;Bodman;47.8013992;9.030746
+161;Bofshm;Bofsheim;49.471811;9.411914
+162;Bohlgn;Bohlingen;47.7192059;8.8952725
+163;Bohlsb.;Bohlsbach;48.4959593;7.9471514
+164;Böhrgn;Böhringen;47.75362;8.93296
+165;Boll (Bonnd.);Boll (Bonnd.);47.83612;8.34848
+166;Boll (Meßk.);Boll (Meßk.);47.94739;9.02863
+167;Böllen;Böllen;47.79865195;7.844341145
+168;Bollenb.;Bollenbach;48.2921058;8.0735008
+169;Bollschweil;Bollschweil;47.9212582;7.7886752
+170;Bomb.;Bombach;48.1788279;7.8177598
+171;Bonnd. i. Schw.;Bonndorf  i. Schw.;47.8195619;8.3420691
+172;Bonnd. (Überlgn);Bonndorf (Überlgn);47.82979;9.09315
+173;Bottenau;Bottenau;48.520262;8.048742
+174;Bottgn;Bottingen;48.0903501;7.7840747
+175;Bötzgn;Bötzingen;48.0713081;7.7184992
+176;Boxbg;Boxberg;49.4811419;9.6412157
+177;Boxt.;Boxtal;49.763718;9.402182
+178;Bräunlgn;Bräunlingen;47.9300645;8.448329
+179;Brehmen;Brehmen;49.5681832;9.5546772
+180;Breisach;Breisach;48.029499;7.580739
+181;Breitenbronn;Breitenbronn;49.3638873;9.0218476
+182;Breitenf.;Breitenfeld;47.6539182;8.3075052
+183;Breith.;Breithurst;48.6845084;8.0810541
+184;Breitnau;Breitnau;47.9398612;8.0770221
+185;Bremgarten;Bremgarten;47.9174601;7.6238784
+186;Brenden;Brenden;47.72787;8.22517
+187;Brennet;Brennet;47.58288245;7.912565066
+188;Bretten;Bretten;49.0366265;8.7068077
+189;Brettent.;Brettental;48.1896969;7.9420456
+190;Bretzgn;Bretzingen;49.5788271;9.4852671
+191;Brigach;Brigach;48.0680766;8.4288364
+192;Britzgn;Britzingen;47.82901;7.670726
+193;Broggingen;Broggingen;48.2187449;7.8293967
+194;Bromb. (Heidelb.);Brombach (Heidelb.);49.48944;8.86886
+195;Bromb. (Lörr.);Brombach (Lörr.);47.63307;7.69511
+196;Bronnb.;Bronnbach;49.7128157;9.5471281
+197;Brötzgn;Brötzingen;48.8895804;8.66795
+198;Bruchhsn;Bruchhausen;48.9259588;8.3699476
+199;Bruchsal;Bruchsal;49.124118;8.5980244
+200;Brühl;Brühl;49.3953536;8.5340405
+201;Brunnadern (Bonnd.);Brunnadern (Bonnd.);47.79528;8.38043
+202;Brunnadern (Waldsh.);Brunnadern (Waldsh.);47.69104;8.14432
+203;Brunnt.;Brunntal;49.6831723;9.6950017
+204;Bubenb.;Bubenbach;47.96539;8.296153
+205;Buch (Waldsh.);Buch (Waldsh.);47.61373;8.11477
+206;Buch a. Ahorn;Buch a. Ahorn;49.538826;9.5560427
+208;Buchen;Buchen;49.5222974;9.3243187
+209;Büchenau;Büchenau;49.101051;8.529538
+210;Buchenb.;Buchenbach;47.96138;8.00909
+211;Buchenbg;Buchenberg;48.16071;8.37891
+212;Büchenbronn;Büchenbronn;48.8552336;8.6633844
+213;Buchhm (Freib.);Buchheim (Freib.);48.05954;7.77286
+214;Buchhm (Meßk.);Buchheim (Meßk.);48.01037;8.98596
+214;Buchhm (Meßk.);Buchheim (Meßk.);48.01037;8.98596
+215;Buchholz;Buchholz;48.081495;7.915098
+216;Büchig (Brett.);Büchig (Brett.);49.07284;8.71102
+217;Büchig (Karlsr.);Büchig (Karlsr.);49.04886;8.46751
+218;Buggenrd;Buggenried;47.74531;8.2504048
+219;Buggingen;Buggingen;47.8469223;7.6388717
+220;Bühl (Offb.);Bühl (Offb.);48.49589;7.93147
+221;Bühl (Rast.);Bühl (Rast.);48.69676;8.13523
+222;Bühl (Waldsh.);Bühl (Waldsh.);47.61758;8.46452
+223;Bühlert.;Bühlertal;48.6868867;8.1872676
+224;Bulach;Bulach;48.9866583;8.3775383
+225;Burb.;Burbach;48.8707408;8.4404638
+226;Bürchau;Bürchau;47.7751586;7.8269226
+227;Burg;Burg;47.97214;7.97982
+228;Burgb.;Burgbach;48.4116195;8.3331359
+229;Burgbg;Burgberg;48.15154;8.44394
+230;Bürglen;Bürglen;47.6497961;8.244625
+231;Burgwlr;Burgweiler;47.9165;9.352284
+232;Burkhm;Burkheim;48.1013025;7.598503
+233;Busenb.;Busenbach;48.9305661;8.4542655
+234;Büsgn;Büsingen;47.6975034;8.6907123
+235;Büßlgn;Büßlingen;47.7917366;8.6849537
+236;Butschb.;Butschbach;48.521026;8.066841
+237;Dainb.;Dainbach;49.4965129;9.714599
+238;Daisb.;Daisbach;49.293953;8.8767345
+239;Daisend.;Daisendorf;47.7109726;9.2679626
+240;Dallau;Dallau;49.3847758;9.1894698
+241;Dangstet.;Dangstetten;47.5951176;8.320972
+242;Dattgn;Dattingen;47.833686;7.657188
+243;Dauchgn;Dauchingen;48.0903198;8.5504079
+244;Daudenz.;Daudenzell;49.3477869;9.0059006
+245;Daxlanden;Daxlanden;49.0014111;8.3386057
+246;Degerf.;Degerfelden;47.5717399;7.7456376
+247;Degernau;Degernau;47.6679121;8.3825555
+248;Deggenhsn;Deggenhausen;47.802171;9.3835977
+249;Deisend.;Deisendorf;47.7686966;9.2163484
+250;Dembg;Demberg;47.740119;7.7750319
+251;Denkgn;Denkingen;47.89446;9.30867
+252;Denzlgn;Denzlingen;48.0669167;7.8862704
+253;Dertgn;Dertingen;49.7662837;9.6178717
+254;Dettighfn;Dettighofen;47.6240598;8.4851391
+255;Dettgn;Dettingen;47.73367;9.11647
+256;Detzeln;Detzeln;47.6677855;8.320667
+257;Deub.;Deubach;49.5472181;9.7716163
+258;Diedelshm;Diedelsheim;49.042842;8.6807405
+259;Diedeshm;Diedesheim;49.35077;9.10894
+260;Dielhm;Dielheim;49.2824981;8.7351709
+261;Dienst.;Dienstadt;49.6340857;9.6125022
+262;Diersburg;Diersburg;48.3991692;7.9365804
+263;Diershm;Diersheim;48.6464642;7.8896058
+264;Dietenb.;Dietenbach;47.9545474;7.9425577
+265;Dietenhan;Dietenhan;49.7436158;9.6065352
+266;Dietenhsn;Dietenhausen;48.9150729;8.5572802
+267;Dietlgn (Waldsh.);Dietlingen (Waldsh.);47.67353;8.24405
+268;Dietlgn (Pforzh.);Dietlingen (Pforzh.);48.8962;8.60149
+269;Dillend.;Dillendorf;47.7991621;8.4031423
+270;Dillstein;Dillstein;48.8780342;8.6764186
+271;Dill-Weißenstein;Dill-Weißenstein;48.86962;8.68832
+272;Dilsbg;Dilsberg;49.3988799;8.8368357
+273;Dingelsd.;Dingelsdorf;47.7389208;9.1560289
+274;Dinglgn;Dinglingen;48.3422479;7.8490882
+275;Distelhsn;Distelhausen;49.5989504;9.6955366
+276;Dittighm;Dittigheim;49.6101091;9.676174
+277;Dittishsn;Dittishausen;47.900801;8.363636
+278;Dittwar;Dittwar;49.5903537;9.6365448
+279;Dogern;Dogern;47.60846;8.1691168
+280;Döggingen;Döggingen;47.892594;8.436392
+281;Donaueschgn;Donaueschingen;47.9534194;8.4959257
+282;Doneb.;Donebach;49.5611317;9.1914422
+283;Dörlesbg;Dörlesberg;49.712855;9.5012422
+284;Dörlinb.;Dörlinbach;48.2459675;7.954273
+285;Dornbg;Dornberg;49.62566;9.4284
+286;Dossenb.;Dossenbach;47.6151637;7.8572699
+287;Dossenhm;Dossenheim;49.449242;8.6732428
+288;Dottgn;Dottingen;47.8575816;7.6907875
+289;Dresselb.;Dresselbach;47.8290894;8.2035467
+290;Duchtlgn;Duchtlingen;47.789857;8.7919719
+291;Dühren;Dühren;49.243601;8.836919
+292;Dumb.;Dumbach;49.56097;9.19264
+293;Dundenhm;Dundenheim;48.450072;7.816302
+294;Durb.;Durbach;48.4946385;8.0182635
+295;Durlach;Durlach;48.9994421;8.4702066
+296;Durmershm;Durmersheim;48.9328266;8.2704865
+297;Dürrenbüchig;Dürrenbüchig;49.0217963;8.6480458
+298;Dürrenbühl;Dürrenbühl;47.8026549;8.2369539
+299;Dürrhm;Dürrheim;48.0222311;8.5299837
+300;Dürrn;Dürrn;48.9565867;8.7552672
+301;Eberb.;Eberbach;49.4635303;8.9855203
+302;Eberfgn;Eberfingen;47.71877415;8.426279689
+303;Ebersteinburg;Ebersteinburg;48.7787163;8.2710473
+304;Ebersw.;Ebersweier;48.5079094;7.9852269
+305;Ebnet (Bonnd.);Ebnet (Bonnd.);47.79721;8.30694
+306;Ebnet (Freib.);Ebnet (Freib.);47.98853;7.90849
+307;Ebratswlr;Ebratsweiler;47.8740751;9.1740406
+308;Ebrgn (Engen);Ebringen (Engen);47.75092;8.75619
+309;Ebrgn (Freib.);Ebringen (Freib.);47.9578;7.77652
+310;Eckartsw.;Eckartsweier;48.5293712;7.8537988
+311;Eckb.;Eckbach;47.9538492;8.1519411
+312;Edgn;Edingen;49.4459156;8.6120103
+313;Efrgn-Kirchen;Efringen-Kirchen;47.6556421;7.565174
+314;Egg;Egg;47.586855;7.959602
+315;Eggenstein;Eggenstein;49.0776664;8.3947842
+316;Eggingen;Eggingen;47.6962642;8.3954399
+317;Egisholz;Egisholz;47.68431035;7.652806068
+318;Egrgn;Egringen;47.6643913;7.5984656
+319;Ehgn;Ehingen;47.82592;8.80275
+320;Ehrenstet.;Ehrenstetten;47.9137674;7.7525887
+321;Ehrsbg;Ehrsberg;47.7437032;7.9061053
+322;Ehrstädt;Ehrstädt;49.244369;8.981801
+323;Eichbg;Eichberg;47.6267;8.46542
+324;Eichel;Eichel;49.7649327;9.5408932
+325;Eichelbg;Eichelberg;49.18822;8.81395
+326;Eichen;Eichen;47.64596;7.84544
+327;Eichsel;Eichsel;47.595697;7.755863
+328;Eichstet.;Eichstetten;48.0938296;7.7314344
+329;Eichtershm;Eichtersheim;49.2375865;8.7770902
+330;Eiershm;Eiersheim;49.6596704;9.5878876
+331;Eigeltgn;Eigeltingen;47.8582141;8.8955908
+332;Eimeldgn;Eimeldingen;47.6321888;7.595491
+333;Einb. (Buchen);Einbach (Buchen);49.48476;9.24056
+334;Einb. (Haus.);Einbach (Hausach);48.31359;8.17042
+335;Eisenb.;Eisenbach;47.9624362;8.2710482
+336;Eisent.;Eisental;48.7122112;8.1636895
+337;Eisgn;Eisingen;48.9478916;8.668972
+338;Elbenschwand;Elbenschwand;47.7507009;7.8307146
+339;Elcheshm;Elchesheim;48.9306923;8.210126
+340;Elgersw.;Elgersweier;48.4403034;7.9469887
+341;Ellmendgn;Ellmendingen;48.9012617;8.5759762
+342;Elsenz;Elsenz;49.176408;8.833203
+343;Elzach;Elzach;48.1757263;8.0718474
+344;Emersb.;Emersbach;48.3325822;8.0056232
+345;Emmendgn;Emmendingen;48.1206565;7.850993
+346;Emmgn ab Egg;Emmingen ab Egg;47.931589;8.854045
+347;Endenburg;Endenburg;47.7131852;7.7354855
+348;Endermettgn;Endermettingen;47.70196;8.33823
+349;Endgn;Endingen;48.1412922;7.6999031
+350;Engelschwand;Engelschwand;47.6836975;8.0277581
+351;Engelswies;Engelswies;48.042924;9.133892
+352;Engen;Engen;47.8532383;8.7704457
+353;Enkenstein;Enkenstein;47.6805418;7.8092533
+354;Entersb.;Entersbach;48.3290137;8.0530716
+355;Epfenb.;Epfenbach;49.336951;8.9122305
+356;Epfenhfn;Epfenhofen;47.8177871;8.5552382
+357;Eppelhm;Eppelheim;49.4025;8.63306
+358;Eppgn;Eppingen;49.1373277;8.9084374
+359;Epplgn;Epplingen;49.5055156;9.6274055
+360;Erbersbronn;Erbersbronn;48.6349766;8.3235538
+361;Erdmannswlr;Erdmannsweiler;48.1435399;8.4537789
+362;Erlach;Erlach;48.5680829;8.0237404
+363;Erlenb.;Erlenbach;49.38544;9.54991
+364;Ersgn;Ersingen;48.9332707;8.6346048
+365;Erzb.;Erzbach;48.3464695;8.0056674
+366;Erzgn;Erzingen;47.6573292;8.4215904
+367;Eschach;Eschach;47.86012;8.50437
+368;Eschb. (Freib.);Eschbach (Freib.);48.00367;7.9824
+369;Eschb. (Heitersh.);Eschbach (Heitersh.);47.89102;7.65541
+370;Eschb. (Waldsh.);Eschbach (Waldsh.);47.63323;8.18078
+371;Eschelb.;Eschelbach;49.2483126;8.7836182
+372;Eschelbronn;Eschelbronn;49.3216701;8.8628361
+373;Espasgn;Espasingen;47.8197652;9.0121845
+374;Eßlgn;Eßlingen;47.9927;8.71709
+375;Etthm;Ettenheim;48.2552348;7.81349
+376;Etthmmünster;Ettenheimmünster;48.2430443;7.8753187
+377;Etthmwlr;Ettenheimweiler;48.2357832;7.820823
+378;Ettgn;Ettingen;47.713107;7.6034355
+379;Ettlgn;Ettlingen;48.9397149;8.40427
+380;Ettlingenw.;Ettlingenweier;48.9286598;8.3896132
+381;Etzenrot;Etzenrot;48.9106109;8.4664085
+382;Etzwihl;Etzwihl;47.6197614;8.1036187
+383;Eubighm;Eubigheim;49.4998936;9.5405123
+384;Eutgn;Eutingen;48.913107;8.745784
+385;Ewattgn;Ewattingen;47.8384654;8.4440319
+386;Fahrenb.;Fahrenbach;49.4314;9.15056
+387;Fahrnau;Fahrnau;47.66065695;7.841629209
+388;Falkau;Falkau;47.869318;8.125615
+389;Falkensteig;Falkensteig;47.945076;7.99843
+390;Faulenfürst;Faulenfürst;47.8077752;8.214708
+391;Fautenb.;Fautenbach;48.623815;8.0519443
+392;Feldbg;Feldberg;47.857858;8.037705
+393;Feldk.;Feldkirch;47.9360866;7.6473928
+394;Fessenb.;Fessenbach;48.465195;7.978636
+395;Fetzenb.;Fetzenbach;47.712178;7.961778
+396;Feudenhm;Feudenheim;49.21954;8.70807
+397;Feuerb.;Feuerbach;47.73632;7.64108
+398;Fischb. (Schluchsee);Fischbach (Schluchsee);47.8381;8.1697
+399;Fischb. (Vill.);Fischbach (Vill.);48.15296;8.4925
+400;Fischenbg;Fischenberg;47.7744967;7.7671149
+401;Fischerb.;Fischerbach;48.287808;8.111432
+402;Fischgn;Fischingen;47.650005;7.5999972
+403;Flehgn;Flehingen;49.087236;8.780527
+404;Flinsb.;Flinsbach;49.3070742;9.0006237
+405;Föhrent.;Föhrental;48.0389674;7.9253292
+406;Forb.;Forbach;48.6790385;8.3594916
+407;Förch;Förch;48.8256695;8.232069
+408;Forchhm (Emm.);Forchheim (Emm.);48.16667;7.7
+409;Forchhm (Karlsr.);Forchheim (Karlsr.);48.97667;8.3145
+410;Forst;Forst;49.1527177;8.5868965
+411;Freiamt;Freiamt;48.1796989;7.9056536
+412;Freib.;Freiburg;47.9960901;7.8494005
+413;Freiolshm;Freiolsheim;48.8460952;8.3733608
+414;Freistett;Freistett;48.6678905;7.9356649
+415;Freudenbg;Freudenberg;49.7486131;9.3261061
+416;Freudent. (Offb.);Freudental (Offb.);48.45;7.98333
+417;Freudent. (Radolfz.);Freudental (Radolfz.);47.74725;9.08012
+418;Frickgn;Frickingen;47.81318;9.272256
+419;Friedenwlr;Friedenweiler;47.917078;8.2571947
+420;Friedgn;Friedingen;47.7866579;8.8768844
+421;Friedrichsd.;Friedrichsdorf;49.5193575;9.0526812
+422;Friedrichsf.;Friedrichsfeld;49.4394048;8.5750181
+423;Friedrichst.;Friedrichstal;49.10562;8.47724
+424;Friesenhm;Friesenheim;48.3734866;7.882329
+425;Fröhnd;Fröhnd;47.7587351;7.8839181
+426;Fürstenbg;Fürstenberg;47.89226;8.55194
+427;Furtwangen;Furtwangen;48.0512198;8.2073776
+428;Fußb.;Fußbach;48.3636567;8.0140393
+429;Fützen;Fützen;47.8076268;8.5304152
+430;Gaggenau;Gaggenau;48.8030291;8.3201799
+431;Gaibg;Gaiberg;49.3664;8.74972
+432;Gaienhfn;Gaienhofen;47.6821346;8.9818583
+433;Gailgn;Gailingen;47.6967256;8.758178993
+434;Gaisb.;Gaisbach;48.5386413;8.0872142
+435;Gaiß;Gaiß;47.6461636;8.1711497
+436;Gallenwlr;Gallenweiler;47.883821;7.680815
+437;Gallmannsweil;Gallmannsweil;47.9231371;8.994137
+438;Gamburg;Gamburg;49.6936712;9.6016347
+439;Gamsh.;Gamshurst;48.6631581;8.0186279
+440;Gausb.;Gausbach;48.6862285;8.3626983
+441;Geisgn;Geisingen;47.922968;8.6491814
+442;Geißlgn;Geißlingen;47.6203594;8.3919242
+443;Gemmgn;Gemmingen;49.1566963;8.9840589
+444;Gengenb.;Gengenbach;48.4035425;8.0153059
+445;Gerchshm;Gerchsheim;49.7061529;9.7846947
+446;Gerichtstet.;Gerichtstetten;49.5348178;9.5042984
+447;Gerlachshm;Gerlachsheim;49.5798828;9.7177399
+448;Gernsb.;Gernsbach;48.7636394;8.3379924
+449;Geroldsau;Geroldsau;48.7299655;8.253169
+450;Gerolzahn;Gerolzahn;49.6258471;9.318909
+451;Gersb.;Gersbach;47.6975505;7.9326403
+452;Geschwend;Geschwend;47.804258;7.938615
+453;Giersb.;Giersbach;47.6719579;8.0188657
+454;Gissighm;Gissigheim;49.5945464;9.5877641
+455;Glashfn;Glashofen;49.6245;9.36672
+456;Glashütte (Bühl);Glashütte (Bühl);48.62851;8.18137
+457;Glashütte (Stock.);Glashütte (Stock.);47.91046;8.90905
+458;Glashütten;Glashütten;47.6326518;7.9642269
+459;Glottert.;Glottertal;48.0486741;7.9602572
+460;Göbrichen;Göbrichen;48.9564855;8.7071884
+461;Gochshm;Gochsheim;49.1035815;8.7503582
+462;Göggingen;Göggingen;48.00416;9.19811
+463;Goldscheuer;Goldscheuer;48.508866;7.8253778
+464;Gölshsn;Gölshausen;49.0439268;8.7214515
+465;Gommersd.;Gommersdorf;49.3700919;9.6151126
+466;Gondelshm;Gondelsheim;49.0591022;8.6596573
+467;Görwihl;Görwihl;47.6411618;8.0784862
+468;Göschwlr;Göschweiler;47.8582957;8.311165
+469;Gottenhm;Gottenheim;48.0502889;7.7261673
+470;Gottersd.;Gottersdorf;49.6372886;9.3097844
+471;Gottmadgn;Gottmadingen;47.734011;8.7763444
+472;Götzgn;Götzingen;49.4971494;9.3934883
+473;Graben;Graben;49.15687;8.482734
+474;Grafenhsn (Lahr);Grafenhausen (Lahr);48.28427;7.76678
+475;Grafenhsn i. Schw.;Grafenhausen i. Schw.;47.77495;8.25731
+476;Grasbeuren;Grasbeuren;47.7313108;9.2977489
+477;Grauelsbaum;Grauelsbaum;48.7357885;7.9825142
+478;Greffern;Greffern;48.7521656;8.0056049
+479;Gremmelsb.;Gremmelsbach;48.1590731;8.2555173
+480;Grenzach-Wyhlen;Grenzach-Wyhlen;47.5528548;7.6737981
+481;Grenzhof;Grenzhof;49.41809;8.59574
+482;Gresgen;Gresgen;47.711889;7.8188644
+483;Griesb. (Freudenst.);Griesbach (Freudenst.);48.45041;8.23494
+484;Griesb. (Simonsw.);Griesbach (Simonsw.);48.0895918;8.0915691
+485;Grieshm;Griesheim;48.5104879;7.9253753
+486;Grießen;Grießen;47.6264888;8.4109158
+487;Grimmelshfn;Grimmelshofen;47.7861745;8.497838
+488;Grißhm;Grißheim;47.8720469;7.5904683
+489;Gromb;Grombach;49.2284445;8.9970131
+490;Großeicholzhm;Großeicholzheim;49.4439727;9.288189
+491;Großrind.;Großrinderfeld;49.6657707;9.7332965
+492;Großsachsen;Großsachsen;49.5125945;8.6598293
+493;Großschönach;Großschönach;47.8627073;9.2361602
+494;Großw.;Großweier;48.6533046;8.0472781
+495;Grötzgn;Grötzingen;49.0070818;8.4976343
+496;Grünenwört;Grünenwört;49.774789;9.47467
+497;Grunern;Grunern;47.8713724;7.720788
+498;Grüngn;Grüningen;47.9841984;8.4715785
+499;Grünsf.;Grünsfeld;49.6082782;9.7447803
+500;Grünsfeldhsn;Grünsfeldhausen;49.6246742;9.7406799
+501;Grünwald;Grünwald;47.8422182;8.2407755
+502;Grünwettersb.;Grünwettersbach;48.957369;8.4685787
+503;Grünwinkel;Grünwinkel;49.0017745;8.3551901
+504;Gundelfgn;Gundelfingen;48.0441176;7.8686038
+505;Gündelwangen;Gündelwangen;47.8426163;8.2864051
+506;Gündlgn;Gündlingen;48.01405;7.640197
+507;Günnenb.;Günnenbach;47.5831763;7.9328229
+508;Günterst.;Günterstal;47.9667841;7.8567215
+509;Gundholzen;Gundholzen;47.70272065;8.988910628
+510;Gupf;Gupf;47.7053162;7.5989999
+511;Gurtweil;Gurtweil;47.6412423;8.2465136
+512;Gutach (Schwwaldb.);Gutach a. d. Schwwaldb.;48.24844;8.21293
+513;Gutach (Elzt.);Gutach i. Elzt.;48.11667;7.98333
+514;Gütenb.;Gütenbach;48.0454535;8.1381577
+515;Gutenstein;Gutenstein;48.0786999;9.1161375
+516;Gutmadgn;Gutmadingen;47.9106423;8.615817
+517;Guttenb.;Guttenbach;49.389961;9.0766248
+518;Güttgn;Güttingen;47.7723234;8.9903648
+519;Haag;Haag;49.3930241;8.9236356
+520;Haagen;Haagen;47.63758;7.6782
+521;Hach;Hach;47.7967944;7.6033703
+522;Häg;Häg;47.7335036;7.916262
+523;Hägelbg;Hägelberg;47.6617147;7.7271254
+524;Hagen;Hagen;47.63758;7.6782
+525;Hagnau;Hagnau;47.6749642;9.3161678
+526;Hagsf.;Hagsfeld;49.0335862;8.4579739
+527;Haigerach;Haigerach;48.428028;8.067683
+528;Hainst.;Hainstadt;49.5407085;9.332366
+529;Halberstung;Halberstung;48.7599001;8.1407808
+530;Halbmeil;Halbmeil;48.2901339;8.270898
+531;Haltgn;Haltingen;47.6152532;7.6163573
+532;Hamb.;Hambach;48.363057;8.08778
+533;Hambg;Hamberg;48.81982;8.77449
+534;Hambrücken;Hambrücken;49.1861055;8.5449438
+535;Hammereis.;Hammereisenbach-Bregenbach;47.99597;8.31967
+536;Hammerstein;Hammerstein;47.6893882;7.6446161
+537;Handsch.;Handschuhsheim;49.4306859;8.6831779
+538;Hänner;Hänner;47.595303;8.0342605
+539;Happach;Happach;48.304815;8.205897
+540;Hardhm;Hardheim;49.6101843;9.4732442
+541;Harpolgn;Harpolingen;47.5723455;8.000997
+542;Harthm (Freib.);Hartheim (Freib.);47.93333;7.63333
+543;Harthm (Meßk.);Hartheim (Meßk.);48.15593;8.93386
+544;Hartschwand;Hartschwand;47.6687787;8.066153
+545;Hasel;Hasel;47.6526083;7.8969746
+546;Haslach (Freib.);Haslach (Freib.);47.99282;7.80303
+547;Haslach (Oberk.);Haslach (Oberk.);48.56531;8.05658
+548;Haslach i. K.;Haslach i. K.;48.27773;8.08941
+549;Hasselb.;Hasselbach;49.25934;8.987326
+550;Haßmershm;Haßmersheim;49.3010953;9.1466828
+551;Hattenwlr;Hattenweiler;47.8596886;9.2777853
+552;Hattgn;Hattingen;47.9223791;8.7839359
+553;Haueneberstein;Haueneberstein;48.8058205;8.2218408
+554;Hauenstein;Hauenstein;47.5816403;8.1064668
+555;Haugn;Hauingen;47.6429856;7.6937985
+556;Hausach;Hausach;48.2836305;8.174972
+557;Hausen (Donauesch.);Hausen (Donauesch.);47.9159;8.67424
+558;Hausen a. d. Aach;Hausen a. d. Aach;47.79151;8.84112
+559;Hausen a. d. M.;Hausen a. d. M.;47.95617;7.66939
+560;Hausen i. T.;Hausen i. T.;48.08522;9.03852
+561;Hausen i. W.;Hausen i. W.;47.68128;7.83986
+562;Hausen vor Wald;Hausen vor Wald;47.8918;8.48923
+563;Hauserb.;Hauserbach;48.27855;8.154721
+564;Häusern;Häusern;47.75;8.16667
+565;Heckf.;Heckfeld;49.5514466;9.6364892
+566;Hecklgn;Hecklingen;48.1698754;7.7712276
+567;Heddesb.;Heddesbach;49.4810598;8.8278266
+568;Heddeshm;Heddesheim;49.5054905;8.6024574
+569;Heidelbg;Heidelberg;49.4093582;8.694724
+570;Heidelshm;Heidelsheim;49.100795;8.645494
+571;Heidenhfn;Heidenhofen;47.9838963;8.5659161
+572;Heidersb.;Heidersbach;49.4533135;9.2477407
+573;Heiligenbg;Heiligenberg;47.8208084;9.3118409
+574;Heiligenholz;Heiligenholz;47.8530947;9.266088
+575;Heiligenz.;Heiligenzell;48.364233;7.8979474
+576;Heiligkreuzst.;Heiligkreuzsteinach;49.4862253;8.7972365
+577;Heimb.;Heimbach;48.1622967;7.8301905
+578;Heinshm;Heinsheim;49.2609926;9.1513095
+579;Heinstet.;Heinstetten;48.1351843;8.9633625
+580;Heitershm;Heitersheim;47.8736185;7.6580337
+581;Helmlgn;Helmlingen;48.7074374;7.9694636
+582;Helmshm;Helmsheim;49.085135;8.640945
+583;Helmst.;Helmstadt;49.34118;9.02513
+584;Hemmenhfn;Hemmenhofen;47.67344;8.967957
+585;Hemsb. (Adelsh.);Hemsbach (Adelsh.);49.42912;9.40129
+586;Hemsb. (Weinh.);Hemsbach (Weinh.);49.59075;8.64779
+587;Hepb.;Hepbach;47.7204163;9.4305565
+588;Heppenschwand;Heppenschwand;47.7245281;8.1620632
+589;Herbolzhm (Bleich);Herbolzheim a. d. Bleich;48.21884;7.77746
+590;Herbolzhm (Jagst);Herbolzheim a. d. Jagst;49.28099;9.25834
+591;Herdern;Herdern;48.0115;7.85936
+592;Herdwangen;Herdwangen;47.8629309;9.1688215
+593;Herlesries;Herlesries;48.4296007;8.1604823
+594;Herrenschwand;Herrenschwand;47.7675298;7.9528484
+595;Herrenwies;Herrenwies;48.6588316;8.2656906
+596;Herrischrd;Herrischried;47.6665531;8.0006455
+597;Herrischwand;Herrischwand;47.679704;8.01186
+598;Herten;Herten;47.556031;7.7347234
+599;Hertgn;Hertingen;47.7236287;7.5868105
+600;Herzogenwlr;Herzogenweiler;48.0253386;8.3719994
+601;Hesselb.;Hesselbach;48.4993379;8.0647206
+602;Hesselh.;Hesselhurst;48.5172296;7.8847052
+603;Hettigenbeuern;Hettigenbeuern;49.5795778;9.264047
+604;Hettgn;Hettingen;49.51794;9.36364
+605;Heub.;Heubach;48.31728;8.32263
+606;Heubronn;Heubronn;47.80122;7.80785
+607;Heud. i. H.;Heudorf  i. H.;47.9137;8.93558
+608;Heud. (Meßk.);Heudorf (Meßk.);47.99532;9.07248
+609;Heuwlr;Heuweiler;48.0546959;7.9052909
+610;Hierb.;Hierbach;47.6859184;8.0905192
+611;Hildmannsf.;Hildmannsfeld;48.7337992;8.0591485
+612;Hilpertsau;Hilpertsau;48.7375509;8.3478522
+613;Hilsb.;Hilsbach;49.195133;8.861397
+614;Hilsenhain;Hilsenhain;49.5119884;8.7719165
+615;Hilzgn;Hilzingen;47.7650022;8.7847713
+616;Hindelwangen;Hindelwangen;47.8630609;9.0103286
+617;Hintertodtm.;Hintertodtmoos;47.7520919;8.0063995
+618;Hinterztn;Hinterzarten;47.9063718;8.103622
+619;Hintschgn;Hintschingen;47.9243031;8.6980473
+620;Hirschlanden;Hirschlanden;49.474191;9.501076
+621;Hochd.;Hochdorf;48.04862;7.802311
+622;Hochemmgn;Hochemmingen;48.0290991;8.5687519
+623;Höchenschwand;Höchenschwand;47.7354379;8.1659943
+624;Hochhsn (Mosb.);Hochhausen (Mosb.);49.323141;9.103185
+625;Hochhsn (Tauber);Hochhausen a. d. Tauber;49.6635329;9.6333051
+626;Hochsal;Hochsal;47.5898727;8.0803806
+627;Hochstet. (Breis.);Hochstetten (Breis.);48.019259;7.610094
+628;Hochstet. (Link.);Hochstetten (Link.);49.135129;8.414175
+629;Hockenhm;Hockenheim;49.3188892;8.5475467
+630;Hödgn;Hödingen;47.7885725;9.1323233
+631;Hörchenbg;Hörchenberg;48.6158255;8.1450526
+632;Hofen;Hofen;47.6922242;7.7476392
+633;Hoffenhm;Hoffenheim;49.2723872;8.8409448
+634;Hofsgrund;Hofsgrund;47.900949;7.8980993
+635;Hofstet.;Hofstetten;48.2589583;8.0677539
+636;Hofw.;Hofweier;48.4237258;7.9082188
+637;Hogschür;Hogschür;47.6478419;8.0159559
+638;Höhef.;Höhefeld;49.7132472;9.6113139
+639;Hohenbodman;Hohenbodman;47.8228517;9.2080997
+640;Hohenegg;Hohenegg;47.7486593;7.8115994
+641;Hohensachsen;Hohensachsen;49.5187639;8.6696038
+642;Hohenst.;Hohenstadt;49.491705;9.516613
+643;Hohentengen;Hohentengen;47.57068;8.434426
+644;Hohenwart;Hohenwart;48.8329136;8.7322478
+645;Hohenwettersb.;Hohenwettersbach;48.966316;8.4807718
+646;Hohnh.;Hohnhurst;48.4929126;7.8624077
+647;Holdersb.;Holdersbach;48.385572;8.172785
+648;Holl;Holl;47.7370466;7.810597
+649;Hollerb.;Hollerbach;49.5150538;9.2807244
+650;Höllstein;Höllstein;47.6395447;7.7481389
+651;Holzen;Holzen;47.6937754;7.6257723
+652;Holzhsn (Emm.);Holzhausen (Emm.);48.070929;7.799271
+653;Holzhsn (Kehl);Holzhausen (Kehl);48.62584;7.919995
+654;Hombg;Homberg;47.81368;9.424058
+655;Honau;Honau;48.6404331;7.8717762
+656;Hondgn;Hondingen;47.8650436;8.5700348
+657;Honstet.;Honstetten;47.8939185;8.8841287
+658;Höpfgn;Höpfingen;49.5999517;9.432936
+659;Hoppetenz.;Hoppetenzell;47.8922326;9.0098123
+660;Horben;Horben;47.9352957;7.8584745
+661;Hörden;Hörden;48.7824292;8.3439379
+662;Horhm;Horheim;47.6488676;8.3470934
+663;Horn;Horn;47.694233;8.993372
+664;Hornb.;Hornbach;49.5951004;9.2892938
+665;Hornbg (Säck.);Hornberg (Säck.);47.659613;7.950885
+666;Hornbg (Schwwaldb.);Hornberg (Schwwaldb.);48.212717;8.23157
+667;Horrenbg;Horrenberg;49.281676;8.781095
+668;Hottgn;Hottingen;47.6230017;8.007987
+669;Hub;Hub;48.665965;8.133319
+670;Hubertshfn;Hubertshofen;47.9599104;8.3908509
+671;Huchenf.;Huchenfeld;48.857612;8.6991744
+672;Hüffenhardt;Hüffenhardt;49.2908862;9.0827453
+673;Hüfgn;Hüfingen;47.9269484;8.4892187
+674;Hügelhm;Hügelheim;47.829021;7.621141
+675;Hügelshm;Hügelsheim;48.7972825;8.1118983
+676;Hugstet.;Hugstetten;48.0533687;7.781347
+677;Hugsw.;Hugsweier;48.3630504;7.8366199
+678;Hundhm;Hundheim;49.6923424;9.467127
+679;Hundsb.;Hundsbach;48.6155394;8.2787672
+680;Hundseck;Hundseck;48.6448143;8.2309535
+681;Hünghm;Hüngheim;49.4123104;9.5184847
+682;Hürrlgn;Hürrlingen;47.7235497;8.2828411
+683;Hüsgn;Hüsingen;47.6306666;7.7403403
+684;Hütten;Hütten;47.627556;7.9500697
+685;Huttenhm;Huttenheim;49.1982786;8.4668757
+686;Hüttersb.;Hüttersbach;48.404147;8.04051
+687;Huttgn;Huttingen;47.672493;7.548737
+688;Ib. (Offb.);Ibach (Offb.);48.454999;8.163383
+689;Ib. (Säck.);Ibach (Säck.);47.743466;8.068271
+690;Ichenhm;Ichenheim;48.4334792;7.8105251
+691;Iffezhm;Iffezheim;48.8209175;8.1421337
+692;Ihrgn;Ihringen;48.0439812;7.6483815
+693;Illgn;Illingen;48.931287;8.210399
+694;Illmensee;Illmensee;47.864499;9.3766192
+695;Illwangen;Illwangen;47.8436524;9.3922686
+696;Ilmspan;Ilmspan;49.6658631;9.7908705
+697;Ilveshm;Ilvesheim;49.4735917;8.5673003
+698;Immendgn;Immendingen;47.9391577;8.734422
+699;Immeneich;Immeneich;47.6968748;8.1251653
+700;Immenstaad;Immenstaad;47.666574;9.365216
+701;Impfgn;Impfingen;49.647561;9.6598203
+702;Indlekofen;Indlekofen;47.6588529;8.2214276
+703;Inzlgn;Inzlingen;47.5887631;7.6869534
+704;Ippgn;Ippingen;47.9836803;8.6670658
+705;Isprgn;Ispringen;48.9205599;8.6690154
+706;Istein;Istein;47.6584833;7.5396199
+707;Ittend.;Ittendorf;47.7010935;9.3384522
+708;Ittenschwand;Ittenschwand;47.7588059;7.877951
+709;Ittersb.;Ittersbach;48.8677921;8.5067607
+710;Ittlgn;Ittlingen;49.1920354;8.9321129
+711;Iznang;Iznang;47.7157232;8.9594697
+712;Jechtgn;Jechtingen;48.119946;7.608509
+713;Jestet.;Jestetten;47.65;8.56667
+714;Jöhlgn;Jöhlingen;49.031465;8.574356
+715;Jost.;Jostal;47.9550507;8.1600599
+716;Jungholz;Jungholz;47.6006347;7.9534014
+717;Kadelburg;Kadelburg;47.6107767;8.2965651
+718;Käfert.;Käfertal;49.5116736;8.5158767
+719;Kaltbrunn;Kaltbrunn;48.346109;8.352346
+720;Kaltenb.;Kaltenbach;47.7549089;7.7255337
+721;Kaltenbronn;Kaltenbronn;48.706363;8.431749
+722;Kaltenbrunn;Kaltenbrunn;49.6479767;9.3588714
+723;Kandern;Kandern;47.714697;7.6610865
+724;Kappel (Neust.);Kappel (Neust.);47.873197;8.232265
+725;Kappel (Vill.);Kappel (Vill.);48.111733;8.502932
+726;Kappel a. Rh.;Kappel a. Rh.;48.29219;7.741146
+727;Kappel i. T.;Kappel i. T.;47.9646668;7.9087001
+728;Kappelrodeck;Kappelrodeck;48.591285;8.1177267
+729;Kappelwi.;Kappelwindeck;48.6903239;8.145914
+730;Karlsd.;Karlsdorf;49.1362062;8.5434328
+731;Karlsr.;Karlsruhe;49.0068705;8.4034195
+732;Karsau;Karsau;47.587065;7.7987903
+733;Kartung;Kartung;48.7760646;8.1724003
+734;Käsacker;Käsacker;47.7547552;7.6937048
+735;Katzenmoos;Katzenmoos;48.1671494;8.0339401
+736;Katzensteig;Katzensteig;48.086113;8.179006
+737;Katzent.;Katzental;49.373224;9.266326
+738;Kehl;Kehl;48.5728929;7.8109768
+739;Kemb.;Kembach;49.742803;9.6275081
+740;Kenzgn;Kenzingen;48.1918267;7.7689368
+741;Keppenb.;Keppenbach;48.1442847;7.9197847
+742;Ketsch;Ketsch;49.367538;8.5237178
+743;Kiechlinsbergen;Kiechlinsbergen;48.1231835;7.6547922
+744;Kieselbronn;Kieselbronn;48.9339465;8.7479626
+745;Kippenhsn;Kippenhausen;47.6720671;9.3516327
+746;Kippenhm;Kippenheim;48.2952196;7.8235952
+747;Kippenheimwlr;Kippenheimweiler;48.3182043;7.8051884
+748;Kirchardt;Kirchardt;49.2060256;8.9915645
+749;Kirchd.;Kirchdorf;48.0151287;8.4701239
+750;Kirchen (Donauesch.);Kirchen (Donauesch.);47.908611;8.671871
+751;Kirchen (Efrgn);Kirchen (Efrgn);47.647711;7.567849
+752;Kirchf.;Kirchfeld;49.0487312;8.3974192
+753;Kirchhsn;Kirchhausen;47.713749;7.754925
+754;Kirchhm;Kirchheim;49.377499;8.665763
+755;Kirchhfn;Kirchhofen;47.9226854;7.7409941
+756;Kirchztn;Kirchzarten;47.9651461;7.9573306
+757;Kirnb.;Kirnbach;48.26199;8.24679
+758;Kirrlach;Kirrlach;49.2443691;8.5408047
+759;Kirschbaumwasen;Kirschbaumwasen;48.62476325;8.354521923
+760;Kittersburg;Kittersburg;48.5016068;7.8357773
+761;Kleinkems;Kleinkems;47.6862094;7.5235689
+762;Kleinlaufenburg;Kleinlaufenburg;47.5671976;8.0599414
+763;Kleinsteinb.;Kleinsteinbach;48.9657328;8.5502578
+764;Klengen;Klengen;48.0068826;8.4685784
+765;Klepsau;Klepsau;49.3880484;9.6728991
+766;Klösterle;Klösterle;48.4259358;8.3301085
+767;Kluftern;Kluftern;47.6921986;9.4008373
+768;Kniebis;Kniebis;48.4720808;8.3106312
+768;Kniebis;Kniebis;48.4720808;8.3106312
+769;Knielgn;Knielingen;49.0299133;8.3402502
+770;Kollmarsr.;Kollmarsreute;48.1019359;7.8800918
+771;Kollnau;Kollnau;48.106722;7.971779
+772;Kommgn;Kommingen;47.816107;8.6144861
+773;Köndrgn;Köndringen;48.13905;7.805324
+774;Könighm;Königheim;49.6182679;9.5951636
+775;Königsb.;Königsbach;48.9665979;8.6080582
+776;Königschaffhsn;Königschaffhausen;48.1349825;7.6561695
+777;Königsf.;Königsfeld;48.14007;8.419631
+778;Königshfn;Königshofen;49.5471848;9.7315312
+779;Konst.;Konstanz;47.65929;9.17482
+780;Korb;Korb;49.355248;9.399277
+781;Kork;Kork;48.5670016;7.8702056
+782;Krauthm;Krautheim;49.3861751;9.6346258
+783;Kreenheinstet.;Kreenheinstetten;48.0574191;9.0525638
+783;Kreenheinstet.;Kreenheinstetten;48.0574191;9.0525638
+784;Krenkgn;Krenkingen;47.6823462;8.3054526
+785;Krenshm;Krensheim;49.6374717;9.7790812
+786;Kronau;Kronau;49.2190434;8.6328799
+787;Krozgn;Krozingen;47.9118288;7.7033313
+788;Krumb. (Meßk.);Krumbach (Meßk.);47.961989;9.045819
+789;Krumb. (Mosb.);Krumbach (Mosb.);49.453811;9.183768
+790;Kuhb.;Kuhbach;48.3380968;7.9074197
+791;Kühlenbronn;Kühlenbronn;47.7751224;7.783167
+792;Külshm;Külsheim;49.6696553;9.5207106
+793;Kuppenhm;Kuppenheim;48.8272323;8.2545743
+794;Kupprichhsn;Kupprichhausen;49.5272434;9.6210962
+795;Kürnb.;Kürnbach;49.0775127;8.8456259
+796;Kürnbg;Kürnberg;47.6645455;7.86976
+797;Kürz.;Kürzell;48.3853924;7.8159121
+798;Küßnach;Küßnach;47.5942417;8.3640125
+799;Kützbrunn;Kützbrunn;49.5809016;9.7593006
+800;Ladenburg;Ladenburg;49.4724349;8.6106455
+801;Lahr;Lahr;48.338896;7.8710825
+802;Lampenhain;Lampenhain;49.4983633;8.7648266
+803;Landeck;Landeck;48.1495517;7.8411153
+804;Landshsn;Landshausen;49.1481861;8.8069259
+805;Langenalb;Langenalb;48.8444597;8.4984243
+806;Langenb. (Vill.);Langenbach (Vill.);48.05404;8.300155
+807;Langenb. (Wolf.);Langenbach (Wolf.);48.318675;8.246922
+808;Langenbrand;Langenbrand;48.702838;8.362507
+809;Langenbrücken;Langenbrücken;49.2027018;8.6480013
+810;Langenelz;Langenelz;49.5162376;9.2056201
+811;Langenhard;Langenhard;48.3101631;7.8986858
+812;Langenhart;Langenhart;48.046328;9.1031689
+813;Langeno.;Langenordnach;47.955433;8.197979
+814;Langenrain;Langenrain;47.763101;9.0753348
+815;Langensch.;Langenschiltach;48.1601845;8.3166036
+816;Langensee;Langensee;47.742851;7.819053
+817;Langenstein;Langenstein;47.842918;8.902526
+818;Langensteinb.;Langensteinbach;48.9132567;8.5049232
+819;Langenwi.;Langenwinkel;48.3323318;7.8225446
+820;Langgassen;Langgassen;47.8717743;9.3309676
+821;Langhard;Langhard;47.9513045;7.8076385
+822;Langh.;Langhurst;48.4732662;7.8769449
+823;Lauda;Lauda;49.5675798;9.7037031
+824;Laudenb.;Laudenbach;49.6122232;8.6509705
+825;Laudenbg;Laudenberg;49.4813436;9.2155953
+826;Lauf;Lauf;48.6485831;8.1292199
+827;Laufen;Laufen;47.842448;7.682618
+828;Laufenburg;Laufenburg;47.5671976;8.0599414
+829;Laushm;Lausheim;47.8119502;8.4527665
+830;Lautenb. (Gernsb.);Lautenbach (Gernsb.);48.7561342;8.3694947
+831;Lautenb. (Rench);Lautenbach (Rench);48.5198867;8.1146774
+832;Legelsh.;Legelshurst;48.5712606;7.9145757
+833;Lehen;Lehen;48.0167693;7.8022723
+834;Lehenge.;Lehengericht;48.269264;8.362983
+835;Lehnacker;Lehnacker;47.7086064;7.7625275
+836;Lehngn;Lehningen;48.7943883;8.8177414
+837;Leibenst.;Leibenstadt;49.369199;9.4194487
+838;Leiberstung;Leiberstung;48.7532117;8.0997247
+839;Leibertgn;Leibertingen;48.0438138;9.0117958
+839;Leibertgn;Leibertingen;48.0438138;9.0117958
+840;Leimen;Leimen;49.3491417;8.6909951
+841;Leipferdgn;Leipferdingen;47.8654706;8.6678258
+842;Leiselhm;Leiselheim;48.126019;7.635511
+843;Lellwangen;Lellwangen;47.7975986;9.366617
+844;Lemb.;Lembach;47.8034009;8.4301366
+845;Lengenrieden;Lengenrieden;49.5290157;9.640628656
+846;Lenzk.;Lenzkirch;47.8682042;8.2022783
+847;Leopoldshafen;Leopoldshafen;49.096332;8.3990376
+848;Leustet.;Leustetten;47.809321;9.294756
+849;Leutersbg;Leutersberg;47.9668184;7.7799408
+850;Leutershsn;Leutershausen;49.4993491;8.660328
+851;Leuteshm;Leutesheim;48.6266794;7.8564824
+852;Leutk.;Leutkirch;47.757561;9.321804
+853;Leutschenb.;Leutschenbach;48.1722798;8.2608395
+854;Lichtenau;Lichtenau;48.7251415;8.0072464
+855;Lichtent.;Lichtental;48.745879;8.2582669
+856;Liedolshm;Liedolsheim;49.1622721;8.4175444
+857;Liel;Liel;47.7393901;7.6066005
+858;Lienhm;Lienheim;47.573502;8.3762648
+859;Lierb.;Lierbach;48.496248;8.187377
+860;Liggergn;Liggeringen;47.7746446;9.0274194
+861;Liggersd.;Liggersdorf;47.8869987;9.110283466
+862;Limb.;Limbach;49.4619356;9.2112167
+863;Limpach;Limpach;47.7946942;9.429628
+864;Linach;Linach;48.02578795;8.241416028
+865;Lindach (Eberb.);Lindach (Eberb.);49.41686;9.007653
+866;Lindach (Gengb.);Lindach (Gengb.);48.375773;8.068055
+867;Lindelb.;Lindelbach;49.7572032;9.5838588
+868;Linkenhm;Linkenheim;49.1233736;8.4077995
+869;Linx;Linx;48.6241412;7.893693
+870;Lipburg;Lipburg;47.785787;7.65856
+871;Lippertsr.;Lippertsreute;47.8052942;9.2382805
+872;Liptgn;Liptingen;47.9385454;8.9090562
+873;Littenwlr;Littenweiler;47.9773178;7.8961055
+874;Litzelstet.;Litzelstetten;47.7133163;9.1726172
+875;Lobenf.;Lobenfeld;49.3557627;8.8706676
+876;Löcherbg;Löcherberg;48.4329539;8.1758767
+877;Löffgn;Löffingen;47.8839004;8.3446627
+878;Lohrb.;Lohrbach;49.399852;9.138915
+879;Lörrach;Lörrach;47.6120896;7.6607218
+880;Lottstet.;Lottstetten;47.6275156;8.5736163
+881;Ludwigshafen;Ludwigshafen;47.8177978;9.056572
+882;Lütschenb.;Lütschenbach;47.7457295;7.7182515
+883;Lützelsachsen;Lützelsachsen;49.5295086;8.6656299
+884;Luttgn;Luttingen;47.5720895;8.0953369
+885;Mahlbg;Mahlberg;48.2871478;7.8124221
+886;Mahlspüren i. H.;Mahlspüren i. H.;47.8754309;8.9783654
+887;Mahlspüren i. T.;Mahlspüren i. T.;47.8632668;9.0962215
+888;Mainau;Mainau;47.7052926;9.194512844
+889;Mainwangen;Mainwangen;47.9248027;9.0100788
+890;Maisach;Maisach;48.4721358;8.2010979
+891;Maleck;Maleck;48.1294507;7.8851394
+892;Malsburg;Malsburg;47.7328144;7.7083209
+893;Malsch (Ettl.);Malsch (Ettl.);48.883964;8.334228
+894;Malsch (Wiesl.);Malsch (Wiesl.);49.245167;8.68297
+895;Malschenbg;Malschenberg;49.2550577;8.6807668
+896;Malterdgn;Malterdingen;48.1621664;7.7951587
+897;Mamb.;Mambach;47.7279496;7.8781592
+898;Mannhm;Mannheim;49.4892913;8.4673098
+899;Mappach;Mappach;47.6825663;7.5982586
+900;Marb. (Tbb.);Marbach (Tbb.);49.565462;9.728026
+901;Marb. (Vill.);Marbach (Vill.);48.031781;8.471113
+902;Markd. a. B.;Markdorf a. B.;47.7206;9.390854
+903;Markd. a. Dinkelbg;Markdorf a. Dinkelbg;47.550514;7.714625
+904;Markelfgn;Markelfingen;47.7431322;9.0032406
+905;Märkt;Märkt;47.6248367;7.5813855
+906;Marlen;Marlen;48.5218664;7.8237061
+907;Marxz.;Marxzell;48.8618255;8.4486959
+908;Marz.;Marzell;47.7711778;7.7262139
+909;Mauchen (Müllh.);Mauchen (Müllh.);47.763564;7.592793
+910;Mauchen (Stühl.);Mauchen (Stühl.);47.738546;8.39063
+911;Mauenhm;Mauenheim;47.9021978;8.7529872
+912;Mauer;Mauer;49.3393776;8.7998674
+913;Maugenhard;Maugenhard;47.674961;7.6320748
+914;Maulburg;Maulburg;47.6415301;7.7795147
+915;Meckeshm;Meckesheim;49.3209158;8.8159217
+916;Meersburg;Meersburg;47.6955538;9.2719656
+917;Meißenhm;Meißenheim;48.41088;7.773541
+918;Memprechtshfn;Memprechtshofen;48.6820814;7.9843376
+919;Mengen;Mengen;47.9579;7.71101
+920;Menngn;Menningen;48.008393;9.160224
+921;Menzenschwand;Menzenschwand;47.817637;8.070735
+922;Menzgn;Menzingen;49.1384019;8.7720814
+923;Merchgn;Merchingen;49.4010818;9.5077722
+924;Merdgn;Merdingen;48.0195754;7.6847988
+925;Merzhsn;Merzhausen;47.9648327;7.8254423
+926;Messelhsn;Messelhausen;49.5754531;9.788308
+927;Meßk.;Meßkirch;47.9939249;9.1122006
+928;Mettenbg;Mettenberg;47.751278;8.26799
+929;Michelb. (Eberb.);Michelbach (Eberb.);49.374957;8.961814
+930;Michelb. (Gernsb.);Michelbach (Gernsb.);48.818154;8.351486
+931;Michelf.;Michelfeld;49.225418;8.783587
+932;Mietershm;Mietersheim;48.3307818;7.8435981
+933;Mimmenhsn;Mimmenhausen;47.7623289;9.2899724
+934;Mindersd.;Mindersdorf;47.895672;9.0745384
+935;Mingolshm;Mingolsheim;49.220399;8.657844
+936;Minseln;Minseln;47.6043737;7.7901117
+937;Mistelbrunn;Mistelbrunn;47.9576901;8.3637878
+938;Mittelschefflenz;Mittelschefflenz;49.4006263;9.2797634
+939;Möggingen;Möggingen;47.765886;9.0028244
+940;Möhrgn;Möhringen;47.960331;8.766162
+941;Mönchwlr;Mönchweiler;48.0993425;8.426761
+942;Mönchz.;Mönchzell;49.3346624;8.8501766
+943;Mondf.;Mondfeld;49.7828451;9.4176431
+944;Moos (Bühl);Moos (Bühl);48.7181788;8.0617653
+945;Moos (Konst.);Moos (Konst.);47.72449;8.93404
+946;Moosbrunn;Moosbrunn;49.4251659;8.930648
+947;Mörsch;Mörsch;48.9611441;8.2892136
+948;Mörschenhardt;Mörschenhardt;49.5693264;9.1718046
+949;Mörtelstein;Mörtelstein;49.358903;9.0479325
+950;Mösb.;Mösbach;48.596951;8.065004
+951;Mosb.;Mosbach;49.3521085;9.1460205
+952;Mückenloch;Mückenloch;49.3878816;8.8580345
+953;Muckenschopf;Muckenschopf;48.6949618;7.9880349
+954;Mudau;Mudau;49.5330014;9.203843
+955;Muggenbrunn;Muggenbrunn;47.8587535;7.9171738
+956;Muggensturm;Muggensturm;48.8701198;8.2798439
+957;Mühlb.;Mühlbach;49.09874;8.90028
+958;Mühlburg;Mühlburg;49.0133216;8.3635856
+959;Mühlenb.;Mühlenbach;48.2540384;8.1105827
+960;Mühlhsn (Pforzh.);Mühlhausen (Pforzh.);48.807148;8.823046
+961;Mühlhsn (Sing.);Mühlhausen (Sing.);47.810435;8.809688
+962;Mühlhsn (Wiesl.);Mühlhausen (Wiesl.);49.247989;8.726031
+963;Mühlgn;Mühlingen;47.9122569;9.0165311
+964;Mülben;Mülben;49.4641783;9.0968206
+964;Mülben;Mülben;49.4641783;9.0968206
+965;Müllen;Müllen;48.46794745;7.835978744
+966;Müllhm;Müllheim;47.809642;7.626389
+967;Münchhöf;Münchhöf;47.8801243;8.9529109
+968;Münchgn;Münchingen;47.82586;8.3948144
+969;Münchw.;Münchweier;48.2487036;7.8568163
+970;Mundelfgn;Mundelfingen;47.867706;8.4670961
+971;Mundgn;Mundingen;48.1356154;7.8361014
+972;Münzeshm;Münzesheim;49.12324;8.715391
+973;Munzgn;Munzingen;47.9696412;7.698233
+974;Murg;Murg;47.556561;8.024888
+975;Mußb.;Mußbach;48.1310726;7.9826511
+976;Mutschelb.;Mutschelbach;48.94199;8.533606
+977;Nack;Nack;47.6073397;8.5788375
+978;Nassig;Nassig;49.7351607;9.4506021
+979;Neckarau;Neckarau;49.4526788;8.4928241
+980;Neckarbischofshm;Neckarbischofsheim;49.293192;8.9617359
+981;Neckarburken;Neckarburken;49.3786293;9.1681837
+982;Neckarelz;Neckarelz;49.3416629;9.105137
+983;Neckargemünd;Neckargemünd;49.3954054;8.7965893
+984;Neckargerach;Neckargerach;49.4003125;9.0708092
+985;Neckarhsn;Neckarhausen;49.4678238;8.5988164
+986;Neckarkatzenb.;Neckarkatzenbach;49.3842729;9.0340166
+987;Neckarmühlb.;Neckarmühlbach;49.2829732;9.1337201
+988;Neckarsteinach;Neckarsteinach;49.407723;8.838206
+989;Neckarwimmersb.;Neckarwimmersbach;49.4551524;8.9802949
+990;Neckarzimmern;Neckarzimmern;49.3182713;9.1322724
+991;Neibshm;Neibsheim;49.0713712;8.6856885
+992;Neidenstein;Neidenstein;49.3167;8.88472
+993;Nenzgn;Nenzingen;47.8429617;8.9609238
+994;Nesselrd;Nesselried;48.5195001;8.004527
+995;Nesselwangen;Nesselwangen;47.8168615;9.1163108
+996;Neuburgw.;Neuburgweier;48.9705048;8.2664405
+997;Neudenau;Neudenau;49.2940857;9.2731888
+998;Neudgn;Neudingen;47.9116877;8.5711224
+999;Neud.;Neudorf;49.175268;8.497694
+1000;Neuenburg (Donauesch.);Neuenburg (Donauesch.);47.862069;8.426504
+1001;Neuenburg a. Rh.;Neuenburg a. Rh.;47.8155916;7.5627871
+1002;Neuenbürg;Neuenbürg;49.153473;8.71975
+1003;Neuenhm;Neuenheim;49.4179561;8.6859804
+1004;Neuenweg;Neuenweg;47.7958222;7.8268252
+1005;Neuershsn;Neuershausen;48.0692049;7.7714161
+1006;Neufrach;Neufrach;47.7616355;9.3113994
+1007;Neuhsn (Engen);Neuhausen (Engen);47.8387169;8.773687
+1008;Neuhsn (Hasl.);Neuhausen (Hasl.);48.358074;8.06223
+1009;Neuhsn (Pforzh.);Neuhausen (Pforzh.);48.792825;8.778641
+1010;Neuhsn (Vill.);Neuhausen (Vill.);48.132563;8.458683
+1011;Neuhof;Neuhof;47.849647;7.862084
+1012;Neuk.;Neukirch;48.02533;8.173631
+1013;Neulußhm;Neulußheim;49.2936758;8.5220709
+1014;Neumühl;Neumühl;48.5704137;7.8430575
+1015;Neunkirchen;Neunkirchen;49.3886578;9.0080906
+1016;Neunstet.;Neunstetten;49.4105847;9.6116823
+1017;Neureut;Neureut;49.045649;8.378125
+1018;Neusaß;Neusaß;49.6212296;9.3480355
+1019;Neusatz;Neusatz;48.6583598;8.1490959
+1020;Neust.;Neustadt;47.916704;8.21066
+1021;Neuthard;Neuthard;49.128229;8.521603
+1022;Neuw.;Neuweier;48.7215648;8.1853115
+1023;N.bühl;Niederbühl;48.8412218;8.2176427
+1024;N.dossenb.;Niederdossenbach;47.6056109;7.8696226
+1025;N.eggenen;Niedereggenen;47.7542892;7.6293575
+1026;N.eichsel;Niedereichsel;47.593049;7.7545686
+1027;N.eschach;Niedereschach;48.1322546;8.5281173
+1028;N.gebisb.;Niedergebisbach;47.6498037;7.9949119
+1029;N.hausen;Niederhausen;48.2399311;7.7135589
+1030;N.hof;Niederhof;47.5660865;8.034796
+1031;N.rimsgn;Niederrimsingen;47.985404;7.669626
+1032;N.rotweil;Niederrotweil;48.0851938;7.6115757
+1033;N.schopfhm;Niederschopfheim;48.4124225;7.8927775
+1034;N.tegernau;Niedertegernau;47.7036136;7.7998682
+1035;N.wasser;Niederwasser;48.1902193;8.2291172
+1036;N.weiler;Niederweiler;47.80675;7.651694
+1037;N.wihl;Niederwihl;47.6195223;8.0731225
+1038;N.winden;Niederwinden;48.1437659;8.0227467
+1039;Niefern;Niefern;48.9160935;8.7846033
+1040;Niklashsn;Niklashausen;49.7041083;9.617409
+1041;Nimburg;Nimburg;48.1049349;7.7748184
+1042;Nöggenschwiel;Nöggenschwiel;47.6934909;8.2152642
+1043;Nollgn;Nollingen;47.5734789;7.7746563
+1044;Nonnenw.;Nonnenweier;48.3476599;7.7608934
+1045;Nordhalden;Nordhalden;47.8072151;8.6068524
+1046;Nordrach;Nordrach;48.4004384;8.083653
+1047;Nordschwaben;Nordschwaben;47.6187856;7.8178898
+1048;Nordweil;Nordweil;48.1925144;7.8150567
+1049;Norsgn;Norsingen;47.9375143;7.728714731
+1050;Nöttgn;Nöttingen;48.928486;8.569751
+1051;Nußb. (Oberk.);Nußbach (Oberk.);48.535465;8.021491
+1052;Nußb. (Tribg);Nußbach (Tribg);48.130611;8.257868
+1053;Nußbaum;Nußbaum;48.9889518;8.6937272
+1054;Nußd.;Nußdorf;47.753615;9.195833
+1055;Nußloch;Nußloch;49.3228653;8.6959385
+1056;Nüstenb.;Nüstenbach;49.373044;9.125691
+1057;O.achern;Oberachern;48.6185918;8.0839286
+1058;O.acker;Oberacker;49.1069695;8.7137838
+1059;O.alpfen;Oberalpfen;47.6576151;8.1492356
+1060;O.balb.;Oberbalbach;49.5388037;9.7932919
+1061;O.baldgn;Oberbaldingen;47.9759274;8.6043728
+1062;O.bergen;Oberbergen;48.0953714;7.6550304
+1063;O.biederb.;Oberbiederbach;48.218062;8.026483
+1064;O.bränd;Oberbränd;47.9491518;8.2920797
+1065;O.bruch;Oberbruch;48.728565;8.089009
+1066;O.dielb.;Oberdielbach;49.4477041;9.0545433
+1066;O.dielb.;Oberdielbach;49.4477041;9.0545433
+1067;O.eggenen;Obereggenen;47.7577716;7.6469658
+1068;O.eggingen;Obereggingen;47.701669;8.3868411
+1069;O.eichsel;Obereichsel;47.5985382;7.7588555
+1070;O.entersb.;Oberentersbach;48.3277668;8.0810805
+1071;O.eschach;Obereschach;48.1058569;8.469754
+1072;O.flockenb.;Oberflockenbach;49.5112841;8.7281985
+1073;O.gebisb.;Obergebisbach;47.6542682;7.9779927
+1074;O.gimpern;Obergimpern;49.255844;9.0408886
+1075;O.glashütte;Oberglashütte;48.1243384;9.0343859
+1076;O.glottert.;Oberglottertal;48.0486992;7.9611021
+1077;O.gromb.;Obergrombach;49.077217;8.583083
+1078;O.harmersb.;Oberharmersbach;48.3727696;8.1267832
+1079;O.hausen (Bruchs.);Oberhausen (Bruchs.);49.2574;8.485451
+1080;O.hausen (Emm.);Oberhausen (Emm.);48.22653;7.71324
+1081;O.häuser;Oberhäuser;47.7588047;7.7965548
+1082;O.hof;Oberhof;47.583077;8.030245
+1083;O.kessach;Oberkessach;49.3660432;9.4888364
+1084;O.kirch;Oberkirch;48.5307122;8.0783998
+1085;O.kirnach;Oberkirnach;48.0926357;8.3132735
+1086;O.lauchrgn;Oberlauchringen;47.623888;8.325557
+1087;O.lauda;Oberlauda;49.5669059;9.6803488
+1088;O.mettgn;Obermettingen;47.7206288;8.3598909
+1089;O.münstert.;Obermünstertal;47.8743245;7.8166598
+1090;O.mutschelb.;Obermutschelbach;48.9336103;8.536123333
+1091;Obernd. (Rast.);Oberndorf (Rast.);48.826701;8.279107
+1092;Obernd. (Tbb.);Oberndorf (Tbb.);49.4074936;9.591119
+1093;O.öwishm;Oberöwisheim;49.1481415;8.6917187
+1094;O.precht.;Oberprechtal;48.2142936;8.1419332
+1095;O.ried;Oberried;47.9330055;7.9498704
+1096;O.rimsgn;Oberrimsingen;47.978383;7.662704
+1097;O.rotweil;Oberrotweil;48.0898323;7.6305625
+1098;O.sasb.;Obersasbach;48.6321099;8.1050476
+1099;O.scheffl.;Oberschefflenz;49.416816;9.284026
+1100;O.scheident.;Oberscheidental;49.5075447;9.1502795
+1101;O.schopfhm;Oberschopfheim;48.3967513;7.9027713
+1102;O.schüpf;Oberschüpf;49.522861;9.677643
+1103;O.schwand.;Oberschwandorf;47.958037;8.982962
+1104;O.simonswald;Obersimonswald;48.0789717;8.094862
+1105;O.spitzenb.;Oberspitzenbach;48.1773782;7.9899722
+1106;Obertsrot;Obertsrot;48.7445874;8.3468197
+1107;O.uhldgn;Oberuhldingen;47.7346651;9.2456059
+1108;O.wangen;Oberwangen;47.7764831;8.3773532
+1109;O.wasser;Oberwasser;48.6865503;8.0539279
+1110;O.weier (Bühl);Oberweier (Bühl);48.6998833;8.1107377
+1111;O.weier (Ettl.);Oberweier (Ettl.);48.913703;8.380969
+1112;O.weier (Lahr);Oberweier (Lahr);48.377104;7.900223
+1113;O.weier (Rast.);Oberweier (Rast.);48.84651;8.307167
+1114;O.weiler;Oberweiler;47.808288;7.672941
+1115;O.weschnegg;Oberweschnegg;47.7095865;8.1553299
+1116;O.wihl;Oberwihl;47.6211557;8.0481705
+1117;O.winden;Oberwinden;48.152948;8.0450017
+1118;O.wittighsn;Oberwittighausen;49.6257395;9.8517367
+1119;O.wittst.;Oberwittstadt;49.4288343;9.5586081
+1120;O.wolf.;Oberwolfach;48.3169714;8.2172428
+1121;Obrighm;Obrigheim;49.352445;9.0899361
+1122;Ochsenb. (Heidelb.);Ochsenbach (Heidelb.);49.338183;8.738649
+1123;Ochsenb. (Pfull.);Ochsenbach (Pfull.);47.904426;9.329065
+1124;Odelshfn;Odelshofen;48.5576902;7.8799819
+1125;Odenhm;Odenheim;49.1775011;8.7503918
+1126;Ödsb.;Ödsbach;48.4990059;8.0891162
+1127;Offenb.;Offenburg;48.4716556;7.944378
+1128;Offnadgn;Offnadingen;47.9339215;7.7130106
+1129;Öfgn;Öfingen;47.9909045;8.6353488
+1130;Öflgn;Öflingen;47.5921621;7.9138159
+1131;Oftergn;Ofteringen;47.6773484;8.3758935
+1132;Oftershm;Oftersheim;49.3695728;8.5829567
+1133;Ohlsb.;Ohlsbach;48.4316699;7.9939024
+1134;Öhngn;Öhningen;47.6617131;8.8873571
+1135;Önsb.;Önsbach;48.6058958;8.0351657
+1136;Oos;Oos;48.786786;8.191379
+1137;Opferdgn;Opferdingen;47.8720001;8.5047235
+1138;Opfgn;Opfingen;48.0008392;7.7169929
+1139;Oppenau;Oppenau;48.4751652;8.1646682
+1140;Orschw.;Orschweier;48.277072;7.7982742
+1141;Orsgn;Orsingen;47.8357983;8.9293656
+1142;Ortenbg;Ortenberg;48.4504257;7.9717876
+1143;Öschelbronn;Öschelbronn;48.9058811;8.8137924
+1144;Osterburken;Osterburken;49.4305787;9.4273773
+1145;Östrgn;Östringen;49.2192418;8.7097172
+1147;Ötighm;Ötigheim;48.8894679;8.2383062
+1148;Ötlgn;Ötlingen;47.6227747;7.6247045
+1149;Ottenau;Ottenau;48.7911454;8.3348126
+1150;Ottenhm;Ottenheim;48.3861601;7.7579985
+1151;Ottenhöfen;Ottenhöfen;48.5658379;8.1521367
+1152;Ottersd.;Ottersdorf;48.8607565;8.1548745
+1153;Ottersw.;Ottersweier;48.667086;8.1120879
+1154;Ottoschwan.;Ottoschwanden;48.1867645;7.897709
+1155;Ottwangen;Ottwangen;47.6114954;7.7381617
+1156;Owgn;Owingen;47.8095858;9.172317
+1157;Paimar;Paimar;49.63976;9.7543211
+1158;Palmb.;Palmbach;48.9469176;8.4822808
+1159;Paradies;Paradies;47.6654744;9.1665136
+1160;Peterst.;Peterstal;48.428696;8.20347
+1161;Peterz.;Peterzell;48.1331844;8.3741332
+1162;Pfaffenbg;Pfaffenberg;47.7346231;7.8698105
+1163;Pfaffenrot;Pfaffenrot;48.8623699;8.4614798
+1164;Pfaffenwlr (Freib.);Pfaffenweiler (Freib.);47.936356;7.753467
+1165;Pfaffenwlr (Vill.);Pfaffenweiler (Vill.);48.033957;8.416429
+1166;Pfohren;Pfohren;47.938897;8.552351
+1167;Pforzhm;Pforzheim;48.8908846;8.7029532
+1168;Pfullend.;Pfullendorf;47.924349;9.2559822
+1169;Philippsburg;Philippsburg;49.2367495;8.4546679
+1170;Plankst.;Plankstadt;49.3927294;8.5930329
+1171;Pleutersb.;Pleutersbach;49.4527346;8.9524636
+1172;Plittersd.;Plittersdorf;48.8846536;8.1563625
+1173;Poppenhsn;Poppenhausen;49.6308148;9.8266689
+1174;Präg;Präg;47.7789046;7.9674019
+1175;Prinzb.;Prinzbach;48.3233074;8.0051696
+1176;Pülfrgn;Pülfringen;49.5812835;9.5270439
+1177;Radolfz.;Radolfzell;47.7372802;8.9702755
+1178;Raich;Raich;47.7510257;7.8000862
+1179;Raitb.;Raitbach;47.6825527;7.8615215
+1180;Raitenbuch;Raitenbuch;47.8663374;8.1465351
+1181;Raithaslach;Raithaslach;47.8822558;8.95988
+1182;Rammersw.;Rammersweier;48.4814241;7.9694489
+1183;Ramsb.;Ramsbach;48.495521;8.13719
+1184;Randegg;Randegg;47.7214839;8.7529344
+1185;Randen;Randen;47.8194028;8.5761052
+1186;Rapp.;Rappenau;49.2393031;9.101268
+1187;Rast;Rast;47.939618;9.12063
+1188;Rastatt;Rastatt;48.8574209;8.2088088
+1189;Rauenbg (Werthm);Rauenberg (Werthm);49.740883;9.384401
+1190;Rauenbg (Wiesl.);Rauenberg (Wiesl.);49.267522;8.703874
+1191;Rauent.;Rauental;48.8564408;8.2478596
+1192;Raumünzach;Raumünzach;48.6394222;8.3496034
+1193;Rechbg (Lörr.);Rechberg (Lörr.);47.660504;7.699205
+1194;Rechbg (Waldsh.);Rechberg (Waldsh.);47.650496;8.400308
+1195;Reckgn;Reckingen;47.5747235;8.3315391
+1196;Reichartshsn;Reichartshausen;49.3576545;8.9434564
+1197;Reichenau;Reichenau;47.69563725;9.05920224
+1198;Reichenb. (Ettl.);Reichenbach (Ettl.);48.925763;8.47524
+1199;Reichenb. (Freiamt);Reichenbach (Freiamt);48.1581534;7.9243497
+1200;Reichenb. (Gengb.);Reichenbach (Gengb.);48.426689;8.014019
+1201;Reichenb. (Hornbg);Reichenbach (Hornbg);48.2175117;8.2627313
+1202;Reichenb. (Lahr);Reichenbach (Lahr);48.3289958;7.9274384
+1203;Reichenbuch;Reichenbuch;49.395434;9.097946
+1204;Reichent.;Reichental;48.7299258;8.3913685
+1205;Reicholzhm;Reicholzheim;49.7278911;9.5344716
+1206;Reihen;Reihen;49.217116;8.91501
+1207;Reilgn;Reilingen;49.2945507;8.5739147
+1208;Reinhardsachsen;Reinhardsachsen;49.6407172;9.3443314
+1209;Reiselfgn;Reiselfingen;47.8557214;8.3520741
+1210;Reisenb.;Reisenbach;49.5042333;9.1246478
+1211;Remetschwiel;Remetschwiel;47.6771916;8.1506958
+1212;Renchen;Renchen;48.5873988;8.0143673
+1213;Rensbg;Rensberg;48.1756399;8.1805718
+1214;Rettighm;Rettigheim;49.23980445;8.700421608
+1215;Reute (Emm.);Reute (Emm.);48.082526;7.820974
+1216;Reute i. H.;Reute i. H.;47.8880537;8.9075172
+1217;Rheinau;Rheinau;49.427869;8.529703
+1218;Rheinbisch.;Rheinbischofsheim;48.6533503;7.9281559
+1219;Rheinf.;Rheinfelden;47.5605924;7.7861959
+1220;Rheinhsn;Rheinhausen;49.27807;8.47213
+1221;Rheinhm;Rheinheim;47.5892797;8.3046971
+1222;Rheinshm;Rheinsheim;49.2356233;8.418401041
+1223;Rheinwlr;Rheinweiler;47.7102932;7.5329468
+1224;Rhina;Rhina;47.5606046;8.0481559
+1225;Richen;Richen;49.1701338;8.9392902
+1226;Rickelshsn;Rickelshausen;47.7416912;8.9285775
+1227;Rickenb.;Rickenbach;47.6209218;7.9788595
+1228;Ried;Ried;47.755303;7.806502
+1229;Riedböhrgn;Riedböhringen;47.8702908;8.5375468
+1230;Riedern a. S.;Riedern a. S.;47.6251309;8.4456732
+1231;Riedern a. W.;Riedern a. W.;47.7169201;8.2891563
+1232;Riedhm (Konst.);Riedheim (Konst.);47.762916;8.748081
+1233;Riedhm (Überlgn);Riedheim (Überlgn);47.70404;9.410239
+1234;Riedichen;Riedichen;47.7052784;7.8884045
+1235;Riedlgn;Riedlingen;47.715312;7.635017
+1236;Riedmatt;Riedmatt;47.5902319;7.8216183
+1237;Riedöschgn;Riedöschingen;47.8437222;8.607676
+1238;Riegel;Riegel;48.150797;7.75016
+1239;Rielasgn;Rielasingen;47.7320433;8.8403886
+1240;Riersb.;Riersbach;48.380951;8.140941
+1241;Riethm;Rietheim;48.031507;8.45639
+1242;Ringelb.;Ringelbach;48.5570888;8.087707
+1243;Ringshm;Ringsheim;48.2478113;7.7796365
+1244;Rinklgn;Rinklingen;49.03437;8.68192
+1245;Rinschhm;Rinschheim;49.5138251;9.3931822
+1246;Rinthm;Rintheim;49.0154961;8.4407597
+1247;Rippbg;Rippberg;49.6217982;9.2954038
+1248;Rippenw.;Rippenweier;49.5053703;8.7093174
+1249;Rippoldsau;Rippoldsau;48.42826;8.328359
+1250;Rippolgn;Rippolingen;47.5764489;7.9883658
+1251;Rittenw.;Rittenweier;49.5105036;8.70283
+1252;Rittersb.;Rittersbach;49.423729;9.236481
+1253;Robern;Robern;49.4522852;9.1623
+1254;Rockenau;Rockenau;49.4468461;8.9985455
+1255;Roggenbeuren;Roggenbeuren;47.7698987;9.4058699
+1256;Rohrb. (Epp.);Rohrbach (Epp.);49.140054;8.856098
+1257;Rohrb. (Furtw.);Rohrbach (Furtw.);48.074672;8.256111
+1258;Rohrb. (Heidelb.);Rohrbach (Heidelb.);49.380117;8.687261
+1259;Rohrb. (Sinsh.);Rohrbach (Sinsh.);49.25253;8.904272
+1260;Rohrbg;Rohrberg;47.717899;7.904928
+1261;Rohrd.;Rohrdorf;48.018015;9.102188
+1262;Röhrenb.;Röhrenbach;47.829584;9.324783
+1263;Rohrhardsbg;Rohrhardsberg;48.131019;8.152032
+1264;Rorgenwies;Rorgenwies;47.9040691;8.920598
+1265;Rosenbg;Rosenberg;49.4571317;9.4738113
+1266;Rot;Rot;49.264662;8.630345
+1267;Rötenb.;Rötenbach;47.89259;8.295692
+1268;Rotenbg;Rotenberg;49.258291;8.715198
+1269;Rotenfels;Rotenfels;48.8138719;8.3059891
+1270;Rothaus;Rothaus;47.794466;8.244949
+1271;Rotzel;Rotzel;47.5947354;8.0618895
+1272;Rotzgn;Rotzingen;47.665196;8.0775716
+1273;Ruchsen;Ruchsen;49.3188905;9.3797811
+1274;Rudenbg;Rudenberg;47.9192327;8.238918
+1275;Rüdent.;Rüdental;49.6312373;9.4794306
+1276;Rührbg;Rührberg;47.5695741;7.7028045
+1277;Ruit;Ruit;49.0082657;8.7249962
+1278;Rümmgn;Rümmingen;47.6419637;7.6429253
+1279;Rumpfen;Rumpfen;49.5343288;9.2434483
+1280;Rüppurr;Rüppurr;48.974643;8.4044285
+1281;Rußhm;Rußheim;49.186605;8.423451
+1282;Rüßwihl;Rüßwihl;47.6311262;8.0702978
+1283;Rust;Rust;48.2659347;7.7263213
+1284;Rütte;Rütte;47.673362;7.989475
+1285;Rüttehof;Rüttehof;47.6395563;7.9479408
+1286;Sachsenflur;Sachsenflur;49.5236015;9.7088637
+1287;Sachsenhsn;Sachsenhausen;49.7315813;9.4925656
+1288;Säckgn;Säckingen;47.5525538;7.9495387
+1289;Saig;Saig;47.89294;8.1780582
+1290;Salem;Salem;47.7666692;9.2974131
+1291;Sallneck;Sallneck;47.7235218;7.7718394
+1292;Sand;Sand;48.5383272;7.9208373
+1293;Sandhsn;Sandhausen;49.3420088;8.6597789
+1294;Sandhfn;Sandhofen;49.544346;8.444766
+1295;Sandw.;Sandweier;48.8088064;8.1951676
+1296;Sasb. (Achern);Sasbach (Achern);48.6390302;8.0924882
+1297;Sasb. (Kaiserst.);Sasbach (Kaiserst.);48.1402686;7.6157755
+1298;Sasbachrd;Sasbachried;48.6573417;8.084514
+1299;Sasbachwa.;Sasbachwalden;48.6186096;8.1280222
+1300;Sattelhof;Sattelhof;47.6739359;7.8781142
+1301;Sauld.;Sauldorf;47.944453;9.1079848
+1302;Schabenhsn;Schabenhausen;48.1300965;8.4917778
+1303;Schachen;Schachen;47.6037018;8.100178
+1304;Schallb.;Schallbach;47.6551983;7.6262283
+1305;Schallst.;Schallstadt;47.9568123;7.7496747
+1306;Schapb.;Schapbach;48.3777578;8.2913097
+1307;Schatthsn;Schatthausen;49.318992;8.757417
+1308;Scheident.;Scheidental;49.5049566;9.1587461
+1309;Schelgn;Schelingen;48.104048;7.6827173
+1310;Schellbronn;Schellbronn;48.8177953;8.7410798
+1311;Schenkenz.;Schenkenzell;48.3105623;8.3717915
+1312;Schergn;Scheringen;49.4682229;9.2353454
+1313;Scherzhm;Scherzheim;48.7104884;7.9952091
+1314;Scherzgn;Scherzingen;47.946512;7.735524345
+1315;Scheuern;Scheuern;48.7557362;8.3474812
+1316;Schielbg;Schielberg;48.84312;8.447876
+1317;Schienen;Schienen;47.687779;8.8989458
+1318;Schiftung;Schiftung;48.7674168;8.0960784
+1319;Schillingst.;Schillingstadt;49.4584905;9.5727054
+1320;Schiltach;Schiltach;48.290371;8.3469136
+1321;Schlächtenhaus;Schlächtenhaus;47.6910473;7.7373414
+1322;Schlatt a. R.;Schlatt a. Randen;47.7695634;8.7017872
+1323;Schlatt u. K.;Schlatt u. Krähen;47.8051408;8.8359943
+1324;Schlatt (Krozgn);Schlatt (Krozgn);47.924885;7.673101
+1325;Schlechtnau;Schlechtnau;47.8176193;7.9395217
+1326;Schliengen;Schliengen;47.7566623;7.5758903
+1327;Schlierb.;Schlierbach;49.413804;8.746057
+1328;Schlierst.;Schlierstadt;49.4549873;9.3668737
+1329;Schloßau;Schloßau;49.5389678;9.1533884
+1330;Schluchsee;Schluchsee;47.8185928;8.177035
+1331;Schluchtern;Schluchtern (Exklave!) ;49.148495;9.102715
+1332;Schluttenb.;Schluttenbach;48.8985052;8.4024783
+1333;Schmidhfn;Schmidhofen;47.8906308;7.6929768
+1334;Schmiehm;Schmieheim;48.2786884;7.8578952
+1335;Schmitzgn;Schmitzingen;47.6492637;8.2024062
+1336;Schnellgn;Schnellingen;48.28516385;8.082753516
+1337;Schollach;Schollach;47.9853401;8.2472349
+1338;Schöllbronn;Schöllbronn;48.895883;8.418194
+1339;Schollbrunn;Schollbrunn;49.4352484;9.0777233
+1339;Schollbrunn;Schollbrunn;49.4352484;9.0777233
+1340;Schonach;Schonach;48.1427148;8.1974937
+1341;Schönau (Heidelb.);Schönau (Heidelb.);49.436491;8.809271
+1342;Schönau i. Schw.;Schönau i. Schw.;47.78624;7.893154
+1343;Schönbg (Lahr);Schönberg (Lahr);48.32536;7.9671
+1344;Schönbg (Offb.);Schönberg (Offb.);48.364132;8.031798
+1345;Schönbrunn;Schönbrunn;48.676003;8.1876716
+1346;Schönbüch;Schönbüch;47.7679732;8.2106415
+1347;Schönenb. (Furtw.);Schönenbach (Furtw.);48.046121;8.232044
+1348;Schönenb. (Schluchsee);Schönenbach (Schluchsee);47.7679732;8.2106415
+1349;Schönenbg;Schönenberg;47.7931784;7.8832379
+1350;Schönf.;Schönfeld;49.6755716;9.8017165
+1351;Schönwald;Schönwald;48.1053473;8.2034483
+1352;Schopfhm;Schopfheim;47.6500525;7.8216997
+1353;Schrieshm;Schriesheim;49.4751705;8.6611149
+1354;Schuttern;Schuttern;48.3823332;7.8501709
+1355;Schuttert.;Schuttertal;48.2697416;7.955104
+1356;Schutterwald;Schutterwald;48.4563397;7.8840188
+1357;Schutterz.;Schutterzell;48.401331;7.837362
+1358;Schwabenhm;Schwabenheim;49.444502;8.627405
+1359;Schwäblishsn;Schwäblishausen;47.9669697;9.2695597
+1360;Schwaib.;Schwaibach;48.3920897;8.0370469
+1361;Schwand;Schwand;47.737191;7.791476
+1362;Schwand.;Schwandorf;47.9511991;8.9957361
+1363;Schwanenb.;Schwanenbach;48.2100822;8.2541174
+1364;Schwanhm;Schwanheim;49.4020866;8.9743343
+1365;Schwangn;Schwaningen;47.7786649;8.4288701
+1366;Schwarzach;Schwarzach;48.747006;8.045718
+1367;Schwärzenb.;Schwärzenbach;47.952275;8.230937
+1368;Schwarzenb.;Schwarzenbach;48.169746;8.326038
+1369;Schweigern;Schweigern;49.4904708;9.671183953
+1370;Schweighsn;Schweighausen;48.2194402;7.9661577
+1371;Schweighof;Schweighof;47.8058723;7.701513218
+1372;Schweighöfe;Schweighöfe;47.9739294;8.1130073
+1373;Schweigmatt;Schweigmatt;47.6814825;7.8825671
+1374;Schweinbg;Schweinberg;49.6199846;9.5187299
+1375;Schwenngn;Schwenningen;48.106014;8.999246
+1376;Schwerzen;Schwerzen;47.6427875;8.3564474
+1377;Schwetzgn;Schwetzingen;49.3832919;8.5735135
+1378;Schwörst.;Schwörstadt;47.5922842;7.8738189
+1379;Seckach;Seckach;49.4432417;9.335885
+1380;Seckenhm;Seckenheim;49.4670016;8.563284
+1381;Seeb. (Achern);Seebach (Achern);48.576169;8.170919
+1382;Seeb. (Wolf.);Seebach (Wolf.);48.400348;8.312356
+1383;Seebrugg;Seebrugg;47.8019417;8.195607
+1384;Seef.;Seefelden;47.8587142;7.6376322
+1385;Seelb.;Seelbach;48.3145597;7.9400652
+1386;Seelfgn;Seelfingen;47.850546;9.1089016
+1387;Segeten;Segeten;47.660436;8.0259978
+1388;Sehrgn;Sehringen;47.7810147;7.675475
+1389;Selb.;Selbach;48.780234;8.312675
+1390;Sennf.;Sennfeld;49.3804237;9.3842057
+1391;Sentenhart;Sentenhart;47.9131059;9.1260454
+1392;Seppenhfn;Seppenhofen;47.8741621;8.3488366
+1393;Sexau;Sexau;48.1024366;7.9082564
+1394;Sickgn;Sickingen;49.0899631;8.7888369
+1395;Siegelau;Siegelau;48.145774;7.97706
+1396;Siegelsb.;Siegelsbach;49.2697;9.08972
+1397;Siensb.;Siensbach;48.1064251;7.9939964
+1398;Simonswald;Simonswald;48.1001644;8.0554669
+1399;Sindolshm;Sindolsheim;49.4882132;9.455578315
+1400;Singen (Pfinz);Singen (Pfinz);48.958516;8.572934
+1401;Singen a. H.;Singen a. H.;47.760066;8.838778
+1402;Sinshm;Sinsheim;49.2553;8.87722
+1403;Sinzhm;Sinzheim;48.7603662;8.1652016
+1404;Sipplgn;Sipplingen;47.7966525;9.0967997
+1405;Sitzenk.;Sitzenkirch;47.7361751;7.6719645
+1406;Sohl;Sohl;47.883114;9.232316
+1407;Sölden;Sölden;47.9335895;7.8119464
+1408;Söllgn (Durl.);Söllingen (Durl.);48.986406;8.542369
+1409;Söllgn (Rast.);Söllingen (Rast.);48.777698;8.057971
+1410;Sonderriet;Sonderriet;49.7176846;9.4392297
+1411;Spechb.;Spechbach;49.346208;8.884559
+1412;Spessart;Spessart;48.911574;8.431621
+1413;Spielbg;Spielberg;48.896355;8.469926
+1414;Spöck;Spöck;49.113777;8.509738
+1415;Sprant.;Sprantal;49.003261;8.682362
+1416;St. Blasien;St. Blasien;47.760126;8.13059
+1417;St. Georgen (Freib.);St. Georgen (Freib.);47.981063;7.800888
+1418;St. Georgen i. Schw.;St. Georgen i. Schw.;48.125649;8.332691
+1419;St. Ilgen (Müllh.);St. Ilgen (Müllh.);47.8422207;7.6707242
+1420;St. Ilgen (Heidelb.);St. Ilgen (Heidelb.);49.334031;8.671544
+1421;St. Leon;St. Leon;49.26692;8.59969
+1422;St. Märgen;St. Märgen;48.007662;8.093055
+1423;St. Peter;St. Peter;48.017812;8.035524
+1423;St. Peter;St. Peter;48.017812;8.035524
+1424;St. Roman;St. Roman;48.331116;8.291754
+1425;St. Trudpert;St. Trudpert;47.864523;7.801531
+1426;St. Ulrich;St. Ulrich;47.908363;7.837772
+1427;St. Wilhelm;St. Wilhelm;47.894997;7.949923
+1428;Staad;Staad;47.681135;9.20948
+1429;Stadelhfn (Oberk.);Stadelhofen (Oberk.);48.559733;8.036008
+1430;Stadelhfn (Pfull.);Stadelhofen (Pfull.);47.888256;9.259009
+1431;Staffort;Staffort;49.092559;8.511372
+1432;Stahrgn;Stahringen;47.785218;8.973452
+1433;Staufen (Breisg.);Staufen (Breisg.);47.881675;7.731399
+1434;Staufen (Waldsh.);Staufen (Waldsh.);47.756996;8.21038
+1435;Staufenbg;Staufenberg;48.765843;8.305692
+1436;Stebb.;Stebbach;49.14558;8.963867
+1437;Stegen;Stegen;47.981442;7.964279
+1438;Stein (Pforzh.);Stein (Pforzh.);48.962774;8.63971
+1439;Stein a. K.;Stein a. K.;49.261483;9.298943
+1440;Steinach;Steinach;48.303099;8.057182
+1441;Steinb. (Buchen);Steinbach (Buchen);49.549501;9.241161
+1442;Steinb. (Bühl);Steinbach (Bühl);48.728791;8.160865
+1443;Steinb. (Werth.);Steinbach (Werth.);49.680033;9.471665
+1444;Steinegg;Steinegg;48.813218;8.790395
+1445;Steinen;Steinen;47.643533;7.739526
+1446;Steinenst.;Steinenstadt;47.768451;7.554432
+1447;Steinfurt;Steinfurt;49.648283;9.483908
+1448;Steinklgn;Steinklingen;49.511009;8.743825
+1449;Steinmauern;Steinmauern;48.900363;8.19799
+1450;Steinsfurt;Steinsfurt;49.23948;8.909151
+1451;Steißlgn;Steißlingen;47.799429;8.927489
+1452;Stetten (Engen);Stetten (Engen);47.873679;8.71734
+1453;Stetten (Lörr.);Stetten (Lörr.);47.599612;7.660707
+1454;Stetten (Meersb.);Stetten (Meersb.);47.69143;9.300101
+1455;Stetten (Waldsh.);Stetten (Waldsh.);47.590466;8.440543
+1456;Stetten a. k. M.;Stetten a. k. M.;48.121981;9.078083
+1457;Stettf.;Stettfeld;49.181895;8.645419
+1458;Stockach;Stockach;47.852961;9.013232
+1459;Stockburg;Stockburg;48.111734;8.394457
+1460;Stockmatt;Stockmatt;47.758726;7.760046
+1461;Stohren;Stohren;47.892404;7.874468
+1462;Stollenhof;Stollenhof;48.410029;8.104804
+1463;Stollhfn;Stollhofen;48.764961;8.048558
+1464;Straßenhm;Straßenheim;49.512882;8.576578
+1465;Strittbg;Strittberg;47.72111;8.193467
+1466;Strittmatt;Strittmatt;47.664448;8.04653
+1467;Strohb.;Strohbach;48.386169;8.010693
+1468;Strümpfelbrunn;Strümpfelbrunn;49.464319;9.079039
+1468;Strümpfelbrunn;Strümpfelbrunn;49.464319;9.079039
+1469;Stühlgn;Stühlingen;47.746969;8.447434
+1470;Stupferich;Stupferich;48.952799;8.50788
+1471;Suggent.;Suggental;48.072375;7.926863
+1472;Sulz;Sulz;48.310608;7.861203
+1473;Sulzb. (Ettl.);Sulzbach (Ettl.);48.89689;8.368922
+1474;Sulzb. (Gernsb.);Sulzbach (Gernsb.);48.807008;8.361079
+1475;Sulzb. (Haus.);Sulzbach (Haus.);48.247028;8.196989
+1476;Sulzb. (Mosb.);Sulzbach (Mosb.);49.350028;9.221194
+1477;Sulzb. (Oberk.);Sulzbach (Oberk.);48.512522;8.152779
+1478;Sulzb. (Weinh.);Sulzbach (Weinh.);49.578811;8.658931
+1479;Sulzburg;Sulzburg;47.840498;7.708152
+1480;Sulzf.;Sulzfeld;49.104594;8.85606
+1481;Sumpfohren;Sumpfohren;47.908168;8.537842
+1482;Sundhm;Sundheim;48.55836;7.83574
+1483;Sunthsn;Sunthausen;48.000672;8.591877
+1484;Tairnb.;Tairnbach;49.264052;8.756999
+1485;Taisersd.;Taisersdorf;47.850003;9.214725
+1486;Talhm;Talheim;47.816411;8.638867
+1487;Tannenk.;Tannenkirch;47.711644;7.606038
+1488;Tannhm;Tannheim;47.999106;8.409477
+1489;Tauberbisch.;Tauberbischofsheim;49.622913;9.662477
+1490;Tegernau;Tegernau;47.719337;7.795049
+1491;Tengen;Tengen;47.816504;8.659341
+1492;Teningen;Teningen;48.126908;7.809927
+1493;Tennenb.;Tennenbach;48.145625;7.894909
+1494;Tennenbronn;Tennenbronn;48.190452;8.350977
+1495;Teutschneureut (=Neureut);Teutschneureut (auch Neureut);49.045848;8.378405
+1496;Tiefenb.;Tiefenbach;49.175525;8.796467
+1497;Tiefenbronn;Tiefenbronn;48.824105;8.801064
+1498;Tiefenhäusern;Tiefenhäusern;47.701933;8.147119
+1499;Tiefenstein;Tiefenstein;47.626612;8.085263
+1500;Tiengen (Freib.);Tiengen (Freib.);47.984129;7.715146
+1501;Tiengen (Waldsh.);Tiengen (Waldsh.);47.634699;8.274537
+1502;Tiergarten;Tiergarten;48.557705;8.065641
+1503;Titisee;Titisee;47.90116;8.149956
+1504;Todtm.;Todtmoos;47.738742;8.001397
+1505;Todtm.-Au;Todtmoos-Au;47.69699;7.979623
+1506;Todtm.-Schwarzenb.;Todtmoos-Schwarzenbach;47.721244;7.987345
+1507;Todtm.-Weg;Todtmoos-Weg;47.754954;7.989425
+1508;Todtnau;Todtnau;47.830253;7.945254
+1509;Todtnaubg;Todtnauberg;47.851725;7.941624
+1510;Treschklgn;Treschklingen;49.225952;9.055782
+1511;Tribg;Triberg;48.132279;8.234163
+1512;Trienz;Trienz;49.440425;9.1699
+1513;Tüfgn;Tüfingen;47.775007;9.240868
+1514;Tüllgn;Tüllingen;47.602461;7.644603
+1515;Tumrgn;Tumringen;47.626838;7.653618
+1516;Tunau;Tunau;47.786483;7.924208
+1517;Tunsel;Tunsel;47.903817;7.669396
+1518;Tutschf.;Tutschfelden;48.215366;7.808321
+1519;Übelb.;Übelbach;48.3369353;8.2562692
+1520;Überauchen;Überauchen;48.0125881;8.4534943
+1521;Überlgn a. B.;Überlingen a. B.;47.766944;9.162036
+1522;Überlgn a. R.;Überlingen a. Ried;47.7381909;8.8971061
+1523;Ubst.;Ubstadt;49.1614286;8.6306975
+1524;Uhldgn;Uhldingen;47.73642045;9.252656517
+1525;Ühlgn;Ühlingen;47.7185032;8.317351
+1526;Uiffgn;Uiffingen;49.501862;9.59284
+1527;Uissighm;Uissigheim;49.6794365;9.5732237
+1528;Uffhsn;Uffhausen;47.9801106;7.8057275
+1529;Ulm (Bühl);Ulm (Bühl);48.727587;8.015
+1530;Ulm (Oberk.);Ulm (Oberk.);48.57878;8.049888
+1531;Umk.;Umkirch;48.0335555;7.7649061
+1532;Unadgn;Unadingen;47.8807628;8.4070082
+1533;U.alpfen;Unteralpfen;47.6469308;8.1320457
+1534;U.balb.;Unterbalbach;49.528493;9.7464144
+1535;U.baldgn;Unterbaldingen;47.9688506;8.6138255
+1536;U.biederb.;Unterbiederbach;48.191724;8.043454
+1537;U.bränd;Unterbränd;47.9335954;8.3585739
+1538;U.entersb.;Unterentersbach;48.3290137;8.0530716
+1539;U.gimpern;Untergimpern;49.2692493;9.0137265
+1540;U.glottert.;Unterglottertal;48.0504518;7.9366874
+1541;U.gromb.;Untergrombach;49.0864707;8.5542487
+1542;U.harmersb.;Unterharmersbach;48.3551934;8.0884324
+1543;U.ibent.;Unteribental;47.9811078;8.0069588
+1544;U.kessach;Unterkessach;49.3458317;9.4383878
+1545;U.kirnach;Unterkirnach;48.0777092;8.3659473
+1546;U.krummen;Unterkrummen;47.8194432;8.1392068
+1547;U.lauchrgn;Unterlauchringen;47.6298972;8.306192367
+1548;U.mettgn;Untermettingen;47.7022301;8.3452123
+1549;U.münstert.;Untermünstertal;47.86083;7.796698
+1550;U.öwishm;Unteröwisheim;49.1433658;8.6660296
+1551;U.precht.;Unterprechtal;48.199666;8.109315
+1552;U.schefflenz;Unterschefflenz;49.3913011;9.2686117
+1553;U.scheident.;Unterscheidental;49.5032903;9.1629634
+1554;U.schüpf;Unterschüpf;49.514473;9.6885908
+1555;U.schwand.;Unterschwandorf;47.958133;8.982926
+1556;U.schwarzach;Unterschwarzach;49.3734859;8.9829513
+1557;U.siggingen;Untersiggingen;47.7761989;9.3783899
+1558;U.simonswald;Untersimonswald;48.111983;8.032394
+1559;U.spitzenb.;Unterspitzenbach;48.1626004;8.0167902
+1560;Unterstmatt;Unterstmatt;48.629078;8.206837
+1561;U.uhldgn;Unteruhldingen;47.721956;9.232635
+1562;U.wangen;Unterwangen;47.780126;8.392062
+1563;U.wittighsn;Unterwittighausen;49.612263;9.837754
+1564;U.wittst.;Unterwittstadt;49.410374;9.5496
+1565;Unzh.;Unzhurst;48.6873101;8.0581589
+1566;Urach;Urach;48.005483;8.249362
+1567;Urbg;Urberg;47.734951;8.12406
+1568;Urloffen;Urloffen;48.5606801;7.9698734
+1569;Urnau;Urnau;47.763795;9.431454
+1570;Urphar;Urphar;49.7482509;9.5740266
+1571;Ursenb.;Ursenbach;49.4943091;8.7238412
+1572;Uttenhfn;Uttenhofen;47.80767;8.633329
+1573;Uttnach;Uttnach;47.7103628;7.6081502
+1574;Utzenf.;Utzenfeld;47.8006378;7.9153864
+1575;Varnhalt;Varnhalt;48.7360832;8.1787874
+1576;Vilchband;Vilchband;49.5905125;9.8243698
+1577;Villgn;Villingen;48.0596619;8.4598995
+1578;Vimbuch;Vimbuch;48.7196031;8.1138218
+1579;Vockenrot;Vockenrot;49.7491179;9.487416
+1580;Vogelb. (Kandern);Vogelbach (Kandern);47.743034;7.704125
+1581;Vogelb. (St. Blasien);Vogelbach (St. Blasien);47.686262;8.09625
+1582;Vögishm;Vögisheim;47.7926;7.621871
+1583;Vogtsburg;Vogtsburg;48.092249;7.684702
+1584;Vöhrenb.;Vöhrenbach;48.0458156;8.3039184
+1585;Völkersb.;Völkersbach;48.8700689;8.3962452
+1586;Volkertshsn;Volkertshausen;47.8216419;8.8651353
+1587;Volkertswlr;Volkertsweiler;47.9436444;9.0083709
+1588;Vordertodtm.;Vordertodtmoos;47.743362;8.00368
+1589;Vormbg;Vormberg;48.7555046;8.1786952
+1590;Vörstet.;Vörstetten;48.0645765;7.8493979
+1591;Wagenschwend;Wagenschwend;49.4734161;9.1489873
+1592;Wagenst.;Wagenstadt;48.2076295;7.7952327
+1593;Wagensteig;Wagensteig;47.984859;8.04700414
+1594;Waghäusel;Waghäusel;49.2485721;8.516277
+1595;Wagsh.;Wagshurst;48.6204826;7.9934091
+1596;Wahlwies;Wahlwies;47.816843;8.9673114
+1597;Waibst.;Waibstadt;49.2978738;8.9205595
+1598;Waldangelloch;Waldangelloch;49.211811;8.80442
+1599;Waldau;Waldau;47.981826;8.16475
+1600;Waldauerb.;Waldauerbach;49.5253942;9.1568999
+1601;Waldbeuren;Waldbeuren;47.910488;9.3470733
+1602;Waldenhsn;Waldenhausen;49.7440111;9.523011
+1603;Waldhsn (Buchen);Waldhausen (Buchen);49.4680835;9.2579618
+1604;Waldhsn (Donauesch.);Waldhausen (Donauesch.);47.92908;8.402239
+1605;Waldhilsb.;Waldhilsbach;49.3730795;8.7704417
+1606;Waldk. (Elzt.);Waldkirch (Elzt.);48.09387;7.96088
+1607;Waldk. (Waldsh.);Waldkirch (Waldsh.);47.659314;8.171794
+1608;Waldmühlb.;Waldmühlbach;49.3619061;9.2829119
+1609;Waldprechtsw.;Waldprechtsweier;48.8615013;8.332844
+1610;Waldsh.;Waldshut;47.6246179;8.2120605
+1611;Waldstet.;Waldstetten;49.565786;9.448314
+1612;Waldulm;Waldulm;48.5863653;8.1028145
+1613;Waldwimmersb.;Waldwimmersbach;49.3754358;8.8937437
+1614;Wallb.;Wallbach;47.5670425;7.9147767
+1615;Wallburg;Wallburg;48.2641844;7.8573999
+1616;Walld.;Walldorf;49.3038134;8.6433518
+1617;Walldürn;Walldürn;49.5833;9.36667
+1618;Wallst.;Wallstadt;49.497018;8.5489923
+1619;Waltershfn;Waltershofen;48.024099;7.719295
+1620;Waltersw.;Waltersweier;48.4857359;7.9177639
+1621;Wamb.;Wambach;47.7415344;7.7490554
+1622;Wangen (Höri);Wangen (Höri);47.662098;8.930025
+1623;Wangen (Überlgn);Wangen (Überlgn);47.727123;9.369615
+1624;Warmb.;Warmbach;47.5533761;7.765418
+1625;Wartenbg;Wartenberg;47.925252;8.617148
+1626;Wasenwlr;Wasenweiler;48.0512375;7.6806838
+1627;Wasser (Emm.);Wasser (Emm.);48.098269;7.856813
+1628;Wasser (Meßk.);Wasser (Meßk.);47.96422;9.094972
+1629;Watterdgn;Watterdingen;47.8381415;8.7002349
+1630;Wehr;Wehr;47.6286078;7.9046417
+1631;Wehrhalden;Wehrhalden;47.7016899;8.0087965
+1632;Weier;Weier;48.4977072;7.9193502
+1633;Weiher;Weiher;49.1795983;8.6187947
+1634;Weil (Engen);Weil (Engen);47.81957;8.704351
+1635;Weil a. Rh.;Weil a. Rh.;47.5932802;7.6116133
+1636;Weild.;Weildorf;47.790727;9.303504
+1637;Weiler (Kinzigt.);Weiler (Kinzigt.);48.287759;8.111497
+1638;Weiler (Konst.);Weiler (Konst.);47.707221;8.953125
+1639;Weiler (Pforzh.);Weiler (Pforzh.);48.887883;8.545863
+1640;Weiler (Sinsh.);Weiler (Sinsh.);49.21043;8.875577
+1641;Weiler (Vill.);Weiler (Vill.);47.9228914;8.3551448
+1642;Weilersb.;Weilersbach;48.0951161;8.505789
+1643;Weilhm;Weilheim;47.6582006;8.2413047
+1644;Weingarten;Weingarten;49.05303;8.52437
+1645;Weinhm;Weinheim;49.5462349;8.6717458
+1646;Weisenb.;Weisenbach;48.729678;8.353855
+1647;Weißenb.;Weißenbach;48.11381;8.195506
+1648;Weißenstein;Weißenstein;48.870562;8.68766
+1649;Weisweil (Emm.);Weisweil (Emm.);48.200725;7.675384
+1650;Weisweil (Waldsh.);Weisweil (Waldsh.);47.64529;8.458897
+1651;Weitenau;Weitenau;47.6792504;7.7655144
+1652;Weitenung;Weitenung;48.7413509;8.12918
+1653;Weiterdgn;Weiterdingen;47.7975616;8.7681022
+1654;Weizen;Weizen;47.779172;8.4631319
+1655;Wellendgn;Wellendingen;47.797518;8.35179
+1656;Welmlgn;Welmlingen;47.6900902;7.5618118
+1657;Welschensteinach;Welschensteinach;48.2744343;8.0177401
+1658;Welschgn;Welschingen;47.8248509;8.7581569
+1659;Welschneureut (= Neureut);Welschneureut (auch Neureut);49.04581;8.378385
+1660;Wemb.;Wembach;47.7734267;7.8877496
+1661;Wendlgn;Wendlingen;47.9769951;7.7943078
+1662;Wenkhm;Wenkheim;49.6999448;9.7035442
+1663;Werb.;Werbach;49.6702181;9.6417327
+1664;Werbachhsn;Werbachhausen;49.6806448;9.6800675
+1665;Werthm;Wertheim;49.7599825;9.5166598
+1666;Wessent.;Wessental;49.7302214;9.4120638
+1667;Wettelbrunn;Wettelbrunn;47.8726215;7.694279308
+1669;Wettersd.;Wettersdorf;49.6329693;9.3864044
+1670;Wieblgn;Wieblingen;49.423851;8.648492
+1671;Wiechs (Hegau);Wiechs (Hegau);47.815796;8.906483
+1672;Wiechs a. R.;Wiechs a. R.;47.7831764;8.6350312
+1673;Wiechs (Schopfh.);Wiechs (Schopfh.);47.63667;7.81339
+1674;Wieden;Wieden;47.8407841;7.880116
+1675;Wiedenfelsen;Wiedenfelsen;48.66069805;8.220515249
+1676;Wiehre;Wiehre;47.9852867;7.8487755
+1677;Wieladgn;Wieladingen;47.5980233;7.9955692
+1678;Wies;Wies;47.7493565;7.7689701
+1679;Wiesenb.;Wiesenbach;49.3614;8.80361
+1680;Wiesent.;Wiesental;49.224724;8.520803
+1681;Wieslet;Wieslet;47.6886775;7.7980867
+1682;Wiesloch;Wiesloch;49.2942599;8.698707
+1683;Wildgutach;Wildgutach;48.0318776;8.1159998
+1684;Wildt.;Wildtal;48.0341207;7.8775995
+1685;Wilferdgn;Wilferdingen;48.947035;8.574322
+1686;Wilfgn;Wilfingen;47.6688083;8.1027152
+1687;Wilhelmsf.;Wilhelmsfeld;49.4676293;8.7584436
+1688;Willargn;Willaringen;47.605586;7.9726551
+1689;Willmendgn;Willmendingen;47.639217;8.354185
+1690;Willstätt;Willstätt;48.5415314;7.8934991
+1691;Winden;Winden;48.768238;8.184295
+1692;Windenr.;Windenreute;48.116298;7.880067
+1693;Windischbuch;Windischbuch;49.4357422;9.6223681
+1694;Windschläg;Windschläg;48.5156179;7.957775
+1695;Wintersd.;Wintersdorf;48.8455231;8.1357373
+1696;Winterspüren;Winterspüren;47.8570982;9.0591453
+1697;Wintersulgen;Wintersulgen;47.8346665;9.3388926
+1698;Winterswlr;Wintersweiler;47.6741329;7.5678981
+1699;Winzenhfn;Winzenhofen;49.3561105;9.5700726
+1700;Wittelb.;Wittelbach;48.2927946;7.9500407
+1701;Wittenhfn;Wittenhofen;47.7826098;9.3903604
+1702;Wittenschwand;Wittenschwand;47.7299948;8.0989738
+1703;Wittent.;Wittental;47.9925387;7.9467565
+1704;Wittenw.;Wittenweier;48.3288204;7.7572192
+1705;Wittichen;Wittichen;48.3381613;8.3434345
+1706;Wittlekofen;Wittlekofen;47.7830143;8.3445753
+1707;Wittlgn;Wittlingen;47.6558635;7.6498364
+1708;Wittnau;Wittnau;47.9462735;7.814375
+1709;Wölchgn;Wölchingen;49.485295;9.630452
+1710;Wolfach;Wolfach;48.298387;8.221722
+1711;Wolfartsw.;Wolfartsweier;48.977594;8.456873
+1712;Wolfenwlr;Wolfenweiler;47.962979;7.762991
+1713;Wolfhag;Wolfhag;48.545187;8.086423
+1714;Wollb.;Wollbach;47.668877;7.649916
+1715;Wollenbg;Wollenberg;49.290855;9.035513
+1716;Wollmatgn;Wollmatingen;47.691137;9.148113
+1717;Wolpadgn;Wolpadingen;47.699501;8.10523
+1718;Wolterdgn;Wolterdingen;47.968701;8.427239
+1719;Worblgn;Worblingen;47.72662;8.860008
+1720;Wornd.;Worndorf;47.987708;8.998733
+1721;Wöschb.;Wöschbach;49.00123;8.56627
+1722;Wössgn;Wössingen;49.0108681;8.6104294
+1723;Würm;Würm;48.857544;8.736924
+1724;Würmershm;Würmersheim;48.9390513;8.2546132
+1725;Wutöschgn;Wutöschingen;47.6596219;8.3651806
+1726;Wyhl;Wyhl;48.164395;7.649331
+1727;Wyhlen;Wyhlen;47.5487995;7.691887
+1728;Yach;Yach;48.1592947;8.0910055
+1729;Zährgn;Zähringen;48.0231488;7.8601394
+1730;Zaisenhsn;Zaisenhausen;49.106738;8.8128458
+1731;Zarten;Zarten;47.9770172;7.9492262
+1732;Zastler;Zastler;47.9242148;7.9856664
+1733;Zell (Bühl);Zell (Bühl);47.968029;9.258111
+1734;Zell a. A.;Zell a. A.;47.9707532;9.25973017
+1735;Zell a. H.;Zell a. H.;48.3718938;8.1225352
+1736;Zell i. W.;Zell i. W.;47.7054471;7.8476208
+1737;Zell-Weierb.;Zell-Weierbach;48.4736933;7.9901497
+1738;Zeutern;Zeutern;49.1764665;8.6751987
+1739;Ziegelhsn;Ziegelhausen;49.4216102;8.756893
+1740;Zienken;Zienken;47.8418331;7.5776267
+1741;Zierolshfn;Zierolshofen;48.6089658;7.9034125
+1742;Zimmerholz;Zimmerholz;47.8674295;8.742626
+1743;Zimmern (Buchen);Zimmern (Buchen);49.43129;9.370603
+1744;Zimmern (Donau);Zimmern (Donau);47.934656;8.709588
+1745;Zimmern (Tbb.);Zimmern (Tbb.);49.59714;9.78619
+1746;Zizenhsn;Zizenhausen;47.8765812;8.9980364
+1747;Zoznegg;Zoznegg;47.8993292;9.0410759
+1748;Zunsw.;Zunsweier;48.424311;7.9488685
+1749;Zunzgn;Zunzingen;47.820754;7.652587
+1750;Zusenhfn;Zusenhofen;48.5487338;8.0175996
+1751;Zuwald;Zuwald;48.397196;8.1821499
+1752;Zuzenhsn;Zuzenhausen;49.2967457;8.825661
+1753;Albert;Albert;47.586164;8.109444

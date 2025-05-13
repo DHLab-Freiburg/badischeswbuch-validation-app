@@ -1,0 +1,362 @@
+/* 
+ * dictionary-styles.css - Styling for Badisches Wörterbuch entries
+ * This file implements the visual formatting guidelines for rendering dictionary entries
+ */
+
+/* ======= General Layout ======= */
+#dictionary-content {
+  max-width: 800px;
+  font-family: Georgia, Cambria, serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.entry {
+  padding: 1rem;
+  margin: 1rem 0;
+  border-bottom: 1px solid #EEE;
+}
+
+/* ======= Core Entry Elements ======= */
+.entry-header {
+  margin-bottom: 0.75rem;
+}
+
+.lemma {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: 0.02em;
+  margin-right: 0.5rem;
+}
+
+.grammar {
+  font-style: italic;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Marker styling with square brackets */
+.marker {
+  font-variant: small-caps;
+  font-size: 0.9rem;
+  margin: 0 0.3rem;
+  position: relative;
+}
+
+.marker::before {
+  content: "[";
+}
+
+.marker::after {
+  content: "]";
+}
+
+.marker.time { color: #8B5A2B; }
+.marker.geo { color: #1E3A8A; }
+.marker.reg { color: #f00; }
+.marker.hom { color: #006400; }
+
+/* ======= Pronunciation Section ======= */
+.pronunciations {
+  margin: 0.5rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #EEE;
+}
+
+.variant {
+  font-size: 0.95rem;
+  margin: 0.3rem 0;
+}
+
+.phon {
+  font-style: italic;
+  color: #444;
+}
+
+.geo {
+  font-size: 0.9rem;
+  color: #666;
+  margin-left: 0.3rem;
+}
+
+.terminator {
+  color: #666;
+}
+
+/* ======= Sense Section ======= */
+.senses {
+  margin-top: 0.75rem;
+  margin-left: 1rem;
+}
+
+.sense {
+  margin-bottom: 0.5rem;
+}
+
+.sense-number {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #0066CC;
+  margin-right: 0.3rem;
+}
+
+.definition {
+  font-size: 1rem;
+  color: #000;
+}
+
+.subsenses {
+  margin-top: 0.3rem;
+  margin-left: 1rem;
+  padding-left: 0.5rem;
+  border-left: 1px solid #DDD;
+}
+
+/* ======= Examples and Attestations ======= */
+.examples {
+  margin-top: 0.3rem;
+  margin-left: 1.5rem;
+}
+
+.example {
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 0.2rem;
+}
+
+.attestations {
+  margin-top: 0.3rem;
+  margin-left: 1.5rem;
+  background-color: #F8F8F8;
+  padding: 0.3rem;
+}
+
+.attestation {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 0.2rem;
+}
+
+.attestation-source {
+  font-size: 0.8rem;
+  text-align: right;
+}
+
+/* ======= Metadata Sections ======= */
+.etymology {
+  font-size: 0.95rem;
+  color: #5D4037;
+  background-color: #FAF7F2;
+  padding: 0.4rem;
+  margin-top: 0.5rem;
+  border-radius: 3px;
+}
+
+.etymology-label {
+  font-weight: bold;
+}
+
+.references {
+  font-size: 0.9rem;
+  color: #00796B;
+  margin-top: 0.4rem;
+}
+
+.references-label {
+  font-weight: bold;
+}
+
+.bibliography {
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 0.4rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.bibliography-label {
+  font-weight: bold;
+}
+
+.problem {
+  font-size: 0.85rem;
+  padding: 0.3rem;
+  margin-top: 0.5rem;
+  border-radius: 3px;
+}
+
+.problem.info {
+  background-color: #E3F2FD;
+  border: 1px solid #BBDEFB;
+}
+
+.problem.warning {
+  background-color: #FFF8E1;
+  border: 1px solid #FFECB3;
+}
+
+.problem.error {
+  background-color: #FFEBEE;
+  border: 1px solid #FFCDD2;
+}
+
+/* ======= Inline Elements ======= */
+/* Term styling */
+.term.scientific {
+  font-style: italic;
+  color: #006400;
+}
+
+.term.common {
+  color: #000;
+}
+
+[lang="latin"] {
+  font-style: italic;
+}
+
+/* Cross-reference styling */
+.cross-ref {
+  color: #0066CC;
+  cursor: pointer;
+}
+
+.cross-ref:hover {
+  text-decoration: underline;
+}
+
+/* Place styling */
+.place {
+  color: #1E3A8A;
+}
+
+/* Bibliography item styling */
+.bibl {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+/* Person styling */
+.person {
+  color: #4B0082;
+}
+
+/* Language styling */
+.lang {
+  font-style: italic;
+  color: #8B4513;
+}
+
+/* Meaning styling */
+.meaning {
+  color: #333;
+}
+
+.meaning::before, .meaning::after {
+  content: "'";
+}
+
+/* Inline phonetic styling */
+.inline-phon {
+  font-style: italic;
+  color: #666;
+}
+
+.inline-phon::before {
+  content: "[";
+}
+
+.inline-phon::after {
+  content: "]";
+}
+
+/* ======= Clickable Pill Styling ======= */
+.pill {
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.pill:hover {
+  opacity: 0.8;
+}
+
+/* Add a subtle indicator that pills are clickable */
+.pill::after {
+  content: " ↩";
+  font-size: 0.8em;
+  vertical-align: super;
+}
+
+/* Clickable place reference styling */
+.place-reference {
+  color: #1E3A8A;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  padding: 1px 2px;
+  border-radius: 3px;
+  position: relative;
+}
+
+.place-reference:hover {
+  background-color: rgba(30, 58, 138, 0.1);
+  text-decoration: underline;
+}
+
+/* Add a subtle caret/arrow to indicate it's clickable */
+.place-reference::after {
+  content: " ↗";
+  font-size: 0.7em;
+  vertical-align: super;
+  opacity: 0.7;
+}
+
+/* Optional tooltip styling */
+.place-reference::before {
+  content: "Click to find in XML";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.place-reference:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ======= Responsive Adjustments ======= */
+@media (max-width: 768px) {
+  #dictionary-content {
+    font-size: 14px;
+  }
+  
+  .lemma {
+    font-size: 1.4rem;
+  }
+  
+  .entry {
+    padding: 0.8rem;
+  }
+  
+  .senses {
+    margin-left: 0.5rem;
+  }
+  
+  .examples, .attestations {
+    margin-left: 1rem;
+  }
+}

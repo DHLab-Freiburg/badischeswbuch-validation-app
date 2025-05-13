@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Badisches Wörterbuch – XML Validator</title>
+  <!-- CodeMirror CSS and JS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/xml/xml.min.js"></script>
+
+  <!-- Application CSS -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/dict-styles.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1>Badisches Wörterbuch – XML Validator</h1>
+  </header>
+
+  <!-- INPUTS -->
+  <section class="inputs">
+    <div class="input-block">
+      <div class="textarea-header">
+        <label>Source &lt;artikel&gt; XML</label>
+        <button class="copy-btn" data-target="source-xml">
+          <span class="copy-icon">📋</span> Copy
+        </button>
+      </div>
+      <div class="code-container">
+        <textarea id="source-xml"></textarea>
+      </div>
+    </div>
+
+    <div class="input-block">
+      <div class="textarea-header">
+        <label>Generated XML</label>
+        <button class="copy-btn" data-target="generated-xml">
+          <span class="copy-icon">📋</span> Copy
+        </button>
+      </div>
+      <div class="code-container">
+        <textarea id="generated-xml"></textarea>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUTTONS -->
+  <div class="btn-group">
+    <button id="validate-btn">Validate Transformation</button>
+    <button id="clear-btn">Clear All</button>
+  </div>
+
+  <!-- RESULTS -->
+  <section id="validation-section" class="results hidden">
+    <!-- Sidebar list -->
+    <aside id="entry-list"></aside>
+
+    <!-- Preview + stats -->
+    <main id="preview-pane">
+      <div id="dictionary-content"></div>
+      <div id="stats-content"></div>
+    </main>
+  </section>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
