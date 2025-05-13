@@ -1,6 +1,6 @@
 # Badisches Wörterbuch XML Validation Tool
 
-A web-based validation tool for checking XML transformations of entries from the Badisches Wörterbuch (Baden Dictionary).
+A web-based validation tool for checking XML transformations (described here: https://github.com/DHLab-Freiburg/badischeswbuch) of entries from the Badisches Wörterbuch (Baden Dictionary).
 
 ## About
 
