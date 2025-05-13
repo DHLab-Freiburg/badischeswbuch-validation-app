@@ -28,9 +28,9 @@ This tool helps editors and contributors verify that dictionary entries are prop
    - Yellow pills indicate extra tokens in the generated XML
    - Click on any place reference to highlight it in the XML
 
-## Demo
+## Live
 
-Visit the live demo: [https://dhlab-freiburg.github.io/badischeswbuch-validation-app/](https://dhlab-freiburg.github.io/badischeswbuch-validation-app/)
+Visit the live site: [https://dhlab-freiburg.github.io/badischeswbuch-validation-app/](https://dhlab-freiburg.github.io/badischeswbuch-validation-app/)
 
 ## Technical Details
 
