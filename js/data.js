@@ -147,11 +147,149 @@ export const resolvePlaceId = (text) => {
   );
 };
 
+/* ---------- Schema Validation ---------- */
+let xmllint = null;
+let schemaContent = null;
+
+/**
+ * Initialize xmllint-wasm and load the RNG schema
+ */
+export const initSchemaValidation = async () => {
+  try {
+    // Load xmllint-wasm
+    xmllint = await import("../libs/xmllint/index-browser.mjs");
+    console.log("xmllint-wasm initialized successfully");
+
+    // Load the RNG schema file
+    const schemaResponse = await fetch("./schema/artikel-corpus.schema.rng"); // Adjust path as needed
+    schemaContent = await schemaResponse.text();
+    console.log("RNG schema loaded successfully");
+
+    return true;
+  } catch (error) {
+    console.error("Error initializing schema validation:", error);
+    return false;
+  }
+};
+
+/**
+ * Validate XML against the loaded RNG schema
+ * @param {string} xmlContent - The XML content to validate
+ * @returns {Object} - Validation result with isValid and errors
+ */
+export const validateAgainstSchema = async (xmlContent) => {
+  if (!xmllint || !schemaContent) {
+    return {
+      isValid: false,
+      errors: [
+        "Schema validation not initialized. Please wait for initialization to complete.",
+      ],
+      initialized: false,
+    };
+  }
+
+  try {
+    // Clean and prepare the XML
+    const cleanXML = xmlContent.trim();
+
+    if (!cleanXML) {
+      return {
+        isValid: false,
+        errors: ["Empty XML content provided"],
+        initialized: true,
+      };
+    }
+
+    // Validate against RNG schema using xmllint-wasm
+    const result = await xmllint.validateXML({
+      xml: [{ fileName: "doc.xml", contents: cleanXML }],
+      schema: [{ fileName: "schema.rng", contents: schemaContent }],
+      extension: "relaxng", // tell xmllint it’s Relax NG
+    });
+    // --- START OF NEW CODE ---
+    // WORKAROUND: Handle cases where the library reports invalid but provides no parsed errors.
+    // This happens when the stderr output is too short for its internal parser.
+    if (!result.valid && result.errors.length === 0 && result.rawOutput) {
+      const rawErrorLines = result.rawOutput
+        .split("\n")
+        .filter((line) => line.trim() !== "");
+
+      // Manually re-create the structure that our parseValidationErrors function expects
+      result.errors = rawErrorLines.map((line) => {
+        const parts = line.split(":");
+        let loc = null;
+        // Check if we can parse a line number (e.g., from "doc.xml:2: ...")
+        if (parts.length >= 2) {
+          const lineNumber = parseInt(parts[1], 10);
+          if (!isNaN(lineNumber)) {
+            loc = { lineNumber };
+          }
+        }
+
+        return {
+          rawMessage: line,
+          message: line, // a bit redundant, but safe
+          loc: loc,
+        };
+      });
+    }
+    // --- END OF NEW CODE ---
+    return {
+      isValid: result.valid,
+      // The `result.errors` from the library is already an array of objects.
+      // Just pass it through, or use an empty array as a safe default.
+      errors: result.errors || [],
+      initialized: true,
+      rawResult: result,
+    };
+  } catch (error) {
+    console.error("Schema validation error:", error);
+    return {
+      isValid: false,
+      errors: [`Validation error: ${error.message}`],
+      initialized: true,
+    };
+  }
+};
+
+/**
+ * Transforms validation errors from xmllint-wasm into the format required by the UI.
+ * @param {Array<Object>} errors - Array of error objects from xmllint.
+ * @returns {Array<Object>} - Parsed error objects with line, column, and message for the view.
+ */
+export const parseValidationErrors = (errors) => {
+  // `errors` is an array of objects from the library, not strings.
+  if (!Array.isArray(errors)) return [];
+
+  return errors.map((errorObj) => {
+    // `errorObj` from the library looks like:
+    // { rawMessage: '...', message: '...', loc: { lineNumber: 123 } }
+
+    const line = errorObj.loc ? errorObj.loc.lineNumber : null;
+
+    // The library doesn't parse the column, so we'll leave it null for now.
+    const column = null;
+
+    // The rawMessage is the most informative, as it includes the context.
+    const message = errorObj.rawMessage || "An unknown error occurred.";
+
+    return {
+      line: line,
+      column: column,
+      message: message,
+      severity: message.toLowerCase().includes("error") ? "error" : "warning",
+    };
+  });
+};
+
 /* ---------- core comparison ---------- */
-export const compareCorpus = (srcXML, genXML) => {
+export const compareCorpus = async (srcXML, genXML) => { // <--- Added async
   const artikelArr = extractArtikelTexts(srcXML);
   const entryArr = extractEntries(genXML);
   const pairs = Math.min(artikelArr.length, entryArr.length);
+
+  // Perform schema validation on generated XML
+  const schemaValidation = await validateAgainstSchema(genXML);
 
   const report = [];
   for (let i = 0; i < pairs; i++) {
@@ -201,7 +339,16 @@ export const compareCorpus = (srcXML, genXML) => {
       },
     });
   }
-  return report;
+
+  // Add schema validation results to the report
+  return {
+    entries: report,
+    schemaValidation: {
+      isValid: schemaValidation.isValid,
+      errors: parseValidationErrors(schemaValidation.errors),
+      initialized: schemaValidation.initialized,
+    },
+  };
 };
 
 const countMap = (arr) => {

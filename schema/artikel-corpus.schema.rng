@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="badisches-corpus">
+      <oneOrMore>
+        <ref name="entry"/>
+      </oneOrMore>
+    </element>
+  </start>
+  
+  <define name="entry">
+    <element name="entry">
+      <attribute name="id">
+        <text/>
+      </attribute>
+      <!-- Using interleave pattern to allow flexible ordering -->
+      <interleave>
+        <!-- Required elements -->
+        <element name="lemma">
+          <text/>
+        </element>
+        <element name="grammar">
+          <zeroOrMore>
+            <choice>
+              <ref name="pos"/>
+              <text/>
+            </choice>
+          </zeroOrMore>
+        </element>
+        <element name="senses">
+          <oneOrMore>
+            <ref name="sense"/>
+          </oneOrMore>
+        </element>
+        
+        <!-- Optional elements wrapped in optional patterns -->
+        <optional>
+          <element name="markers">
+            <zeroOrMore>
+              <ref name="marker"/>
+            </zeroOrMore>
+          </element>
+        </optional>
+        <optional>
+          <element name="pronunciations">
+            <oneOrMore>
+              <element name="variant">
+                <element name="phon">
+                  <text/>
+                </element>
+                <element name="geo">
+                  <optional>
+                    <attribute name="key">
+                      <text/>
+                    </attribute>
+                  </optional>
+                  <zeroOrMore>
+                    <choice>
+                      <ref name="place"/>
+                      <text/>
+                    </choice>
+                  </zeroOrMore>
+                </element>
+                <element name="terminator">
+                  <choice>
+                    <value>;</value>
+                    <value>.</value>
+                    <value>,</value>
+                    <value>:</value>
+                    <value>)</value>
+                    <text/>
+                  </choice>
+                </element>
+              </element>
+            </oneOrMore>
+          </element>
+        </optional>
+        <optional>
+          <element name="etymology">
+            <zeroOrMore>
+              <choice>
+                <ref name="lang"/>
+                <ref name="term"/>
+                <ref name="meaning"/>
+                <text/>
+              </choice>
+            </zeroOrMore>
+          </element>
+        </optional>
+        <optional>
+          <element name="references">
+            <zeroOrMore>
+              <choice>
+                <ref name="crossRef"/>
+                <ref name="place"/>
+                <ref name="bibl"/>
+                <ref name="person"/>
+                <ref name="inline-phon"/>
+                <ref name="meaning"/>
+                <text/>
+              </choice>
+            </zeroOrMore>
+          </element>
+        </optional>
+        <optional>
+          <element name="bibliography">
+            <zeroOrMore>
+              <choice>
+                <ref name="bibl"/>
+                <ref name="place"/>
+                <ref name="person"/>
+                <text/>
+              </choice>
+            </zeroOrMore>
+          </element>
+        </optional>
+        <optional>
+          <element name="problems">
+            <oneOrMore>
+              <element name="problem">
+                <attribute name="severity">
+                  <choice>
+                    <value>info</value>
+                    <value>warning</value>
+                    <value>error</value>
+                  </choice>
+                </attribute>
+                <attribute name="location">
+                  <text/>
+                </attribute>
+                <text/>
+              </element>
+            </oneOrMore>
+          </element>
+        </optional>
+      </interleave>
+    </element>
+  </define>
+  
+  <define name="sense">
+    <element name="sense">
+      <optional>
+        <attribute name="n">
+          <text/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="domain">
+          <text/>
+        </attribute>
+      </optional>
+      <element name="def">
+        <zeroOrMore>
+          <choice>
+            <ref name="inline-phon"/>
+            <ref name="term"/>
+            <ref name="crossRef"/>
+            <ref name="place"/>
+            <ref name="bibl"/>
+            <ref name="person"/>
+            <ref name="meaning"/>
+            <text/>
+          </choice>
+        </zeroOrMore>
+      </element>
+      <!-- Using optional patterns for flexibility -->
+      <optional>
+        <element name="examples">
+          <oneOrMore>
+            <element name="example">
+              <optional>
+                <attribute name="source">
+                  <text/>
+                </attribute>
+              </optional>
+              <optional>
+                <attribute name="location">
+                  <text/>
+                </attribute>
+              </optional>
+              <zeroOrMore>
+                <choice>
+                  <ref name="inline-phon"/>
+                  <ref name="meaning"/>
+                  <text/>
+                </choice>
+              </zeroOrMore>
+            </element>
+          </oneOrMore>
+        </element>
+      </optional>
+      <optional>
+        <element name="attestations">
+          <oneOrMore>
+            <element name="attestation">
+              <optional>
+                <attribute name="date">
+                  <text/>
+                </attribute>
+              </optional>
+              <optional>
+                <attribute name="source">
+                  <text/>
+                </attribute>
+              </optional>
+              <optional>
+                <attribute name="location">
+                  <text/>
+                </attribute>
+              </optional>
+              <zeroOrMore>
+                <choice>
+                  <ref name="inline-phon"/>
+                  <ref name="meaning"/>
+                  <text/>
+                </choice>
+              </zeroOrMore>
+            </element>
+          </oneOrMore>
+        </element>
+      </optional>
+      <optional>
+        <element name="subsenses">
+          <oneOrMore>
+            <ref name="sense"/>
+          </oneOrMore>
+        </element>
+      </optional>
+    </element>
+  </define>
+  
+  <define name="marker">
+    <element name="marker">
+      <attribute name="type">
+        <choice>
+          <value>time</value>
+          <value>geo</value>
+          <value>reg</value>
+          <value>hom</value>
+        </choice>
+      </attribute>
+      <optional>
+        <attribute name="subtype">
+          <text/>
+        </attribute>
+      </optional>
+      <attribute name="value">
+        <text/>
+      </attribute>
+      <text/>
+    </element>
+  </define>
+  
+  <define name="place">
+    <element name="place">
+      <choice>
+        <group>
+          <attribute name="key">
+            <text/>
+          </attribute>
+          <optional>
+            <attribute name="source">
+              <choice>
+                <value>table</value>
+                <value>guess</value>
+              </choice>
+            </attribute>
+          </optional>
+        </group>
+        <group>
+          <attribute name="guess">
+            <text/>
+          </attribute>
+          <attribute name="confidence">
+            <text/>
+          </attribute>
+          <attribute name="source">
+            <value>guess</value>
+          </attribute>
+        </group>
+        <empty/>
+      </choice>
+      <text/>
+    </element>
+  </define>
+  
+  <define name="bibl">
+    <element name="bibl">
+      <choice>
+        <group>
+          <attribute name="key">
+            <text/>
+          </attribute>
+          <optional>
+            <attribute name="source">
+              <choice>
+                <value>table</value>
+                <value>guess</value>
+              </choice>
+            </attribute>
+          </optional>
+        </group>
+        <group>
+          <attribute name="guess">
+            <text/>
+          </attribute>
+          <attribute name="confidence">
+            <text/>
+          </attribute>
+          <attribute name="source">
+            <value>guess</value>
+          </attribute>
+        </group>
+        <empty/>
+      </choice>
+      <text/>
+    </element>
+  </define>
+  
+  <define name="person">
+    <element name="person">
+      <choice>
+        <group>
+          <attribute name="key">
+            <text/>
+          </attribute>
+          <optional>
+            <attribute name="source">
+              <choice>
+                <value>table</value>
+                <value>guess</value>
+              </choice>
+            </attribute>
+          </optional>
+        </group>
+        <group>
+          <attribute name="guess">
+            <text/>
+          </attribute>
+          <attribute name="confidence">
+            <text/>
+          </attribute>
+          <attribute name="source">
+            <value>guess</value>
+          </attribute>
+        </group>
+        <empty/>
+      </choice>
+      <text/>
+    </element>
+  </define>
+  
+  <define name="crossRef">
+    <element name="crossRef">
+      <attribute name="key">
+        <text/>
+      </attribute>
+      <optional>
+        <attribute name="subsense">
+          <text/>
+        </attribute>
+      </optional>
+      <text/>
+    </element>
+  </define>
+  
+  <define name="pos">
+    <element name="pos">
+      <optional>
+        <attribute name="gender">
+          <text/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="note">
+          <text/>
+        </attribute>
+      </optional>
+      <text/>
+    </element>
+  </define>
+  
+  <define name="term">
+    <element name="term">
+      <attribute name="type">
+        <choice>
+          <value>scientific</value>
+          <value>common</value>
+        </choice>
+      </attribute>
+      <optional>
+        <attribute name="lang">
+          <text/>
+        </attribute>
+      </optional>
+      <text/>
+    </element>
+  </define>
+  
+  <define name="lang">
+    <element name="lang">
+      <text/>
+    </element>
+  </define>
+  
+  <define name="meaning">
+    <element name="meaning">
+      <text/>
+    </element>
+  </define>
+  
+  <define name="inline-phon">
+    <element name="inline-phon">
+      <text/>
+    </element>
+  </define>
+  
+  <define name="variant">
+    <element name="variant">
+      <optional>
+        <attribute name="phon">
+          <text/>
+        </attribute>
+      </optional>
+      <text/>
+    </element>
+  </define>
+</grammar>

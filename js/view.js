@@ -17,6 +17,7 @@ function cacheDom() {
   dom.previewPanel = document.getElementById("dictionary-content");
   dom.statsPanel = document.getElementById("stats-content");
   dom.validationSection = document.getElementById("validation-section");
+  dom.schemaValidationPanel = document.getElementById("schema-validation");
 }
 
 /* -------------------------------------------------- */
@@ -155,11 +156,90 @@ function prefillSample() {
 }
 
 /* -------------------------------------------------- */
+/* Schema validation rendering                        */
+/* -------------------------------------------------- */
+function renderSchemaValidation(schemaValidation) {
+  if (!dom.schemaValidationPanel) return;
+
+  const { isValid, errors, initialized } = schemaValidation;
+
+  if (!initialized) {
+    dom.schemaValidationPanel.innerHTML = `
+      <div class="schema-status">
+        <div class="schema-header">
+          <span class="schema-icon">⏳</span>
+          <h3>Schema Validation</h3>
+          <span class="status-badge loading">Loading...</span>
+        </div>
+        <p>Schema validation is initializing...</p>
+      </div>
+    `;
+    return;
+  }
+
+  let html = `
+    <div class="schema-status">
+      <div class="schema-header">
+        <span class="schema-icon">${isValid ? '✅' : '❌'}</span>
+        <h3>Schema Validation</h3>
+        <span class="status-badge ${isValid ? 'valid' : 'invalid'}">${isValid ? 'Valid' : 'Invalid'}</span>
+      </div>
+  `;
+
+  if (isValid) {
+    html += '<p class="success-message">XML is valid according to the RelaxNG schema.</p>';
+  } else {
+    html += `
+      <div class="error-summary">
+        <p><strong>${errors.length} validation error${errors.length === 1 ? '' : 's'} found:</strong></p>
+        <div class="validation-errors">
+    `;
+
+    errors.forEach((error, index) => {
+      html += `
+        <div class="validation-error ${error.severity}" data-error-index="${index}">
+          <div class="error-header">
+            <span class="error-icon">${error.severity === 'error' ? '🔴' : '🟡'}</span>
+            ${error.line ? `<span class="error-location">Line ${error.line}${error.column ? `, Column ${error.column}` : ''}</span>` : ''}
+          </div>
+          <div class="error-message">${escapeHtml(error.message)}</div>
+        </div>
+      `;
+    });
+
+    html += `
+        </div>
+      </div>
+    `;
+  }
+
+  html += '</div>';
+  dom.schemaValidationPanel.innerHTML = html;
+
+  // Add click handlers to error messages to jump to locations
+  attachSchemaErrorClickHandlers(errors);
+}
+
+/* -------------------------------------------------- */
+/* Schema error click handlers                        */
+/* -------------------------------------------------- */
+function attachSchemaErrorClickHandlers(errors) {
+  document.querySelectorAll('.validation-error').forEach((errorEl, index) => {
+    if (errors[index] && errors[index].line) {
+      errorEl.style.cursor = 'pointer';
+      errorEl.addEventListener('click', () => {
+        jumpToLine(errors[index].line, errors[index].column, genEditor);
+      });
+    }
+  });
+}
+
+/* -------------------------------------------------- */
 /* sidebar list                                       */
 /* -------------------------------------------------- */
-function renderSidebar(report) {
-  currentReport = report;
-  dom.sidebar.innerHTML = report
+function renderSidebar(entries) {
+  currentReport = entries;
+  dom.sidebar.innerHTML = entries
     .map(
       (r, i) => `
     <li data-idx="${i}" class="sidebar-row ${
@@ -612,6 +692,40 @@ function jumpToText(text, textarea) {
   }
 }
 
+/**
+ * Jump to a specific line in a CodeMirror editor
+ * @param {number} lineNumber - The line number to jump to (1-based)
+ * @param {number} column - The column number (1-based, optional)
+ * @param {CodeMirror} editor - The CodeMirror editor instance
+ */
+function jumpToLine(lineNumber, column = 1, editor) {
+  if (!editor || !lineNumber) return;
+
+  // Convert to 0-based indexing
+  const line = Math.max(0, lineNumber - 1);
+  const ch = Math.max(0, column - 1);
+
+  // Focus and scroll to position
+  editor.focus();
+  editor.setCursor(line, ch);
+  editor.scrollIntoView({ line, ch }, 100);
+
+  // Highlight the line briefly
+  const lineHandle = editor.addLineClass(line, 'background', 'error-highlight');
+  setTimeout(() => {
+    editor.removeLineClass(lineHandle, 'background', 'error-highlight');
+  }, 2000);
+}
+
+/**
+ * Escape HTML entities
+ */
+function escapeHtml(text) {
+  const div = document.createElement('div');
+  div.textContent = text;
+  return div.innerHTML;
+}
+
 /* -------------------------------------------------- */
 /* validation section visibility                      */
 /* -------------------------------------------------- */
@@ -653,6 +767,10 @@ function resetUI() {
   dom.previewPanel.innerHTML = "";
   dom.statsPanel.innerHTML = "";
 
+  if (dom.schemaValidationPanel) {
+    dom.schemaValidationPanel.innerHTML = "";
+  }
+
   if (dom.validationSection) {
     dom.validationSection.classList.add("hidden");
   }
@@ -671,6 +789,7 @@ export {
   setGenXML,
   renderSidebar,
   renderPreview,
+  renderSchemaValidation,
   onValidate,
   onClear,
   onSidebarSelect,
