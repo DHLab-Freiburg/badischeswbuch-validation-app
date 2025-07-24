@@ -30,17 +30,31 @@ const extractArtikelTexts = (srcXML) => {
   ];
 
   if (artikelMatches.length > 0) {
-    return artikelMatches.map((m) => plainArtikel(m[1]));
+    const results = artikelMatches.map((m) => plainArtikel(m[1]));
+    // CHECK FOR EMPTY ARTIKEL CONTENT
+    if (results.every((text) => !text.trim())) {
+      throw new Error(
+        "Source XML contains <artikel> tags but they are all empty. Please provide artikel content to compare."
+      );
+    }
+    return results;
   }
 
   // If no artikel tags found, try to parse the whole thing as one text
   // This is a fallback for cases where the source doesn't use artikel tags
   try {
     // Remove any XML-like tags and just use the text content
-    return [plainArtikel(srcXML)];
+    const result = plainArtikel(srcXML);
+    // CHECK FOR EMPTY SOURCE CONTENT
+    if (!result.trim()) {
+      throw new Error(
+        "Source XML appears to be empty or contains no meaningful text content."
+      );
+    }
+    return [result];
   } catch (error) {
     console.error("Error extracting text from source XML:", error);
-    return [];
+    throw new Error(`Source XML processing failed: ${error.message}`);
   }
 };
 
@@ -63,15 +77,24 @@ const extractEntries = (genXML) => {
       const wrappedXML = `<root>${genXML}</root>`;
       doc = parser.parseFromString(wrappedXML, "text/xml");
 
-      // If still error, return empty array
+      // If still error, throw specific error
       if (doc.querySelector("parsererror")) {
         console.error("Error parsing XML even with wrapper");
-        return [];
+        throw new Error(
+          "Generated XML is not well-formed or contains syntax errors"
+        );
       }
     }
 
     // Get all entry elements, regardless of parent
     const entries = [...doc.getElementsByTagName("entry")];
+
+    // CHECK FOR NO ENTRY ELEMENTS
+    if (entries.length === 0) {
+      throw new Error(
+        "No <entry> elements found in Generated XML. Please ensure your XML contains properly structured dictionary entries."
+      );
+    }
 
     return entries.map((e) => {
       const lemmaEl = e.getElementsByTagName("lemma")[0];
@@ -85,7 +108,7 @@ const extractEntries = (genXML) => {
     });
   } catch (error) {
     console.error("Error parsing XML:", error);
-    return [];
+    throw new Error(`XML parsing failed: ${error.message}`);
   }
 };
 
@@ -283,7 +306,8 @@ export const parseValidationErrors = (errors) => {
 };
 
 /* ---------- core comparison ---------- */
-export const compareCorpus = async (srcXML, genXML) => { // <--- Added async
+export const compareCorpus = async (srcXML, genXML) => {
+  // <--- Added async
   const artikelArr = extractArtikelTexts(srcXML);
   const entryArr = extractEntries(genXML);
   const pairs = Math.min(artikelArr.length, entryArr.length);
