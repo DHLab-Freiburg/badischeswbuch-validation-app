@@ -162,7 +162,19 @@ export const resolvePlaceId = (text) => {
       const placeInfo = placesData[lfdKey];
 
       if (placeInfo) {
-        return `${placeName} (${lfdKey};${placeInfo.name};${placeInfo.latitude};${placeInfo.longitude})`;
+        // ✅ NEW: Check first letter mismatch
+        const xmlFirstLetter = placeName.charAt(0).toLowerCase();
+        const csvFirstLetter = placeInfo.name.charAt(0).toLowerCase();
+        const isMismatch = xmlFirstLetter !== csvFirstLetter;
+
+        const baseResult = `${placeName} (${lfdKey};${placeInfo.name};${placeInfo.latitude};${placeInfo.longitude})`;
+
+        // Add mismatch flag if needed
+        if (isMismatch) {
+          return `${baseResult}[MISMATCH]`;
+        }
+
+        return baseResult;
       }
 
       return match; // Return original if not found

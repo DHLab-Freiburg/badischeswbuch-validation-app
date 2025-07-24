@@ -180,27 +180,42 @@ function renderSchemaValidation(schemaValidation) {
   let html = `
     <div class="schema-status">
       <div class="schema-header">
-        <span class="schema-icon">${isValid ? '✅' : '❌'}</span>
+        <span class="schema-icon">${isValid ? "✅" : "❌"}</span>
         <h3>Schema Validation</h3>
-        <span class="status-badge ${isValid ? 'valid' : 'invalid'}">${isValid ? 'Valid' : 'Invalid'}</span>
+        <span class="status-badge ${isValid ? "valid" : "invalid"}">${
+    isValid ? "Valid" : "Invalid"
+  }</span>
       </div>
   `;
 
   if (isValid) {
-    html += '<p class="success-message">XML is valid according to the RelaxNG schema.</p>';
+    html +=
+      '<p class="success-message">XML is valid according to the RelaxNG schema.</p>';
   } else {
     html += `
       <div class="error-summary">
-        <p><strong>${errors.length} validation error${errors.length === 1 ? '' : 's'} found:</strong></p>
+        <p><strong>${errors.length} validation error${
+      errors.length === 1 ? "" : "s"
+    } found:</strong></p>
         <div class="validation-errors">
     `;
 
     errors.forEach((error, index) => {
       html += `
-        <div class="validation-error ${error.severity}" data-error-index="${index}">
+        <div class="validation-error ${
+          error.severity
+        }" data-error-index="${index}">
           <div class="error-header">
-            <span class="error-icon">${error.severity === 'error' ? '🔴' : '🟡'}</span>
-            ${error.line ? `<span class="error-location">Line ${error.line}${error.column ? `, Column ${error.column}` : ''}</span>` : ''}
+            <span class="error-icon">${
+              error.severity === "error" ? "🔴" : "🟡"
+            }</span>
+            ${
+              error.line
+                ? `<span class="error-location">Line ${error.line}${
+                    error.column ? `, Column ${error.column}` : ""
+                  }</span>`
+                : ""
+            }
           </div>
           <div class="error-message">${escapeHtml(error.message)}</div>
         </div>
@@ -213,7 +228,7 @@ function renderSchemaValidation(schemaValidation) {
     `;
   }
 
-  html += '</div>';
+  html += "</div>";
   dom.schemaValidationPanel.innerHTML = html;
 
   // Add click handlers to error messages to jump to locations
@@ -224,10 +239,10 @@ function renderSchemaValidation(schemaValidation) {
 /* Schema error click handlers                        */
 /* -------------------------------------------------- */
 function attachSchemaErrorClickHandlers(errors) {
-  document.querySelectorAll('.validation-error').forEach((errorEl, index) => {
+  document.querySelectorAll(".validation-error").forEach((errorEl, index) => {
     if (errors[index] && errors[index].line) {
-      errorEl.style.cursor = 'pointer';
-      errorEl.addEventListener('click', () => {
+      errorEl.style.cursor = "pointer";
+      errorEl.addEventListener("click", () => {
         jumpToLine(errors[index].line, errors[index].column, genEditor);
       });
     }
@@ -534,12 +549,27 @@ function processGeoContent(content) {
     // Create a span for the expanded place information
     const expandedPlace = data.resolvePlaceId(`${placeName} (${lfdKey})`);
 
+    // Check for mismatch
+    const hasMismatch = hasPlaceMismatch(expandedPlace);
+    const cleanText = cleanMismatchFlag(expandedPlace);
+
     // Create a clickable span instead of just text
     const span = document.createElement("span");
-    span.className = "place-reference";
+    span.className = hasMismatch
+      ? "place-reference place-mismatch"
+      : "place-reference";
     span.setAttribute("data-lfd-key", lfdKey);
     span.setAttribute("data-place-name", placeName);
-    span.textContent = expandedPlace;
+
+    //  Add warning icon for mismatches
+    if (hasMismatch) {
+      span.innerHTML = `🚩 ${cleanText}`;
+      span.title = `WARNING: First letter mismatch! "${placeName}" vs "${
+        expandedPlace.split(";")[1]
+      }"`;
+    } else {
+      span.textContent = cleanText;
+    }
 
     // Replace the place tag with the clickable span
     placeTag.parentNode.replaceChild(span, placeTag);
@@ -711,9 +741,9 @@ function jumpToLine(lineNumber, column = 1, editor) {
   editor.scrollIntoView({ line, ch }, 100);
 
   // Highlight the line briefly
-  const lineHandle = editor.addLineClass(line, 'background', 'error-highlight');
+  const lineHandle = editor.addLineClass(line, "background", "error-highlight");
   setTimeout(() => {
-    editor.removeLineClass(lineHandle, 'background', 'error-highlight');
+    editor.removeLineClass(lineHandle, "background", "error-highlight");
   }, 2000);
 }
 
@@ -721,7 +751,7 @@ function jumpToLine(lineNumber, column = 1, editor) {
  * Escape HTML entities
  */
 function escapeHtml(text) {
-  const div = document.createElement('div');
+  const div = document.createElement("div");
   div.textContent = text;
   return div.innerHTML;
 }
@@ -750,7 +780,19 @@ function onSidebarSelect(fn) {
     if (row) fn(+row.dataset.idx);
   });
 }
+/**
+ * Check if a place reference has a first-letter mismatch
+ */
+function hasPlaceMismatch(expandedText) {
+  return expandedText.includes("[MISMATCH]");
+}
 
+/**
+ * Clean mismatch flag from display text
+ */
+function cleanMismatchFlag(text) {
+  return text.replace("[MISMATCH]", "");
+}
 /* -------------------------------------------------- */
 /* housekeeping                                       */
 /* -------------------------------------------------- */
