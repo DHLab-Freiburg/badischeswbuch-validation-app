@@ -36,23 +36,7 @@
                   <text/>
                 </element>
                 <optional>
-                  <element name="geo">
-                    <optional>
-                      <attribute name="key">
-                        <text/>
-                      </attribute>
-                    </optional>
-                    <zeroOrMore>
-                      <choice>
-                        <ref name="place"/>
-                        <ref name="bibl"/>
-                        <ref name="person"/>
-                        <ref name="inline-phon"/>
-                        <ref name="superscript"/>
-                        <text/>
-                      </choice>
-                    </zeroOrMore>
-                  </element>
+                  <ref name="geo"/>
                 </optional>
                 <optional>
                   <element name="terminator">
@@ -136,6 +120,7 @@
                 <ref name="person"/>
                 <ref name="meaning"/>
                 <ref name="superscript"/>
+                <ref name="inline-phon"/>
                 <text/>
               </choice>
             </zeroOrMore>
@@ -255,6 +240,7 @@
                   <ref name="term"/>
                   <ref name="person"/>
                   <ref name="superscript"/>
+                  <ref name="geo"/>
                   <text/>
                 </choice>
               </zeroOrMore>
@@ -327,6 +313,34 @@
     </element>
   </define>
   
+  <define name="geo">
+  <element name="geo">
+    <optional>
+      <attribute name="key">
+        <text/>
+      </attribute>
+    </optional>
+    <optional>
+      <attribute name="source">
+        <choice>
+          <value>table</value>
+          <value>guess</value>
+        </choice>
+      </attribute>
+    </optional>
+    <zeroOrMore>
+      <choice>
+        <ref name="place"/>
+        <ref name="bibl"/>
+        <ref name="person"/>
+        <ref name="inline-phon"/>
+        <ref name="superscript"/>
+        <text/>
+      </choice>
+    </zeroOrMore>
+  </element>
+  </define> 
+
   <define name="bibl">
   <element name="bibl">
     <choice>
