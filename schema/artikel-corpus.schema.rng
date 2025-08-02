@@ -19,20 +19,7 @@
         <element name="lemma">
           <text/>
         </element>
-        <element name="grammar">
-          <zeroOrMore>
-            <choice>
-              <ref name="pos"/>
-              <text/>
-            </choice>
-          </zeroOrMore>
-        </element>
-        <element name="senses">
-          <oneOrMore>
-            <ref name="sense"/>
-          </oneOrMore>
-        </element>
-        
+                
         <!-- Optional elements wrapped in optional patterns -->
         <optional>
           <element name="markers">
@@ -48,30 +35,62 @@
                 <element name="phon">
                   <text/>
                 </element>
-                <element name="geo">
-                  <optional>
-                    <attribute name="key">
-                      <text/>
-                    </attribute>
-                  </optional>
-                  <zeroOrMore>
+                <optional>
+                  <element name="geo">
+                    <optional>
+                      <attribute name="key">
+                        <text/>
+                      </attribute>
+                    </optional>
+                    <zeroOrMore>
+                      <choice>
+                        <ref name="place"/>
+                        <ref name="bibl"/>
+                        <ref name="person"/>
+                        <ref name="inline-phon"/>
+                        <ref name="superscript"/>
+                        <text/>
+                      </choice>
+                    </zeroOrMore>
+                  </element>
+                </optional>
+                <optional>
+                  <element name="terminator">
                     <choice>
-                      <ref name="place"/>
+                      <value>;</value>
+                      <value>.</value>
+                      <value>,</value>
+                      <value>:</value>
+                      <value>)</value>
                       <text/>
                     </choice>
-                  </zeroOrMore>
-                </element>
-                <element name="terminator">
-                  <choice>
-                    <value>;</value>
-                    <value>.</value>
-                    <value>,</value>
-                    <value>:</value>
-                    <value>)</value>
-                    <text/>
-                  </choice>
-                </element>
+                  </element>
+                </optional>
               </element>
+            </oneOrMore>
+          </element>
+        </optional>
+        <optional>
+          <element name="morphology">
+            <oneOrMore>
+              <ref name="form"/>
+            </oneOrMore>
+           </element>
+        </optional>
+        <optional>
+          <element name="grammar">
+            <zeroOrMore>
+              <choice>
+                <ref name="pos"/>
+                <text/>
+              </choice>
+            </zeroOrMore>
+          </element>
+        </optional>
+        <optional>
+          <element name="senses">
+            <oneOrMore>
+              <ref name="sense"/>
             </oneOrMore>
           </element>
         </optional>
@@ -82,6 +101,11 @@
                 <ref name="lang"/>
                 <ref name="term"/>
                 <ref name="meaning"/>
+                <ref name="crossRef"/>
+                <ref name="bibl"/>
+                <ref name="inline-phon"/>
+                <ref name="place"/>
+                <ref name="person"/>
                 <text/>
               </choice>
             </zeroOrMore>
@@ -97,6 +121,7 @@
                 <ref name="person"/>
                 <ref name="inline-phon"/>
                 <ref name="meaning"/>
+                <ref name="pos"/>
                 <text/>
               </choice>
             </zeroOrMore>
@@ -109,6 +134,8 @@
                 <ref name="bibl"/>
                 <ref name="place"/>
                 <ref name="person"/>
+                <ref name="meaning"/>
+                <ref name="superscript"/>
                 <text/>
               </choice>
             </zeroOrMore>
@@ -149,46 +176,25 @@
           <text/>
         </attribute>
       </optional>
-      <element name="def">
-        <zeroOrMore>
-          <choice>
-            <ref name="inline-phon"/>
-            <ref name="term"/>
-            <ref name="crossRef"/>
-            <ref name="place"/>
-            <ref name="bibl"/>
-            <ref name="person"/>
-            <ref name="meaning"/>
-            <text/>
-          </choice>
-        </zeroOrMore>
-      </element>
-      <!-- Using optional patterns for flexibility -->
       <optional>
-        <element name="examples">
-          <oneOrMore>
-            <element name="example">
-              <optional>
-                <attribute name="source">
-                  <text/>
-                </attribute>
-              </optional>
-              <optional>
-                <attribute name="location">
-                  <text/>
-                </attribute>
-              </optional>
-              <zeroOrMore>
-                <choice>
-                  <ref name="inline-phon"/>
-                  <ref name="meaning"/>
-                  <text/>
-                </choice>
-              </zeroOrMore>
-            </element>
-          </oneOrMore>
+        <element name="def">
+          <zeroOrMore>
+            <choice>
+              <ref name="inline-phon"/>
+              <ref name="pos"/>
+              <ref name="term"/>
+              <ref name="crossRef"/>
+              <ref name="place"/>
+              <ref name="bibl"/>
+              <ref name="person"/>
+              <ref name="meaning"/>
+              <ref name="superscript"/>
+              <text/>
+            </choice>
+          </zeroOrMore>
         </element>
       </optional>
+      <!-- Using optional patterns for flexibility -->
       <optional>
         <element name="attestations">
           <oneOrMore>
@@ -212,6 +218,43 @@
                 <choice>
                   <ref name="inline-phon"/>
                   <ref name="meaning"/>
+                  <ref name="place"/>
+                  <ref name="bibl"/>
+                  <ref name="person"/>
+                  <ref name="crossRef"/>
+                  <ref name="superscript"/>
+                  <text/>
+                </choice>
+              </zeroOrMore>
+            </element>
+          </oneOrMore>
+        </element>
+      </optional>
+      <optional>
+        <element name="examples">
+          <oneOrMore>
+            <element name="example">
+              <optional>
+                <attribute name="source">
+                  <text/>
+                </attribute>
+              </optional>
+              <optional>
+                <attribute name="location">
+                  <text/>
+                </attribute>
+              </optional>
+              <zeroOrMore>
+                <choice>
+                  <ref name="inline-phon"/>
+                  <ref name="meaning"/>
+                  <ref name="bibl"/>
+                  <ref name="crossRef"/>
+                  <ref name="place"/>
+                  <ref name="lang"/>
+                  <ref name="term"/>
+                  <ref name="person"/>
+                  <ref name="superscript"/>
                   <text/>
                 </choice>
               </zeroOrMore>
@@ -285,37 +328,42 @@
   </define>
   
   <define name="bibl">
-    <element name="bibl">
-      <choice>
-        <group>
-          <attribute name="key">
-            <text/>
-          </attribute>
-          <optional>
-            <attribute name="source">
-              <choice>
-                <value>table</value>
-                <value>guess</value>
-              </choice>
-            </attribute>
-          </optional>
-        </group>
-        <group>
-          <attribute name="guess">
-            <text/>
-          </attribute>
-          <attribute name="confidence">
-            <text/>
-          </attribute>
+  <element name="bibl">
+    <choice>
+      <group>
+        <attribute name="key">
+          <text/>
+        </attribute>
+        <optional>
           <attribute name="source">
-            <value>guess</value>
+            <choice>
+              <value>table</value>
+              <value>guess</value>
+            </choice>
           </attribute>
-        </group>
-        <empty/>
+        </optional>
+      </group>
+      <group>
+        <attribute name="guess">
+          <text/>
+        </attribute>
+        <attribute name="confidence">
+          <text/>
+        </attribute>
+        <attribute name="source">
+          <value>guess</value>
+        </attribute>
+      </group>
+      <empty/>
+    </choice>
+    <zeroOrMore>
+      <choice>
+        <ref name="superscript"/>
+        <text/>
       </choice>
-      <text/>
-    </element>
-  </define>
+    </zeroOrMore>
+  </element>
+</define>
   
   <define name="person">
     <element name="person">
@@ -386,6 +434,7 @@
         <choice>
           <value>scientific</value>
           <value>common</value>
+          <value>historical</value>
         </choice>
       </attribute>
       <optional>
@@ -405,13 +454,122 @@
   
   <define name="meaning">
     <element name="meaning">
-      <text/>
+      <zeroOrMore>
+        <choice>
+          <ref name="superscript"/>
+          <text/>
+        </choice>
+      </zeroOrMore>
+    </element>
+  </define>
+ 
+  <define name="hi">
+    <element name="hi">
+      <optional>
+        <attribute name="rend">
+          <choice>
+            <value>bold</value>
+            <value>italic</value>
+            <value>underline</value>
+            <value>smallcaps</value>
+          </choice>
+        </attribute>
+      </optional>
+      <zeroOrMore>
+        <choice>
+          <ref name="superscript"/>
+          <text/>
+        </choice>
+      </zeroOrMore>
     </element>
   </define>
   
+  <define name="superscript">
+    <element name="superscript">
+      <zeroOrMore>
+        <choice>
+          <ref name="inline-phon"/>
+          <text/>
+        </choice>
+      </zeroOrMore>
+    </element>
+  </define>
+
+  <define name="morphology">
+    <element name="morphology">
+      <oneOrMore>
+        <ref name="form"/>
+      </oneOrMore>
+    </element>
+  </define>
+
+  <define name="form">
+    <element name="form">
+      <optional>
+        <attribute name="n">
+          <text/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="person">
+          <choice>
+            <value>1</value>
+            <value>2</value>
+            <value>3</value>
+          </choice>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="number">
+          <choice>
+            <value>sg</value>
+            <value>pl</value>
+          </choice>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="tense">
+          <choice>
+            <value>present</value>
+            <value>past</value>
+            <value>perfect</value>
+            <value>future</value>
+            <value>infinitive</value>
+            <value>participle</value>
+          </choice>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="mood">
+          <choice>
+            <value>indicative</value>
+            <value>subjunctive</value>
+            <value>imperative</value>
+          </choice>
+        </attribute>
+      </optional>
+      <zeroOrMore>
+        <choice>
+          <ref name="inline-phon"/>
+          <ref name="hi"/>
+          <ref name="superscript"/>
+          <ref name="place"/>
+          <ref name="bibl"/>
+          <ref name="person"/>
+          <text/>
+        </choice>
+      </zeroOrMore>
+    </element>
+  </define>
+
   <define name="inline-phon">
     <element name="inline-phon">
-      <text/>
+      <zeroOrMore>
+        <choice>
+          <ref name="hi"/>
+          <text/>
+        </choice>
+      </zeroOrMore>
     </element>
   </define>
   
