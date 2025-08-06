@@ -471,6 +471,7 @@
       <zeroOrMore>
         <choice>
           <ref name="superscript"/>
+          <ref name="term"/>
           <text/>
         </choice>
       </zeroOrMore>
