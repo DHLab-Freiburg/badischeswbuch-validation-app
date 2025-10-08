@@ -86,6 +86,29 @@
   color: #666;
 }
 
+/* ======= Morphology Section ======= */
+.morphology {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0.5rem 0;
+  padding: 0.3rem 0.5rem;
+  background-color: #F5F5F5;
+  border-radius: 3px;
+}
+
+.morphology-label {
+  font-weight: bold;
+  margin-right: 0.4rem;
+}
+
+.morph-form {
+  margin-right: 0.3rem;
+}
+
+.morph-form::before {
+  content: "";
+}
+
 /* ======= Sense Section ======= */
 .senses {
   margin-top: 0.75rem;
@@ -101,6 +124,19 @@
   font-size: 1rem;
   color: #0066CC;
   margin-right: 0.3rem;
+}
+
+.domain-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: #E8F5E9;
+  color: #2E7D32;
+  padding: 2px 6px;
+  border-radius: 3px;
+  margin-right: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
 }
 
 .definition {
@@ -122,28 +158,84 @@
 }
 
 .example {
+  margin-bottom: 0.25rem;
+}
+
+.example-text {
   font-style: italic;
   font-size: 0.95rem;
   color: #444;
-  margin-bottom: 0.2rem;
+}
+
+.example-meta {
+  font-size: 0.8rem;
+  color: #888;
+  font-style: normal;
 }
 
 .attestations {
-  margin-top: 0.3rem;
+  margin-top: 0.5rem;
   margin-left: 1.5rem;
-  background-color: #F8F8F8;
-  padding: 0.3rem;
+  background-color: #FFF9E6;
+  padding: 0.5rem;
+  border-left: 3px solid #FFD54F;
+  border-radius: 3px;
+}
+
+.attestations-label {
+  display: block;
+  font-weight: bold;
+  font-size: 0.85rem;
+  color: #795548;
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .attestation {
   font-size: 0.9rem;
   color: #444;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.4rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid #FFE4B3;
+}
+
+.attestation:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.attestation-date {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 0.85rem;
+  color: #D84315;
+  background-color: #FFCCBC;
+  padding: 2px 6px;
+  border-radius: 3px;
+  margin-right: 0.5rem;
+}
+
+.attestation-text {
+  font-style: italic;
+  color: #333;
+}
+
+.attestation-meta {
+  display: block;
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 0.2rem;
 }
 
 .attestation-source {
   font-size: 0.8rem;
-  text-align: right;
+  margin-right: 0.5rem;
+}
+
+.attestation-location {
+  font-size: 0.8rem;
 }
 
 /* ======= Metadata Sections ======= */
@@ -181,11 +273,35 @@
   font-weight: bold;
 }
 
+.problems-section {
+  margin-top: 0.75rem;
+  padding: 0.5rem;
+  background-color: #FFF3E0;
+  border-radius: 5px;
+  border-left: 4px solid #FF9800;
+}
+
+.problems-label {
+  display: block;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #E65100;
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
 .problem {
   font-size: 0.85rem;
   padding: 0.3rem;
-  margin-top: 0.5rem;
+  margin-top: 0.3rem;
   border-radius: 3px;
+}
+
+.problem-location {
+  font-weight: bold;
+  color: #D84315;
+  margin-right: 0.3rem;
 }
 
 .problem.info {
@@ -240,14 +356,19 @@
 }
 
 /* Person styling */
-.person {
+.person-reference {
   color: #4B0082;
+  font-weight: 500;
+  background-color: rgba(75, 0, 130, 0.05);
+  padding: 1px 3px;
+  border-radius: 2px;
 }
 
 /* Language styling */
 .lang {
   font-style: italic;
   color: #8B4513;
+  font-weight: 500;
 }
 
 /* Meaning styling */
@@ -271,6 +392,29 @@
 
 .inline-phon::after {
   content: "]";
+}
+
+/* Highlight (hi) styling */
+.hi-bold {
+  font-weight: bold;
+}
+
+.hi-italic {
+  font-style: italic;
+}
+
+.hi-underline {
+  text-decoration: underline;
+}
+
+.hi-smallcaps {
+  font-variant: small-caps;
+}
+
+/* Superscript styling */
+sup.superscript {
+  font-size: 0.75em;
+  vertical-align: super;
 }
 
 /* ======= Clickable Pill Styling ======= */

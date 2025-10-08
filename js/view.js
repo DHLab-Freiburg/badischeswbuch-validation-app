@@ -297,6 +297,28 @@ function renderPreview(r, index) {
 
   html += `</div>`; // Close entry-header
 
+  // Morphology - flexion forms
+  const morphology = entry.querySelector("morphology");
+  if (morphology) {
+    html += '<div class="morphology">';
+    html += '<span class="morphology-label">Forms: </span>';
+    const forms = morphology.querySelectorAll("form");
+    forms.forEach((form, idx) => {
+      const formAttrs = [];
+      if (form.getAttribute("person")) formAttrs.push(`${form.getAttribute("person")}. pers.`);
+      if (form.getAttribute("number")) formAttrs.push(form.getAttribute("number"));
+      if (form.getAttribute("tense")) formAttrs.push(form.getAttribute("tense"));
+      if (form.getAttribute("mood")) formAttrs.push(form.getAttribute("mood"));
+
+      const formText = processComplexContent(form);
+      const attrText = formAttrs.length ? ` (${formAttrs.join(', ')})` : '';
+
+      html += `<span class="morph-form">${formText}${attrText}</span>`;
+      if (idx < forms.length - 1) html += '<span class="separator">; </span>';
+    });
+    html += '</div>';
+  }
+
   // Pronunciations
   const pronunciations = entry.querySelector("pronunciations");
   if (pronunciations) {
@@ -326,23 +348,67 @@ function renderPreview(r, index) {
       const defElement = sense.querySelector("def");
       const def = defElement ? processComplexContent(defElement) : "";
 
+      const senseN = sense.getAttribute("n");
+      const domain = sense.getAttribute("domain");
+
       html += `<div class="sense">`;
 
-      // Only add sense number if there are multiple senses
+      // Add sense number (use @n attribute if present, otherwise use index)
       if (senses.querySelectorAll("sense").length > 1) {
-        html += `<span class="sense-number">${idx + 1}.</span>`;
+        html += `<span class="sense-number">${senseN || (idx + 1)}.</span>`;
+      }
+
+      // Add domain badge if present
+      if (domain) {
+        html += `<span class="domain-badge">${domain}</span>`;
       }
 
       html += `<span class="definition">${def}</span>`;
+
+      // Process attestations if present
+      const attestations = sense.querySelector("attestations");
+      if (attestations) {
+        html += `<div class="attestations">`;
+        html += `<span class="attestations-label">Historical attestations:</span>`;
+        attestations.querySelectorAll("attestation").forEach((attestation) => {
+          const date = attestation.getAttribute("date") || "";
+          const source = attestation.getAttribute("source") || "";
+          const location = attestation.getAttribute("location") || "";
+          const content = processComplexContent(attestation);
+
+          html += `<div class="attestation">`;
+          if (date) html += `<span class="attestation-date">${date}</span>`;
+          html += `<span class="attestation-text">${content}</span>`;
+          if (source || location) {
+            html += `<span class="attestation-meta">`;
+            if (source) html += `<span class="attestation-source">${source}</span>`;
+            if (location) html += `<span class="attestation-location">${location}</span>`;
+            html += `</span>`;
+          }
+          html += `</div>`;
+        });
+        html += `</div>`;
+      }
 
       // Process examples if present
       const examples = sense.querySelector("examples");
       if (examples) {
         html += `<div class="examples">`;
         examples.querySelectorAll("example").forEach((example) => {
-          html += `<div class="example">${processContent(
-            example.textContent
-          )}</div>`;
+          const exampleSource = example.getAttribute("source") || "";
+          const exampleLocation = example.getAttribute("location") || "";
+          const exampleContent = processComplexContent(example);
+
+          html += `<div class="example">`;
+          html += `<span class="example-text">${exampleContent}</span>`;
+          if (exampleSource || exampleLocation) {
+            html += ` <span class="example-meta">(`;
+            if (exampleSource) html += exampleSource;
+            if (exampleSource && exampleLocation) html += `, `;
+            if (exampleLocation) html += exampleLocation;
+            html += `)</span>`;
+          }
+          html += `</div>`;
         });
         html += `</div>`;
       }
@@ -400,15 +466,23 @@ function renderPreview(r, index) {
   }
 
   // Problems - for editorial notes or issues
-  const problems = entry.querySelectorAll("problem");
-  if (problems.length > 0) {
-    problems.forEach((problem) => {
-      const severity = problem.getAttribute("severity") || "info";
-      html += `
-        <div class="problem ${severity}">
-          ${processContent(problem.textContent)}
-        </div>`;
-    });
+  const problemsContainer = entry.querySelector("problems");
+  if (problemsContainer) {
+    const problems = problemsContainer.querySelectorAll("problem");
+    if (problems.length > 0) {
+      html += `<div class="problems-section">`;
+      html += `<span class="problems-label">Editorial Notes:</span>`;
+      problems.forEach((problem) => {
+        const severity = problem.getAttribute("severity") || "info";
+        const location = problem.getAttribute("location") || "";
+        html += `
+          <div class="problem ${severity}">
+            ${location ? `<span class="problem-location">[${location}]</span> ` : ""}
+            ${processContent(problem.textContent)}
+          </div>`;
+      });
+      html += `</div>`;
+    }
   }
 
   html += "</div>"; // Close entry
@@ -465,13 +539,72 @@ function processComplexContent(element) {
 
   // Process inline-phon elements
   tempDiv.querySelectorAll("inline-phon").forEach((inlinePhon) => {
-    const content = inlinePhon.textContent;
-
     const span = document.createElement("span");
     span.className = "inline-phon";
-    span.textContent = content;
+    span.innerHTML = inlinePhon.innerHTML; // Use innerHTML to preserve nested elements
 
     inlinePhon.parentNode.replaceChild(span, inlinePhon);
+  });
+
+  // Process hi (highlight) elements
+  tempDiv.querySelectorAll("hi").forEach((hi) => {
+    const rend = hi.getAttribute("rend") || "";
+    const span = document.createElement("span");
+    span.className = `hi hi-${rend}`;
+    span.innerHTML = hi.innerHTML;
+
+    hi.parentNode.replaceChild(span, hi);
+  });
+
+  // Process superscript elements
+  tempDiv.querySelectorAll("superscript").forEach((sup) => {
+    const span = document.createElement("sup");
+    span.className = "superscript";
+    span.innerHTML = sup.innerHTML;
+
+    sup.parentNode.replaceChild(span, sup);
+  });
+
+  // Process lang elements
+  tempDiv.querySelectorAll("lang").forEach((lang) => {
+    const span = document.createElement("span");
+    span.className = "lang";
+    span.textContent = lang.textContent;
+
+    lang.parentNode.replaceChild(span, lang);
+  });
+
+  // Process meaning elements
+  tempDiv.querySelectorAll("meaning").forEach((meaning) => {
+    const span = document.createElement("span");
+    span.className = "meaning";
+    span.innerHTML = meaning.innerHTML;
+
+    meaning.parentNode.replaceChild(span, meaning);
+  });
+
+  // Process person elements
+  tempDiv.querySelectorAll("person").forEach((person) => {
+    const key = person.getAttribute("key") || "";
+    const guess = person.getAttribute("guess") || "";
+    const confidence = person.getAttribute("confidence") || "";
+    const source = person.getAttribute("source") || "";
+    const personName = person.textContent;
+
+    const span = document.createElement("span");
+    span.className = "person-reference";
+    if (key) span.setAttribute("data-person-key", key);
+    if (guess) span.setAttribute("data-person-guess", guess);
+
+    let displayText = personName;
+    if (key) {
+      displayText += ` (${key})`;
+    } else if (guess) {
+      displayText += ` (~${guess}, conf: ${confidence})`;
+    }
+    span.textContent = displayText;
+
+    person.parentNode.replaceChild(span, person);
   });
 
   // Process bibl elements
@@ -495,15 +628,22 @@ function processComplexContent(element) {
     bibl.parentNode.replaceChild(span, bibl);
   });
 
-  // Process cross-references
-  tempDiv.querySelectorAll("ref").forEach((ref) => {
-    const target = ref.getAttribute("target") || "";
+  // Process cross-references (both <ref> and <crossRef>)
+  tempDiv.querySelectorAll("ref, crossRef").forEach((ref) => {
+    const target = ref.getAttribute("target") || ref.getAttribute("key") || "";
+    const subsense = ref.getAttribute("subsense") || "";
     const content = ref.textContent;
 
     const span = document.createElement("span");
     span.className = "cross-ref";
     if (target) span.setAttribute("data-target", target);
-    span.textContent = content;
+    if (subsense) span.setAttribute("data-subsense", subsense);
+
+    let displayText = content;
+    if (subsense) {
+      displayText += ` (${subsense})`;
+    }
+    span.textContent = displayText;
 
     ref.parentNode.replaceChild(span, ref);
   });
