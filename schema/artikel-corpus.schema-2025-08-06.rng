@@ -208,7 +208,6 @@
                   <ref name="person"/>
                   <ref name="crossRef"/>
                   <ref name="superscript"/>
-                  <ref name="hi"/>
                   <text/>
                 </choice>
               </zeroOrMore>
@@ -247,22 +246,6 @@
               </zeroOrMore>
             </element>
           </oneOrMore>
-        </element>
-      </optional>
-      <optional>
-        <element name="references">
-          <zeroOrMore>
-            <choice>
-              <ref name="crossRef"/>
-              <ref name="place"/>
-              <ref name="bibl"/>
-              <ref name="person"/>
-              <ref name="inline-phon"/>
-              <ref name="meaning"/>
-              <ref name="pos"/>
-               <text/>
-            </choice>
-          </zeroOrMore>
         </element>
       </optional>
       <optional>
@@ -389,7 +372,6 @@
     </choice>
     <zeroOrMore>
       <choice>
-        <ref name="hi"/>
         <ref name="superscript"/>
         <text/>
       </choice>
@@ -521,7 +503,7 @@
     <element name="superscript">
       <zeroOrMore>
         <choice>
-          <ref name="hi"/>
+          <ref name="inline-phon"/>
           <text/>
         </choice>
       </zeroOrMore>
@@ -600,7 +582,6 @@
       <zeroOrMore>
         <choice>
           <ref name="hi"/>
-          <ref name="superscript"/>
           <text/>
         </choice>
       </zeroOrMore>
