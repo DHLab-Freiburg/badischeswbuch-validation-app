@@ -155,9 +155,10 @@ export const resolvePlaceId = (text) => {
   if (!placesData) return text;
 
   // Look for pattern: placename (lfd_XXXX)
-  // Regex captures all characters including umlauts (Ä, Ö, Ü, etc.)
+  // Regex captures everything before (lfd_XXXX), including nested parentheses
+  // Example: "Oberw. (Rast.) (lfd_1777)" -> placeName="Oberw. (Rast.)", lfdId="1777"
   return text.replace(
-    /([^(]+?)\s*\(lfd_(\d+)\)/g,
+    /(.+?)\s*\(lfd_(\d+)\)/g,
     (match, placeName, lfdId) => {
       // Trim whitespace from captured place name
       placeName = placeName.trim();
