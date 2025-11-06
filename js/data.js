@@ -155,10 +155,12 @@ export const resolvePlaceId = (text) => {
   if (!placesData) return text;
 
   // Look for pattern: placename (lfd_XXXX)
-  // Modified regex to allow periods, commas, and other punctuation in place names
+  // Regex captures all characters including umlauts (Ä, Ö, Ü, etc.)
   return text.replace(
-    /([\w\.\-]+)\s*\(lfd_(\d+)\)/g,
+    /([^(]+?)\s*\(lfd_(\d+)\)/g,
     (match, placeName, lfdId) => {
+      // Trim whitespace from captured place name
+      placeName = placeName.trim();
       const lfdKey = `lfd_${lfdId}`;
       const placeInfo = placesData[lfdKey];
 
