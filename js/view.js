@@ -441,7 +441,7 @@ function renderPreview(r, index) {
     html += `
       <div class="etymology">
         <span class="etymology-label">Etymology: </span>
-        ${processContent(etymology.textContent)}
+        ${processComplexContent(etymology)}
       </div>`;
   }
 
