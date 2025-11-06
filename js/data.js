@@ -132,7 +132,7 @@ export const loadPlacesData = async () => {
       // Adjust to use semicolons and match the correct column format
       const [lfd, shortName, fullName, latitude, longitude] = row
         .split(";")
-        .map((field) => field.trim());
+        .map((field) => field.trim().normalize('NFC'));
       if (lfd) {
         const lfdKey = `lfd_${lfd}`;
         placesData[lfdKey] = {
@@ -164,9 +164,25 @@ export const resolvePlaceId = (text) => {
 
       if (placeInfo) {
         // Check first letter mismatch: compare XML abbreviation with CSV short form
-        const xmlFirstLetter = placeName.charAt(0).toLowerCase();
-        const csvFirstLetter = placeInfo.shortName.charAt(0).toLowerCase();
+        // Normalize strings to handle different Unicode encodings and trim whitespace
+        const xmlNormalized = placeName.trim().normalize('NFC');
+        const csvNormalized = placeInfo.shortName.trim().normalize('NFC');
+
+        const xmlFirstLetter = xmlNormalized.charAt(0).toLowerCase();
+        const csvFirstLetter = csvNormalized.charAt(0).toLowerCase();
         const isMismatch = xmlFirstLetter !== csvFirstLetter;
+
+        // Debug logging (temporary - remove after testing)
+        if (isMismatch) {
+          console.log(`Mismatch detected for ${lfdKey}:`, {
+            xmlName: placeName,
+            csvShortName: placeInfo.shortName,
+            xmlFirstChar: xmlFirstLetter,
+            csvFirstChar: csvFirstLetter,
+            xmlCharCode: xmlFirstLetter.charCodeAt(0),
+            csvCharCode: csvFirstLetter.charCodeAt(0)
+          });
+        }
 
         // Include short form in result for better mismatch reporting
         const baseResult = `${placeName} (${lfdKey};${placeInfo.shortName};${placeInfo.name};${placeInfo.latitude};${placeInfo.longitude})`;
