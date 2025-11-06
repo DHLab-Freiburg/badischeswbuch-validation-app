@@ -704,9 +704,8 @@ function processGeoContent(content) {
     //  Add warning icon for mismatches
     if (hasMismatch) {
       span.innerHTML = `🚩 ${cleanText}`;
-      span.title = `WARNING: First letter mismatch! "${placeName}" vs "${
-        expandedPlace.split(";")[1]
-      }"`;
+      const csvShortForm = expandedPlace.split(";")[1]; // Extract short form from CSV
+      span.title = `WARNING: First letter mismatch! XML abbreviation "${placeName}" does not match CSV short form "${csvShortForm}"`;
     } else {
       span.textContent = cleanText;
     }

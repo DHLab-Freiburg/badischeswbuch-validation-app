@@ -136,6 +136,7 @@ export const loadPlacesData = async () => {
       if (lfd) {
         const lfdKey = `lfd_${lfd}`;
         placesData[lfdKey] = {
+          shortName, // Kurzform from column 2
           name: fullName, // Using the Ortsname_BadWB column
           latitude,
           longitude,
@@ -162,12 +163,13 @@ export const resolvePlaceId = (text) => {
       const placeInfo = placesData[lfdKey];
 
       if (placeInfo) {
-        // ✅ NEW: Check first letter mismatch
+        // Check first letter mismatch: compare XML abbreviation with CSV short form
         const xmlFirstLetter = placeName.charAt(0).toLowerCase();
-        const csvFirstLetter = placeInfo.name.charAt(0).toLowerCase();
+        const csvFirstLetter = placeInfo.shortName.charAt(0).toLowerCase();
         const isMismatch = xmlFirstLetter !== csvFirstLetter;
 
-        const baseResult = `${placeName} (${lfdKey};${placeInfo.name};${placeInfo.latitude};${placeInfo.longitude})`;
+        // Include short form in result for better mismatch reporting
+        const baseResult = `${placeName} (${lfdKey};${placeInfo.shortName};${placeInfo.name};${placeInfo.latitude};${placeInfo.longitude})`;
 
         // Add mismatch flag if needed
         if (isMismatch) {
