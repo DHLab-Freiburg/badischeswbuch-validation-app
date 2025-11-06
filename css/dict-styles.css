@@ -162,7 +162,6 @@
 }
 
 .example-text {
-  font-style: italic;
   font-size: 0.95rem;
   color: #444;
 }
@@ -176,44 +175,28 @@
 .attestations {
   margin-top: 0.5rem;
   margin-left: 1.5rem;
-  background-color: #FFF9E6;
-  padding: 0.5rem;
-  border-left: 3px solid #FFD54F;
-  border-radius: 3px;
+  padding: 0.3rem 0;
 }
 
 .attestations-label {
   display: block;
   font-weight: bold;
   font-size: 0.85rem;
-  color: #795548;
+  color: #666;
   margin-bottom: 0.3rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
 }
 
 .attestation {
   font-size: 0.9rem;
   color: #444;
   margin-bottom: 0.4rem;
-  padding-bottom: 0.3rem;
-  border-bottom: 1px solid #FFE4B3;
-}
-
-.attestation:last-child {
-  border-bottom: none;
-  margin-bottom: 0;
-  padding-bottom: 0;
 }
 
 .attestation-date {
   display: inline-block;
   font-weight: bold;
   font-size: 0.85rem;
-  color: #D84315;
-  background-color: #FFCCBC;
-  padding: 2px 6px;
-  border-radius: 3px;
+  color: #666;
   margin-right: 0.5rem;
 }
 
@@ -250,6 +233,18 @@
 
 .etymology-label {
   font-weight: bold;
+}
+
+/* Make cross-references visible in etymology */
+.etymology .cross-ref {
+  color: #0066CC;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.etymology .cross-ref:hover {
+  color: #004499;
 }
 
 .references {
@@ -384,14 +379,6 @@
 .inline-phon {
   font-style: italic;
   color: #666;
-}
-
-.inline-phon::before {
-  content: "[";
-}
-
-.inline-phon::after {
-  content: "]";
 }
 
 /* Highlight (hi) styling */

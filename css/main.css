@@ -354,9 +354,6 @@ button:hover {
   font-style: italic;
 }
 
-.inline-phon::before { content: "/"; }
-.inline-phon::after { content: "/"; }
-
 .term[data-type="scientific"] {
   font-weight: 700;
 }
