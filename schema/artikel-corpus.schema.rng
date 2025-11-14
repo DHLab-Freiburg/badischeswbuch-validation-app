@@ -241,6 +241,7 @@
                   <ref name="term"/>
                   <ref name="person"/>
                   <ref name="superscript"/>
+                  <ref name="hi"/>
                   <ref name="geo"/>
                   <text/>
                 </choice>
@@ -500,12 +501,16 @@
     <element name="hi">
       <optional>
         <attribute name="rend">
-          <choice>
-            <value>bold</value>
-            <value>italic</value>
-            <value>underline</value>
-            <value>smallcaps</value>
-          </choice>
+          <list>
+            <oneOrMore>
+              <choice>
+                <value>bold</value>
+                <value>italic</value>
+                <value>underline</value>
+                <value>smallcaps</value>
+              </choice>
+            </oneOrMore>
+          </list>
         </attribute>
       </optional>
       <zeroOrMore>
