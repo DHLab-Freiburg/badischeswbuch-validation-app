@@ -30,37 +30,28 @@
         </optional>
         <optional>
           <element name="pronunciations">
-            <zeroOrMore>
-              <choice>
-                <element name="variant">
-                  <zeroOrMore>
+            <oneOrMore>
+              <element name="variant">
+                <element name="phon">
+                  <text/>
+                </element>
+                <optional>
+                  <ref name="geo"/>
+                </optional>
+                <optional>
+                  <element name="terminator">
                     <choice>
-                      <element name="phon">
-                        <text/>
-                      </element>
-                      <ref name="geo"/>
-                      <element name="terminator">
-                        <choice>
-                          <value>;</value>
-                          <value>.</value>
-                          <value>,</value>
-                          <value>:</value>
-                          <value>)</value>
-                          <text/>
-                        </choice>
-                      </element>
+                      <value>;</value>
+                      <value>.</value>
+                      <value>,</value>
+                      <value>:</value>
+                      <value>)</value>
                       <text/>
                     </choice>
-                  </zeroOrMore>
-                </element>
-                <ref name="place"/>
-                <ref name="bibl"/>
-                <ref name="person"/>
-                <ref name="superscript"/>
-                <ref name="hi"/>
-                <text/>
-              </choice>
-            </zeroOrMore>
+                  </element>
+                </optional>
+              </element>
+            </oneOrMore>
           </element>
         </optional>
         <optional>
@@ -115,7 +106,6 @@
                 <ref name="inline-phon"/>
                 <ref name="meaning"/>
                 <ref name="pos"/>
-                <ref name="term"/>
                 <text/>
               </choice>
             </zeroOrMore>
@@ -622,4 +612,14 @@
     </element>
   </define>
   
+  <define name="variant">
+    <element name="variant">
+      <optional>
+        <attribute name="phon">
+          <text/>
+        </attribute>
+      </optional>
+      <text/>
+    </element>
+  </define>
 </grammar>
