@@ -75,7 +75,6 @@
             <zeroOrMore>
               <choice>
                 <ref name="pos"/>
-                <ref name="crossRef"/>
                 <text/>
               </choice>
             </zeroOrMore>
