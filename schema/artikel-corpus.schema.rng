@@ -39,16 +39,7 @@
                         <text/>
                       </element>
                       <ref name="geo"/>
-                      <element name="terminator">
-                        <choice>
-                          <value>;</value>
-                          <value>.</value>
-                          <value>,</value>
-                          <value>:</value>
-                          <value>)</value>
-                          <text/>
-                        </choice>
-                      </element>
+                      <ref name="terminator"/>
                       <text/>
                     </choice>
                   </zeroOrMore>
@@ -254,6 +245,7 @@
                   <ref name="superscript"/>
                   <ref name="hi"/>
                   <ref name="geo"/>
+                  <ref name="terminator"/>
                   <text/>
                 </choice>
               </zeroOrMore>
@@ -622,5 +614,18 @@
       </zeroOrMore>
     </element>
   </define>
+
+  <define name="terminator">
+  <element name="terminator">
+    <choice>
+      <value>;</value>
+      <value>.</value>
+      <value>,</value>
+      <value>:</value>
+      <value>)</value>
+      <text/>
+    </choice>
+  </element>
+</define>
   
 </grammar>
