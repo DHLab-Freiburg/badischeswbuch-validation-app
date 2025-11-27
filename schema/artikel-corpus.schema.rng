@@ -494,6 +494,7 @@
         <choice>
           <ref name="superscript"/>
           <ref name="term"/>
+          <ref name="hi"/>
           <text/>
         </choice>
       </zeroOrMore>
