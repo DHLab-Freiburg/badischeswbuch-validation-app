@@ -48,6 +48,7 @@
                 <ref name="bibl"/>
                 <ref name="person"/>
                 <ref name="superscript"/>
+                <ref name="subscript"/>
                 <ref name="hi"/>
                 <text/>
               </choice>
@@ -67,6 +68,7 @@
               <choice>
                 <ref name="pos"/>
                 <ref name="crossRef"/>
+                <ref name="hi"/>
                 <text/>
               </choice>
             </zeroOrMore>
@@ -108,6 +110,7 @@
                 <ref name="meaning"/>
                 <ref name="pos"/>
                 <ref name="term"/>
+                <ref name="hi"/>
                 <text/>
               </choice>
             </zeroOrMore>
@@ -176,6 +179,7 @@
               <ref name="person"/>
               <ref name="meaning"/>
               <ref name="superscript"/>
+              <ref name="subscript"/>
               <text/>
             </choice>
           </zeroOrMore>
@@ -210,6 +214,7 @@
                   <ref name="person"/>
                   <ref name="crossRef"/>
                   <ref name="superscript"/>
+                  <ref name="subscript"/>
                   <ref name="hi"/>
                   <text/>
                 </choice>
@@ -243,9 +248,11 @@
                   <ref name="term"/>
                   <ref name="person"/>
                   <ref name="superscript"/>
+                  <ref name="subscript"/>
                   <ref name="hi"/>
                   <ref name="geo"/>
                   <ref name="terminator"/>
+                  <ref name="pos"/>
                   <text/>
                 </choice>
               </zeroOrMore>
@@ -264,7 +271,8 @@
               <ref name="inline-phon"/>
               <ref name="meaning"/>
               <ref name="pos"/>
-               <text/>
+              <ref name="hi"/>
+              <text/>
             </choice>
           </zeroOrMore>
         </element>
@@ -356,6 +364,8 @@
         <ref name="person"/>
         <ref name="inline-phon"/>
         <ref name="superscript"/>
+        <ref name="subscript"/>
+        <ref name="hi"/>
         <text/>
       </choice>
     </zeroOrMore>
@@ -493,6 +503,7 @@
       <zeroOrMore>
         <choice>
           <ref name="superscript"/>
+          <ref name="subscript"/>
           <ref name="term"/>
           <ref name="hi"/>
           <ref name="crossRef"/>
@@ -521,6 +532,7 @@
       <zeroOrMore>
         <choice>
           <ref name="superscript"/>
+          <ref name="subscript"/>
           <text/>
         </choice>
       </zeroOrMore>
@@ -529,6 +541,17 @@
   
   <define name="superscript">
     <element name="superscript">
+      <zeroOrMore>
+        <choice>
+          <ref name="hi"/>
+          <text/>
+        </choice>
+      </zeroOrMore>
+    </element>
+  </define>
+
+  <define name="subscript">
+    <element name="subscript">
       <zeroOrMore>
         <choice>
           <ref name="hi"/>
@@ -596,6 +619,7 @@
           <ref name="inline-phon"/>
           <ref name="hi"/>
           <ref name="superscript"/>
+          <ref name="subscript"/>
           <ref name="place"/>
           <ref name="bibl"/>
           <ref name="person"/>
@@ -611,6 +635,7 @@
         <choice>
           <ref name="hi"/>
           <ref name="superscript"/>
+          <ref name="subscript"/>
           <text/>
         </choice>
       </zeroOrMore>
