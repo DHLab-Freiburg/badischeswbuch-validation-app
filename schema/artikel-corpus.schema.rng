@@ -366,6 +366,8 @@
         <ref name="superscript"/>
         <ref name="subscript"/>
         <ref name="hi"/>
+        <ref name="crossRef"/>
+        <ref name="meaning"/>
         <text/>
       </choice>
     </zeroOrMore>
