@@ -725,8 +725,8 @@ lfd;Kurzform;Ortsname_BadWB;Lat;Lon
 723;Kandern;Kandern;47.714697;7.6610865
 724;Kappel (Neust.);Kappel (Neust.);47.873197;8.232265
 725;Kappel (Vill.);Kappel (Vill.);48.111733;8.502932
-726;Kappel a. Rh.;Kappel a. Rh.;48.29219;7.741146
-727;Kappel i. T.;Kappel i. T.;47.9646668;7.9087001
+726;Kappel a. Rh.;Kappel am Rhein;48.29219;7.741146
+727;Kappel i. T.;Kappel im Tal;47.9646668;7.9087001
 728;Kappelrodeck;Kappelrodeck;48.591285;8.1177267
 729;Kappelwi.;Kappelwindeck;48.6903239;8.145914
 730;Karlsd.;Karlsdorf;49.1362062;8.5434328
@@ -1836,3 +1836,4 @@ lfd;Kurzform;Ortsname_BadWB;Lat;Lon
 1826;Riedern (Bonndorf);Riedern a. W.;47.7169201;8.2891563
 1827;Hochhsn (Tauberb.);Hochhausen a. d. Tauber;49.6635329;9.6333051
 1828;Hohensa.;Hohensachsen;49.5187639;8.6696038
+1829;Kappel (Freib.).;Kappel im Tal;47.9646668;7.9087001
