@@ -35,7 +35,9 @@
                 <element name="variant">
                   <zeroOrMore>
                     <choice>
-                      <ref name="phon"/>
+                      <element name="phon">
+                        <text/>
+                      </element>
                       <ref name="geo"/>
                       <ref name="terminator"/>
                       <text/>
@@ -180,7 +182,9 @@
                 <element name="variant">
                   <zeroOrMore>
                     <choice>
-                      <ref name="phon"/>
+                      <element name="phon">
+                        <text/>
+                      </element>
                       <ref name="geo"/>
                       <ref name="terminator"/>
                       <text/>
@@ -784,19 +788,5 @@
     </choice>
   </element>
 </define>
-  
-  <!-- Reusable phon definition - allows mixed content with superscript/subscript/hi -->
-  <define name="phon">
-    <element name="phon">
-      <zeroOrMore>
-        <choice>
-          <ref name="hi"/>
-          <ref name="superscript"/>
-          <ref name="subscript"/>
-          <text/>
-        </choice>
-      </zeroOrMore>
-    </element>
-  </define>
   
 </grammar>
