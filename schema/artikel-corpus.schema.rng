@@ -67,6 +67,7 @@
                 <ref name="pos"/>
                 <ref name="crossRef"/>
                 <ref name="hi"/>
+                <ref name="bibl"/>
                 <text/>
               </choice>
             </zeroOrMore>
@@ -212,6 +213,7 @@
                 <ref name="pos"/>
                 <ref name="crossRef"/>
                 <ref name="hi"/>
+                <ref name="bibl"/>
                 <text/>
               </choice>
             </zeroOrMore>
@@ -343,6 +345,7 @@
                   <ref name="subscript"/>
                   <ref name="hi"/>
                   <ref name="terminator"/>
+                  <ref name="term"/>
                   <text/>
                 </choice>
               </zeroOrMore>
