@@ -94,7 +94,6 @@
                 <ref name="inline-phon"/>
                 <ref name="place"/>
                 <ref name="person"/>
-                <ref name="terminator"/>
                 <text/>
               </choice>
             </zeroOrMore>
@@ -243,7 +242,6 @@
                 <ref name="inline-phon"/>
                 <ref name="place"/>
                 <ref name="person"/>
-                <ref name="terminator"/>
                 <text/>
               </choice>
             </zeroOrMore>
@@ -314,7 +312,6 @@
               <ref name="superscript"/>
               <ref name="subscript"/>
               <ref name="hi"/>
-              <ref name="terminator"/>
               <text/>
             </choice>
           </zeroOrMore>
