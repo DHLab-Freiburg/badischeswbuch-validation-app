@@ -114,6 +114,7 @@
                 <ref name="term"/>
                 <ref name="hi"/>
                 <ref name="terminator"/>
+                <ref name="superscript"/>
                 <text/>
               </choice>
             </zeroOrMore>
@@ -263,6 +264,7 @@
                 <ref name="term"/>
                 <ref name="hi"/>
                 <ref name="terminator"/>
+                <ref name="superscript"/>
                 <text/>
               </choice>
             </zeroOrMore>
@@ -410,6 +412,7 @@
               <ref name="pos"/>
               <ref name="hi"/>
               <ref name="terminator"/>
+              <ref name="superscript"/>
               <text/>
             </choice>
           </zeroOrMore>
