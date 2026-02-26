@@ -302,6 +302,21 @@
         </attribute>
       </optional>
       <optional>
+        <element name="grammar">
+          <zeroOrMore>
+            <choice>
+              <ref name="pos"/>
+              <ref name="crossRef"/>
+              <ref name="hi"/>
+              <ref name="bibl"/>
+              <ref name="place"/>
+              <ref name="inline-phon"/>
+              <text/>
+            </choice>
+          </zeroOrMore>
+        </element>
+      </optional>
+      <optional>
         <element name="def">
           <zeroOrMore>
             <choice>
@@ -413,6 +428,24 @@
               <ref name="hi"/>
               <ref name="terminator"/>
               <ref name="superscript"/>
+              <text/>
+            </choice>
+          </zeroOrMore>
+        </element>
+      </optional>
+      <optional>
+        <element name="etymology">
+          <zeroOrMore>
+            <choice>
+              <ref name="lang"/>
+              <ref name="term"/>
+              <ref name="meaning"/>
+              <ref name="crossRef"/>
+              <ref name="bibl"/>
+              <ref name="inline-phon"/>
+              <ref name="place"/>
+              <ref name="person"/>
+              <ref name="terminator"/>
               <text/>
             </choice>
           </zeroOrMore>
@@ -589,15 +622,17 @@
   
   <define name="crossRef">
     <element name="crossRef">
-      <attribute name="key">
-        <text/>
-      </attribute>
+      <attribute name="key"><text/></attribute>
       <optional>
-        <attribute name="subsense">
-          <text/>
-        </attribute>
+        <attribute name="subsense"><text/></attribute>
       </optional>
-      <text/>
+      <zeroOrMore>
+        <choice>
+          <ref name="superscript"/>
+          <ref name="subscript"/>
+          <text/>
+        </choice>
+      </zeroOrMore>
     </element>
   </define>
   
@@ -631,7 +666,14 @@
           <text/>
         </attribute>
       </optional>
-      <text/>
+      <zeroOrMore>
+      <choice>
+        <ref name="hi"/>
+        <ref name="superscript"/>
+        <ref name="subscript"/>
+        <text/>
+      </choice>
+    </zeroOrMore>
     </element>
   </define>
   
@@ -786,17 +828,11 @@
   </define>
 
   <define name="terminator">
-  <element name="terminator">
-    <choice>
-      <value>;</value>
-      <value>.</value>
-      <value>,</value>
-      <value>:</value>
-      <value>)</value>
+    <element name="terminator">
+      <!-- Typical values: ; . ‒ , : ) or combinations like ". ‒" "; ‒" -->
       <text/>
-    </choice>
-  </element>
-</define>
+    </element>
+  </define>
   
   <!-- Reusable phon definition - allows mixed content with superscript/subscript/hi -->
   <define name="phon">

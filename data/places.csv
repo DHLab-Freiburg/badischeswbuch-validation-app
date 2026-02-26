@@ -557,10 +557,10 @@ lfd;Kurzform;Ortsname_BadWB;Lat;Lon
 555;Haugn;Hauingen;47.6429856;7.6937985
 556;Hausach;Hausach;48.2836305;8.174972
 557;Hausen (Donauesch.);Hausen (Donauesch.);47.9159;8.67424
-558;Hausen a. d. Aach;Hausen a. d. Aach;47.79151;8.84112
-559;Hausen a. d. M.;Hausen a. d. M.;47.95617;7.66939
-560;Hausen i. T.;Hausen i. T.;48.08522;9.03852
-561;Hausen i. W.;Hausen i. W.;47.68128;7.83986
+558;Hausen a. d. Aach;Hausen an der Aach;47.79151;8.84112
+559;Hausen a. d. M.;Hausen an der Möhlin;47.95617;7.66939
+560;Hausen i. T.;Hausen im Tal;48.08522;9.03852
+561;Hausen i. W.;Hausen im Wiesental;47.68128;7.83986
 562;Hausen vor Wald;Hausen vor Wald;47.8918;8.48923
 563;Hauserb.;Hauserbach;48.27855;8.154721
 564;Häusern;Häusern;47.75;8.16667
@@ -1842,3 +1842,7 @@ lfd;Kurzform;Ortsname_BadWB;Lat;Lon
 1832;Kirchen-Hausen (Engen);Kirchen-Hausen;47.915363;8.675004
 1833;Schwackenreute;Schwackenreute (Mühlingen);47.9135;9.04847
 1834;Steig (Freib.);Breitnau-Steig;47.915024;8.082241
+1835;Hausen (Meßk.);Hausen im Tal;48.08522;9.03852
+1836;U.flockenb.;Unterflockenbach;49.575;8.733
+1837;Unterflockenbach;Unterflockenbach;49.575;8.733
+1838;Müllhofen;Müllhofen (Sinzheim);48.74526;8.13855
