@@ -35,7 +35,6 @@ lfd;Kurzform;Ortsname_BadWB;Lat;Lon
 34;Altglashütten;Altglashütten;47.85602;8.1113
 35;Althm (Buchen);Altheim (Buchen);49.52055;9.44333
 36;Althm (Meßk.);Altheim (Meßk.);47.99521;9.03437
-36;Althm (Meßk.);Altheim (Meßk.);47.99521;9.03437
 37;Althm (Überlgn);Altheim (Überlgn);47.82636;9.25463
 38;Altlußhm;Altlußheim;49.3004929;8.4981809
 39;Altneud.;Altneudorf;49.4618062;8.8065793
@@ -212,7 +211,6 @@ lfd;Kurzform;Ortsname_BadWB;Lat;Lon
 211;Buchenbg;Buchenberg;48.16071;8.37891
 212;Büchenbronn;Büchenbronn;48.8552336;8.6633844
 213;Buchhm (Freib.);Buchheim (Freib.);48.05954;7.77286
-214;Buchhm (Meßk.);Buchheim (Meßk.);48.01037;8.98596
 214;Buchhm (Meßk.);Buchheim (Meßk.);48.01037;8.98596
 215;Buchholz;Buchholz;48.081495;7.915098
 216;Büchig (Brett.);Büchig (Brett.);49.07284;8.71102
@@ -783,7 +781,6 @@ lfd;Kurzform;Ortsname_BadWB;Lat;Lon
 780;Korb;Korb;49.355248;9.399277
 781;Kork;Kork;48.5670016;7.8702056
 782;Krauthm;Krautheim;49.3861751;9.6346258
-783;Kreenheinstet.;Kreenheinstetten;48.0574191;9.0525638
 783;Kreenheinstet.;Kreenheinstetten;48.0574191;9.0525638
 784;Krenkgn;Krenkingen;47.6823462;8.3054526
 785;Krenshm;Krensheim;49.6374717;9.7790812
@@ -1428,7 +1425,6 @@ lfd;Kurzform;Ortsname_BadWB;Lat;Lon
 1421;St. Leon;St. Leon;49.26692;8.59969
 1422;St. Märgen;St. Märgen;48.007662;8.093055
 1423;St. Peter;St. Peter;48.017812;8.035524
-1423;St. Peter;St. Peter;48.017812;8.035524
 1424;St. Roman;St. Roman;48.331116;8.291754
 1425;St. Trudpert;St. Trudpert;47.864523;7.801531
 1426;St. Ulrich;St. Ulrich;47.908363;7.837772
@@ -1810,42 +1806,43 @@ lfd;Kurzform;Ortsname_BadWB;Lat;Lon
 1801;Kirchen (Lörrach);Kirchen (Efrgn);47.647711;7.567849
 1802;Maulb;Maulburg;47.6415301;7.7795147
 1803;Menzenschw;Menzenschwand;47.817637;8.070735
-1803;O.Schopf;Oberschopfheim;48.3967513;7.9027713
-1804;Ottoschw.;Ottoschwanden;48.1867645;7.897709
-1805;Gutach (Wolf.);Gutach a. d. Schwwaldb.;48.24844;8.21293
-1806;Kippenhmwlr;Kippenheimweiler;48.3182043;7.8051884
-1807;Welschenstein;Welschensteinach;48.2744343;8.0177401
-1808;Wolf.;Wolfach;48.298387;8.221722
-1809;Buggenr;Buggenried;47.74531;8.2504048
-1810;Ludwigsh;Ludwigshafen;47.8177978;9.056572
-1811;Mühlgn (Stockach);Mühlingen;47.9122569;9.0165311
-1812;Urfar;Urphar;49.7482509;9.5740266
-1813;Göschw.;Göschweiler;47.8582957;8.311165
-1814;Steinbach (Werth.);Steinbach (Werth.);49.680033;9.471665
-1815;Lautenb. (Oberk.);Lautenbach (Oberkirch);48.5198867;8.1146774
-1816;Heidelberg;Heidelberg;49.4093582;8.694724
-1817;Diersh.;Diersheim;48.6464642;7.8896058
-1818;Ebersteinb.;Ebersteinburg;48.7787163;8.2710473
-1819;Murbach;Murbach;47.7145745;8.7673195
-1820;Murb.;Murbach;47.7145745;8.7673195
-1821;Eichberg (Waldsh.);Eichberg;47.6267;8.46542
-1822;Tutschfelden;Tutschfelden;48.215366;7.808321
-1823;Rohrbach (Trib.);Rohrbach (Furtw.);48.074672;8.256111
-1824;Oberglash. (Meßk.);Oberglashütte;48.1243384;9.0343859
-1825;Stadelho. (Oberk.);Stadelhofen (Oberk.);48.559733;8.036008
-1826;Riedern (Bonndorf);Riedern a. W.;47.7169201;8.2891563
-1827;Hochhsn (Tauberb.);Hochhausen a. d. Tauber;49.6635329;9.6333051
-1828;Hohensa.;Hohensachsen;49.5187639;8.6696038
-1829;Kappel (Freib.).;Kappel im Tal;47.9646668;7.9087001
-1830;Bad Peterst.;Peterstal;48.428696;8.20347
-1831;Schildwende;Schildwende (Titisee);47.93268;8.15318
-1832;Kirchen-Hausen (Engen);Kirchen-Hausen;47.915363;8.675004
-1833;Schwackenreute;Schwackenreute (Mühlingen);47.9135;9.04847
-1834;Steig (Freib.);Breitnau-Steig;47.915024;8.082241
-1835;Hausen (Meßk.);Hausen im Tal;48.08522;9.03852
-1836;U.flockenb.;Unterflockenbach;49.575;8.733
-1837;Unterflockenbach;Unterflockenbach;49.575;8.733
-1838;Müllhofen;Müllhofen (Sinzheim);48.74526;8.13855
-1839;Luchle;Luchle (St. Blasien);47.71139;8.10967
-1840;Oberscheffl.;Oberschefflenz;49.416816;9.284026
-1841;Tannenkirch;Tannenkirch;47.711644;7.606038
+1804;O.Schopf;Oberschopfheim;48.3967513;7.9027713
+1805;Ottoschw.;Ottoschwanden;48.1867645;7.897709
+1806;Gutach (Wolf.);Gutach a. d. Schwwaldb.;48.24844;8.21293
+1807;Kippenhmwlr;Kippenheimweiler;48.3182043;7.8051884
+1808;Welschenstein;Welschensteinach;48.2744343;8.0177401
+1809;Wolf.;Wolfach;48.298387;8.221722
+1810;Buggenr;Buggenried;47.74531;8.2504048
+1811;Ludwigsh;Ludwigshafen;47.8177978;9.056572
+1812;Mühlgn (Stockach);Mühlingen;47.9122569;9.0165311
+1813;Urfar;Urphar;49.7482509;9.5740266
+1814;Göschw.;Göschweiler;47.8582957;8.311165
+1815;Steinbach (Werth.);Steinbach (Werth.);49.680033;9.471665
+1816;Lautenb. (Oberk.);Lautenbach (Oberkirch);48.5198867;8.1146774
+1817;Heidelberg;Heidelberg;49.4093582;8.694724
+1818;Diersh.;Diersheim;48.6464642;7.8896058
+1819;Ebersteinb.;Ebersteinburg;48.7787163;8.2710473
+1820;Murbach;Murbach;47.7145745;8.7673195
+1821;Murb.;Murbach;47.7145745;8.7673195
+1822;Eichberg (Waldsh.);Eichberg;47.6267;8.46542
+1823;Tutschfelden;Tutschfelden;48.215366;7.808321
+1824;Rohrbach (Trib.);Rohrbach (Furtw.);48.074672;8.256111
+1825;Oberglash. (Meßk.);Oberglashütte;48.1243384;9.0343859
+1826;Stadelho. (Oberk.);Stadelhofen (Oberk.);48.559733;8.036008
+1827;Riedern (Bonndorf);Riedern a. W.;47.7169201;8.2891563
+1828;Hochhsn (Tauberb.);Hochhausen a. d. Tauber;49.6635329;9.6333051
+1829;Hohensa.;Hohensachsen;49.5187639;8.6696038
+1830;Kappel (Freib.).;Kappel im Tal;47.9646668;7.9087001
+1831;Bad Peterst.;Peterstal;48.428696;8.20347
+1832;Schildwende;Schildwende (Titisee);47.93268;8.15318
+1833;Kirchen-Hausen (Engen);Kirchen-Hausen;47.915363;8.675004
+1834;Schwackenreute;Schwackenreute (Mühlingen);47.9135;9.04847
+1835;Steig (Freib.);Breitnau-Steig;47.915024;8.082241
+1836;Hausen (Meßk.);Hausen im Tal;48.08522;9.03852
+1837;U.flockenb.;Unterflockenbach;49.575;8.733
+1838;Unterflockenbach;Unterflockenbach;49.575;8.733
+1839;Müllhofen;Müllhofen (Sinzheim);48.74526;8.13855
+1840;Luchle;Luchle (St. Blasien);47.71139;8.10967
+1841;Oberscheffl.;Oberschefflenz;49.416816;9.284026
+1842;Tannenkirch;Tannenkirch;47.711644;7.606038
+1843;Mühlhsn (Engen);Mühlhausen (Engen);47.810435;8.809688
