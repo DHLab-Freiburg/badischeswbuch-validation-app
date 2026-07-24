@@ -1231,7 +1231,7 @@ lfd;Kurzform;Ortsname_BadWB;Lat;Lon
 1228;Ried;Ried;47.755303;7.806502
 1229;Riedböhrgn;Riedböhringen;47.8702908;8.5375468
 1230;Riedern a. S.;Riedern a. S.;47.6251309;8.4456732
-1231;Riedern a. W.;Riedern a. W.;47.7169201;8.2891563
+1231;Riedern a. W.;Riedern am Wald;47.7169201;8.2891563
 1232;Riedhm (Konst.);Riedheim (Konst.);47.762916;8.748081
 1233;Riedhm (Überlgn);Riedheim (Überlgn);47.70404;9.410239
 1234;Riedichen;Riedichen;47.7052784;7.8884045
@@ -1829,7 +1829,7 @@ lfd;Kurzform;Ortsname_BadWB;Lat;Lon
 1824;Rohrbach (Trib.);Rohrbach (Furtw.);48.074672;8.256111
 1825;Oberglash. (Meßk.);Oberglashütte;48.1243384;9.0343859
 1826;Stadelho. (Oberk.);Stadelhofen (Oberk.);48.559733;8.036008
-1827;Riedern (Bonndorf);Riedern a. W.;47.7169201;8.2891563
+1827;Riedern (Bonndorf);Riedern am Wald;47.7169201;8.2891563
 1828;Hochhsn (Tauberb.);Hochhausen a. d. Tauber;49.6635329;9.6333051
 1829;Hohensa.;Hohensachsen;49.5187639;8.6696038
 1830;Kappel (Freib.).;Kappel im Tal;47.9646668;7.9087001
@@ -1892,3 +1892,23 @@ lfd;Kurzform;Ortsname_BadWB;Lat;Lon
 1887;Schefflenz;Schefflenz;49.40040;9.27970
 1888;Singen (Durlach);Singen (Durlach);48.958516;8.572934
 1889;Singen (Durl.);Singen (Durlach);48.958516;8.572934
+1890;Hirschbach (Wolfach);Hirschbach (Schapbach);48.3751;8.2554
+1891;Oberbeuern;Oberbeuern (Lichtental);48.74238;8.29122
+1892;Ibental;Ibental (Buchenbach);47.971915;7.993313
+1893;Oberschaffhsn;Oberschaffhausen (Bötzingen);48.07153;7.7176
+1894;Bötzgn-Oberschaffhsn;Oberschaffhausen (Bötzingen);48.07153;7.7176
+1895;Querbach;Querbach (Kehl);48.588288;7.868585
+1896;Allerheiligen;Allerheiligen (Oppenau);48.53728;8.19413
+1897;Sommerau;Sommerau (Bonndorf);47.816275;8.258496
+1898;Hornenberg (Bühl);Hornenberg (Lauf);48.64332;8.11894
+1900;Steurental;Steurental (Stegen);47.99432;7.98971
+1901;Werenwag;Werenwag (Beuron);48.075249;9.015054
+1902;Rankach;Rankach (Oberwolfach);48.379963;8.228835
+1903;U.mutschelb.;Untermutschelbach;48.94429;8.53331
+1904;Untermutschelbach;Untermutschelbach;48.94429;8.53331
+1905;Kohlenbach;Kohlenbach (Waldkirch-Kollnau);48.11905;7.95548
+1906;Fahrenberg;Fahrenberg (Breitnau);47.945415;8.103855
+1907;Viertäler;Viertäler (Titisee);47.945415;8.103855
+1908;Adelsreute;Adelsreute (Ravensburg);47.74896;9.53874
+1909;Eggenen;Eggenen (Schliengen);47.74833;7.64743
+1910;Aispel;Aispel (Waldshut-Tiengen);47.66212;8.21271
