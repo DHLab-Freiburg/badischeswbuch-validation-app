@@ -48,8 +48,6 @@
                 <ref name="superscript"/>
                 <ref name="subscript"/>
                 <ref name="hi"/>
-                <ref name="crossRef"/>
-                <ref name="term"/>
                 <text/>
               </choice>
             </zeroOrMore>
@@ -202,8 +200,6 @@
                 <ref name="superscript"/>
                 <ref name="subscript"/>
                 <ref name="hi"/>
-                <ref name="crossRef"/>
-                <ref name="term"/>
                 <text/>
               </choice>
             </zeroOrMore>
