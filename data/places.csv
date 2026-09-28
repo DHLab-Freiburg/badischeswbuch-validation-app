@@ -766,7 +766,6 @@ lfd;Kurzform;Ortsname_BadWB;Lat;Lon
 766;Klösterle;Klösterle;48.4259358;8.3301085
 767;Kluftern;Kluftern;47.6921986;9.4008373
 768;Kniebis;Kniebis;48.4720808;8.3106312
-768;Kniebis;Kniebis;48.4720808;8.3106312
 769;Knielgn;Knielingen;49.0299133;8.3402502
 770;Kollmarsr.;Kollmarsreute;48.1019359;7.8800918
 771;Kollnau;Kollnau;48.106722;7.971779
@@ -837,7 +836,6 @@ lfd;Kurzform;Ortsname_BadWB;Lat;Lon
 836;Lehngn;Lehningen;48.7943883;8.8177414
 837;Leibenst.;Leibenstadt;49.369199;9.4194487
 838;Leiberstung;Leiberstung;48.7532117;8.0997247
-839;Leibertgn;Leibertingen;48.0438138;9.0117958
 839;Leibertgn;Leibertingen;48.0438138;9.0117958
 840;Leimen;Leimen;49.3491417;8.6909951
 841;Leipferdgn;Leipferdingen;47.8654706;8.6678258
@@ -964,7 +962,6 @@ lfd;Kurzform;Ortsname_BadWB;Lat;Lon
 962;Mühlhsn (Wiesl.);Mühlhausen (Wiesl.);49.247989;8.726031
 963;Mühlgn;Mühlingen;47.9122569;9.0165311
 964;Mülben;Mülben;49.4641783;9.0968206
-964;Mülben;Mülben;49.4641783;9.0968206
 965;Müllen;Müllen;48.46794745;7.835978744
 966;Müllhm;Müllheim;47.809642;7.626389
 967;Münchhöf;Münchhöf;47.8801243;8.9529109
@@ -1066,7 +1063,6 @@ lfd;Kurzform;Ortsname_BadWB;Lat;Lon
 1063;O.biederb.;Oberbiederbach;48.218062;8.026483
 1064;O.bränd;Oberbränd;47.9491518;8.2920797
 1065;O.bruch;Oberbruch;48.728565;8.089009
-1066;O.dielb.;Oberdielbach;49.4477041;9.0545433
 1066;O.dielb.;Oberdielbach;49.4477041;9.0545433
 1067;O.eggenen;Obereggenen;47.7577716;7.6469658
 1068;O.eggingen;Obereggingen;47.701669;8.3868411
@@ -1340,7 +1336,6 @@ lfd;Kurzform;Ortsname_BadWB;Lat;Lon
 1337;Schollach;Schollach;47.9853401;8.2472349
 1338;Schöllbronn;Schöllbronn;48.895883;8.418194
 1339;Schollbrunn;Schollbrunn;49.4352484;9.0777233
-1339;Schollbrunn;Schollbrunn;49.4352484;9.0777233
 1340;Schonach;Schonach;48.1427148;8.1974937
 1341;Schönau (Heidelb.);Schönau (Heidelb.);49.436491;8.809271
 1342;Schönau i. Schw.;Schönau i. Schw.;47.78624;7.893154
@@ -1469,7 +1464,6 @@ lfd;Kurzform;Ortsname_BadWB;Lat;Lon
 1465;Strittbg;Strittberg;47.72111;8.193467
 1466;Strittmatt;Strittmatt;47.664448;8.04653
 1467;Strohb.;Strohbach;48.386169;8.010693
-1468;Strümpfelbrunn;Strümpfelbrunn;49.464319;9.079039
 1468;Strümpfelbrunn;Strümpfelbrunn;49.464319;9.079039
 1469;Stühlgn;Stühlingen;47.746969;8.447434
 1470;Stupferich;Stupferich;48.952799;8.50788
@@ -1860,10 +1854,10 @@ lfd;Kurzform;Ortsname_BadWB;Lat;Lon
 1855;Schönmünz;Schönmünz (Baiersbronn);48.58757;8.31776
 1856;Freudenstadt;Freudenstadt;48.4633;8.4111
 1857;Schömberg;Schömberg (Loßburg);48.39618;8.4072
-1858;Vorderlehenger.;Vorderlehengericht (Schiltach);48.290075,8.341144
-1859;Hinterlehenger.;Hinterlehengericht (Schiltach);48.291659,8.344820
+1858;Vorderlehenger.;Vorderlehengericht (Schiltach);48.290075;8.341144
+1859;Hinterlehenger.;Hinterlehengericht (Schiltach);48.291659;8.344820
 1860;Lauterbach;Lauterbach (Schwarzwald);48.24528;8.36028
-1861;Oberreichenbach;Oberreichenbach (Hornberg);48.2021438,8.2993611
+1861;Oberreichenbach;Oberreichenbach (Hornberg);48.2021438;8.2993611
 1862;Tuttlingen;Tuttlingen;47.98444;8.81861
 1863;Ennetach;Ennetach (Mengen);48.0528;9.3222
 1864;Langenzell;Langenzell (Wiesenbach);49.36306;8.83694
@@ -1916,3 +1910,4 @@ lfd;Kurzform;Ortsname_BadWB;Lat;Lon
 1912;Langenhardt (Meßk.);Langenhart;48.046328;9.1031689
 1913;Langenhardt;Langenhart;48.046328;9.1031689
 1914;Langenhardt b. Meßk.;Langenhart;48.046328;9.1031689
+1915;Obersexau;Obersexau;48.127600;7.943020
