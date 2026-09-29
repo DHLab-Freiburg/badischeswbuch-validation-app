@@ -48,6 +48,8 @@
                 <ref name="superscript"/>
                 <ref name="subscript"/>
                 <ref name="hi"/>
+                <ref name="crossRef"/>
+                <ref name="term"/>
                 <text/>
               </choice>
             </zeroOrMore>
@@ -70,7 +72,6 @@
                 <ref name="bibl"/>
                 <ref name="place"/>
                 <ref name="inline-phon"/>
-                <ref name="lang"/>
                 <text/>
               </choice>
             </zeroOrMore>
@@ -201,6 +202,8 @@
                 <ref name="superscript"/>
                 <ref name="subscript"/>
                 <ref name="hi"/>
+                <ref name="crossRef"/>
+                <ref name="term"/>
                 <text/>
               </choice>
             </zeroOrMore>
@@ -223,7 +226,6 @@
                 <ref name="bibl"/>
                 <ref name="place"/>
                 <ref name="inline-phon"/>
-                <ref name="lang"/>
                 <text/>
               </choice>
             </zeroOrMore>
@@ -307,15 +309,6 @@
           <text/>
         </attribute>
       </optional>
-      <!-- Markers (†, A, F, R ...) at the start of a sense; they always refer to this sense,
-           regardless of whether they stand before or after the sense number in the print -->
-      <optional>
-        <element name="markers">
-          <zeroOrMore>
-            <ref name="marker"/>
-          </zeroOrMore>
-        </element>
-      </optional>
       <optional>
         <element name="grammar">
           <zeroOrMore>
@@ -326,7 +319,6 @@
               <ref name="bibl"/>
               <ref name="place"/>
               <ref name="inline-phon"/>
-              <ref name="lang"/>
               <text/>
             </choice>
           </zeroOrMore>
