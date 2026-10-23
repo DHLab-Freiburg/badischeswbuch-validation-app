@@ -1,5 +1,8 @@
 import * as data from "./data.js";
 import * as view from "./view.js";
+import * as pruefung from "./pruefung.js";
+
+let listsInfo = null;
 
 // Wait for DOM to be fully loaded
 document.addEventListener("DOMContentLoaded", async () => {
@@ -15,10 +18,14 @@ document.addEventListener("DOMContentLoaded", async () => {
   showInitializationStatus("Loading schema validation...", false);
 
   // Load places data and initialize schema validation in parallel
-  const [placesLoaded, schemaInitialized] = await Promise.allSettled([
+  const [placesLoaded, schemaInitialized, listsLoaded] = await Promise.allSettled([
     data.loadPlacesData(),
     data.initSchemaValidation(),
+    pruefung.loadLists(),
   ]);
+  if (listsLoaded.status === "fulfilled") listsInfo = listsLoaded.value;
+  else console.warn("Failed to load check lists:", listsLoaded.reason);
+  view.initFileButtons();
 
   // Handle initialization results
   if (placesLoaded.status === "fulfilled") {
@@ -52,20 +59,24 @@ document.addEventListener("DOMContentLoaded", async () => {
     showValidationLoading(true);
 
     try {
-      // This now returns { entries: [], schemaValidation: {} }
-      const result = await data.compareCorpus(srcXML, genXML);
+      const report = pruefung.check(srcXML, genXML);
 
-      if (!result.entries || !result.entries.length) {
-        alert("No entries found in either source");
+      if (!report.entries.length) {
+        alert("No entries found in the generated XML");
         showValidationLoading(false);
         return;
       }
 
-      // Render the results
-      view.renderSidebar(result.entries);
-      view.renderPreview(result.entries[0], 0);
-      view.renderSchemaValidation(result.schemaValidation);
+      // Render the results at once; the schema check (xmllint in WebAssembly) can take minutes for a whole
+      // delivery and follows when it is done
+      view.renderSummary(report, listsInfo);
+      view.renderSidebar(report.entries);
+      view.renderPreview(report.entries[0], 0);
       view.showValidationSection();
+      showInitializationStatus("Schema validation running (may take a few minutes for a whole delivery)…", false);
+      await new Promise((r) => setTimeout(r, 50));
+      const schema = await data.validateAgainstSchema(genXML);
+      view.renderSchemaValidation({ isValid: schema.isValid, errors: data.parseValidationErrors(schema.errors), initialized: schema.initialized });
 
       showValidationLoading(false);
     } catch (error) {

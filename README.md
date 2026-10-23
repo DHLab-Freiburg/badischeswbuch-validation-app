@@ -16,10 +16,45 @@ This tool helps editors and contributors verify that dictionary entries are prop
 - XML syntax highlighting with CodeMirror
 - Copy functionality for XML content
 
+## Checks (branch `pruefung-erweitert`, October 2026)
+
+`js/pruefung.js` checks a result against its source. It follows the same rules as the checking tool of the new editorial system (`neuaufbau/anwendung/bin/transformation_pruefen.php`, plan in `neuaufbau/transformation/PLAN.md`) and needs no server.
+
+- **Pairing by lemma**, not by position. Missing and surplus entries are reported, and swapped upper/lower case pairs (Ähren/ähren) are recognised.
+- **Text, character by character** (Unicode-normalised). Each difference is classified:
+  - sense number only in `n`; dash, punctuation, quotation or elision mark changed; superscript written as a special character – **can be repaired automatically**;
+  - text moved (allowed by the schema, no word lost) – **allowed**;
+  - text missing or added – **to check**.
+- **Places:**
+  - variant numbers, i.e. a second number for a known place (e.g. `lfd_1777` → `lfd_1113`);
+  - text that is the short form of another place (e.g. *Hettgn* tagged as Häusern);
+  - regions tagged as places (should be `type="region"`);
+  - unknown numbers.
+- **Sources:** the title must be exactly the one in the source list; otherwise the short title is looked up.
+- **Cross-references and IDs:** checked against the ID register, which assigns each ID once and never changes it; duplicates are reported.
+- **Source:** the plain delivery XML, or the enriched XML of the editorial system (`Lfg_<n>_transformation.xml`). With the enriched XML, places, sources and references are also compared position by position with what the editorial system knows.
+
+Every entry gets a verdict: *in order*, *can be repaired automatically*, *check places, sources, references*, *check text or lemma*. The summary filters by verdict or finding; all findings can be saved as CSV. The schema check runs after the results are shown, because it takes minutes for a whole delivery.
+
+`js/entry-view.js` renders the entry in document order, including nested senses (`subsenses/sense`), terminators and the markup in grammar. Places, sources and references with a finding are marked in the text.
+
+### Data files (`data/`)
+
+Snapshots with a date in `data/stand.json`. Do not edit them by hand.
+
+| File | Content | Maintained in |
+|---|---|---|
+| `places.csv` | lfd;Kurzform;Ortsname_BadWB;Lat;Lon | `ABBR_places.md` (copy) |
+| `sources.csv` | Kurztitel;Titel | source list of the editorial system (`neuaufbau/anwendung/bin/app_daten.php`) |
+| `regions.csv` | Abkürzung;Langform | `ABBR_geo_regions.md` (`app_daten.php`) |
+| `ids.csv` | ID;Stichwort;Homonym;Lieferung | ID register (`neuaufbau/anwendung/bin/id_register.php`, then `app_daten.php`) |
+
+`tests/pruefung.html?source=…&result=…` runs the checks without the user interface and prints the summary as JSON.
+
 ## How to Use
 
-1. Enter the source XML in the left textarea
-2. Enter the generated XML in the right textarea
+1. Open or paste the source XML (left) – the delivery XML or the enriched XML
+2. Open or paste the generated XML (right)
 3. Click "Validate Transformation"
 4. Review the results:
    - The sidebar shows all entries with their preservation percentages

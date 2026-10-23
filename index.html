@@ -23,7 +23,8 @@
   <section class="inputs">
     <div class="input-block">
       <div class="textarea-header">
-        <label>Source &lt;artikel&gt; XML</label>
+        <label>Source XML (delivery XML or enriched XML of the editorial system)</label>
+        <label class="file-btn">Open file… <input type="file" accept=".xml" data-target="source-xml" hidden></label>
         <button class="copy-btn" data-target="source-xml">
           <span class="copy-icon">📋</span> Copy
         </button>
@@ -36,6 +37,7 @@
     <div class="input-block">
       <div class="textarea-header">
         <label>Generated XML</label>
+        <label class="file-btn">Open file… <input type="file" accept=".xml" data-target="generated-xml" hidden></label>
         <button class="copy-btn" data-target="generated-xml">
           <span class="copy-icon">📋</span> Copy
         </button>
@@ -56,6 +58,9 @@
   <section id="schema-validation" class="schema-validation-section">
     <!-- Schema validation status will be rendered here -->
   </section>
+
+  <!-- SUMMARY OF THE CHECK -->
+  <section id="report-summary" class="report-summary"></section>
 
   <!-- RESULTS -->
   <section id="validation-section" class="results hidden">
