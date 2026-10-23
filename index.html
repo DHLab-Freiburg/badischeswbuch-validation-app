@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Badisches Wörterbuch – XML Validator</title>
+  <title>Badisches Wörterbuch – XML-Prüfung</title>
   <!-- CodeMirror CSS and JS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
@@ -16,17 +16,17 @@
 
 <body>
   <header class="header">
-    <h1>Badisches Wörterbuch – XML Validator</h1>
+    <h1>Badisches Wörterbuch – XML-Prüfung</h1>
   </header>
 
   <!-- INPUTS -->
   <section class="inputs">
     <div class="input-block">
       <div class="textarea-header">
-        <label>Source XML (delivery XML or enriched XML of the editorial system)</label>
-        <label class="file-btn">Open file… <input type="file" accept=".xml" data-target="source-xml" hidden></label>
+        <label>Quell-XML (Lieferungs-XML oder angereichertes XML des Redaktionssystems)</label>
+        <label class="file-btn">Datei öffnen … <input type="file" accept=".xml" data-target="source-xml" hidden></label>
         <button class="copy-btn" data-target="source-xml">
-          <span class="copy-icon">📋</span> Copy
+          <span class="copy-icon">📋</span> Kopieren
         </button>
       </div>
       <div class="code-container">
@@ -36,10 +36,10 @@
 
     <div class="input-block">
       <div class="textarea-header">
-        <label>Generated XML</label>
-        <label class="file-btn">Open file… <input type="file" accept=".xml" data-target="generated-xml" hidden></label>
+        <label>Ergebnis-XML</label>
+        <label class="file-btn">Datei öffnen … <input type="file" accept=".xml" data-target="generated-xml" hidden></label>
         <button class="copy-btn" data-target="generated-xml">
-          <span class="copy-icon">📋</span> Copy
+          <span class="copy-icon">📋</span> Kopieren
         </button>
       </div>
       <div class="code-container">
@@ -50,8 +50,8 @@
 
   <!-- BUTTONS -->
   <div class="btn-group">
-    <button id="validate-btn">Validate Transformation</button>
-    <button id="clear-btn">Clear All</button>
+    <button id="validate-btn">Transformation prüfen</button>
+    <button id="clear-btn">Alles leeren</button>
   </div>
 
   <!-- SCHEMA VALIDATION STATUS -->

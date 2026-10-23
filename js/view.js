@@ -94,7 +94,7 @@ function initCopyButtons() {
           // Visual feedback
           btn.classList.add("copied");
           const originalText = btn.innerHTML;
-          btn.innerHTML = '<span class="copy-icon">✓</span> Copied!';
+          btn.innerHTML = '<span class="copy-icon">✓</span> Kopiert';
 
           // Reset after 2 seconds
           setTimeout(() => {
@@ -189,10 +189,10 @@ function renderSchemaValidation(schemaValidation) {
       <div class="schema-status">
         <div class="schema-header">
           <span class="schema-icon">⏳</span>
-          <h3>Schema Validation</h3>
-          <span class="status-badge loading">Loading...</span>
+          <h3>Schemaprüfung</h3>
+          <span class="status-badge loading">lädt …</span>
         </div>
-        <p>Schema validation is initializing...</p>
+        <p>Die Schemaprüfung wird geladen …</p>
       </div>
     `;
     return;
@@ -202,22 +202,20 @@ function renderSchemaValidation(schemaValidation) {
     <div class="schema-status">
       <div class="schema-header">
         <span class="schema-icon">${isValid ? "✅" : "❌"}</span>
-        <h3>Schema Validation</h3>
+        <h3>Schemaprüfung</h3>
         <span class="status-badge ${isValid ? "valid" : "invalid"}">${
-    isValid ? "Valid" : "Invalid"
+    isValid ? "gültig" : "ungültig"
   }</span>
       </div>
   `;
 
   if (isValid) {
     html +=
-      '<p class="success-message">XML is valid according to the RelaxNG schema.</p>';
+      '<p class="success-message">Das XML ist nach dem RelaxNG-Schema gültig.</p>';
   } else {
     html += `
       <div class="error-summary">
-        <p><strong>${errors.length} validation error${
-      errors.length === 1 ? "" : "s"
-    } found:</strong></p>
+        <p><strong>${errors.length} Fehler im Schema gefunden:</strong></p>
         <div class="validation-errors">
     `;
 
@@ -232,8 +230,8 @@ function renderSchemaValidation(schemaValidation) {
             }</span>
             ${
               error.line
-                ? `<span class="error-location">Line ${error.line}${
-                    error.column ? `, Column ${error.column}` : ""
+                ? `<span class="error-location">Zeile ${error.line}${
+                    error.column ? `, Spalte ${error.column}` : ""
                   }</span>`
                 : ""
             }
@@ -312,19 +310,19 @@ function renderSummary(report, listsInfo) {
   for (const e of report.entries) for (const f of e.findings) kind[f.code] = f.kind;
   if (s.missing.length) kind["entry.missing"] = "review";
   const codes = Object.entries(s.codes).sort((a, b) => b[1] - a[1]);
-  const stand = listsInfo && listsInfo.stand ? `Lists: ${escapeHtml(listsInfo.stand.datenstand || "")}, created ${escapeHtml(listsInfo.stand.erzeugt || "")}` : "Lists: no data/stand.json";
+  const stand = listsInfo && listsInfo.stand ? `Prüflisten: Datenstand ${escapeHtml(listsInfo.stand.datenstand || "")}, erzeugt ${escapeHtml(listsInfo.stand.erzeugt || "")}` : "Prüflisten: data/stand.json fehlt";
   box.innerHTML = `
     <div class="summary-head">
-      <h3>Check of the whole file</h3>
-      <span>${s.articles} articles in the source, ${s.entries} entries in the result${s.enriched ? " · source: enriched XML of the editorial system (position by position)" : " · source: delivery XML"}</span>
-      <button id="csv-btn" type="button">Findings as CSV</button>
-      <button id="filter-reset" type="button">Show all</button>
+      <h3>Prüfung der ganzen Datei</h3>
+      <span>${s.articles} Artikel in der Quelle, ${s.entries} Einträge im Ergebnis${s.enriched ? " · Quelle: angereichertes XML des Redaktionssystems (Stelle für Stelle)" : " · Quelle: Lieferungs-XML"}</span>
+      <button id="csv-btn" type="button">Befunde als CSV</button>
+      <button id="filter-reset" type="button">Alle zeigen</button>
     </div>
     <div class="summary-verdicts">${Object.entries(pruefung.VERDICTS).map(([v, label]) =>
       `<button type="button" class="verdict-chip verdict-${v}" data-verdict="${v}">${escapeHtml(label)}: <b>${s.verdicts[v] || 0}</b></button>`).join("")}</div>
     <table class="summary-codes"><tbody>${codes.map(([c, n]) =>
-      `<tr data-code="${c}"><td><span class="kind kind-${kind[c] || "review"}">${kind[c] === "fix" ? "automatic" : kind[c] === "info" ? "allowed" : "check"}</span></td><td>${escapeHtml(pruefung.LABELS[c] || c)}</td><td class="num">${n}</td></tr>`).join("")}</tbody></table>
-    ${s.missing.length ? `<p class="summary-missing">Missing in the result: ${s.missing.map(escapeHtml).join(", ")}</p>` : ""}
+      `<tr data-code="${c}"><td><span class="kind kind-${kind[c] || "review"}">${kind[c] === "fix" ? "automatisch" : kind[c] === "info" ? "zulässig" : "nachsehen"}</span></td><td>${escapeHtml(pruefung.LABELS[c] || c)}</td><td class="num">${n}</td></tr>`).join("")}</tbody></table>
+    ${s.missing.length ? `<p class="summary-missing">Fehlen im Ergebnis: ${s.missing.map(escapeHtml).join(", ")}</p>` : ""}
     <p class="summary-stand">${stand}</p>`;
   box.querySelectorAll("[data-verdict]").forEach((b) => b.addEventListener("click", () => setFilter({ verdict: b.dataset.verdict })));
   box.querySelectorAll("tr[data-code]").forEach((t) => t.addEventListener("click", () => setFilter({ code: t.dataset.code })));
@@ -333,7 +331,7 @@ function renderSummary(report, listsInfo) {
     const blob = new Blob([pruefung.findingsCsv(report)], { type: "text/csv;charset=utf-8" });
     const a = document.createElement("a");
     a.href = URL.createObjectURL(blob);
-    a.download = "findings.csv";
+    a.download = "befunde.csv";
     a.click();
     URL.revokeObjectURL(a.href);
   });
@@ -356,7 +354,7 @@ function renderPreview(r, index) {
   document.querySelectorAll(".sidebar-row.selected").forEach((x) => x.classList.remove("selected"));
   document.querySelector(`.sidebar-row[data-idx="${index}"]`)?.classList.add("selected");
   dom.previewPanel.innerHTML = renderEntry(r.entryNode, r.findings) +
-    (r.source ? `<details class="source-text"><summary>Source text</summary><div>${escapeHtml(r.source.text)}</div></details>` : "");
+    (r.source ? `<details class="source-text"><summary>Text der Quelle</summary><div>${escapeHtml(r.source.text)}</div></details>` : "");
   attachPlaceClickHandlers();
   showValidationSection();
   renderFindings(r);
@@ -372,8 +370,8 @@ function renderFindings(r) {
     </tbody></table>` : "";
   dom.statsPanel.innerHTML = `
     <div class="card verdict-${r.verdict}"><span class="val">${escapeHtml(pruefung.VERDICTS[r.verdict] || r.verdict)}</span><span class="lbl">${escapeHtml(r.id)}</span></div>
-    ${block("review", "To check")}${block("fix", "Can be repaired automatically")}${block("info", "Allowed")}
-    ${r.findings.length ? "" : '<p class="success-message">No findings.</p>'}`;
+    ${block("review", "Nachsehen")}${block("fix", "Automatisch reparierbar")}${block("info", "Zulässig")}
+    ${r.findings.length ? "" : '<p class="success-message">Keine Befunde.</p>'}`;
 }
 
 /**

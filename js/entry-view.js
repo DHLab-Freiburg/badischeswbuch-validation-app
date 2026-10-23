@@ -44,14 +44,14 @@ function inline(node, ctx) {
       case "place": {
         const key = attr(n, "key").trim(), guess = attr(n, "guess"), type = attr(n, "type");
         const info = key.startsWith("lfd_") ? placeInfo(key) : null;
-        const tip = type === "region" ? `region: ${key}` : info ? `${key}: ${info.name}` : key ? key : guess ? `guess ${guess} (${attr(n, "confidence")})` : "no key";
+        const tip = type === "region" ? `Landschaft: ${key}` : info ? `${key}: ${info.name}` : key ? key : guess ? `vermutet ${guess} (${attr(n, "confidence")})` : "ohne Schlüssel";
         const list = ctx.flags.place.get(k);
         h += `<span class="place-reference${type === "region" ? " region" : ""}${guess ? " guess" : ""}${key || guess ? "" : " nokey"}" data-lfd-key="${esc(key || guess)}" data-place-name="${esc(n.textContent)}" title="${esc(tip)}"${flagAttrs(list)}>${inner()}</span>`;
         break;
       }
       case "bibl": {
         const key = attr(n, "key"), list = ctx.flags.bibl.get(k);
-        h += `<span class="bibl${key ? "" : " nokey"}" title="${esc(key || "no key")}"${flagAttrs(list)}>${inner()}</span>`;
+        h += `<span class="bibl${key ? "" : " nokey"}" title="${esc(key || "ohne Schlüssel")}"${flagAttrs(list)}>${inner()}</span>`;
         break;
       }
       case "crossRef": {
@@ -70,7 +70,7 @@ function inline(node, ctx) {
       case "subscript": h += `<sub>${inner()}</sub>`; break;
       case "hi": h += `<span class="hi hi-${esc(attr(n, "rend"))}">${inner()}</span>`; break;
       case "terminator": h += `<span class="terminator">${inner()}</span>`; break;
-      case "geo": h += `<span class="geo"${attr(n, "key") ? ` title="region: ${esc(attr(n, "key"))}"` : ""}>${inner()}</span>`; break;
+      case "geo": h += `<span class="geo"${attr(n, "key") ? ` title="Landschaft: ${esc(attr(n, "key"))}"` : ""}>${inner()}</span>`; break;
       case "marker": h += `<span class="marker ${esc(attr(n, "type"))}" title="${esc([attr(n, "type"), attr(n, "subtype")].filter(Boolean).join(" "))}">${inner()}</span>`; break;
       default: h += `<span class="xml-other" title="&lt;${esc(n.nodeName)}&gt;">${inner()}</span>`;
     }
@@ -96,7 +96,7 @@ function blocks(el, ctx, depth) {
         h += `<div class="pronunciations">${[...c.children].map((v) => `<div class="variant">${inline(v, ctx)}</div>`).join("")}</div>`;
         break;
       case "morphology":
-        h += `<div class="morphology"><span class="morphology-label">Forms:</span> ${[...c.children].map((f) =>
+        h += `<div class="morphology"><span class="morphology-label">Formen:</span> ${[...c.children].map((f) =>
           `<span class="morph-form" title="${esc(["n", "person", "number", "tense", "mood"].filter((a) => attr(f, a)).map((a) => `${a}=${attr(f, a)}`).join(", "))}">${inline(f, ctx)}</span>`).join(" ")}</div>`;
         break;
       case "grammar": h += `<div class="grammar">${inline(c, ctx)}</div>`; break;
@@ -106,11 +106,11 @@ function blocks(el, ctx, depth) {
       case "def": h += `<div class="definition">${inline(c, ctx)}</div>`; break;
       case "examples": h += list(c, ctx, "example", "example"); break;
       case "attestations": h += list(c, ctx, "attestation", "attestation"); break;
-      case "etymology": h += `<div class="etymology"><span class="etymology-label">Etymology:</span> ${inline(c, ctx)}</div>`; break;
-      case "references": h += `<div class="references"><span class="references-label">References:</span> ${inline(c, ctx)}</div>`; break;
-      case "bibliography": h += `<div class="bibliography"><span class="bibliography-label">Literature:</span> ${inline(c, ctx)}</div>`; break;
+      case "etymology": h += `<div class="etymology"><span class="etymology-label">Herkunft:</span> ${inline(c, ctx)}</div>`; break;
+      case "references": h += `<div class="references"><span class="references-label">Verweise:</span> ${inline(c, ctx)}</div>`; break;
+      case "bibliography": h += `<div class="bibliography"><span class="bibliography-label">Literatur:</span> ${inline(c, ctx)}</div>`; break;
       case "problems":
-        h += `<div class="problems-section"><span class="problems-label">Notes of the transformation:</span>${[...c.children].map((p) =>
+        h += `<div class="problems-section"><span class="problems-label">Hinweise der Transformation:</span>${[...c.children].map((p) =>
           `<div class="problem ${esc(attr(p, "severity") || "info")}">${attr(p, "location") ? `<span class="problem-location">[${esc(attr(p, "location"))}]</span> ` : ""}${inline(p, ctx)}</div>`).join("")}</div>`;
         break;
       case "subentries":

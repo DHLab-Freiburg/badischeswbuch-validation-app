@@ -446,7 +446,7 @@ sup.superscript {
 
 /* Optional tooltip styling */
 .place-reference::before {
-  content: "Click to find in XML";
+  content: "Klicken: im XML suchen";
   position: absolute;
   bottom: 100%;
   left: 50%;

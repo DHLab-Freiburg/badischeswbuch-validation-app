@@ -238,7 +238,7 @@ export const validateAgainstSchema = async (xmlContent) => {
     return {
       isValid: false,
       errors: [
-        "Schema validation not initialized. Please wait for initialization to complete.",
+        "Die Schemaprüfung ist noch nicht geladen. Bitte warten, bis sie bereit ist.",
       ],
       initialized: false,
     };
@@ -251,7 +251,7 @@ export const validateAgainstSchema = async (xmlContent) => {
     if (!cleanXML) {
       return {
         isValid: false,
-        errors: ["Empty XML content provided"],
+        errors: ["Das XML ist leer."],
         initialized: true,
       };
     }
@@ -302,7 +302,7 @@ export const validateAgainstSchema = async (xmlContent) => {
     console.error("Schema validation error:", error);
     return {
       isValid: false,
-      errors: [`Validation error: ${error.message}`],
+      errors: [`Fehler der Schemaprüfung: ${error.message}`],
       initialized: true,
     };
   }
@@ -327,7 +327,7 @@ export const parseValidationErrors = (errors) => {
     const column = null;
 
     // The rawMessage is the most informative, as it includes the context.
-    const message = errorObj.rawMessage || "An unknown error occurred.";
+    const message = errorObj.rawMessage || (typeof errorObj === "string" ? errorObj : "Unbekannter Fehler.");
 
     return {
       line: line,

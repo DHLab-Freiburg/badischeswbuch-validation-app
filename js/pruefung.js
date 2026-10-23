@@ -103,45 +103,45 @@ export const sourceTitle = (kurz) => lists.sources.get(nfc(kurz)) || null;
 /* ---------------------------------------------------------------- labels */
 
 export const LABELS = {
-  "entry.missing": "Article missing in the result",
-  "entry.unmatched": "Entry not matched to any article",
-  "lemma.changed": "Lemma changed",
-  "lemma.other": "Different lemma",
-  "id.not-in-register": "ID neither by the ID register nor by rule 1",
-  "id.rule1": "ID by rule 1; the ID register assigns another (for later)",
-  "id.duplicate": "ID used more than once in this file",
-  "text.lost": "Text missing",
-  "text.added": "Text added",
-  "text.moved": "Text moved (order changed, nothing lost)",
-  "text.to-attribute": "Text moved into an attribute",
-  "text.sense-number": "Sense number only in attribute n",
-  "text.dash": "Dash ‒ missing",
-  "text.punct": "Punctuation or digit missing",
-  "text.char-added": "Character added",
-  "text.quote": "Quotation or elision mark replaced",
-  "text.superscript": "Superscript written as special character",
-  "text.too-different": "Text differs too much to compare",
-  "place.key-space": "Space in the key",
-  "place.variant-number": "Variant number; the place has another number",
-  "place.unknown-number": "Number not in the place list",
-  "place.other-place": "Text is the short form of another place",
-  "place.region": "Region tagged as place (use type=\"region\")",
-  "place.region-unknown": "Region not in the region list",
-  "place.name-key": "Name instead of lfd number as key",
-  "place.differs": "Different place than the editorial system",
-  "place.sure-but-guess": "Marked as certain, editorial system only guesses",
-  "place.sure-but-unknown": "Marked as certain, unknown to the editorial system",
-  "place.no-key-known": "No key, but the editorial system knows the place",
-  "bibl.title-differs": "Title differs from the source list",
-  "bibl.title-unknown": "Title not in the source list",
-  "bibl.no-key-known": "No key, but the source is known",
-  "xref.no-hyphens": "Target written without hyphens",
-  "xref.missing": "Target is not a lemma",
-  "xref.differs": "Different target than the editorial system",
+  "entry.missing": "Artikel fehlt im Ergebnis",
+  "entry.unmatched": "Eintrag keinem Artikel zugeordnet",
+  "lemma.changed": "Lemma verändert",
+  "lemma.other": "Anderes Lemma",
+  "id.not-in-register": "ID weder nach dem ID-Register noch nach Regel 1",
+  "id.rule1": "ID nach Regel 1; das ID-Register sieht eine andere vor (für später)",
+  "id.duplicate": "ID in dieser Datei mehrfach vergeben",
+  "text.lost": "Text fehlt",
+  "text.added": "Text hinzugefügt",
+  "text.moved": "Text umgestellt (Reihenfolge geändert, nichts verloren)",
+  "text.to-attribute": "Text in ein Attribut verschoben",
+  "text.sense-number": "Gliederungszeichen nur im Attribut n",
+  "text.dash": "Gedankenstrich ‒ fehlt",
+  "text.punct": "Satzzeichen oder Ziffer fehlt",
+  "text.char-added": "Zeichen hinzugefügt",
+  "text.quote": "Anführungs- oder Auslassungszeichen ersetzt",
+  "text.superscript": "Hochstellung als Sonderzeichen geschrieben",
+  "text.too-different": "Text weicht zu stark ab für einen Vergleich",
+  "place.key-space": "Leerzeichen im Schlüssel",
+  "place.variant-number": "Nummer einer Nebenform; der Ort hat eine andere Nummer",
+  "place.unknown-number": "Nummer nicht in der Ortsliste",
+  "place.other-place": "Text ist Kurzform eines anderen Orts",
+  "place.region": "Landschaft als Ort ausgezeichnet (type=\"region\" verwenden)",
+  "place.region-unknown": "Landschaft nicht in der Landschaftsliste",
+  "place.name-key": "Name statt lfd-Nummer als Schlüssel",
+  "place.differs": "Anderer Ort als im Redaktionssystem",
+  "place.sure-but-guess": "Als sicher ausgezeichnet, das Redaktionssystem vermutet nur",
+  "place.sure-but-unknown": "Als sicher ausgezeichnet, dem Redaktionssystem unbekannt",
+  "place.no-key-known": "Ohne Schlüssel, das Redaktionssystem kennt den Ort",
+  "bibl.title-differs": "Titel weicht von der Quellenliste ab",
+  "bibl.title-unknown": "Titel nicht in der Quellenliste",
+  "bibl.no-key-known": "Ohne Schlüssel, die Quelle ist bekannt",
+  "xref.no-hyphens": "Ziel ohne Bindestriche geschrieben",
+  "xref.missing": "Ziel ist kein Lemma",
+  "xref.differs": "Anderes Ziel als im Redaktionssystem",
 };
 
-export const VERDICTS = { ok: "in order", fix: "can be repaired automatically", "review-data": "check places, sources, references",
-  "review-text": "check text or lemma" };
+export const VERDICTS = { ok: "in Ordnung", fix: "automatisch reparierbar", "review-data": "nachsehen (Orte, Quellen, Verweise)",
+  "review-text": "nachsehen (Text oder Lemma)" };
 
 /* ---------------------------------------------------------------- text comparison */
 
@@ -258,7 +258,7 @@ function levenshtein(a, b) {
 /** source articles: plain (<artikel>) or enriched (<eintrag><artikel>) */
 export function readSource(xml) {
   const doc = new DOMParser().parseFromString(xml.includes("<document") || xml.includes("<badisches") ? xml : `<root>${xml}</root>`, "text/xml");
-  if (doc.querySelector("parsererror")) throw new Error("Source XML is not well-formed.");
+  if (doc.querySelector("parsererror")) throw new Error("Das Quell-XML ist nicht wohlgeformt.");
   const eintraege = [...doc.getElementsByTagName("eintrag")];
   if (eintraege.length) {
     return { enriched: true, articles: eintraege.map((e) => {
@@ -275,7 +275,7 @@ export function readSource(xml) {
 export function readResult(xml) {
   let doc = new DOMParser().parseFromString(xml, "text/xml");
   if (doc.querySelector("parsererror")) doc = new DOMParser().parseFromString(`<root>${xml}</root>`, "text/xml");
-  if (doc.querySelector("parsererror")) throw new Error("Generated XML is not well-formed.");
+  if (doc.querySelector("parsererror")) throw new Error("Das Ergebnis-XML ist nicht wohlgeformt.");
   return [...doc.getElementsByTagName("entry")].filter((e) => e.parentNode.nodeName !== "subentries" || true).map((e) => {
     const lemma = [...e.children].find((k) => k.nodeName === "lemma");
     return { id: e.getAttribute("id") || "", lemma: lemma ? lemma.textContent : "", node: e };
@@ -453,10 +453,13 @@ export function check(srcXML, genXML) {
 /** all findings as CSV (UTF-8 with BOM, ";") */
 export function findingsCsv(report) {
   const q = (s) => `"${String(s ?? "").replace(/"/g, '""')}"`;
-  const lines = [["Lemma", "ID", "Area", "Code", "Finding", "In result", "Expected", "Kind"].map(q).join(";")];
+  const area = { entry: "Eintrag", lemma: "Lemma", id: "ID", text: "Text", place: "Ort", bibl: "Quelle", xref: "Verweis" };
+  const kind = { fix: "automatisch", review: "nachsehen", info: "zulässig" };
+  const lines = [["Lemma", "ID", "Bereich", "Code", "Befund", "im Ergebnis", "erwartet", "Art"].map(q).join(";")];
   for (const e of report.entries) for (const f of e.findings) {
-    lines.push([e.lemma, e.id, f.code.split(".")[0], f.code, LABELS[f.code] || f.code, f.text, f.expected, f.kind].map(q).join(";"));
+    const a = f.code.split(".")[0];
+    lines.push([e.lemma, e.id, area[a] || a, f.code, LABELS[f.code] || f.code, f.text, f.expected, kind[f.kind] || f.kind].map(q).join(";"));
   }
-  for (const l of report.summary.missing) lines.push([l, "", "entry", "entry.missing", LABELS["entry.missing"], "", "", "review"].map(q).join(";"));
+  for (const l of report.summary.missing) lines.push([l, "", area.entry, "entry.missing", LABELS["entry.missing"], "", "", kind.review].map(q).join(";"));
   return "﻿" + lines.join("\r\n") + "\r\n";
 }
