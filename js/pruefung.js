@@ -107,7 +107,8 @@ export const LABELS = {
   "entry.unmatched": "Entry not matched to any article",
   "lemma.changed": "Lemma changed",
   "lemma.other": "Different lemma",
-  "id.not-in-register": "ID not in the ID register",
+  "id.not-in-register": "ID neither by the ID register nor by rule 1",
+  "id.rule1": "ID by rule 1; the ID register assigns another (for later)",
   "id.duplicate": "ID used more than once in this file",
   "text.lost": "Text missing",
   "text.added": "Text added",
@@ -308,6 +309,14 @@ export function align(src, res) {
 /* ---------------------------------------------------------------- checks per entry */
 
 const ROMAN = { I: 1, II: 2, III: 3, IV: 4, V: 5, VI: 6, VII: 7, VIII: 8, IX: 9, X: 10 };
+const ROMAN_LOWER = ["", "i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x"];
+
+/** entry ID by rule 1 of TRANSFORMATION-RULES (as Transformationsxml::eintragsId in the editorial system) */
+export function ruleOneId(stichwort, homonym = 0) {
+  let s = nfc(stichwort).toLowerCase().replace(/ä/g, "ae").replace(/ö/g, "oe").replace(/ü/g, "ue").replace(/ß/g, "ss");
+  s = s.normalize("NFD").replace(/\p{Mn}+/gu, "").replace(/[^a-z0-9-]+/g, "");
+  return s + (homonym > 0 ? "." + (ROMAN_LOWER[homonym] || String(homonym)) : "");
+}
 
 function knowledge(artNode) {
   const k = { place: new Map(), bibl: new Map(), crossRef: new Map(), unbekannt: new Set(), landschaft: new Map() };
@@ -390,14 +399,18 @@ function checkPair(src, entry, enriched, duplicateId) {
   // lemma
   const want = stripPrefix(src.lemma), got = nfc(entry.lemma);
   if (lemmaKey(want) !== lemmaKey(got)) add(similar(lemmaKey(want), lemmaKey(got)) ? "lemma.changed" : "lemma.other", "review", got, want);
-  // ID (register)
-  if (lists.ids.size && !lists.ids.has(entry.id)) {
-    const hom = [...e.getElementsByTagName("marker")].find((m) => m.getAttribute("type") === "hom");
-    const h = hom ? String(ROMAN[(hom.getAttribute("value") || hom.textContent).trim()] || "") : "";
-    const cand = lists.idsByLemma.get(`${want}\u001f${h}`) || lists.idsByLemma.get(`${got}\u001f${h}`) || [];
-    add("id.not-in-register", cand.length === 1 ? "fix" : "review", entry.id, cand.join(" | "));
+  // ID: the register is the target; until the transformation project uses it, an ID built by rule 1 is allowed
+  // (it differs from the register only for the lemmas that rule 1 makes equal, e.g. "Alt"/"alt")
+  const hom = [...e.getElementsByTagName("marker")].find((m) => m.getAttribute("type") === "hom");
+  const h = hom ? String(ROMAN[(hom.getAttribute("value") || hom.textContent).trim()] || "") : "";
+  const expected = lists.idsByLemma.get(`${want}\u001f${h}`) || lists.idsByLemma.get(`${got}\u001f${h}`) || [];
+  const rule1 = ruleOneId(want || got, h ? +h : 0);
+  if (lists.ids.size && !expected.includes(entry.id)) {
+    if (entry.id === rule1 && expected.length === 1) add("id.rule1", "info", entry.id, expected[0]);
+    else if (entry.id === rule1 && !expected.length) { /* lemma not in the register snapshot: nothing to say */ }
+    else add("id.not-in-register", expected.length === 1 || rule1 ? "fix" : "review", entry.id, expected.join(" | ") || rule1);
   }
-  if (duplicateId) add("id.duplicate", "review", entry.id, "");
+  if (duplicateId) add("id.duplicate", expected.length === 1 && expected[0] !== entry.id ? "info" : "review", entry.id, expected.join(" | "));
   // text
   let attrs = "";
   for (const el of e.getElementsByTagName("*")) {

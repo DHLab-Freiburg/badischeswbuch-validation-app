@@ -1,5 +1,5 @@
 ID;Stichwort;Homonym;Lieferung
-a;a!;;1
+a_2;a!;;1
 a-;a-;;1
 ae;ä!;;1
 aa;Aa;;1
@@ -653,8 +653,8 @@ adeline;Adeline;;1
 adels-heim;Adels-heim;;1
 adels-person;Adels-person;;1
 adel-zug;Adel-zug;;1
-ader;ader;;1
-ader_2;Ader;;1
+ader_2;ader;;1
+ader;Ader;;1
 aderig;aderig;;1
 ader-laesse;Ader-lässe;;1
 ader-lassen;ader-lassen;;1
@@ -742,7 +742,7 @@ ahoi;ahoi;;1
 ahorn;Ahorn;;1
 ahornen-huerste;Ahornen-hürste;;1
 aehre;Ähre;;1
-aehren;ähren;;1
+aehren_2;ähren;;1
 aehren-bund;Ähren-bund;;1
 aehren-bueschele;Ähren-büschele;;1
 aehr-sieb;Ähr-sieb;;1
@@ -1299,8 +1299,8 @@ an-lehen;An-lehen;;1
 an-lehren;an-lehren;;1
 an-leinen;an-leinen;;1
 an-leite;An-leite;;1
-an-liegen;an-liegen;;1
-an-liegen_2;An-liegen;;1
+an-liegen_2;an-liegen;;1
+an-liegen;An-liegen;;1
 an-loeten;an-löten;;1
 an-lugen;an-lugen;;1
 an-luegen;an-lügen;;1
@@ -1833,8 +1833,8 @@ auf-habe;Auf-habe;;2
 auf-haben;auf-haben;;2
 auf-hacken;auf-hacken;;2
 auf-halsen;auf-halsen;;2
-auf-halten;auf-halten;;2
-auf-halten_2;Auf-halten;;2
+auf-halten_2;auf-halten;;2
+auf-halten;Auf-halten;;2
 aufhalt-kette;Aufhalt-kette;;2
 auf-haltung;Auf-haltung;;2
 auf-hauen;auf-hauen;;2
@@ -2642,7 +2642,7 @@ back-trog;Back-trog;;2
 bad;Bad;;2
 bad-anstalt;Bad-anstalt;;2
 badascher;Badascher;;2
-baden;baden;;2
+baden_2;baden;;2
 badener;Badener;;2
 bader;Bader;;2
 baeder-bruennele;Bäder-brünnele;;2
@@ -2902,7 +2902,7 @@ papst;Papst;;2
 papst-geld;Papst-geld;;2
 papst-muenzen;Papst-münze(n);;2
 baptist;Baptist;;2
-bar;bar;;2
+bar_2;bar;;2
 -bar;-bar;;2
 baer;Bär;;2
 baracke;Baracke;;2
@@ -2989,7 +2989,7 @@ barren;Barren;;2
 barri;Barri;;2
 barriere;Barriere;;2
 barrikade;Barrikad(e);;2
-barsch;barsch;;2
+barsch_2;barsch;;2
 barse;Barse;;2
 bart;Bart;;2
 partei;Partei;;2
@@ -3028,7 +3028,7 @@ basilikum;Basilikum;;2
 baskul;Baskul;;2
 bason;Bason;;2
 pasquill;Pasquill;;2
-bass;Baß;;2
+bass_2;Baß;;2
 pass;Paß;;2
 passabel;passabel;;2
 passah;Passah;;2
@@ -3114,8 +3114,8 @@ bauch;Bauch;;2
 bauch-aufzug;Bauch-aufzug;;2
 bauch-blaser;Bauch-blaser;;2
 bauche;Bauche;;2
-bauchen;bauchen;;2
-bauchen_2;Bauchen;;2
+bauchen_2;bauchen;;2
+bauchen;Bauchen;;2
 bauchet;Bauchet;;2
 bauch-geschwulst;Bauch-geschwulst;;2
 bauch-grimmen;Bauch-grimmen;;2
@@ -4743,7 +4743,7 @@ pfurrig;pfurrig;;3
 pfuschen;pfuschen;;3
 pfuscher;Pfuscher;;3
 pfusen;pfusen;;3
-pfut;pfut;;3
+pfut_2;pfut;;3
 pfu-teufele;Pfu-teufele;;3
 pfuetter;Pfütter;;3
 pfuetterlen;pfütterlen;;3
@@ -5232,7 +5232,7 @@ blarr;Blarr;;4
 plaerr;Plärr;;4
 blaerre;Blärre;;4
 plaerre;Plärre;;4
-plarren;plarren;;4
+plarren_2;plarren;;4
 plaerren;plärren;;4
 plaerrer;Plärrer;;4
 plaerrerei;Plärrerei;;4
@@ -5260,8 +5260,8 @@ plaesier-reise;Pläsier-reise;;4
 blasig;blasig;;4
 blasius;Blasius;;4
 blas-rohr;Blas-rohr;;4
-blass;blaß;;4
-blass_2;Blaß;;4
+blass_2;blaß;;4
+blass;Blaß;;4
 blass-berg;Blaß-berg;;4
 blasse;Blasse;;4
 blaesse;Blässe;;4
@@ -5572,8 +5572,8 @@ blocker;Blocker;;4
 block-haus;Block-haus;;4
 blockieren;blockieren;;4
 blod-aess;blod-äß;;4
-bloede;blöd(e);;4
-bloede_2;Blöde;;4
+bloede_2;blöd(e);;4
+bloede;Blöde;;4
 bloder;Bloder;;4
 bloder-hosen;Bloder-hosen;;4
 blodern;blodern;;4
@@ -5761,7 +5761,7 @@ bockelen;bockelen;;4
 boeckelen;böckelen;;4
 bockel-hart;bockel-hart;;4
 bockeln;bockeln;;4
-bocken;bocken;;4
+bocken_2;bocken;;4
 boecken;böcken;;4
 bocker;Bocker;;4
 bock-fleisch;Bock-fleisch;;4
@@ -6097,7 +6097,7 @@ pompje-hauptmann;Pompje-hauptmann;;4
 pompje-maettle;Pompje-mättle;;4
 pompje-musik;Pompje-musik;;4
 pompjers-fest;Pompje(r)s-fest;;4
-bon;bon;;4
+bon_2;bon;;4
 bon-ami;Bon-ami;;4
 bonascheffla;bonascheffla;;4
 bonaventura;Bonaventura;;4
@@ -6236,7 +6236,7 @@ boes-artig;bös-artig;;4
 posaune;Posaune;;4
 posaunen-engel;Posaunen-engel;;4
 bosch;Bosch;;4
-boschen;boschen;;4
+boschen_2;boschen;;4
 boscher;Boscher;;4
 boschern;boschern;;4
 boschert;Boschert;;4
@@ -7610,7 +7610,7 @@ puken;puken;;5
 pukerei;Pukerei;;5
 bukett;Bukett;;5
 bulach;Bulach;;5
-bule;bule;;5
+bule_2;bule;;5
 buletten;Buletten;;5
 puelfringen;Pülfringen;;5
 bulgaren;Bulgaren;;5
@@ -8276,7 +8276,7 @@ tag-dieb;Tag-dieb;;6
 tage-geld;Tage-geld;;6
 da-gegen;da-gegen;;6
 dagegen-gehen;dagegen-gehen;;6
-tagen;tagen;;6
+tagen_2;tagen;;6
 tages-befehl;Tages-befehl;;6
 tages-licht;Tages-licht;;6
 tages-ordnung;Tages-ordnung;;6
@@ -9742,7 +9742,7 @@ dirigieren;dirigieren;;7
 dirli-;Dirli(-);;7
 dirne;Dirne;;7
 tirol;Tirol;;7
-dis;dis;;7
+dis_2;dis;;7
 disch;Disch;;7
 tisch;Tisch;;7
 tisch-becher;Tisch-becher;;7
@@ -9857,7 +9857,7 @@ toechterle-salat;Töchterle-salat;;7
 tochter-mann;Tochter-mann;;7
 toechter-schule;Töchter-schul(e);;7
 doecht-schwaebin;Döcht-schwäbin;;7
-dock;dock;;7
+dock_2;dock;;7
 docke;Docke;;7
 dockele;Dockele;;7
 dockelen;dockelen;;7
@@ -10043,7 +10043,7 @@ topf;Topf;;7
 topf-eben;topf-ebe(n);;7
 topfeln;topfeln;;7
 toepfel-stein;Töpfel-stei(n);;7
-topfen;topfen;;7
+topfen_2;topfen;;7
 toepfer;Töpfer;;7
 toepfern;töpfern;;7
 topf-gehurgel;Topf-gehurgel;;7
@@ -10258,8 +10258,8 @@ dosis;Dosis;;7
 dossen-bach;Dossen-bach;;7
 dossen-heim;Dossen-heim;;7
 dosten;Dost(en);;7
-tot;tot;;7
-tot_2;Tot;;
+tot_2;tot;;7
+tot;Tot;;
 total;total;;7
 tot-beissen;tot-beiße(n);;7
 tot-beten;tot-beten;;7
@@ -10524,7 +10524,7 @@ traempeln;trämpeln;;7
 traempel-schulden;Trämpel-schulden;;7
 trampel-tier;Trampel-tier;;7
 traempel-wetter;Trämpel-wetter;;7
-trampen;trampe(n);;7
+trampen_2;trampe(n);;7
 tramper;Tramper;;7
 trampes;Trampes;;7
 trampi;Trampi;;7
@@ -10540,7 +10540,7 @@ traene;Träne;;7
 traenen;tränen;;7
 traener;Träner;;7
 tran-funsel;Tran-funsel;;7
-drang;drang;;7
+drang_2;drang;;7
 draengeln;drängeln;;7
 draengen;drängen;;7
 drangsalieren;drangsalieren;;7
@@ -10578,7 +10578,7 @@ trappe.i;Trappe;1;7
 trappe.ii;Trappe;2;7
 trappeln;trappeln;;7
 traeppeln;träppeln;;7
-trappen;trappen;;7
+trappen_2;trappen;;7
 trappen-schnaps;Trappen-schnaps;;7
 trapper;Trapper;;7
 trappert;Trappert;;7
@@ -11578,7 +11578,7 @@ tu-nicht-gut;Tu-nicht-gut;;8
 tuenik;Tünik;;8
 dunk;Dunk;;8
 tunke;Tunke;;8
-dunkel;dunkel;;8
+dunkel_2;dunkel;;8
 dunkel-arrest;Dunkel-arrest;;8
 dunkel-blau;dunkel-blau;;8
 tuenkele-suppe;Tünkele-suppe;;8
@@ -11691,8 +11691,8 @@ durch-dringen;durch-dringen;;8
 durch-druecken;durch-drücken;;8
 durch-dure;durch-dure;;8
 durch-ein;durch-ein;;8
-durch-einander;durch-einander;;8
-durch-einander_2;Durch-einander;;
+durch-einander_2;durch-einander;;8
+durch-einander;Durch-einander;;
 durch-eini;durch-eini;;8
 durch-fahren;durch-fahren;;8
 durch-fall;Durch-fall;;8
@@ -11988,7 +11988,7 @@ dueseln;düseln;;8
 dusel-peter;Dusel-peter;;8
 dusel-tier;Dusel-tier;;8
 dusel-wetter;Dusel-wetter;;8
-dusem;dusem;;8
+dusem_2;dusem;;8
 dusen;duse(n);;8
 dusenerwald;"Dusener Wald";;8
 dusenierle;Dusenierle;;8
@@ -12028,7 +12028,7 @@ dutte.ii;Dutte;2;8
 duttel.i;Duttel;1;8
 duettel-katel;Düttel-katel;;8
 duettel-steller;Düttel-steller;;8
-a_2;A;;1
+a;A;;1
 duttern;duttern;;8
 dutti;Dutti;;8
 duttig;duttig;;8
@@ -13034,7 +13034,7 @@ element;Element;;9
 elend;Elend;;9
 elendig;elend(ig);;9
 elenmess;El(en)meß;;9
-elf;elf;;9
+elf_2;elf;;9
 elfe-gloeckle;Elfe-glöckle;;9
 elfe-messe;Elfe-messe;;9
 elfen-bein;Elfen-bein;;9
@@ -13147,7 +13147,7 @@ ener-kennig;ener-kennig;;9
 ener-land;Ener-land;;9
 ener-wald;Ener-wald;;9
 enet-bruck;Enet-bruck;;9
-eng;eng;;9
+eng_2;eng;;9
 engagieren;engagieren;;9
 eng-atmig;eng-atmig;;9
 eng-bruestig;eng-brüstig;;9
@@ -13571,7 +13571,7 @@ er-schwingen;er-schwingen;;9
 er-setzen;er-setzen;;9
 ersingen;Ersingen;;9
 er-spaechten;er-spächten;;9
-erst;erst;;9
+erst_2;erst;;9
 er-staunen;er-staunen;;9
 erste;Erste;;9
 er-stehen;er-stehen;;9
@@ -13652,7 +13652,7 @@ esche;Esche;;9
 esch-eck;Esch-eck;;9
 eschel-bach;Eschel-bach;;9
 eschel-bronn;Eschel-bronn;;9
-eschen_2;Eschen;;
+eschen;Eschen;;
 eschen-wurm;Eschen-wurm;;9
 esch-hirt;Esch-hirt;;9
 eschingen;Eschingen;;9
@@ -14295,7 +14295,7 @@ fecke;Fecke;;10
 fecke_2;fecke;;10
 feckeln;feckeln;;10
 fecken-buti;Fecken-buti;;10
-feckten;feckten;;10
+feckten_2;feckten;;10
 feckten-schopen;Feckten-schopen;;10
 fede;Fede;;10
 feden;feden;;10
@@ -17005,7 +17005,7 @@ fleuchnen;fleuchnen;;14
 fleuel;Fleuel;;14
 flick;Flick;;14
 flicke;Flicke;;14
-flicken;flicken;;14
+flicken_2;flicken;;14
 flicker;Flicker;;14
 flick-korb;Flick-korb;;14
 flick-zeug;Flick-zeug;;14
@@ -18025,7 +18025,7 @@ frikadellen;Frikadellen;;16
 frikassiert;frikassiert;;16
 friko;Friko;;16
 frimsel-suppe;Frimsel-suppe;;16
-frisch;frisch;;16
+frisch_2;frisch;;16
 frischele;Frischele;;16
 frischieren;frischieren;;16
 frisch-lecht;frisch-lecht;;16
@@ -19027,7 +19027,7 @@ gant-ordnung;Gant-ordnung;;18
 gant-person;Gant-person;;18
 gant-recht;Gant-recht;;18
 gant-tag;Gant-tag;;18
-ganz;ganz;;18
+ganz_2;ganz;;18
 ganz-bogig;ganz-bogig;;18
 ganz-geschirr;Ganz-geschirr;;18
 ganz-horn;Ganz-horn;;18
@@ -20805,7 +20805,7 @@ ge-spur;Ge-spur;;21
 ge-spueren;ge-spüren;;21
 gespus-i;Gespus-i;;21
 gessete;Gessete;;21
-gest;gest;;21
+gest_2;gest;;21
 ge-staat;Ge-staat;;21
 gestaats-maessig;g(e)staats-mäßig;;21
 ge-staebelet;g(e)-stäbelet;;21
@@ -21156,7 +21156,7 @@ gickern;gickern;;22
 gick-gick;Gick-gick;;22
 gick-in-die-welt;Gick-in-die-Welt;;22
 gickis;gickis;;22
-gicks;gicks;;22
+gicks_2;gicks;;22
 gicksen;gicksen;;22
 gideon;Gideon;;22
 giebel.i;Giebel;1;22
@@ -21451,7 +21451,7 @@ glauber-salz;Glauber-salz;;22
 glaeub-ig;gläub-ig;;22
 glaunen;glaunen;;22
 glaun-er;Glaun-er;;22
-gleich;gleich;;22
+gleich_2;gleich;;22
 gleich-auf;Gleich-auf;;22
 gleich-e;Gleich-e;;22
 gleichen;Gleichen;;22
@@ -23297,7 +23297,7 @@ hahnen-schritt;Hahnen-schritt;;26
 hahnen-schuehle;Hahnen-schühle;;26
 hahnen-tanz;Hahnen-tanz;;26
 hahnwaechtel;Hahnwächtel;;26
-hai;hai;;26
+hai_2;hai;;26
 haibel;Haibel;;26
 haid-ach;Haid-ach;;26
 haien;haie(n);;26
@@ -23416,7 +23416,7 @@ hall;Hall;;26
 hallas;Hallas;;26
 halle;Halle;;26
 halleluja;Halleluja;;26
-hallen;hallen;;26
+hallen_2;hallen;;26
 haelli;Hälli;;26
 hallimasch;Hallimasch;;26
 hall-o;hall-o;;26
@@ -24798,7 +24798,7 @@ helfio;helfio;;28
 helf-lich;helf-lich;;28
 helgen-wasen;Helgen-wasen;;28
 helgen-zug;Helgen-zug;;28
-hell;hell;;28
+hell_2;hell;;28
 hell-auf;hell-auf;;28
 hell-augen;Hell-augen;;28
 helle.i;Helle;1;28
@@ -27226,7 +27226,7 @@ hitz-kopf;Hitz-kopf;;32
 hitz-leichen;Hitz-leichen;;32
 hitzling;Hitzling;;32
 hm;hm;;32
-ho;ho;;32
+ho_2;ho;;32
 hoe;hö;;32
 hobede;Hobede;;32
 hobel;Hobel;;32
@@ -27242,7 +27242,7 @@ hobelspaen-lerin;Hobelspän-lerin;;32
 hoben;hoben;;32
 hobt;Hobt;;32
 hoebzer-joerg;Höbzer-jörg;;32
-hoch;hoch;;32
+hoch_2;hoch;;32
 hoch-acker;Hoch-acker;;32
 hoch-allee;Hoch-allee;;32
 hoch-altar;Hoch-altar;;32
@@ -27426,8 +27426,8 @@ hoeckeln.ii;höckeln;2;32
 hoeckeln.iii;höckeln;3;32
 hoeckel-rechen;Höckel-rechen;;32
 hockemann;Hockemann;;32
-hocken;hocken;;32
-hoecken;höcken;;32
+hocken_2;hocken;;32
+hoecken_2;höcken;;32
 hocken-bleiber;Hocken-bleiber;;32
 hocken-fangens;Hocken-fangens;;32
 hocken-heim;Hocken-heim;;32
@@ -27589,7 +27589,7 @@ hohen-zollern;Hohen-zollern;;32
 hoheseck;"Hohes Eck";;32
 hohesteig;"Hohe Steig";;32
 hoeh-fahne;Höh-fahne;;32
-hohl;hohl;;32
+hohl_2;hohl;;32
 hohl-arme;Hohl-arme;;32
 hohl-aeugicht;hohl-äugicht;;32
 hohl-beutel;Hohl-beutel;;32
@@ -28043,7 +28043,7 @@ horn-geiss;Horn-geiß;;33
 hoern-hirsch;Hörn-hirsch;;33
 horni;Horni;;33
 hornibus;Hornibus;;33
-hornig;hornig;;33
+hornig_2;hornig;;33
 hornigel;Hornigel;;33
 hornigeln;hornigeln;;33
 horn-igler;Horn-igler;;33
@@ -29136,8 +29136,8 @@ jauchenhag;Jauchenhag;;35
 jauchenloch;Jauchenloch;;35
 jauchert;Jauchert;;35
 jaeuken;jäuken;;35
-jauker;jauker;;35
-jauker_2;Jauker;;35
+jauker_2;jauker;;35
+jauker;Jauker;;35
 jaeukeri;Jäukeri;;35
 jaukern;jaukern;;35
 jaeukern;jäukern;;35
@@ -29168,7 +29168,7 @@ jenentag;jenentag;;35
 jener;jener;;35
 jenisch;jenisch;;35
 jenne;Jenne;;35
-jenseits;jenseits;;35
+jenseits_2;jenseits;;35
 jeremias;Jeremias;;35
 jericho;Jericho;;35
 jericho-rose;Jericho-rose;;35
@@ -30641,8 +30641,8 @@ kauf;Kauf;;37
 kauf-brief;Kauf-brief;;37
 kaufen;kaufen;;37
 kaeufer;Käufer;;37
-kaufes;kaufes;;37
-kaufes_2;Kaufes;;37
+kaufes_2;kaufes;;37
+kaufes;Kaufes;;37
 kauf-gut;Kauf-gut;;37
 kauf-haus;Kauf-haus;;37
 kauf-herr;Kauf-herr;;37
@@ -30710,8 +30710,8 @@ kawernetchen;Kawernetchen;;38
 kebelig;kebelig;;38
 kebse;Kebse;;38
 kebs-weib;Kebs-weib;;38
-keck;keck;;38
-keck_2;Keck;;38
+keck_2;keck;;38
+keck;Keck;;38
 keck-brunnen;Keck-brunnen;;38
 kecke;Kecke;;38
 kecken-wurzel;Kecken-wurzel;;38
@@ -31632,8 +31632,8 @@ kistle;Kistle;;39
 kistles;Kistles;;39
 kistler;Kistler;;39
 kiterle;Kiterle;;39
-kitsch;kitsch;;39
-kitsch_2;Kitsch;;39
+kitsch_2;kitsch;;39
+kitsch;Kitsch;;39
 kitsche.i;Kitsche;1;39
 kitsche.ii;Kitsche;2;39
 kitschen;kitschen;;39
@@ -31876,8 +31876,8 @@ kleb-stecken;Kleb-stecken;;39
 kleb-stoff;Kleb-stoff;;39
 kleb-tischlein;Kleb-tischlein;;39
 klechter;Klechter;;39
-klecken;klecken;;39
-klecken_2;Klecken;;39
+klecken_2;klecken;;39
+klecken;Klecken;;39
 klecks;Klecks;;39
 klee;Klee;;39
 klee-acker;Klee-acker;;39
@@ -32242,8 +32242,8 @@ kluetter;Klütter;;40
 kluttere;Kluttere;;40
 klutterer;Klutterer;;40
 klutteri;Klutteri;;40
-klutterig;klutterig;;40
-klutterig_2;Klutterig;;40
+klutterig_2;klutterig;;40
+klutterig;Klutterig;;40
 kluttern;kluttern;;40
 kluettern;klüttern;;40
 klutter-schulden;Klutter-schulden;;40
@@ -32367,7 +32367,7 @@ knaus-birne;Knaus-birne;;40
 knauscheln;knauscheln;;40
 knause;Knaus(e);;40
 knaeuseln;knäuseln;;40
-knausen;knausen;;40
+knausen_2;knausen;;40
 knauser;Knauser;;40
 knauserich;Knauserich;;40
 knauserig;knauserig;;40
@@ -32602,7 +32602,7 @@ knoerle;Knörle;;41
 knorpel;Knorpel;;41
 knorpelig;knorpelig;;41
 knorpeln;knorpeln;;41
-knorpen;knorpen;;41
+knorpen_2;knorpen;;41
 knorper;Knorper;;41
 knorr;Knorr;;41
 knorren;Knorre(n);;41
@@ -32684,7 +32684,7 @@ knueppel;Knüppel;;41
 knueppel-dick;knüppel-dick;;41
 knuppeln;knuppeln;;41
 knueppeln;knüppeln;;41
-knuppen;knuppen;;41
+knuppen_2;knuppen;;41
 knupper.ii;Knupper;2;41
 knuepperle;Knüpperle;;41
 knuppern;knuppern;;41
@@ -33698,8 +33698,8 @@ krauen;krauen;;43
 kraeuen;kräuen;;43
 krauli;Krauli;;43
 kraeuli;Kräuli;;43
-kraus;kraus;;43
-kraus_2;Kraus;;
+kraus_2;kraus;;43
+kraus;Kraus;;
 kraeuscheln;kräuscheln;;43
 krause.i;Krause;1;43
 krause.ii;Krause;2;43
@@ -35041,7 +35041,7 @@ kurz-um;kurz-um;;45
 kurz-weil;Kurz-weil;;45
 kurz-weilen;kurz-weilen;;45
 kurz-weilig;kurz-weilig;;45
-kusch;kusch;;45
+kusch_2;kusch;;45
 kusche;Kusche;;45
 kuschef;kuschef;;45
 kuschen;kuschen;;45
@@ -35049,7 +35049,7 @@ kusin;Kusin;;45
 kusine;Kusine;;45
 kuss;Kuß;;45
 kuessa-burg;Küssa-burg;;45
-kuessen;küssen;;45
+kuessen_2;küssen;;45
 kussen-land;Kussen-land;;45
 kuess-madam;Küß-madam;;45
 kussmaul;Kußmaul;;45
@@ -35361,7 +35361,7 @@ lambarasch;Lambarasch;;46
 lamberie;Lamb(e)ri(e);;46
 lambis;Lambis;;46
 lamel;Lamel;;46
-lamentabel;lamentabel;;46
+lamentabel_2;lamentabel;;46
 lamentation;Lamentation;;46
 lamentieren;lamentieren;;46
 lamentiererei;Lamentiererei;;46
@@ -36171,8 +36171,8 @@ le.i;le;1;47
 lea;Lea;;47
 leander;Leander;;47
 lebel;Lebel;;47
-leben;leben;;47
-leben_2;Leben;;47
+leben_2;leben;;47
+leben;Leben;;47
 lebendig;lebendig;;47
 lebens-dauer;Lebens-dauer;;47
 lebensessenz-ansatz;Lebensessenz-ansatz;;47
@@ -36525,7 +36525,7 @@ leichen-weg;Leichen-weg;;48
 leichen-zug;Leichen-zug;;48
 leichgaessle;Leichgäßle;;48
 leichnam;Leichnam;;48
-leicht;leicht;;48
+leicht_2;leicht;;48
 leichten;leichten;;48
 leichter;Leichter;;48
 leicht-fertig;leicht-fertig;;48
@@ -36541,7 +36541,7 @@ leid-band;Leid-band;;48
 leid-brust;Leid-brust;;48
 leiden.i;Leiden;1;48
 leiden.ii;Leiden;2;48
-leiden;leiden;;48
+leiden_2;leiden;;48
 leider;Leider;;48
 leider_2;leider;;48
 leid-haus;Leid-haus;;48
@@ -37380,7 +37380,7 @@ lorli;Lorli;;50
 lor-oel;Lor-öl;;50
 loerrach;Lörrach;;50
 lortschen;Lortschen;;50
-los.i;Los;1;50
+los.i_2;Los;1;50
 los;los;;50
 losament;Losament;;50
 los-binden;los-binden;;50
@@ -37775,8 +37775,8 @@ lunzig;lunzig;;50
 lupberg;Lupberg;;50
 lupe;Lupe;;50
 lupf;Lupf;;50
-lupfen;lupfen;;50
-lupfen_2;Lupfen;;50
+lupfen_2;lupfen;;50
+lupfen;Lupfen;;50
 lupfen-acker;Lupfen-acker;;50
 lupfen-anwander;Lupfen-anwander;;
 lupfen-gut;Lupfen-gut;;
@@ -38240,7 +38240,7 @@ malauchen;malauchen;;51
 malauches;Malauches;;51
 malazei;Malazei;;51
 malbisch;Malbisch;;51
-malchen;malchen;;51
+malchen_2;malchen;;51
 malchus;Malchus;;51
 maleam-bais;Maleam-bais;;51
 mal-eck;Mal-eck;;51
@@ -40349,7 +40349,7 @@ molzer-trog;Molzer-trog;;55
 momen;Momen;;55
 moment;Moment;;55
 momentan;momentan;;55
-mon;Mon?;;55
+mon_2;Mon?;;55
 monarch;Monarch;;55
 monat;Monat;;55
 monat-lich;monat-lich;;55
@@ -40702,8 +40702,8 @@ moewe;Möwe;;56
 mozen;mozen;;56
 mozer;Mozer;;56
 mozes;Mozes;;56
-mu;mu;;56
-mu_2;Mu;;56
+mu_2;mu;;56
+mu;Mu;;56
 muauzen;muauzen;;56
 much;much;;56
 muche;Muche;;56
@@ -40722,7 +40722,7 @@ mucke.ii;Mucke;2;56
 mucke.iii;Mucke;3;56
 muckeln;muckeln;;56
 muckel-nest;Muckel-nest;;56
-mucken;mucken;;56
+mucken_2;mucken;;56
 muckenbaum;Muckenbaum;;56
 mucken-bendel;Mucken-bendel;;56
 mucken-boehrle-wind;Mucken-böhrle-wind;;56
@@ -40784,8 +40784,8 @@ mueckser;Mückser;;56
 muecksle-still;mücksle-still;;56
 mucks-maeusle-gestill;mucks-mäusle-(ge)still;;56
 mudau;Mudau;;56
-muede;müde;;56
-muede_2;Müde;;56
+muede_2;müde;;56
+muede;Müde;;56
 mueden;müden;;56
 muder;Muder;;56
 mudern;mudern;;56
@@ -41140,8 +41140,8 @@ muenz-wardein;Münz-wardein;;56
 muepfen;müpfen;;56
 muepfi;Müpfi;;56
 mur.i;Mur;1;56
-muerb;mürb;;56
-muerb_2;Mürb;;56
+muerb_2;mürb;;56
+muerb;Mürb;;56
 murbele.i;Murbele;1;56
 murbele.ii;Murbele;2;56
 muerben;mürben;;56
@@ -41606,7 +41606,7 @@ nach-schreien;nach-schreien;;57
 nach-schueren;nach-schüren;;57
 nach-schuetten;nach-schütten;;57
 nach-schwaetzen;nach-schwätzen;;57
-nach-sehen;nach-sehen;;57
+nach-sehen_2;nach-sehen;;57
 nach-setzen;nach-setzen;;57
 nach-sich;nach-sich;;57
 nach-sichtig;nach-sichtig;;57
@@ -42645,7 +42645,7 @@ nieren-braten;Nieren-braten;;59
 nieren-fett;Nier(en)-fett;;59
 nieren-kartoffel;Nieren-kartoffel;;59
 nieren-stueck;Nieren-stück;;59
-nies;Niës;;59
+nies_2;Niës;;59
 nieseln;nieseln;;59
 niesel-priem;Niesel-priem;;59
 niesen;niesen;;59
@@ -42714,7 +42714,7 @@ nixe;Nixe;;59
 n-ja;n-ja;;59
 nn;nn;;59
 noah;Noah;;59
-nobel;nobel;;59
+nobel_2;nobel;;59
 nobel-haftig;nobel-haftig;;59
 nobis;nobis;;59
 nobisen;nobisen;;59
@@ -42902,7 +42902,7 @@ nuen;nün;;59
 nunerle;Nunerle;;59
 nunu;Nunu;;59
 nupf-eisen;Nupf-eisen;;59
-nuppen;nuppen;;59
+nuppen_2;nuppen;;59
 nuppern;nuppern;;59
 nupplerin;Nupplerin;;59
 nur;nur;;59
@@ -44499,7 +44499,7 @@ raenkel;Ränkel;;62
 rankeln;rankeln;;62
 ranken.i;Ranken;1;62
 ranken.i_2;ranken;1;62
-ranken.ii;ranken;2;62
+ranken.ii_2;ranken;2;62
 ranken-aeckerle;Ranken-äckerle;;62
 raenken-gasse;Ränken-gasse;;62
 ranki;Ranki;;62
@@ -45834,7 +45834,7 @@ retur-fahrkarte;Retur-fahrkarte;;65
 retur-kutsche;Retur-kutsche;;65
 retur-schese;Retur-schese;;65
 retur-weg;Retur-weg;;65
-retzel;retzel;;65
+retzel_2;retzel;;65
 retzeln;retzeln;;65
 retzelte;Retzelte;;65
 retzel-traeuble;Retzel-träuble;;65
@@ -46019,7 +46019,7 @@ rhena;Rhena;;65
 rhina;Rhina;;65
 rhode-laender;Rhode-länder;;65
 ribel;Ribel;;65
-ribele;ribele;;65
+ribele_2;ribele;;65
 ribele-buerste;Ribele-bürste;;65
 ribele-maenner;Ribele-männer;;65
 ribele-rock;Ribele-rock;;65
@@ -50844,7 +50844,7 @@ schlauder-berg;Schlauder-berg;;75
 schlauderer;Schlauderer;;75
 schlauder-kaudisch;Schlauder-kaudisch;;75
 schlauder-kauz;Schlauder-kauz;;75
-schlaudern;schlaudern;;75
+schlaudern_2;schlaudern;;75
 schlauf;Schlauf;;75
 schlauf-diele;Schlauf-diele;;75
 schlaufe;Schlaufe;;75
@@ -52406,7 +52406,7 @@ schnoderete;Schnoderete;;78
 schnoderig;schnoderig;;78
 schnodern;schnodern;;78
 schnoder-nase;Schnoder-nase;;78
-schnollen;schnollen;;78
+schnollen_2;schnollen;;78
 schnoller;Schnoller;;78
 schnoppel;Schnoppel;;78
 schnores;Schnores;;78
@@ -52750,7 +52750,7 @@ schoepf-wate;Schöpf-wate;;79
 schoeppel;Schöppel;;79
 schoeppeln;schöppeln;;79
 schoppen.i;Schoppen;1;79
-schoppen;schoppen;;79
+schoppen_2;schoppen;;79
 schoppen-blech;Schoppen-blech;;79
 schoppen-budel;Schoppen-budel;;79
 schoppen-dudel;Schoppen-dudel;;79
@@ -52916,7 +52916,7 @@ schrauden;schrauden;;79
 schraze;Schraze;;79
 schreck.i;Schreck;1;79
 schrecke.i;Schrecke;1;79
-schrecken;schrecken;;79
+schrecken_2;schrecken;;79
 schrecken-laeuten;Schreck(en)-läuten;;79
 schreck-glocke;Schreck-glocke;;79
 schreck-kopf;Schreck-kopf;;79
@@ -53602,7 +53602,7 @@ schwanden_2;schwanden;;81
 schwander;Schwander;;81
 schwan-dorf;Schwan-dorf;;81
 schwanelen;schwanelen;;81
-schwanen;schwanen;;81
+schwanen_2;schwanen;;81
 schwanen-bach;Schwanen-bach;;81
 schwanen-gans;Schwanen-gans;;81
 schwanen-hals;Schwanen-hals;;81
@@ -53862,7 +53862,7 @@ schweine-zugsalbe;Schweine-zugsalbe;;81
 schwein-fasel;Schwein-fasel;;81
 schwein-grueben;Schwein-grüben;;81
 schwein-hardus;Schwein-hardus;;81
-schweinig;schweinig;;81
+schweinig_2;schweinig;;81
 schwein-igel;Schwein-igel;;81
 schweinisch;schweinisch;;81
 schwein-knoechle;Schwein-knöchle;;81
@@ -54534,8 +54534,8 @@ seiler-buendel;Seiler-bündel;;83
 seiler-graben;Seiler-graben;;83
 seilerin;Seilerin;;83
 seiler-juliane;Seiler-Juliane;;83
-seilern;seilern;;83
-seilern_2;Seilern;;83
+seilern_2;seilern;;83
+seilern;Seilern;;83
 seilers-haeuschen;Seilers-häuschen;;83
 seil-gumpens;Seil-gumpen(s);;83
 seil-hopsens;Seil-hopsen(s);;83
@@ -54708,7 +54708,7 @@ semmel-scheiben;Semmel-scheiben;;84
 semmete;Semmete;;84
 semmettli;Semmettli;;
 semmeten-kittel;Semmeten-kittel;;84
-semper;semper;;84
+semper_2;semper;;84
 semperer;Semperer;;84
 sempern;sempern;;84
 semper-hof;Semper-hof;;84
@@ -54876,8 +54876,8 @@ setz-bernen;Setz-ber(n)e(n);;84
 setz-bohnen;Setz-bohnen;;84
 setze;Setze;;84
 setze-acker;Setze-acker;;84
-setzen_2;Setzen;;
-setzen;setzen;;84
+setzen;Setzen;;
+setzen_2;setzen;;84
 setzer;Setzer;;84
 setzete;Setzete;;84
 setz-fische;Setz-fische;;84
@@ -54973,7 +54973,7 @@ sieben-eck;Sieben-eck;;84
 siebene-guecke;Siebene-gücke;;84
 siebener;Siebener;;84
 siebener-lei;siebener-lei;;84
-sieben-fach;sieben-fach;;84
+sieben-fach_2;sieben-fach;;84
 sieben-gescheiter;Sieben-gescheiter;;84
 sieben-gestirn;Sieben-gestirn;;84
 sieben-haar;Sieben-haar;;84
@@ -55051,8 +55051,8 @@ siedend;siedend;;
 sieder;Sieder;;85
 sied-fleisch;Sied-fleisch;;85
 sied-heiss;sied-heiß;;85
-siedig;siedig;;85
-siedig-heiss;sied(ig)-heiß;;85
+siedig_2;siedig;;85
+siedig-heiss_2;sied(ig)-heiß;;85
 siedig-scharf;siedig-scharf;;85
 siedler;Siedler;;85
 siedlerin;Siedlerin;;85
@@ -55069,8 +55069,8 @@ siegel-lack;Siegel-lack;;85
 siegeln;siegeln;;85
 siegel-ring;Siegel-ring;;85
 siegels-bach;Siegels-bach;;85
-siegen;siegen;;85
-siegen_2;Siegen;;85
+siegen_2;siegen;;85
+siegen;Siegen;;85
 sieger;Sieger;;85
 sieges-frei;sieges-frei;;85
 siegfried;Siegfried;;85
@@ -56157,8 +56157,8 @@ spezifizierlich;spezifizierlich;;87
 spich;Spich;;87
 spick-acker;Spick-acker;;87
 spickel;Spickel;;87
-spickeln_2;Spickeln;;
-spickeln;spickeln;;87
+spickeln;Spickeln;;
+spickeln_2;spickeln;;87
 spicken;spicken;;87
 spicken-kopf;Spicken-kopf;;87
 spiken-oel;Spik(en)-öl;;88
@@ -56231,7 +56231,7 @@ spiess;Spieß;;87
 spiess-acker;Spieß-acker;;87
 spiess-buerger;Spieß-bürger;;87
 spiess-eckig;spieß-eckig;;87
-spiessen_2;Spiessen;;
+spiessen;Spiessen;;
 spiessen.ii;Spießen;2;87
 spiesser;Spießer;;87
 spiess-foerster;Spieß-förster;;88
@@ -56263,7 +56263,7 @@ spinnen;spinnen;;88
 spinnenboppele-nest;Spinnenboppe(le)-nest;;88
 spinnenboppen-garn;Spinnenboppen-garn;;88
 spinnenboppen-picker;Spinnenboppen-picker;;88
-spinnen-feind;spinne(n)-feind;;88
+spinnen-feind_2;spinne(n)-feind;;88
 spinnen-fritz;Spinnen-fritz;;88
 spinnen-garn;Spinnen-garn;;88
 spinnen-hoppe;Spinnen-hoppe;;88
@@ -56369,7 +56369,7 @@ spittel-hof;Spittel-hof;;
 spittel-matte;Spittel-matte;;
 spittels-neumatte;Spittels-neumatte;;
 spitzen;Spitz(en);;88
-spitz;spitz;;88
+spitz_2;spitz;;88
 spitz-acker;Spitz-acker;;88
 spitzacker-wiese;Spitz(acker)-wiese;;
 spitz-ahorn;Spitz-ahorn;;88
@@ -56574,7 +56574,7 @@ spreng-stoff;Spreng-stoff;;88
 sprinke;Sprinke;;88
 sprenkel;Sprenkel;;
 sprenzel;Sprenzel;;88
-sprenzen;sprenzen;;88
+sprenzen_2;sprenzen;;88
 sprenzer;Sprenzer;;88
 sprenz-kanne;Sprenz-kanne;;88
 sprenz-kopf;Sprenz-kopf;;88
@@ -57039,7 +57039,7 @@ staender;Ständer;;89
 staenderle;Ständ(er)le;;89
 staendern;ständern;;89
 standes-gemaess;standes-gemäß;;89
-stand-fest;stand-fest;;89
+stand-fest_2;stand-fest;;89
 stand-geiss;Stand-geiß;;89
 stand-geld;Stand-geld;;89
 staendig;ständig;;90
@@ -57178,7 +57178,7 @@ staub-wedel;Staub-wedel;;90
 staeub-wehete;Stäub-wehete;;90
 stauche;Stauche;;90
 staeucheln;stäucheln;;90
-stauchen;stauchen;;90
+stauchen_2;stauchen;;90
 stauchen-weiss;stauchen-weiß;;90
 staucher;Staucher;;90
 staeuchler;Stäuchler;;90
@@ -57340,8 +57340,8 @@ steeken-spiel;Steeken-spiel;;90
 stefan;Stefan;;90
 stefan-meier-hering;Stefan-Meier-Hering;;90
 stefans-tag;Stefans-tag;;90
-steffen;steffen;;90
-steffen_2;Steffen;;90
+steffen_2;steffen;;90
+steffen;Steffen;;90
 steffi;Steffi;;90
 steft;Steft;;90
 stefzgen;Stefz(g)e(n);;90
@@ -57472,7 +57472,7 @@ stein-beule;Stein-beule;;
 stein-biele;Stein-biele;;
 stein-bick;Stein-bick;;90
 stein-bickel;Stein-bickel;;90
-stein-bickel-hart;stein-bickel-hart;;90
+stein-bickel-hart_2;stein-bickel-hart;;90
 stein-birn-baum;Stein-birn-baum;;
 stein-birnen;Stein-birnen;;
 steinbis;Steinbis;;
@@ -58062,7 +58062,7 @@ stief-wesen;Stief-wesen;;
 stieg;Stieg;;
 stieg-acker;Stieg-acker;;
 stiege;Stiege;;
-stiegel;Stiegel;;
+stiegel_2;Stiegel;;
 stiegelen;Stiegelen;;
 stiegelen-matte;Stiegelen-matte;;
 stiegeler;Stiegeler;;
@@ -58070,7 +58070,7 @@ stiegel-reben;Stiegel-reben;;
 stiegel-stein;Stiegel-stein;;
 stiegel-weg;Stiegel-weg;;
 stiegel-wiese;Stiegel-wiese;;
-stiegel_2;Sti(e)gel;;
+stiegel;Sti(e)gel;;
 stiegen;Stiegen;;
 stiegen-schraube;Stiegen-schraube;;
 stieger;Stieger;;
@@ -58097,7 +58097,7 @@ stier-bube;Stier-bube;;
 stieren;stieren;;
 stieren-auge;Stieren-auge;;
 stieren-graben;Stieren-graben;;
-stieren-grindig;stieren-grindig;;
+stieren-grindig_2;stieren-grindig;;
 stieren-wiese;Stieren-wiese;;
 stier-futter;Stier-futter;;
 stier-futterer;Stier-futterer;;
@@ -58273,7 +58273,7 @@ stockeln;stockeln;;
 stoeckel-schuh;Stöckel-schuh;;
 stocken;Stocken;;
 stocken_2;stocken;;
-stoecken;stöcken;;
+stoecken_2;stöcken;;
 stocken-aecker;Stocken-äcker;;
 stoecken-bruch;Stöcken-bruch;;
 stoecken-garten;Stöcken-garten;;
@@ -58309,7 +58309,7 @@ stock-herr;Stock-herr;;
 stock-holz;Stock-holz;;
 stoecki;Stöcki;;
 stockig;stockig;;
-stoeckig;stöckig;;
+stoeckig_2;stöckig;;
 stoeckig-matte;Stöckig-matte;;
 stock-klotz;Stock-klotz;;
 stock-kohle;Stock-kohle;;
@@ -58581,8 +58581,8 @@ stoss-buehl;Stoss-bühl;;
 stoss-daempfer;Stoß-dämpfer;;
 stoss-eimer;Stoß-eimer;;
 stoss-eisen;Stoß-eisen;;
-stoessel;Stößel;;
-stoessel_2;Stössel;;
+stoessel_2;Stößel;;
+stoessel;Stössel;;
 stoesseln;stößeln;;
 stossen;stoßen;;
 stoessen-reben;Stößen-reben;;
@@ -58969,7 +58969,7 @@ strick-abend;Strick-abend;;
 strick-bach;Strick-bach;;
 strick-eisen;Strick-eisen;;
 strick-eiseln;Strick-eiseln;;
-strickle;strickle;;
+strickle_2;strickle;;
 strickeln;strickeln;;
 strickel;Strickel;;
 stricken;stricken;;
@@ -58987,7 +58987,7 @@ strick-hopserles;Strick-hopserles;;
 strick-hupsels;Strick-hupsels;;
 strick-kette;Strick-kette;;
 strick-koerble;Strick-körble;;
-strickle_2;Strickle;;
+strickle;Strickle;;
 strick-lehrerin;Strick-lehrerin;;
 stricklein;Stricklein;;
 strick-leiter;Strick-leiter;;
@@ -59245,7 +59245,7 @@ stube;Stube;;
 stuebe;Stübe;;
 stuebel;Stübel;;
 stuben;stuben;;
-stueben;stüben;;
+stueben_2;stüben;;
 stuben-besen;Stuben-besen;;
 stuben-boden;Stuben-boden;;
 stuben-brunnen;Stuben-brunnen;;
@@ -59419,8 +59419,8 @@ stuemper;Stümper;;
 stuemper-haft;stümper-haft;;
 stumperle;Stumperle;;
 stumperles;Stumperles;;
-stumpes;stumpes;;
-stumpes_2;Stumpes;;
+stumpes_2;stumpes;;
+stumpes;Stumpes;;
 stumpet;stumpet;;
 stumpf;Stumpf;;
 stumpf_2;stumpf;;
@@ -59501,7 +59501,7 @@ stupsen;stupsen;;
 stupser;Stupser;;
 stups-feile;Stups-feile;;
 stups-nase;Stups-nase;;
-stur;stur;;
+stur_2;stur;;
 sturanzen;sturanzen;;
 stuercheln;stürcheln;;
 stuerchlerei;Stürchlerei;;
@@ -59514,7 +59514,7 @@ sturm;Sturm;;
 sturm-schritt;Sturm-schritt;;
 stuermel;Stürmel;;
 stuermeln;stürmeln;;
-sturmen;sturmen;;
+sturmen_2;sturmen;;
 stuermen;stürmen;;
 sturmen-beunde;Sturmen-beunde;;
 stuermer;Stürmer;;
@@ -59575,7 +59575,7 @@ stuetzel-weg;Stützel-weg;;
 stuetzel-wiese;Stützel-wiese;;
 stutzen;Stutzen;;
 stutzen_2;stutzen;;
-stuetzen;stützen;;
+stuetzen_2;stützen;;
 stutzen-aecker;Stutzen-äcker;;
 stutzen-bock;Stutzen-bock;;
 stutzen-kopf;Stutzen-kopf;;
@@ -59744,7 +59744,7 @@ suenden-bock;Sünden-bock;;
 suenden-geld;Sünden-geld;;
 suenden-kaefig;Sünden-käfig;;
 suenden-pfuhl;Sünden-pfuhl;;
-suenden-schade;sünden-schade;;
+suenden-schade_2;sünden-schade;;
 suenden-schuld;Sünden-schuld;;
 suenden-turm;Sünden-turm;;
 suender;Sünder;;
@@ -59776,8 +59776,8 @@ super-klug;super-klug;;
 super-kluger;Super-kluger;;
 suepfeln;süpfeln;;
 supf;Supf;;
-supfen_2;Supfen;;
-supfen;supfen;;
+supfen;Supfen;;
+supfen_2;supfen;;
 supfer;Supfer;;
 supferich;Supferich;;
 supferlein;Supferlein;;
@@ -59869,8 +59869,8 @@ sus-boser;Sus-boser;;
 suschet;Suschet;;
 sus-haendler;Sus-händler;;
 susi;Susi;;
-suess;süß;;
-suess_2;Süß;;
+suess_2;süß;;
+suess;Süß;;
 suess-aepfel;Süß-äpfel;;
 suessapfelbaum;Süßapfelbaum;;
 suesser;Süßer;;
@@ -59915,7 +59915,7 @@ sutane;Sutane;;
 suters-hube;Suters-hube;;
 suet-kammer;Süt-kammer;;
 suet-korb;Süt-korb;;
-sutter-dole_2;Sutt(er)-dole;;
+sutter-dole;Sutt(er)-dole;;
 sutt;Sutt;;
 sutte;Sutte;;
 suette;sütte;;
@@ -59927,8 +59927,8 @@ sutten-loch;Sutten-loch;;
 sutten-wiese;Sutten-wiese;;
 sutter;Sutter;;
 sutter-brueckle;Sutter-brückle;;
-sutter-dole;Sutter-dole;;
-suttern_2;Suttern;;
+sutter-dole_2;Sutter-dole;;
+suttern;Suttern;;
 sutterer;Sutterer;;
 sutter-fuedle;Sutter-füdle;;
 suetteri;Sütteri;;
@@ -59937,7 +59937,7 @@ suetterich;Sütterich;;
 suetterlen;sütterlen;;
 sutter-lese;Sutter-lese;;
 suetterlin;Sütterlin;;
-suttern;suttern;;
+suttern_2;suttern;;
 suettern;süttern;;
 sutters-halden;Sutters-halden;;
 sutters-waeldelin;Sutters-wäldelin;;
@@ -59968,11 +59968,11 @@ syringen;Syringen;;
 szepter;Szepter;;
 u;U;;
 ue;Ü;;
-uebel;übel;;
-uebel_2;Übel;;
+uebel_2;übel;;
+uebel;Übel;;
 uebelebruck;"Übele Bruck";;
 uebel-gehoerig;übel-gehörig;;
-uebel-hausen;übel-hausen;;
+uebel-hausen_2;übel-hausen;;
 uebelhoer;Übelhör;;
 uebel-hoerig;übel-hörig;;
 uebeln;übeln;;
@@ -60018,8 +60018,8 @@ ueber-dure;über-dure;;
 ueberdure-trollen;überdure-trollen;;
 ueber-duetzen;über-dützen;;
 uebere;übere;;
-ueber-eck;über-eck;;
-ueber-eck_2;Über-eck;;
+ueber-eck_2;über-eck;;
+ueber-eck;Über-eck;;
 ueber-ecks;über-ecks;;
 ueber-einander;über-einander;;
 ueber-einander-enen;über-einander-enen;;
@@ -60032,8 +60032,8 @@ ueber-enen;über-enen;;
 ueber-enzig;über-enzig;;
 ueber-essen;über-essen;;
 ueber-faehre;Über-fähre;;
-ueber-fahren;über-fahren;;
-ueber-fahren_2;Über-fahren;;
+ueber-fahren_2;über-fahren;;
+ueber-fahren;Über-fahren;;
 ueber-fahrer;Über-fahrer;;
 ueber-fahrt;Über-fahrt;;
 ueber-fall;Über-fall;;
@@ -60220,9 +60220,9 @@ ueber-stube;Über-stube;;
 ueber-studieren;über-studieren;;
 ueber-stunde;Über-stunde;;
 ueber-stuerzt;über-stürzt;;
-ueber-stuerzen_2;Über-stürzen;;
+ueber-stuerzen;Über-stürzen;;
 ueber-stuetzig;über-stützig;;
-ueber-supfen;über-supfen;;
+ueber-supfen_2;über-supfen;;
 ueber-tauber;über-tauber;;
 ueber-toelpeln;über-tölpeln;;
 ueber-trag;Über-trag;;
@@ -60266,8 +60266,8 @@ ueber-zieche;Über-zieche;;
 ueber-ziehen;über-ziehen;;
 ueber-zieher;Über-zieher;;
 ueber-zug;Über-zug;;
-ueber-zwerch_2;Über-zwerch;;
-ueber-zwerch;über-zwerch;;
+ueber-zwerch;Über-zwerch;;
+ueber-zwerch_2;über-zwerch;;
 ueber-zwerch-zeile;Über-zwerch-zeile;;
 ueblich;üblich;;
 u-boegle;U-bögle;;
@@ -60376,7 +60376,7 @@ umbeisen-hoelzlein;Umbeisen-hölzlein;;
 umbeise-rainli;Umbeise-rainli;;
 um-beigen;um-beigen;;
 umbeise;Umbeise;;
-um-besen;um(-)besen;;
+um-besen_2;um(-)besen;;
 um-biegen;um-biegen;;
 um-bieten;um-bieten;;
 um-blasen;um-blasen;;
@@ -60884,7 +60884,7 @@ un-ding_2;un-ding;;
 un-ditz;Un-ditz;;
 undnicht;"und nicht";;
 undrich;Undrich;;
-un-eben;un-eben;;
+un-eben_2;un-eben;;
 un-edel;un-edel;;
 un-ehelich;un-ehelich;;
 un-ehre;Un-ehr(e);;
@@ -60950,16 +60950,16 @@ un-gehaeb;un-gehäb;;
 un-gehefelt;un-gehefelt;;
 un-geheissen;un-geheißen;;
 un-geheit;un-geheit;;
-un-geheuer;un-geheuer;;
-un-geheuer_2;Un-geheuer;;
+un-geheuer_2;un-geheuer;;
+un-geheuer;Un-geheuer;;
 ungeheurestannenstraessle;"Ungeheures Tannensträßle";;
 ungeheuer-strasse;Ungeheuer-straße;;
 ungeheuer-straessle;Ungeheuer-sträßle;;
 ungeheuer-weg;Ungeheuer-weg;;
 un-gehobelt;un-gehobelt;;
 un-gehoer;Un-gehör;;
-un-gehorsam;un-gehorsam;;
-un-gehorsam_2;Un-gehorsam;;
+un-gehorsam_2;un-gehorsam;;
+un-gehorsam;Un-gehorsam;;
 un-geimpft;un-geimpft;;
 un-gekaemmt;un-gekämmt;;
 un-gelacht;un-gelacht;;
@@ -61042,7 +61042,7 @@ un-gewiss;un-gewiß;;
 un-gewohn;un-gewohn;;
 un-gezaehlt;un-gezählt;;
 un-gezaehltes;Un-gezähltes;;
-un-geziefer;Un-geziefer;;
+un-geziefer_2;Un-geziefer;;
 un-gezogen;un-gezogen;;
 un-gichtbar;un-gichtbar;;
 un-gichtig;un-gichtig;;
@@ -61125,8 +61125,8 @@ un-nigeln;un-(n)igeln;;
 un-nobel;un-nobel;;
 un-noet;un-nöt;;
 un-notacker;Un-notacker;;
-un-noetig;un-nötig;;
-un-noetig_2;Un-nötig;;
+un-noetig_2;un-nötig;;
+un-noetig;Un-nötig;;
 un-nutz;un-nutz;;
 un-nuetze;un-nütze;;
 un-nuetzet;un-nützet;;
@@ -61178,8 +61178,8 @@ unsel;Unsel;;
 un-selbstaendig;un-selbständig;;
 un-selig;un-selig;;
 unseliger;Unseliger;;
-unser_2;Unser;;
-unser;unser;;
+unser;Unser;;
+unser_2;unser;;
 unser-einer;unser-einer;;
 unser-eins;unser-eins;;
 unser-ein;unser-ein;;
@@ -61282,8 +61282,8 @@ untere-fahren;untere-fahren;;
 untere-fitzen;untere-fitzen;;
 untere-gehen;untere-gehen;;
 unter-eggete;Unter-eggete;;
-unter-einander;unter-einander;;
-unter-einander_2;Unter-einander;;
+unter-einander_2;unter-einander;;
+unter-einander;Unter-einander;;
 untereinander-machen;untereinander-machen;;
 untereinander-ruehren;untereinander-rühren;;
 unter-einst;unter-einst;;
@@ -61389,7 +61389,7 @@ unter-mieter;Unter-mieter;;
 unter-miniert;unter-miniert;;
 untermrainbeimdorf;"Unterm Rain beim Dorf";;
 unterm;Unterm;;
-untern;untern;;
+untern_2;untern;;
 untern-essen;Untern-essen;;
 unter-nehmen;Unter-nehmen;;
 unter-nehmen_2;unter-nehmen;;
@@ -61568,7 +61568,7 @@ un-wadel;Un-wadel;;
 un-weg;un-weg;;
 un-wegen;un-wegen;;
 un-wegsam;un-wegsam;;
-un-wert;un-wert;;
+un-wert_2;un-wert;;
 un-werte;Un-werte;;
 un-willen;Un-willen;;
 un-willkuerlich;un-willkürlich;;
@@ -61590,7 +61590,7 @@ unzhaero;unzhäro;;
 unz-hurst;Unz-hurst;;
 unz-hurster;Unz-hurster;;
 un-ziefer;Un-ziefer;;
-un-geziefer_2;Un-(ge)ziefer;;
+un-geziefer;Un-(ge)ziefer;;
 un-zucht;Un-zucht;;
 un-zuechtig;un-züchtig;;
 un-zufrieden;un-zufrieden;;
@@ -61752,8 +61752,8 @@ waben-honig;Waben-honig;;
 waben-lohe;Waben-lohe;;
 wabern;wabern;;
 wab-sack;Wab-sack;;
-wach_2;Wach;;
-wach;wach;;
+wach;Wach;;
+wach_2;wach;;
 wachbar;wachbar;;
 wache;Wache;;
 wachen;wachen;;
@@ -61833,8 +61833,8 @@ wackel-peter;Wackel-peter;;
 wackel-schelee;Wackel-schelee;;
 wackel-stein;Wackel-stein;;
 wackel-zug;Wackel-zug;;
-wacken_2;Wacke(n);;
-wacken;Wacken;;
+wacken;Wacke(n);;
+wacken_2;Wacken;;
 wacken-acker;Wacken-acker;;
 wacken-rain;Wacken-rain;;
 wacken-stein;Wacken-stein;;
@@ -61865,7 +61865,7 @@ waden-patscher;Waden-patscher;;
 waden-wickel;Waden-wickel;;
 wadleff;Wadleff;;
 wadudel;Wadudel;;
-waefern;wäfern;;
+waefern_2;wäfern;;
 waffe;Waffe;;
 waffel;Waffel;;
 waffel-eisen;Waffel-eisen;;
@@ -62362,7 +62362,7 @@ wambeschers-matte;Wambeschers-matte;;
 wamme;Wamme;;
 wampe;Wampe;;
 wampen;Wampen;;
-wampel_2;Wampel;;
+wampel;Wampel;;
 wampern;wampern;;
 wampes;Wampes;;
 wampig;wampig;;
@@ -62469,7 +62469,7 @@ wanweg;Wanweg;;
 wanze;Wanze;;
 wanzele;Wanzele;;
 wanzelen;wanzelen;;
-wanzen;wanzen;;
+wanzen_2;wanzen;;
 wanzen-beer;Wanzen-beer;;
 wanzen-kahn;Wanzen-kahn;;
 wanzen-nest;Wanzen-nest;;
@@ -62703,7 +62703,7 @@ wasser-dicht;wasser-dicht;;
 wasser-dobel;Wasser-dobel;;
 wasser-doktor;Wasser-doktor;;
 waessere;Wässere;;
-waessern_2;Wässern;;
+waessern;Wässern;;
 waesser-bruecke;Wässer-brücke;;
 wasser-eck;Wasser-eck;;
 waessere-feld;Wässere-feld;;
@@ -62798,7 +62798,7 @@ wasser-maeusle;Wasser-mäusle;;
 wasser-moeckele;Wasser-möckele;;
 wasser-motte;Wasser-motte;;
 wasser-muecke;Wasser-mücke;;
-waessern;wässern;;
+waessern_2;wässern;;
 wasser-nadel;Wasser-nadel;;
 wasser-nadeln;Wasser-nadeln;;
 wasser-nase;Wasser-nase;;
@@ -62834,14 +62834,14 @@ wasser-schaft;Wasser-schaft;;
 wasser-schapf;Wasser-schapf;;
 wasser-scheide;Wasser-scheide;;
 wasser-schenkel;Wasser-schenkel;;
-wasser-scheu;wasser-scheu;;
+wasser-scheu_2;wasser-scheu;;
 wasser-schieferles;Wasser-schieferles;;
 wasser-schiff;Wasser-schiff;;
 wasser-schiffles;Wasser-schiffles;;
 wasser-schlaechtig;wasser-schlächtig;;
 wasser-schleichig;wasser-schleichig;;
 wasser-schleiferles;Wasser-schleiferles;;
-wasser-schlingig_2;Wasser-schlingig;;
+wasser-schlingig;Wasser-schlingig;;
 wasser-schloss;Wasser-schloß;;
 wasser-schlupfer;Wasser-schlupfer;;
 wasser-schmeissen;Wasser-schmeißen;;
@@ -62933,7 +62933,7 @@ watsch;Watsch;;
 watsche;Watsche;;
 watschel;Watschel;;
 watscheln;watscheln;;
-watschen;watschen;;
+watschen_2;watschen;;
 waetschle;Wätschle;;
 wat-schiff;Wat-schiff;;
 watt;Watt;;
@@ -63025,7 +63025,7 @@ weckeln;weckeln;;
 wecken;Weck(en);;
 weck-beck;Weck-beck;;
 weck-docke;Weck-docke;;
-wecken_2;wecken;;
+wecken_3;wecken;;
 wecken-mann;Wecken-mann;;
 wecken-sonntag;Wecken-sonntag;;
 wecken-stampf;Wecken-stampf;;
@@ -63222,10 +63222,10 @@ wehra;Wehra;;
 wehr-baum;Wehr-baum;;
 wehr-bube;Wehr-bube;;
 wehre;Wehre;;
-wehren_2;Wehren;;
-wehren;wehren;;
+wehren;Wehren;;
+wehren_2;wehren;;
 wehren-acker;Wehren-acker;;
-wehr-fest;wehr-fest;;
+wehr-fest_2;wehr-fest;;
 wehr-gasse;Wehr-gasse;;
 wehr-graben;Wehr-graben;;
 wehr-hag;Wehr-hag;;
@@ -63347,8 +63347,8 @@ weidel-gras;Weidel-gras;;
 weideln;weideln;;
 weidele;Weidele;;
 weidels-bach;Weidels-bach;;
-weiden;weiden;;
-weiden_2;Weiden;;
+weiden_2;weiden;;
+weiden;Weiden;;
 weiden-acker;Weiden-acker;;
 weiden-aecker;Weiden-äcker;;
 weiden-baum;Weiden-baum;;
@@ -63413,7 +63413,7 @@ weidich-gaerten;Weidich-gärten;;
 weidicht;Weidicht;;
 weidich-weg;Weidich-weg;;
 weidlein;Weidlein;;
-weidlich;weidlich;;
+weidlich_2;weidlich;;
 weidling;Weidling;;
 weidling-macher;Weidling-macher;;
 weidlin-graben;Weidlin-graben;;
@@ -63536,8 +63536,8 @@ weihwasser-spritzer;Weihwasser-spritzer;;
 weihwasser-stande;Weihwasser-stande;;
 weihwasser-wedel;Weihwasser-wedel;;
 weih-wisch;Weih-wisch;;
-weil;weil;;
-weil_2;Weil;;
+weil_2;weil;;
+weil;Weil;;
 weiland;weiland;;
 weilatten;Weilatten;;
 weilatten-graben;Weilatten-graben;;
@@ -63590,7 +63590,7 @@ wein-buecke;Wein-bücke;;
 wein-butte;Wein-butte;;
 wein-buettich;Wein-büttich;;
 wein-dorf;Wein-dorf;;
-weinelen_2;Weinelen;;
+weinelen;Weinelen;;
 weinen;weinen;;
 weiner;Weiner;;
 wein-essig;Wein-essig;;
@@ -63732,8 +63732,8 @@ weisel;Weisel;;
 weisele;Weisele;;
 weiseln;weiseln;;
 weisel-zelle;Weisel-zelle;;
-weisen_2;Weisen;;
-weisen;weisen;;
+weisen;Weisen;;
+weisen_2;weisen;;
 weisen-stein;Weisen-stein;;
 weiser;Weiser;;
 weiser-gabel;Weiser-gabel;;
@@ -63742,9 +63742,9 @@ weisheit;Weisheit;;
 weis-los;weis-los;;
 weis-machen;weis-machen;;
 weismanns-gut;Weismanns-gut;;
-weiss;weiß;;
+weiss_2;weiß;;
 weiss-acker;Weiß-acker;;
-weis-sagen;weis-sagen;;
+weis-sagen_2;weis-sagen;;
 weiss-arsch;Weiß-arsch;;
 weiss-baeckle;Weiß-bäckle;;
 weiss-baeckler;Weiß-bäckler;;
@@ -63773,14 +63773,14 @@ weisseln;weißeln;;
 weisselste;Weißelste;;
 weissen;weißen;;
 weissen-bach;Weißen-bach;;
-weissen-burg_2;Weiß(en)-burg;;
-weissen-burg;Weißen-burg;;
+weissen-burg;Weiß(en)-burg;;
+weissen-burg_2;Weißen-burg;;
 weissen-burger;Weißen-burger;;
 weissen-buehl;Weißen-bühl;;
 weissen-feld;Weißen-feld;;
 weissen-matten;Weißen-matten;;
 weissen-stein;Weißen-stein;;
-weisser;Weißer;;
+weisser_2;Weißer;;
 weiss-erde;Weiß-erde;;
 weisserfels;"Weißer Fels";;
 weiss-erle;Weiß-erle;;
@@ -63794,7 +63794,7 @@ weiss-ge;Weiß-ge;;
 weissgeln;weißgeln;;
 weissgen;weißgen;;
 weissger;Weißger;;
-weisser_2;Weisser;;
+weisser;Weisser;;
 weiss-gerber;Weiß-gerber;;
 weiss-gerberei;Weiß-gerberei;;
 weissgete;Weißgete;;
@@ -63992,8 +63992,8 @@ welmen-acker;Welmen-acker;;
 welmlingen;Welmlingen;;
 welo;Welo;;
 weloziped;Weloziped;;
-welsch_2;Welsch;;
-welsch;welsch;;
+welsch;Welsch;;
+welsch_2;welsch;;
 welschen-guller;Welschen-guller;;
 welschen-nordrach;Welschen-nordra(ch);;
 welschen-steinach;Welschen-steinach;;
@@ -64119,7 +64119,7 @@ wend-recht;Wend-recht;;
 wend-ring;Wend-ring;;
 wend-stecken;Wend-stecken;;
 wenig;wenig;;
-weniger;weniger;;
+weniger_2;weniger;;
 wenigst;wenigst;;
 wenigstens;wenigstens;;
 wenk-heim;Wenk-heim;;
@@ -64139,8 +64139,8 @@ wer-bach;Wer-bach;;
 werbach-hausen;Werbach-hausen;;
 werbahe;Werbahe;;
 werbe;Werbe;;
-werben_2;Werben;;
-werben;werben;;
+werben;Werben;;
+werben_2;werben;;
 werber;Werber;;
 werb-graben;Werb-graben;;
 werd;Werd;;
@@ -64225,7 +64225,7 @@ werre;Werre;;
 werren;werren;;
 werren-bach;Werren-bach;;
 werren-knecht;Werren-knecht;;
-wersich;wersich;;
+wersich_2;wersich;;
 wert;Wert;;
 wert_2;wert;;
 wert-acker;Wert-acker;;
@@ -64337,11 +64337,11 @@ wetter-launisch;wetter-launisch;;
 wetterle;Wetterle;;
 wetter-laeuten;Wetter-läuten;;
 wetter-leich;Wetter-leich;;
-wetter-leichen;wetter-leichen;;
-wetter-leichen_2;Wetter-leichen;;
+wetter-leichen_2;wetter-leichen;;
+wetter-leichen;Wetter-leichen;;
 wetter-leien;wetter-leien;;
-wetter-leuchten;wetter-leuchten;;
-wetter-leuchten_2;Wetter-leuchten;;
+wetter-leuchten_2;wetter-leuchten;;
+wetter-leuchten;Wetter-leuchten;;
 wetterlich;Wetterlich;;
 wetterlich_2;wetterlich;;
 wetter-loch;Wetter-loch;;
@@ -64513,7 +64513,7 @@ wider-reden;wider-reden;;
 wider-rennen;wider-rennen;;
 wider-rist;Wider-rist;;
 wider-ruf;Wider-ruf;;
-wider-rufen;wider-rufen;;
+wider-rufen_2;wider-rufen;;
 wider-sacher;Wider-sacher;;
 wider-satz;Wider-satz;;
 wider-schein;Wider-schein;;
@@ -64596,7 +64596,7 @@ wieder-kauen;wieder-kauen;;
 wieder-kaeuen;wieder-käuen;;
 wieder-kehrung;Wieder-kehrung;;
 wieder-komm;Wieder-komm;;
-wieder-kommen;wieder-kommen;;
+wieder-kommen_2;wieder-kommen;;
 wieder-lugen;wieder-lugen;;
 wieder-sehen;Wieder-sehen;;
 wieder-taeufer;Wieder-täufer;;
@@ -64606,7 +64606,7 @@ wiefel;Wiefel;;
 wiefel-jueppe;Wiefel-jüppe;;
 wiefeln;wiefeln;;
 wiefel-rock;Wiefel-rock;;
-wiefling;wiefling;;
+wiefling_2;wiefling;;
 wiefling-hippe;Wiefling-hippe;;
 wiege;Wiege;;
 wiegel;Wiegel;;
@@ -64649,11 +64649,11 @@ wiese-bach;Wiese-bach;;
 wiesel;Wiesel;;
 wiesele;Wiesele;;
 wieselen;wieselen;;
-wieseln;wieseln;;
+wieseln_2;wieseln;;
 wieseles-flink;wiesel(es)-flink;;
 wieseles-wohl;wiesele(s)-wohl;;
 wieseles-wohl_2;wieseles-wohl;;
-wieseln_2;Wieseln;;
+wieseln;Wieseln;;
 wiesel-wohl;wiesel-wohl;;
 wiesels-wohl;wiesels-wohl;;
 wiesen;Wiesen;;
@@ -64714,8 +64714,8 @@ wiggen-weiler;Wiggen-weiler;;
 wiher;Wiher;;
 wihl;Wihl;;
 wik;Wik;;
-wild;wild;;
-wild_2;Wild;;
+wild_2;wild;;
+wild;Wild;;
 wild-baechli;Wild-bächli;;
 wild-bad;Wild-bad;;
 wild-bann;Wild-bann;;
@@ -64811,7 +64811,7 @@ wimmern;wimmern;;
 wimmler;Wimmler;;
 wimmlerin;Wimmlerin;;
 wimmler-scherle;Wimmler-scherle;;
-wimlot;wimlot;;
+wimlot_2;wimlot;;
 wimlete;Wimlete;;
 wimpel;Wimpel;;
 wimpel-sinnig;wimpel-sinnig;;
@@ -65181,7 +65181,7 @@ wispeln;wispeln;;
 wisperlen;wisperlen;;
 wispern;wispern;;
 wisplig;wisplig;;
-wissen;wissen;;
+wissen_2;wissen;;
 wissenschaft;Wissenschaft;;
 wissenthaft;wissen(t)haft;;
 wisser-eck;Wisser-eck;;
@@ -65198,8 +65198,8 @@ wist-umme;wist-umme;;
 wist-und-her;wist-und-her;;
 wist-zoppen;wist-zoppen;;
 wisund;Wisund;;
-wit;wit;;
-wit_2;Wit;;
+wit_2;wit;;
+wit;Wit;;
 wit-frau;Wit-frau;;
 witwen-blume;Witwen-blume;;
 wit-gasse;Wit-gasse;;
@@ -65289,7 +65289,7 @@ wochen-toelpel;Wochen-tölpel;;
 woch-hausen;Woch-hausen;;
 wochner;Wochner;;
 woechnerin;Wöchnerin;;
-wocht;wocht;;
+wocht_2;wocht;;
 wocken;Wocken;;
 wocken-helle;Wocken-helle;;
 wo-darueber;wo-darüber;;
@@ -65311,7 +65311,7 @@ wo-hinan;wo-hinan;;
 wo-hinaus;wo-hinaus;;
 wohl_2;wohl;;
 wohlansein;"wohlan sein";;
-wohl-auf;wohl-auf;;
+wohl-auf_2;wohl-auf;;
 wohl-dienen;wohl-dienen;;
 wohl-diener;Wohl-diener;;
 wohl-dienerei;Wohl-dienerei;;
@@ -65518,7 +65518,7 @@ wo-raus;wo-raus;;
 worb;Worb;;
 worbel-hag;Worbel-hag;;
 worbelhag-aecker;Worbelhag-äcker;;
-worben;worben;;
+worben_2;worben;;
 worberin;Worberin;;
 worb-gabel;Worb-gabel;;
 worben-gabel;Worben-gabel;;
@@ -65626,7 +65626,7 @@ wuhr-aecker;Wuhr-äcker;;
 wuhr-axt;Wuhr-axt;;
 wuehre;Wühre;;
 wuehre-acker;Wühre-acker;;
-wuhren_2;Wuhren;;
+wuhren;Wuhren;;
 wuhren-schauer;Wuhren-schauer;;
 wuhr-genossenschaft;Wuhr-genossenschaft;;
 wuhr-knecht;Wuhr-knecht;;
@@ -65637,12 +65637,12 @@ wuhr-wiesen;Wuhr-wiesen;;
 wule-wu;wule-wu;;
 wuelflingers-hoelzle;Wülflingers-hölzle;;
 wulin-bach;Wulin-bach;;
-wulle-wulle;Wulle(-wulle);;
-wulli;wulli;;
+wulle-wulle_2;Wulle(-wulle);;
+wulli_2;wulli;;
 wulle-gans;Wulle-gans;;
 wuellele;Wüllele;;
 wullen;wullen;;
-wulle-wulle_2;Wulle-wulle;;
+wulle-wulle;Wulle-wulle;;
 wulle-wutz;Wulle-wutz;;
 wulm;Wulm;;
 wulst;Wulst;;
@@ -65685,7 +65685,7 @@ wunder-messe;Wunder-messe;;
 wundern;wundern;;
 wunder-nehmen;wunder-nehmen;;
 wunder-schoen;wunder-schön;;
-wunder-selten;wunder-selten;;
+wunder-selten_2;wunder-selten;;
 wunder-tag;Wunder-tag;;
 wunder-voll;wunder-voll;;
 wunder-was;wunder-was;;
@@ -65700,7 +65700,7 @@ wuenschel-rute;Wünschel-rute;;
 wuenschen;wünschen;;
 wunschen-muehle;Wunschen-mühle;;
 wunzig;wunzig;;
-wupp;wupp;;
+wupp_2;wupp;;
 wupp-dich;Wupp-dich;;
 wupperlen;wupperlen;;
 wuerde;Würde;;
@@ -65812,8 +65812,8 @@ wuerttembergisch;württembergisch;;
 wuerttembergische;Württembergische;;
 wuerttembergischerhof;"Württembergischer Hof";;
 wuerttembergischesholz;"Württembergisches Holz";;
-wurz;wurz;;
-wurz_2;Wurz;;
+wurz_2;wurz;;
+wurz;Wurz;;
 wuerz;Würz;;
 wuerz-aepfel;Würz-äpfel;;
 wuerz-birne;Würz-birne;;
@@ -65884,14 +65884,14 @@ wusseler;Wusseler;;
 wuss-saeule;Wuß-säule;;
 wuss-sau;Wuß-sau;;
 wust;Wust;;
-wuest;wüst;;
+wuest_2;wüst;;
 wuestau;Wüstau;;
 wuesteegerte;"Wüste Egert(e)";;
 wueste;Wüste;;
 wustel;Wustel;;
 wuestel;Wüstel;;
 wusteln;wusteln;;
-wusten;wusten;;
+wusten_2;wusten;;
 wuesten;wüsten;;
 wuesten-aecker;Wüsten-äcker;;
 wuesten-berger;Wüsten-berger;;
@@ -65974,11 +65974,11 @@ zacherlin;Zacherlin;;
 zack;zack;;
 zackel;Zackel;;
 zackeln;zackeln;;
-zaeckerer;Zäckerer?;;
+zaeckerer_2;Zäckerer?;;
 zaeckeln;zäckeln;;
 zacken;Zacken;;
 zacken-litze;Zacken-litze;;
-zaeckerer_2;Zäckerer;;
+zaeckerer;Zäckerer;;
 zackerei;Zackerei;;
 zacker-fahren;zacker-fahren;;
 zacker-gang;Zacker-gang;;
@@ -66005,8 +66005,8 @@ zaeh-fitz;Zäh-fitz;;
 zaeh-haar;Zäh-haar;;
 zahl;Zahl;;
 zahl-bar;zahl-bar;;
-zahlen_2;Zahlen;;
-zahlen;zahlen;;
+zahlen;Zahlen;;
+zahlen_2;zahlen;;
 zaehlen;zählen;;
 zahler;Zahler;;
 zaehler;Zähler;;
@@ -66161,7 +66161,7 @@ zapplete;Zapplete;;
 zaptieren;zaptieren;;
 zar;Zar;;
 zarge;Zarge;;
-zargen;zargen;;
+zargen_2;zargen;;
 zargen-traemel;zargen-träm(el);;
 zart;zart;;
 zarte;zarte;;
@@ -66170,18 +66170,18 @@ zart-jaehrig;zart-jährig;;
 zaertlich;zärtlich;;
 zaesar;Zäsar;;
 zaeschen;zäschen;;
-zase;zase;;
+zase_2;zase;;
 zaseln;zaseln;;
 zasen;Zasen;;
 zaesemen;Zäse(me)n;;
 zaser;Zaser;;
 zaeserle;Zäserle;;
-zaeserln;zäserln;;
+zaeserln_2;zäserln;;
 zaeser;Zäser;;
 zaseres;Zaseres;;
 zaeseres;Zäseres;;
 zaserig;zaserig;;
-zaeserig_2;Zäserig;;
+zaeserig;Zäserig;;
 zaesern;zäsern;;
 zaster;Zaster;;
 zastig;Zastig;;
@@ -66233,8 +66233,8 @@ zaupel;Zaupel;;
 zaeuple;Zäuple;;
 zauseln;zauseln;;
 zauselt;Zauselt;;
-zausen_2;Zausen;;
-zausen;zausen;;
+zausen;Zausen;;
+zausen_2;zausen;;
 zauserle;Zauserle;;
 zausle;Zausle;;
 zaute;Zaute;;
@@ -66265,7 +66265,7 @@ ze-emer;Ze-emer;;
 zefir;zefir;;
 zephyr;Zephyr;;
 zegel;Zegel;;
-zegenen;zegenen;;
+zegenen_2;zegenen;;
 zeger-auge;Zeger-auge;;
 zego;Zego;;
 zehe;Zehe;;
@@ -66359,8 +66359,8 @@ zeiland;Zeiland;;
 zeilander;Zeilander;;
 zeiland-schelfen;Zeiland-schelfen;;
 zeile;Zeile;;
-zeilen_2;Zeilen;;
-zeilen;zeilen;;
+zeilen;Zeilen;;
+zeilen_2;zeilen;;
 zeilen-kapelle;Zeilen-kapelle;;
 zeilen-schinder;Zeilen-schinder;;
 zeilen-weise;zeilen-weise;;
@@ -66383,7 +66383,7 @@ zeit;Zeit;;
 zeit-abschnitt;Zeit-abschnitt;;
 zeit-abstand;Zeit-abstand;;
 zeit-alter;Zeit-alter;;
-zeiten_2;Zeiten;;
+zeiten;Zeiten;;
 zeiten-roeslein;Zeiten-röslein;;
 zeiten-sturm;Zeiten-sturm;;
 zeiten-weise;zeit(en)-weise;;
@@ -66454,7 +66454,7 @@ zelt;Zelt;;
 zelt-bahn;Zelt-bahn;;
 zelt-blahe;Zelt-blahe;;
 zelte;Zelte;;
-zelten;zelten;;
+zelten_2;zelten;;
 zelter;Zelter;;
 zelt-getuech;Zelt-getüch;;
 zeltle;Zeltle;;
@@ -66605,12 +66605,12 @@ ziblins-grien;Ziblins-grien;;
 zicherei;Zicherei;;
 zicke;Zicke;;
 zickele;Zickele;;
-zicklein;Zicklein;;
+zicklein_2;Zicklein;;
 zickelen;zickelen;;
 zickeles-braten;Zickele(s)-braten;;
 zickeles-fleisch;Zickeles-fleisch;;
 zickeln;zickeln;;
-zicklein_2;Zickle(in);;
+zicklein;Zickle(in);;
 zicklein-schmalz;Zicklein-schmalz;;
 zickli;Zickli;;
 zick-zack;Zick-zack;;
@@ -66988,7 +66988,7 @@ ziprianer-augen;Ziprianer-Augen;;
 ziprianer;Ziprianer;;
 zirbel;Zirbel;;
 zirbeln;zirbeln;;
-ziren;ziren;;
+ziren_2;ziren;;
 ziriak;Ziriak;;
 zirinke;Zirinke;;
 zirinken-busch;Zirinken-busch;;
@@ -67001,7 +67001,7 @@ zirkel-schmied;Zirkel-schmied;;
 zirkulieren;zirkulieren;;
 zirkus;Zirkus;;
 zirli;Zirli;;
-zirpen;zirpen;;
+zirpen_2;zirpen;;
 zischen;zischen;;
 zisel;Zisel;;
 ziseleur;Ziseleur;;
@@ -67042,7 +67042,7 @@ zitter-gras;Zitter-gras;;
 zitterig;zitterig;;
 zitter-klee;Zitter-klee;;
 zitterle;Zitterle;;
-zitterligs;zitterligs;;
+zitterligs_2;zitterligs;;
 zitter-mal;Zitter-mal;;
 zitter-motte;Zitter-motte;;
 zittern;zittern;;
@@ -67072,13 +67072,13 @@ zoche;Zoche;;
 zochen;Zochen;;
 zoechlen;zöchlen;;
 zochen-birne;Zochen-birne;;
-zoches;zoches;;
-zoches_2;Zoches;;
+zoches_2;zoches;;
+zoches;Zoches;;
 zock;Zock;;
 zock-angel;Zock-angel;;
 zockeln;zockeln;;
 zocken;zocken;;
-zoecken;zöcken;;
+zoecken_2;zöcken;;
 zoeckes;Zöckes;;
 zocker;Zocker;;
 zock-fischer;Zock-fischer;;
@@ -67209,7 +67209,7 @@ zotzeln;Zotzeln;;
 zozzele;Zozzele;;
 zozig;zozig;;
 zoznegg;Zoznegg;;
-zu;zu;;
+zu_2;zu;;
 zuabend-essen;"zu Abend-essen";;
 zuallenwinden;"Zu allen Winden";;
 zu-aller-erst;zu-aller-erst;;
@@ -67396,7 +67396,7 @@ zug-kuh;Zug-kuh;;
 zug-lade;Zug-lade;;
 zug-leder;Zug-leder;;
 zu-gleich;zu-gleich;;
-zuegles;zügles;;
+zuegles_2;zügles;;
 zueglis;züglis;;
 zug-luft;Zug-luft;;
 zug-mantel;Zug-mantel;;
@@ -67514,7 +67514,7 @@ zundel-mann;Zundel-mann;;
 zuendeln;zündeln;;
 zuendel-rot;zündel-rot;;
 zundel-stein;Zundel-stein;;
-zuenden;zünden;;
+zuenden_2;zünden;;
 zunder;Zunder;;
 zunder-haendler;Zunder-händler;;
 zuenderlen;zünderlen;;
@@ -67581,7 +67581,7 @@ zu-pappen;zu-pappen;;
 zu-patschen;zu-patschen;;
 zu-patschieren;zu-patschieren;;
 zupfe;Zupfe;;
-zupfen;zupfen;;
+zupfen_2;zupfen;;
 zupfete;Zupfete;;
 zu-pfetzen;zu-pfetzen;;
 zupf-geige;Zupf-geige;;
@@ -67635,7 +67635,7 @@ zurueck-leinen;zurück-leinen;;
 zurueck-machen;zurück-machen;;
 zurueck-nehmen;zurück-nehmen;;
 zurueck-rufen;zurück-rufen;;
-zurueck-schenken;zurück-schenken;;
+zurueck-schenken_2;zurück-schenken;;
 zurueck-schieben;zurück-schieben;;
 zurueck-schlagen;zurück-schlagen;;
 zurueck-schneiden;zurück-schneiden;;
@@ -67926,7 +67926,7 @@ zusammen-zurpfen;zusammen-zurpfen;;
 zusammen-zweigen;zusammen-zweigen;;
 zu-sammete;Zu-sammete;;
 zu-samt;zu-samt;;
-zusatze;Zusatze;;
+zusatze_2;Zusatze;;
 zu-saetzlich;zu-sätzlich;;
 zu-saufen;zu-saufen;;
 zu-schaffen;zu-schaffen;;
@@ -67949,8 +67949,8 @@ zuschuss;Zuschuß;;
 zu-schustern;zu-schustern;;
 zu-schwaetzen;zu-schwätzen;;
 zu-sehends;zu-sehends;;
-zusel_2;Zus(el);;
-zusel;Zusel;;
+zusel;Zus(el);;
+zusel_2;Zusel;;
 zusel-haar;Zusel-haar;;
 zusel-hexe;Zusel-hexe;;
 zussen-berg;Zus(s)en-berg;;
@@ -67977,10 +67977,10 @@ zu-stricken;zu-stricken;;
 zu-tappen;zu-tappen;;
 zu-taeppisch;zu-täppisch;;
 zute;Zute;;
-zuteil;zuteil;;
+zuteil_2;zuteil;;
 zu-teilen;zu-teilen;;
 zu-tragen;zu-tragen;;
-zu-trauen;zu-trauen;;
+zu-trauen_2;zu-trauen;;
 zu-traulich;zu-traulich;;
 zu-treffen;zu-treffen;;
 zu-treiben;zu-treiben;;
@@ -67993,8 +67993,8 @@ zuttel-buette;Zuttel-bütte;;
 zutteri;Zutteri;;
 zuetteri;Zütteri;;
 zuettern;züttern;;
-zu-tun_2;Zu-tun;;
-zu-tun;zu-tun;;
+zu-tun;Zu-tun;;
+zu-tun_2;zu-tun;;
 zutzel;Zutzel;;
 zu-unter-obsich;zu-unter-obsich;;
 zu-unterst;zu-unterst;;
@@ -68179,8 +68179,8 @@ zwerch-pfeife;Zwerch-pfeife;;
 zwerch-reben;Zwerch-reben;;
 zwerch-sack;Zwerch-sack;;
 zwerch-stueckle;Zwerch-stückle;;
-zwerch-weg;Zwerch-weg;;
-zwerch-weg_2;Zwer(ch)-weg;;
+zwerch-weg_2;Zwerch-weg;;
+zwerch-weg;Zwer(ch)-weg;;
 zwerch-wiesen;Zwerch-wiesen;;
 zwerch-wind;Zwerch-wind;;
 zwerg;Zwerg;;
@@ -68514,12 +68514,12 @@ aus-segnung;Aus-segnung;;2
 be-segnen_2;be-segnen;;
 lebendiger;Lebendiger;;
 secker.ii;Seck(er);2;82
-dunkel_2;Dunkel;;
+dunkel;Dunkel;;
 gauser;Gauser;;
 grosele;Grosele;;
 hemd-hafte;Hemd-hafte;;
 drein-sehen;drein-sehen;;
-nach-sehen_2;Nach-sehen;;
+nach-sehen;Nach-sehen;;
 seher;Seher;;82
 seher-kraft;Seher-kraft;;
 sehig;sehig;;82
@@ -68616,7 +68616,7 @@ seinigen;seinigen;;
 buch-seite;Buch-seite;;
 butter-schnitte;Butter-schnitte;;
 gondel-seite;Gondel-seite;;
-jenseits_2;Jenseits;;
+jenseits;Jenseits;;
 maedchen-seite;Mädchen-seite;;
 anschnitt-seite;Anschnitt-seite;;
 anderer-seit;anderer-seit;;
@@ -68758,7 +68758,7 @@ zuerst;zuerst;;
 servazius;Servaz(ius);;84
 servela;Servela;;84
 papier-serviette;Papier-serviette;;
-socken;Sock(e)(n);;85
+socken_2;Sock(e)(n);;85
 zerevis-kaepple;Zerevis-käpple;;
 sesseles-tragen;Sesseles-tragen;;84
 sessel-ruecken;Sessel-rücken;;
@@ -68826,7 +68826,7 @@ sieb-eimer;Sieb-eimer;;
 sieben.i;sieben;1;84
 sieben.ii;sieben;2;84
 liesel;Liesel;;
-sieben-fach_2;Sieben-fach;;84
+sieben-fach;Sieben-fach;;84
 siebenhippen-weible;Siebenhippen-weible;;84
 sieben-karig;sieben-karig;;84
 fuenf-karig;fünf-karig;;
@@ -68852,8 +68852,8 @@ ge-sotten;ge-sotten;;21
 aus-sieden;aus-sieden;;
 bier-sieder;Bier-sieder;;
 sied-hafen;Sied-hafen;;
-siedig_2;Siedig;;85
-siedig-heiss_2;Siedig-heiß;;85
+siedig;Siedig;;85
+siedig-heiss;Siedig-heiß;;85
 siegelauer;Siegelauer;;
 siegel-graber;Siegel-graber;;85
 siegel-tanse;Siegel-tanse;;
@@ -69016,7 +69016,7 @@ sockeln;sockeln;;85
 socket;socket;;85
 salband-socken;Salband-socke(n);;
 bohnen-stroh_2;Bohnen-stroh;;
-socken_2;socken;;85
+socken_3;socken;;85
 bleich-soda;Bleich-soda;;
 glueckerles-wasser;Glückerles-wasser;;
 soden;soden;;
@@ -69116,7 +69116,7 @@ sonnen-zwirbele;Sonnen-zwirbele;;86
 sonnen-gicht;Sonn(en)-gicht;;86
 sonnigs;Sonnigs;;
 sonntags-anzug;Sonntags-anzug;;86
-wecken_3;Wecken;;
+wecken_2;Wecken;;
 ein-laeuten;ein-läuten;;
 mittfasten-sonntag;Mittfasten-sonntag;;
 monats-sonntage;Monats-sonntage;;55
@@ -69441,7 +69441,7 @@ spiel-grund;Spiel-grund;;87
 spiel-hoelle;Spiel-hölle;;
 spiel-muecke;Spiel-mücke;;
 zusammen-hinan-essen;zusammen-hinan-essen;;
-spiessen;spießen;;87
+spiessen_2;spießen;;87
 spissen;spissen;;88
 spiessglasbutter-oel;Spießglasbutter-öl;;
 spiessle;Spießle;;
@@ -69464,7 +69464,7 @@ spinnele-wub;Spinnele-wub;;
 spinn-gewebe;Spinn-gewebe;;
 spinnen-boppelen;Spinn(en)-bopp(el)(en);;88
 spinnen-poppelen;Spinnen-popp(el)en;;88
-spinnen-feind_2;spinn(e)(n)-feind;;
+spinnen-feind;spinn(e)(n)-feind;;
 spinnen-gewebe;Spinn(en)-gewebe;;88
 spinnen-gewett;Spinnen-gewett;;
 singele-matt;Singel(e)-matt;;85
@@ -69563,7 +69563,7 @@ spott-stall;Spott-stall;;
 spott-vogel;Spott-vogel;;
 sprach-gefuehl;Sprach-gefühl;;
 sprach-haus;Sprach-haus;;
-sprenzen_2;Sprenzen;;88
+sprenzen;Sprenzen;;88
 spranz;Spranz;;88
 sprau;Sprau;;
 spratzen;spratzen;;88
@@ -69741,7 +69741,7 @@ stadt-pfarramt;Stadt-pfarramt;;89
 stadt-schminkel;Stadt-schminkel;;
 stadt-schmuetzer;Stadt-schmützer;;
 stadt-streicher;Stadt-streicher;;89
-gest_2;Gest;;21
+gest;Gest;;21
 stauffer-buechse;Stauffer-büchse;;
 stadt-vagant;Stadt-vagant;;
 stadt-weib;Stadt-weib;;89
@@ -69786,7 +69786,7 @@ stall-schaufel;Stall-schaufel;;89
 stech-schwader;Stech-schwader;;
 stech-schritt;Stech-schritt;;
 steckeln;steckeln;;
-stoecken_2;Stöcken;;
+stoecken;Stöcken;;
 stall-beschuette;Stall-beschütte;;
 stall-diele;Stall-diele;;
 stalle;Stalle;;
@@ -69828,7 +69828,7 @@ wein-stande;Wein-stande;;
 stande-kabis;Stande-(kabis);;
 standes-amtlich;standes-amtlich;;89
 stand-haft;stand-haft;;89
-stand-fest_2;Stand-fest;;89
+stand-fest;Stand-fest;;89
 stand-holz;Stand-holz;;
 stand-land;Stand-land;;
 stand-rechtlich;stand-rechtlich;;90
@@ -69933,7 +69933,7 @@ semperig;semperig;;84
 stein-wenden;Stein-wenden;;
 stein-wacken;Stein-wacken;;
 steiper;Steiper;;
-semper_2;Semper;;84
+semper;Semper;;84
 stelzel;Stelzel;;
 umeinander-;umeinander-;;
 stelement;Stelement;;
@@ -70008,7 +70008,7 @@ stock-lauf;Stock-lauf;;
 stock-haube;Stock-haube;;
 stock-holdere;Stock-holdere;;
 stoeckle-rie;Stöckle-rie;;
-stoeckig_2;Stöckig;;
+stoeckig;Stöckig;;
 stock-ofen;Stock-ofen;;
 stoeck-teil;Stöck-teil;;
 stock-wolke;Stock-wolke;;
@@ -70084,7 +70084,7 @@ agio;Agio;;1
 agle;Agle;;1
 ahne.ii;Ahne;2;1
 aehneln;ähneln;;1
-aehren_2;Ähren;;1
+aehren;Ähren;;1
 akzent;Akzent;;1
 aelaegsl;älägsl;;1
 aelbe;älbe;;1
@@ -70279,7 +70279,7 @@ packel;Packel;;2
 back-haeuele;Back-häuele;;2
 back-haus;Back-haus;;2
 back-pfeife;Back-pfeife;;2
-baden_2;Baden;;2
+baden;Baden;;2
 paederast;Päderast;;2
 badi;badi;;2
 paegori;Pägori;;2
@@ -70317,7 +70317,7 @@ paep;päp;;2
 baepfele;Bäpfele;;2
 papoli;papoli;;2
 pappe;Pappe;;2
-bar_2;Bar;;2
+bar;Bar;;2
 barbier;Barbier;;2
 baerches;Bärches;;2
 baren;Baren;;2
@@ -70332,7 +70332,7 @@ baerme;Bärme;;2
 barnabas;Barnabas;;2
 baernert;Bärnert;;2
 baeromesle;Bäromesle;;2
-barsch_2;Barsch;;2
+barsch;Barsch;;2
 barschen;barschen;;2
 part;Part;;2
 barte;Barte;;2
@@ -70342,7 +70342,7 @@ ba-schitt;Ba-schitt;;2
 pascholl;pascholl;;2
 baes-kuegele;Bäs-kügele;;2
 basler;Basler;;2
-bass_2;baß;;2
+bass;baß;;2
 bastei;Bastei;;2
 bast-nagel;Bast-nagel;;2
 pastor;Pastor;;2
@@ -70681,7 +70681,7 @@ pfuserli;Pfuser(li);;3
 pfusig;pfusig;;3
 pfusili;Pfusili;;3
 pfust-ros;Pfust-ros;;3
-pfut_2;Pfut;;3
+pfut;Pfut;;3
 pfutle;Pfutle;;3
 pfutscht;pfutscht;;3
 pfuttel;Pfuttel;;3
@@ -70835,7 +70835,7 @@ plantschen;plantschen;;4
 plan-wagen;Plan-wagen;;4
 plapp;plapp;;4
 plapper;Plapper;;4
-plarren_2;Plarre(n);;4
+plarren;Plarre(n);;4
 blas-arsch;Blas-arsch;;4
 blaeser;Bläser;;4
 blaesi;Bläsi;;4
@@ -70955,7 +70955,7 @@ bocherle;Bocherle;;4
 bochsel-naechte;Bochsel-nächte;;4
 pocke;Pocke;;4
 boeckeln;böckeln;;4
-bocken_2;Bocken;;4
+bocken;Bocken;;4
 bockes;bockes;;4
 bocks-beinig;bocks-beinig;;4
 bocks-beutel.ii;Bocks-beutel;2;4
@@ -71031,7 +71031,7 @@ bombole;Bombo(le);;4
 pommer;Pommer;;4
 pomologe;Pomologe;;4
 pomp;Pomp;;4
-bon_2;Bon;;4
+bon;Bon;;4
 bonaparte;Bonaparte;;4
 ponemai;ponemai;;4
 bonne;Bonne;;4
@@ -71071,7 +71071,7 @@ portland-zement;Portland-zement;;4
 boerzel;Börzel;;4
 borzeln;borzeln;;4
 boesch;Bösch;;4
-boschen_2;Bosche(n);;4
+boschen;Bosche(n);;4
 boese-wicht;Böse-wicht;;4
 bosget;Bosget;;4
 bos-hummele;Bos-hummele;;4
@@ -71322,7 +71322,7 @@ buhne;Buhne;;5
 buehre;Bühre;;5
 buehrer;Bührer;;5
 buehrle;Bührle;;5
-bule_2;Bul(e);;5
+bule;Bul(e);;5
 bulem;Bulem;;5
 bulemer;Bulemer;;5
 pulle;Pulle;;5
@@ -71472,7 +71472,7 @@ tage-buch;Tage-buch;;6
 tagelen;tagelen;;6
 tage-lied;Tage-lied;;6
 tageln;tageln;;6
-tagen_2;Tagen;;6
+tagen;Tagen;;6
 tagner;Tagner;;6
 daguerreotypie;Daguerreotypie;;6
 tag-waehlerei;Tag-wählerei;;6
@@ -71767,7 +71767,7 @@ tipserles;Tipserles;;7
 dir;dir;;7
 tirade;Tirade;;7
 tiren;Tiren;;7
-dis_2;Dis;;7
+dis;Dis;;7
 tisch-decke;Tisch-decke;;7
 tischler;Tischler;;7
 tisch-platte;Tisch-platte;;7
@@ -71792,7 +71792,7 @@ dje;D(j)e;;7
 tn-;tn-;;7
 toast;Toast;;7
 dobe;Dobe;;7
-dock_2;Dock;;7
+dock;Dock;;7
 docken-markt;Docken-markt;;7
 todemig;todemig;;7
 doeggingen;Döggingen;;7
@@ -71820,7 +71820,7 @@ donnermark;Donnermark;;7
 donners-distel;Donners-distel;;7
 donnerwettergras;Donnerwettergras;;7
 topas;Topas;;7
-topfen_2;Topfen;;7
+topfen;Topfen;;7
 topp;Topp;;7
 topp_2;topp;;7
 doppel-schritt;Doppel-schritt;;7
@@ -71879,11 +71879,11 @@ tralli;tralli;;7
 tralloeri;Trallöri;;7
 traemeln;trämeln;;7
 traemlig;trämlig;;7
-trampen_2;Trampe(n);;7
+trampen;Trampe(n);;7
 tramplaecht;tramplächt;;7
 dran-;dran(-);;7
 traeneln;träneln;;7
-drang_2;Drang;;7
+drang;Drang;;7
 draenglerei;Dränglerei;;7
 drangsal;Drangsal;;7
 draengsen;drängsen;;7
@@ -71891,7 +71891,7 @@ traenkle;Tränkle;;7
 traenktor;Tränktor;;7
 trappe.iii;Trappe;3;7
 traeppelen;träppelen;;7
-trappen_2;Trappen;;7
+trappen;Trappen;;7
 traeppling;Träppling;;7
 trassen;trassen;;7
 trastel;Trastel;;7
@@ -72184,7 +72184,7 @@ tusche;Tusche;;8
 duschen;duschen;;8
 duse;Duse;;8
 dueselen;düselen;;8
-dusem_2;Dusem;;8
+dusem;Dusem;;8
 duslig;duslig;;8
 duesmen;düsmen;;8
 duesselen;düsselen;;8
@@ -72350,7 +72350,7 @@ elegant;elegant;;9
 eleganz;Eleganz;;9
 elen;Elen;;9
 elen-tier;Elen-tier;;9
-elf_2;Elf;;9
+elf;Elf;;9
 elfe;Elfe;;9
 elias;Elias;;9
 eliezer;Eliezer;;9
@@ -72385,7 +72385,7 @@ enderle.ii;Enderle;2;9
 endigen;endigen;;9
 endli-christ;Endli-christ;;9
 enerst;enerst;;9
-eng_2;Eng;;9
+eng;Eng;;9
 engbutt;Engbutt;;9
 enge_2;enge;;9
 engeleliebe-tee;Engeleliebe-tee;;9
@@ -72498,7 +72498,7 @@ er-saeufen;er-säufen;;9
 er-schlaffen;er-schlaffen;;9
 er-spaehen;er-spähen;;9
 er-sparen;er-sparen;;9
-erst_2;Erst;;9
+erst;Erst;;9
 er-starken;er-starken;;9
 er-stechen;er-stechen;;9
 er-steigern;er-steigern;;9
@@ -72522,7 +72522,7 @@ er-zuernen;er-zürnen;;9
 es.i;es;1;9
 es.ii;es;2;9
 esaessele;Esäß(ele);;9
-eschen;eschen;;9
+eschen_2;eschen;;9
 eschen-holz;Eschen-holz;;9
 escher;Escher;;9
 eschle.i;Eschle;1;9
@@ -72673,7 +72673,7 @@ faeul-nis;Fäul-nis;;10
 faeuserlen;fäuserlen;;10
 fauteuil;Fauteuil;;10
 fazi;Fazi;;10
-feckten_2;Feckte(n);;10
+feckten;Feckte(n);;10
 feder-;Feder-;;10
 federachse;Federachse;;10
 federbach;Federbach;;10
@@ -73039,7 +73039,7 @@ fletsche;Fletsche;;14
 fletter-blume;Fletter-blume;;14
 flexier-keste;Flexier-keste;;14
 fli;fli;;14
-flicken_2;Flicken;;14
+flicken;Flicken;;14
 flieden;Flieden;;14
 flieger-bomben;Flieger-bomben;;14
 flieget;Flieget;;14
@@ -73193,7 +73193,7 @@ frieder;Frieder;;16
 friedolin;Friedolin;;16
 fries;Fries;;16
 friesack;Friesack;;16
-frisch_2;Frisch;;16
+frisch;Frisch;;16
 frisch-e;Frisch-e;;16
 frischerle;Frischerle;;16
 fritschi;Fritsch(i);;16
@@ -73365,7 +73365,7 @@ gansler;Gansler;;18
 gaensthaler;Gänsthaler;;18
 ganter.ii;Ganter;2;18
 gaentner;Gäntner;;18
-ganz_2;Ganz;;18
+ganz;Ganz;;18
 gaenzinger;Gänzinger;;18
 ganz-mann;Ganz-mann;;18
 gapen;gapen;;18
@@ -73671,7 +73671,7 @@ gicht-rose;Gicht-rose;;22
 gick;gick;;22
 gickel;Gickel;;22
 gickes;Gickes;;22
-gicks_2;Gicks;;22
+gicks;Gicks;;22
 gicksch;Gicksch;;22
 gieb;Gieb;;22
 giebig;giebig;;22
@@ -73721,7 +73721,7 @@ glanz-mann;Glanz-mann;;22
 glase;Glase;;22
 glauern;glauern;;22
 glausen;glausen;;22
-gleich_2;Gleich;;22
+gleich;Gleich;;22
 gleichenig;gleichenig;;22
 gleichig;gleichig;;22
 gleich-sam;gleich-sam;;22
@@ -74091,7 +74091,7 @@ hahnen;Hahnen;;25
 hahnen-nagel;Hahnen-nagel;;25
 hackete;Hackete;;25
 hahnrei;Hahnrei;;26
-hai_2;Hai;;26
+hai;Hai;;26
 hain;Hain;;26
 hain-buche;Hain-buche;;26
 hairi;hairi;;26
@@ -74116,7 +74116,7 @@ half-reiter;Half-reiter;;26
 halfter-kessele;Halfter-kessele;;26
 haeli;Häli;;26
 halkyonisch;halkyonisch;;26
-hallen_2;Hallen;;26
+hallen;Hallen;;26
 haller;Haller;;26
 hallig;Hallig;;26
 halli-hallo;halli-hallo;;26
@@ -74377,7 +74377,7 @@ helgenzahn;Helgenzahn;;28
 helgertle;Helgertle;;28
 helgle;Helgle;;28
 heli;Heli;;28
-hell_2;Hell;;28
+hell;Hell;;28
 hellarme;Hellarme;;28
 hellaut;Hellaut;;28
 hellbank;Hellbank;;28
@@ -75036,7 +75036,7 @@ hist;hist!;;32
 hitz;Hitz;;32
 hiwen;hiwen;;32
 hixen;hixen;;32
-ho_2;Ho;;32
+ho;Ho;;32
 ho-arme;Ho-arme;;32
 hob;Hob;;32
 hobank;Hobank;;32
@@ -75047,7 +75047,7 @@ hobenne;Hobenne;;32
 hobigser;Hobigser;;32
 hobler;Hobler;;32
 hobmete;Hobmete;;32
-hoch_2;Hoch;;32
+hoch;Hoch;;32
 hoch-;Hoch-;;32
 hoch-blauen;Hoch-blauen;;32
 hoch-emmingen;Hoch-emmingen;;32
@@ -75074,8 +75074,8 @@ hochzeitles;Hochzeitles;;32
 hochzeit-struempfe;Hochzeit-strümpfe;;32
 hochzeit-taenze;Hochzeit-tänze;;32
 hockarte;Hockarte;;32
-hocken_2;Hocken;;32
-hoecken_2;Höcken;;32
+hocken;Hocken;;32
+hoecken;Höcken;;32
 hocken-bleiben;hocken-bleiben;;32
 hoecklein;Höcklein;;32
 hockus;Hockus;;32
@@ -75117,7 +75117,7 @@ hoherfuerst;"Hoher Fürst";;32
 hohertag;"Hoher Tag";;32
 hohgarten;Hohgarten;;32
 hohgaertler;Hohgärtler;;32
-hohl_2;Hohl;;32
+hohl;Hohl;;32
 hohl-backen;Hohl-backen;;32
 hoehlen;höhlen;;32
 hohl-nagel;Hohl-nagel;;32
@@ -75213,7 +75213,7 @@ horlebiss;Horlebiß;;33
 horn-dackel;Horn-dackel;;33
 hoernels-philipp;Hörnels-philipp;;33
 horn-esel;Horn-esel;;33
-hornig_2;Hornig;;33
+hornig;Hornig;;33
 horn-iglerei;Horn-iglerei;;33
 hornigs-blume;Horni(g)s-blume;;33
 horni-korn;Horni-korn;;33
@@ -75641,7 +75641,7 @@ knauen;knauen;;40
 knauf;Knauf;;40
 knaugen;knaugen;;40
 knaeupeln;knäupeln;;40
-knausen_2;Knausen;;40
+knausen;Knausen;;40
 kneckes;Kneckes;;40
 kneibeln;kneibeln;;40
 kneilen;kneilen;;40
@@ -75683,7 +75683,7 @@ klipfel;Klipfel;;40
 knoechle;Knöchle;;40
 knoden;Knoden;;40
 knoerpele;Knörp(e)le;;41
-knorpen_2;Knorpen;;41
+knorpen;Knorpen;;41
 knorren_2;knorren;;41
 knoterle;Knoterle;;41
 knoeterich;Knöterich;;41
@@ -75694,7 +75694,7 @@ knuebeln;knübeln;;41
 knulfen;knulfen;;41
 knuenlen;knü(n)len;;41
 knuppe;Knuppe;;41
-knuppen_2;Knuppen;;41
+knuppen;Knuppen;;41
 knupper.i;Knupper;1;41
 knute;Knute;;41
 knutsche;Knutsche;;41
@@ -75974,10 +75974,10 @@ kurgelauser;Kurgelauser;;45
 kurgeln;kurgeln;;45
 kurkuma;Kurkuma;;45
 kurzes;Kurzes;;45
-kusch_2;Kusch;;45
+kusch;Kusch;;45
 kuscheln;kuscheln;;45
 kusse;Kusse;;45
-kuessen_2;Küssen;;45
+kuessen;Küssen;;45
 kueste;Küste;;45
 kuester;Küster;;45
 kutsche.ii;Kutsche;2;45
@@ -76026,7 +76026,7 @@ lallenhaegler;Lalle(n)hägler;;46
 laelli;Lälli;;46
 lama;Lama;;46
 lamech;Lamech;;46
-lamentabel_2;Lamentabel;;46
+lamentabel;Lamentabel;;46
 lampazi;Lampazi;;46
 lampedi;Lampedi;;46
 lamper;Lamper;;46
@@ -76148,7 +76148,7 @@ leich;Leich;;48
 -leichen;-leichen;;48
 leichen-bieterin;Leichen-bieterin;;48
 leichen-fledderer;Leichen-fledderer;;48
-leicht_2;Leicht;;48
+leicht;Leicht;;48
 leich-trunk;Leich-trunk;;48
 leidsam;leidsam;;48
 leier-bengel;Leier-bengel;;48
@@ -76271,7 +76271,7 @@ lorgen;lorgen;;50
 loeri;Löri;;50
 lormser;Lormser;;50
 lorsch;lorsch;;50
-los.ii;Los;2;50
+los.ii_2;Los;2;50
 losa;Losa;;50
 loescher;Löscher;;50
 loeschungs-bewilligung;Löschungs-bewilligung;;50
@@ -76349,7 +76349,7 @@ makel.i;Makel;1;51
 maker;maker;;51
 makrele;Makrele;;51
 malatz-;Malatz-;;51
-malchen_2;Malche(n);;51
+malchen;Malche(n);;51
 maleboschen;Maleboschen;;51
 malefiz-schelm;Malefiz-schelm;;51
 malerschloss;Malerschloß;;51
@@ -76568,7 +76568,7 @@ molton;Molton;;55
 moltwerfel;Moltwerfel;;55
 moemle;Mömle;;55
 momorle;Momorle;;55
-mon_2;mon;;55
+mon;mon;;55
 monatfrau;Monatfrau;;55
 monatle;Monatle;;55
 monatrettich;Monatrettich;;55
@@ -76628,7 +76628,7 @@ mueckeler;Mückele(r);;56
 melancholisch;melancholisch;;53
 muckelimausis;Muckelimausis;;56
 melben_2;melben;;53
-mucken_2;Mucken;;56
+mucken;Mucken;;56
 mucken-datscher;Mucken-datscher;;56
 mele;Mele;;53
 muckes;Muckes;;56
@@ -76847,7 +76847,7 @@ nied-wendig;nied-wendig;;59
 nieme;nieme;;59
 niendert;niendert;;59
 nieneds;nieneds;;59
-nies_2;Nies;;59
+nies;Nies;;59
 niesser;Nießer;;59
 niessung;Nießung;;59
 nifel;Nifel;;59
@@ -76876,7 +76876,7 @@ nister;Nister;;59
 nit;nit;;59
 nitment;nitment;;59
 no;no;;59
-nobel_2;Nobel;;59
+nobel;Nobel;;59
 nock;Nock;;59
 nod;Nod;;59
 node;Node;;59
@@ -76933,7 +76933,7 @@ nuentelig;nüntelig;;59
 nunter;nunter;;59
 nuenter;Nünter;;59
 nuentig;nüntig;;59
-nuppen_2;Nuppen;;59
+nuppen;Nuppen;;59
 nuppig;nuppig;;59
 nuere;Nüre;;59
 nurksen;nurksen;;59
@@ -76993,7 +76993,7 @@ oehmd-erwachs;Öhmd-erwachs;;60
 ohmen-haeusle;Ohmen-häusle;;60
 ohn-haben;ohn-haben;;60
 ohn-werden;ohn-werden;;60
-ohren;ohren;;60
+ohren_2;ohren;;60
 nutzig;nutzig;;60
 oben-hinan;oben-hinan;;60
 ohren-butzer;Ohren-butzer;;61
@@ -77162,7 +77162,7 @@ rangieren;rangieren;;62
 rang-scheit;Rang-scheit;;62
 ranikum;Ranikum;;62
 raenkeln;ränkeln;;62
-ranken.ii_2;Ranken;2;62
+ranken.ii;Ranken;2;62
 raenken;ränken;;62
 raenk-scheit;Ränk-scheit;;62
 raenne;Ränne;;62
@@ -77372,7 +77372,7 @@ resten.ii;resten;2;65
 retour;retour;;65
 rettel;Rettel;;65
 rettig;Rettig;;65
-retzel_2;Retzel;;65
+retzel;Retzel;;65
 retzen.i;retzen;1;65
 retzen.ii;retzen;2;65
 reuel.ii;Reuel;2;65
@@ -77396,7 +77396,7 @@ ri.ii;ri;2;65
 ribbling;Ribbling;;65
 rib-eisen;Rib-eisen;;65
 ribel-brei;Ribel-brei;;65
-ribele_2;Ribele;;65
+ribele;Ribele;;65
 ribele-hose;Ribele-hose;;65
 ribel-kopf;Ribel-kopf;;65
 ribel-kuchen;Ribel-kuchen;;65
@@ -77521,7 +77521,7 @@ roschemrein;Roschemrein;;67
 rose.ii;Rose;2;67
 rose;rosé;;67
 rosel.i;Rosel;1;67
-rosen;rosen;;67
+rosen_2;rosen;;67
 rosili;Rosili;;67
 roesle;Rösle;;67
 roslet;Roslet;;67
@@ -78085,7 +78085,7 @@ schlaettern;schlättern;;75
 schlaettle;Schlättle;;75
 schlaetzen;schlätzen;;75
 schlaeuchen;schläuchen;;75
-schlaudern_2;Schlaudern;;75
+schlaudern;Schlaudern;;75
 schlau-heit;Schlau-heit;;75
 schlaungsen;schlaungsen;;75
 schlausern;schlausern;;75
@@ -78272,7 +78272,7 @@ schnitzen.ii;schnitzen;2;78
 schnitzle;Schnitzle;;78
 schnitz-pudel;Schnitz-pudel;;78
 schnokes;Schnokes;;78
-schnollen_2;Schnollen;;78
+schnollen;Schnollen;;78
 schnorcheln;schnorcheln;;78
 schnorr;Schnorr;;78
 schnorren.ii;schnorren;2;78
@@ -78344,7 +78344,7 @@ schraufe;Schraufe;;79
 schrayen;Schray(en);;79
 schreck-blass;schreck-blaß;;79
 schrecke.ii;Schrecke;2;79
-schrecken_2;Schrecken;;79
+schrecken;Schrecken;;79
 schreckle;Schreckle;;79
 schrecksle;Schrecksle;;79
 schreib-kommode;Schreib-kommode;;79
@@ -78423,7 +78423,7 @@ schwal;Schwal;;80
 schulem;Schulem;;80
 schuseln;schuseln;;80
 schwalm.ii;Schwalm;2;81
-schwanen_2;Schwanen;;81
+schwanen;Schwanen;;81
 schwaenklich;schwänklich;;81
 schwannen;schwannen;;81
 schwanzet;schwanzet;;81
@@ -78442,7 +78442,7 @@ schwegel;Schwegel;;81
 schweifer;Schweifer;;81
 schweiferin;Schweiferin;;81
 schweifig;schweifig;;81
-schweinig_2;Schweinig;;81
+schweinig;Schweinig;;81
 schweizer-laible;Schweizer-laible;;81
 schweizerlen;schweizerlen;;81
 schwelche;Schwelch(e);;81
@@ -78768,8 +78768,8 @@ stroemler;Strömler;;
 stroeppen;ströppen;;
 stromers-loch;Stromers-loch;;
 strubel-heuel;Strubel-heuel;;
-stroepper;ströpper;;
-stroepper_2;Ströpper;;
+stroepper_2;ströpper;;
+stroepper;Ströpper;;
 strueblig;Strüblig;;
 struebere;strübere;;
 struble;struble;;
@@ -78786,7 +78786,7 @@ struessi;Strüßi;;
 strupfer-stiel;Strupfer-stiel;;
 strueten-klinge;Strüten-klinge;;
 stuebeln;stübeln;;
-stueben_2;Stüben;;
+stueben;Stüben;;
 stuben-bank;Stuben-bank;;
 stuben-buerste;Stuben-bürste;;
 stuben-diele;Stuben-diele;;
@@ -78870,7 +78870,7 @@ sturzin;sturzin;;
 sturzzuber;Sturzzuber;;
 stuetzaerscheln;stützärscheln;;
 stuetz-aerschel-stein;Stütz-ärschel-stein;;
-stuetzen_2;Stützen;;
+stuetzen;Stützen;;
 stutz-hammel;Stutz-hammel;;
 stutz-fluegel;Stutz-flügel;;
 stuetzlig;stützlig;;
@@ -78915,7 +78915,7 @@ sipp-erbe;Sipp-erbe;;85
 sipp-erbfall;Sipp-erbfall;;85
 sipp-verwandte;Sipp-verwandte;;85
 suendenessen;Sündenessen;;
-suenden-schade_2;Sünden-schade;;
+suenden-schade;Sünden-schade;;
 sund-heim;Sund-heim;;
 sundisch;sundisch;;
 suend-lich;sünd-lich;;
@@ -78982,9 +78982,9 @@ synonym;synonym;;
 szene;Szene;;
 szienz;Szienz;;
 u_2;u;;
-uebel-hausen_2;Übel-hausen;;
+uebel-hausen;Übel-hausen;;
 uebelklang;Übelklang;;
-socken_3;Socken;;
+socken;Socken;;
 latte;Latte;;
 winter-kopfsalat;Winter-kopfsalat;;
 sommer-laeden;Sommer-läden;;86
@@ -79032,8 +79032,8 @@ ueberspiel;Überspiel;;
 ueber-leuchse;Über-leuchse;;
 ueberstueelt;überstüelt;;
 ueberstuerzig;überstürzig;;
-ueber-stuerzen;über-stürzen;;
-ueber-supfen_2;Über-supfen;;
+ueber-stuerzen_2;über-stürzen;;
+ueber-supfen;Über-supfen;;
 uebertrampen;übertrampen;;
 ueber-trumpfen;über-trumpfen;;
 uebertuerner;Übertürner;;
@@ -79052,7 +79052,7 @@ uebriger;Übriger;;
 uebriges;Übriges;;
 undurchschaulich;undurchschaulich;;
 une;une;;
-un-eben_2;Un-eben;;
+un-eben;Un-eben;;
 unefuerzli;Unefürzli;;
 un-eigennuetzig;un-eigennützig;;
 unerkannt;unerkannt;;
@@ -79118,7 +79118,7 @@ unrechtswohltat;Unrechtswohltat;;
 unrichtig;unrichtig;;
 un-schicklich;un-schicklich;;
 un-ziemlig;un-ziemlig;;
-um-besen_2;um-besen;;
+um-besen;um-besen;;
 um-bruechen;um-brüchen;;
 um-buhlung;Um-buhlung;;
 um-der;um-der;;
@@ -79169,7 +79169,7 @@ unter-laufen;unter-laufen;;
 unterlichteln;unterlichteln;;
 unterliegen;unterliegen;;
 unter-linden;Unter-linden;;
-untern_2;Untern;;
+untern;Untern;;
 um-falten;um-falten;;
 um-haenge;Um-hänge;;
 umher-tastung;Umher-tastung;;
@@ -79203,7 +79203,7 @@ un-versehen;un-versehen;;
 unverwelkt;unverwelkt;;
 un-verzeihlicher;Un-verzeihlicher;;
 unwahrsagung;Unwahrsagung;;
-un-wert_2;Un-wert;;
+un-wert;Un-wert;;
 un-wesen;Un-wesen;;
 unzeitraum;Unzeitraum;;
 un-zufriedenheit;Un-zufriedenheit;;
@@ -79245,7 +79245,7 @@ uruai;Uruai;;
 waag-haeusel;Waag-häusel;;
 v;V;;
 wag-scheitel;Wag-scheitel;;
-rosen_2;Rosen;;
+rosen;Rosen;;
 waech;wäch;;
 wachler;Wachler;;
 wacholder-baum;Wacholder-baum;;
@@ -79328,7 +79328,7 @@ sonnen-matt;Sonnen-matt;;86
 sonnen-ziel;Sonnen-ziel;;86
 sorgen-hoefe;Sorgen-höfe;;86
 walbrett;Walbrett;;
-ohren_2;Ohren;;
+ohren;Ohren;;
 umstech-gabel;Umstech-gabel;;
 umstech-schaufel;Umstech-schaufel;;
 umsternt;umsternt;;
@@ -79407,7 +79407,7 @@ walzerkoenig;Walzerkönig;;
 waelzer;Wälzer;;
 waelz-ung;Wälz-ung;;
 wambeln;wambeln;;
-wampel;wampel;;
+wampel_2;wampel;;
 wams-aermel;Wams-ärmel;;
 wamse;Wamse;;
 walz;Walz;;
@@ -79557,8 +79557,8 @@ wasserpolacke;Wasserpolacke;;
 wasser-quelle;Wasser-quelle;;
 wasser-reserwar;Wasser-reserwar;;
 wasserrolle;Wasserrolle;;
-wasser-scheu_2;Wasser-scheu;;
-wasser-schlingig;wasser-schlingig;;
+wasser-scheu;Wasser-scheu;;
+wasser-schlingig_2;wasser-schlingig;;
 wasserschluessele;Wasserschlüssele;;
 wasser-schnake;Wasser-schnake;;
 wasser-schneller;Wasser-schneller;;
@@ -79695,7 +79695,7 @@ weidescheuer;Weidescheuer;;
 weidetasche;Weidetasche;;
 weideweg;Weideweg;;
 weidich-baechlein;Weidich-bächlein;;
-weidlich_2;Weidlich;;
+weidlich;Weidlich;;
 weid-mann;Weid-mann;;
 weidnerei;Weidnerei;;
 weidschrei;Weidschrei;;
@@ -79715,13 +79715,13 @@ watleff;Watleff;;
 watluff;Watluff;;
 speck-genick;Speck-genick;;87
 weilers-burg;Weilers-burg;;
-schoppen_2;Schoppen;;
+schoppen;Schoppen;;
 wein-baum;Wein-baum;;
 wattlauf;Wattlauf;;
 wc;WC;;
 wein-bockten;Wein-bockte(n);;
 weinbrente;Weinbrente;;
-weinelen;weinelen;;
+weinelen_2;weinelen;;
 weinerfuellt;weinerfüllt;;
 wein-faerbi;Wein-färbi;;
 weckle-bub;Weckle-bub;;
@@ -79749,12 +79749,12 @@ wind-wehete;Wind-wehete;;
 teich;Teich;;
 weiseli-schar;Weiseli-schar;;
 weisen-bach;Weisen-bach;;
-weiss_2;Weiß;;
+weiss;Weiß;;
 weiss-baum;Weiß-baum;;
 weide.ii;Weide;2;
 winter-weide;Winter-weide;;
 weissblassel;Weißblassel;;
-weiss-bleich;weiß-bleich;;
+weiss-bleich_2;weiß-bleich;;
 zimmer-decke;Zimmer-decke;;
 hexe_2;Hexe;;
 weiden-hebel;Weiden-hebel;;
@@ -79842,7 +79842,7 @@ weltkugelumsegelud;weltkugelumsegelud;;
 welt-mensch;Welt-mensch;;
 weltregel;Weltregel;;
 weltriss;Weltriß;;
-welts;welts;;
+welts_2;welts;;
 weltschluss;Weltschluß;;
 weltschmerz;Weltschmerz;;
 welt-schmerz;Welt-schmerz;;
@@ -79866,7 +79866,7 @@ umeinander-spazieren;umeinander-spazieren;;
 spittel.ii;Spittel;2;88
 speyerer;Speyerer;;87
 wenigkeit;Wenigkeit;;
-weniger_2;Weniger;;
+weniger;Weniger;;
 wenigmann;Wenigmann;;
 spend-brot;Spend-brot;;87
 spend-korn;Spend-korn;;87
@@ -79912,11 +79912,11 @@ werth;Werth;;
 widergewicht;Widergewicht;;
 widergrien-matten;Widergrien-matten;;
 wider-hoelzig;wider-hölzig;;
-wieder-kommen_2;Wieder-kommen;;
+wieder-kommen;Wieder-kommen;;
 wider-legung;Wider-legung;;
 wider-lich;wider-lich;;
 wider-passen_2;wider-passen;;
-wider-rufen_2;Wider-rufen;;
+wider-rufen;Wider-rufen;;
 widerspruchkuenstler;Widerspruchkünstler;;
 widerstaeuben;widerstäuben;;
 wider-steg;Wider-steg;;
@@ -79993,7 +79993,7 @@ willkommenskuss;Willkommenskuß;;
 wider-geilen;Wider-geilen;;
 wimmet;Wimmet;;
 wieder-kehr;Wieder-kehr;;
-wiefling_2;Wiefling;;
+wiefling;Wiefling;;
 wiege-messer;Wiege(-messer);;
 wiegenfest;Wiegenfest;;
 wieggi;Wieggi;;
@@ -80076,7 +80076,7 @@ wischport;Wischport;;
 wischtuer;Wischtür;;
 wisewerre;Wisewerre;;
 wisper-hans;Wisper-hans;;
-wissen_2;Wissen;;
+wissen;Wissen;;
 winglazen;winglazen;;
 winkelbrach-wiese;Winkelbrach-wiese;;
 winkel-fischen;winkel-fischen;;
@@ -80146,7 +80146,7 @@ wirrjahr;Wirrjahr;;
 wirri;Wirri;;
 wirr-kopf;Wirr-kopf;;
 wohl;Wohl;;
-wohl-auf_2;Wohl-auf;;
+wohl-auf;Wohl-auf;;
 wohlgefuehl;Wohlgefühl;;
 wohl-gemut_2;wohl-gemut;;
 wohl-ig;wohl-ig;;
@@ -80185,7 +80185,7 @@ woll-kamm;Woll-kamm;;
 wueeds;Wüeds;;
 wueggist;Wueggist;;
 wuehler-stengel;Wühler-stengel;;
-wuhren;wuhren;;
+wuhren_2;wuhren;;
 wui;wui;;
 wulgern;wulgern;;
 wull;Wull;;
@@ -80206,7 +80206,7 @@ wunderwerk;Wunderwerk;;
 wund-trank;Wund-trank;;
 wunschwort;Wunschwort;;
 wupf;Wupf?;;
-wupp_2;Wupp;;
+wupp;Wupp;;
 wuppel;Wuppel;;
 wuppespunne;Wuppespunne;;
 wuppngspinst;Wuppngspinst;;
@@ -80268,7 +80268,7 @@ wuerstlein;Würstlein;;
 wurst-mahl;Wurst-mahl;;
 wurst-schinzele;Wurst-schinzele;;
 wurst-wecken;Wurst-wecken;;
-worben_2;Worben;;
+worben;Worben;;
 worfeln;worfeln;;
 wurzelfink;Wurzelfink;;
 wurzlig;wurzlig;;
@@ -80297,7 +80297,7 @@ zantihanseberi;Zantihanseberi;;
 zantihanstruebeli;Zantihanstrüb(e)li;;
 zantihansjohannesberi;Zantihansjohannesberi;;
 zanzerle;Zanzerle;;
-wusten_2;Wusten;;
+wusten;Wusten;;
 wutach-tal;Wutach-tal;;
 wuetend;wütend;;
 wuestesgelaende;"Wüstes Gelände";;
@@ -80309,14 +80309,14 @@ zappel-fritz;Zappel-fritz;;
 zappel-peter;Zappel-peter;;
 zapping;Zapping;;
 zarfes;Zarfes;;
-zargen_2;Zargen;;
+zargen;Zargen;;
 zarten-bach;Zarten-bach;;
 zartgefuehl;Zartgefühl;;
 zaertlichkeit;Zärtlichkeit;;
 zartling;Zartling;;
 zartzweigig;zartzweigig;;
 zasel;Zasel;;
-zaeserig;zäserig;;
+zaeserig_2;zäserig;;
 zeiseln;zeiseln;;
 zaesur;Zäsur;;
 za;za;;
@@ -80427,7 +80427,7 @@ ziegel-rain;Ziegel-rain;;
 ziegenschinder;Ziegenschinder;;
 ziegerbauer;Ziegerbauer;;
 ziegergabel;Ziegergabel;;
-zeiten;zeiten;;
+zeiten_2;zeiten;;
 zeitevangelist;Zeitevangelist;;
 zeit-geist;Zeit-geist;;
 zeitglocke;Zeitglocke;;
@@ -80451,7 +80451,7 @@ ziel-beun;Ziel-beun;;
 zielbewusst;zielbewußt;;
 ziel-buechse;Ziel-büchse;;
 ziel-statt;Ziel-statt;;
-spitz_2;Spitz;;88
+spitz;Spitz;;88
 splien;Splien;;88
 splienig;splienig;;88
 sporen.i;sporen;1;88
@@ -80483,7 +80483,7 @@ zenckere;Zenckere;;
 zennhaare-locken;"Zennhaare-, locken";;
 zensiten;Zensiten;;
 zensur;Zensur;;
-zu_2;Zu;;
+zu;Zu;;
 zigorie-haken;Zigorie-haken;;
 zillerssteige;"Zillers Steige";;
 zimershub;"Zimers Hub";;
@@ -80529,7 +80529,7 @@ zirkelfluss;Zirkelfluß;;
 sudlete;Sudlete;;
 zirkulation;Zirkulation;;
 zischlauter;Zischlauter;;
-zispern;zispern;;
+zispern_2;zispern;;
 zitat;Zitat;;
 zitation;Zitation;;
 zitels;Zitels;;
@@ -80544,13 +80544,13 @@ zuberschaber;Zuberschaber;;
 zuberschabete;Zuberschabete;;
 zuberstand;Zuberstand;;
 zitzele;Zitzele;;
-leiden_2;Leiden;;
+leiden;Leiden;;
 zivilisieren;zivilisieren;;
 zivilitaet;Zivilität;;
 zuchtleute;Zuchtleute;;
 zuck_2;zuck;;
 zizingen;Zizingen;;
-zoecken_2;Zöcken;;
+zoecken;Zöcken;;
 zockler;Zockler;;
 zodiakus;Zodiakus;;
 zoegerei;Zögerei;;
@@ -80585,7 +80585,7 @@ zugift;Zugift;;
 zu-kapetusen;zu-kapetusen;;
 zugkuebel;Zugkübel;;
 zugladen;Zugladen;;
-zuegles_2;Zügles;;
+zuegles;Zügles;;
 zu-grunde;zu-grunde;;
 zugscheuerle;Zugscheuerle;;
 zug-seil;Zug-seil;;
@@ -80649,11 +80649,11 @@ zustoeren;zustören;;
 zu-strecken;zu-strecken;;
 zustube;Zustube;;
 zutal;"zu Tal";;
-zuteil_2;Zuteil;;
+zuteil;Zuteil;;
 zutenne;Zutenne;;
 zuensel-wuermlein;Zünsel-würmlein;;
 zuns-weier;Zuns-weier;;
-zu-trauen_2;Zu-trauen;;
+zu-trauen;Zu-trauen;;
 zutten;zutten;;
 zu-verdienst;Zu-verdienst;;
 zuviere_2;"zu viere";;
@@ -80707,7 +80707,7 @@ zwei-teil;Zwei-teil;;
 zweit-oehmd;Zweit-öhmd;;
 zuntel;Zuntel;;
 zuepfeln;züpfeln;;
-zupfen_2;Zupfen;;
+zupfen;Zupfen;;
 zuepfen;Züpfen;;
 zupfen-baender;Zupfen-bänder;;
 zuepfenschuessel;Züpfenschüssel;;
@@ -80733,7 +80733,7 @@ zurueck-weisen;zurück-weisen;;
 zusammen;zusammen;;
 sprenke;Sprenke;;88
 zusammen-bastern;zusammen-bastern;;
-zusammen-bruechen;zusammen-brüchen;;
+zusammen-bruechen_2;zusammen-brüchen;;
 zusammenbuessen;zusammenbüßen;;
 zusammendrehung;Zusammendrehung;;
 zusammen-feimen;zusammen-feimen;;
@@ -80900,7 +80900,7 @@ stadt-pfeifer;Stadt-pfeifer;;89
 stadt-gericht;Stadt-gericht;;89
 staucherle;Staucherle;;90
 stadt-brauch;Stadt-brauch;;89
-stauchen_2;Stauchen;;90
+stauchen;Stauchen;;90
 stadt-miete;Stadt-miete;;89
 stauch-maschine;Stauch-maschine;;90
 staedter-dialekt;Städter-dialekt;;89
@@ -81021,8 +81021,8 @@ laufen.ii;laufen;2;
 lieb.i;lieb;1;
 lieb.ii;lieb;2;
 lieb.iii;lieb;3;
-los.i_2;los;1;
-los.ii_2;los;2;
+los.i;los;1;
+los.ii;los;2;
 maeuche;Mäuche;;
 mauser;Mauser;;
 mesner;Mesner;;
@@ -81109,7 +81109,7 @@ steige;Steige;;
 steig-eiseln;Steig-eiseln;;
 steige-wange;Steige-wange;;
 stein-aehr;Stein-ähr;;
-stein-bickel-hart_2;Stein-bickel-hart;;
+stein-bickel-hart;Stein-bickel-hart;;
 stein-bickerle;Stein-bickerle;;
 stein-bueckel;Stein-bückel;;
 steinechstesstueck;"Steinechstes Stück";;
@@ -81125,7 +81125,7 @@ stern-doldepflanzennamedoldigermilchstern;"Stern-dolde#Pflanzenname: doldiger Mi
 sternen-feld;Sternen-feld;;
 stern-schiessen_2;stern-schießen;;
 stiefmkuetterles-tee;Stiefmkütterles-tee;;
-stieren-grindig_2;Stieren-grindig;;
+stieren-grindig;Stieren-grindig;;
 stier-matten;Stier-matten;;
 stifs-waeldlein;Stifs-wäldl(ein);;
 stiftze;Stiftze;;
@@ -81149,9 +81149,9 @@ strize-keppe;Strize-keppe;;
 stroemm;strömm;;
 strutfln;Strut#FlN;;
 stuben-gluecke;Stuben-glücke;;
-stur_2;Stur;;
+stur;Stur;;
 sturn-stinker;Sturn-stinker;;
-sturmen_2;Sturmen;;
+sturmen;Sturmen;;
 stur-pfankl;Stur-pfankl;;
 stuetzel-wiesefln;Stützel-wiese#FlN;;
 suckere;suckere;;
@@ -81191,7 +81191,7 @@ untertannen;"Unter Tannen";;
 urewndorfergut;"Urewndorfer Gut";;
 urschlechten-muehler;Urschlechten-mühler;;
 ur-schmarket;ur-schmarket;;
-waefern_2;Wäfern;;
+waefern;Wäfern;;
 wagen-ackerfln;Wagen-acker#FlN;;
 wagen-reif_2;wagen-reif;;
 wag-hurst;Wag-hurst;;
@@ -81207,7 +81207,7 @@ wangel;Wangel;;
 wangeln_2;wangeln;;
 wanger-e;wanger-e;;
 waenne-lein;Wänne-lein;;
-wanzen_2;Wanzen;;
+wanzen;Wanzen;;
 wanzen-beer_2;wanzen-beer;;
 wart-tung;Wart-tung;;
 warzloffrichten;"Warzloff richten";;
@@ -81239,7 +81239,7 @@ wasser-sucher;Wasser-sucher;;
 wasser-wellen;Wasser-wellen;;
 waesslig;wässlig;;
 wat-luf;Wat-luf;;
-watschen_2;Watschen;;
+watschen;Watschen;;
 watt-scheibe;Watt-scheibe;;
 wart_2;wart;;
 waeue;wäue;;
@@ -81255,7 +81255,7 @@ weck-manscher;Weck-manscher;;
 wegen.i;wegen;1;
 wegen.ii;wegen;2;
 weg-lehen;weg-lehen;;
-wehr-fest_2;Wehr-fest;;
+wehr-fest;Wehr-fest;;
 wehr-mann;Wehr-mann;;
 weibeln;weibeln;;
 weichsel-kirschen;Weichsel-kirschen;;
@@ -81274,8 +81274,8 @@ weingerts-berg;Weingerts-berg;;
 weingert-haeusle;Weingert-häusle;;
 weinheimerprobe;"Weinheimer Probe";;
 wein-zen;Wein-zen;;
-weis-sagen_2;Weis-sagen;;
-weiss-bleich_2;Weiß-bleich;;
+weis-sagen;Weis-sagen;;
+weiss-bleich;Weiß-bleich;;
 weisserkaese;"Weißer Käse";;
 weiss-koepfi;Weiß-köpfi;;
 weiters-gehen;weiters-gehen;;
@@ -81285,7 +81285,7 @@ wellen-bruegel;Wellen-brügel;;
 wellen-huepfer;Wellen-hüpfer;;
 welsch-egger-aepfel;Welsch-egger-äpfel;;
 welscher-rain;Welscher-Rain;;
-welts_2;Welts;;
+welts;Welts;;
 wendelinus-kapelle;Wendelinus-kapelle;;
 wendeln;wendeln;;
 wend-juru;Wend-juru;;
@@ -81299,7 +81299,7 @@ werkel;Werkel;;
 werkel-tag;Werkel-tag;;
 werktag-kleid;Werktag-kleid;;
 werktags-fuess;Werktags-füß;;
-wersich_2;Wersich;;
+wersich;Wersich;;
 wert-heimer-probe;Wert-heimer-Probe;;
 werz-kaber;Werz(-kaber);;
 wespel;Wespel;;
@@ -81322,7 +81322,7 @@ wiesen-schaumkraut-;Wiesen-schaumkraut-;;
 wildeaepfel;"wilde Äpfel";;
 wildeln;wildeln;;
 wild-roeslein;Wild-röslein;;
-wimlot_2;Wimlot;;
+wimlot;Wimlot;;
 wimsili;Wimsili;;
 wind_2;win(d);;
 wind-braude;Wind-braude;;
@@ -81343,7 +81343,7 @@ wittum-stuecklein;Wittum-stück(lein);;
 wittum-weingaerten;Wittum-weingärten;;
 woanderst;woanders(t);;
 woch-haufen;Woch-haufen;;
-wocht_2;Wocht;;
+wocht;Wocht;;
 wohl-fett;wohl-fett;;
 wohl-stand_2;wohl-stand;;
 wohnungen;Wohnungen;;
@@ -81354,10 +81354,10 @@ wolligwerden;"wollig werden";;
 woert;Wört;;
 wuddel;Wuddel;;
 wuehre-ackerfln;Wühre-acker#FlN;;
-wulli_2;Wulli;;
+wulli;Wulli;;
 wunde-arznei;Wunde-arznei;;
 wunderlig_2;wunderlig;;
-wunder-selten_2;Wunder-selten;;
+wunder-selten;Wunder-selten;;
 wupp-dich_2;wupp-dich;;
 wupti;Wupti;;
 wuerde_2;würde;;
@@ -81373,7 +81373,7 @@ wurzele;Wurzele;;
 wurzel-reben;Wurzel-reben;;
 wurzel-stoecke;Wurzel-stöcke;;
 wuspunnen-nest;Wuspunnen-nest;;
-wuest_2;Wüst;;
+wuest;Wüst;;
 wuesten-gerten;Wüsten-gerten;;
 wutz_2;wutz;;
 xfuereinumachen;"X für ein U machen";;
@@ -81387,14 +81387,14 @@ zahn-kaeppelle;Zahn-käppelle;;
 zahn-relf;Zahn-relf;;
 zaehnweh-kraetich;Zähnweh-krätich;;
 zanni;Zanni;;
-zase_2;Zase;;
+zase;Zase;;
 zaserer;Zaser(er);;
-zaeserln_2;Zäserln;;
+zaeserln;Zäserln;;
 zasterr-;"Zaster R-";;
 zattern;zattern;;
 zaugel-ring;Zaugel-ring;;
 zaun-schlupfer;Zaun-schlupfer;;
-zegenen_2;Zegenen;;
+zegenen;Zegenen;;
 zehner-schlaefer;Zehner-schläfer;;
 zehnt-bittele;Zehnt-bittele;;
 zeilets-stein;Zeilets-stein;;
@@ -81410,7 +81410,7 @@ zeisig_2;zeisig;;
 zeisle;Zeisle;;
 zeissen-gut;Zeissen-gut;;
 zelt-blahn;Zelt-blahn;;
-zelten_2;Zelten;;
+zelten;Zelten;;
 zentrifugieren;zentrifugieren;;
 zentumhin_2;zentumhin;;
 zerewis-kaepple;Zerewis-käpple;;
@@ -81442,13 +81442,13 @@ zipfeles-grete;Zipfeles-grete;;
 zippere;zippere;;
 zipper-trime;Zipper-trime;;
 zirbele;Zirbele;;
-ziren_2;Ziren;;
+ziren;Ziren;;
 zirkle-schmied;Zirkle-schmied;;
-zirpen_2;Zirpen;;
-zispern_2;Zispern;;
+zirpen;Zirpen;;
+zispern;Zispern;;
 zittere;Zittere;;
 zitter-laiblein;Zitter-laiblein;;
-zitterligs_2;Zitterligs;;
+zitterligs;Zitterligs;;
 zitter-male;Zitter-male;;
 zoeckle;Zöckle;;
 zogarten_2;zogarten;;
@@ -81473,14 +81473,14 @@ zuell-gutsel;Züll-gutsel;;
 zuelg;Zülg;;
 zu-mittags;zu-mittags;;
 zu-mitten;zu-mitten;;
-zuenden_2;Zünden;;
+zuenden;Zünden;;
 zungen-schlagen;Zungen-schlagen;;
 zuensel-wuermchen;Zünsel-würmchen;;
 zurpfe;Zurpfe;;
 zurueck-hufen;zurück-hufen;;
-zurueck-schenken_2;Zurück-schenken;;
+zurueck-schenken;Zurück-schenken;;
 zusammen-broselnen;zusammen-broselnen;;
-zusammen-bruechen_2;Zusammen-brüchen;;
+zusammen-bruechen;Zusammen-brüchen;;
 zusammen-gekratztes;Zusammen-gekratztes;;
 zusammenhianhudeln;zusammenhianhudeln;;
 zusammen-kauchen;zusammen-kauchen;;
@@ -81490,7 +81490,7 @@ zusammen-raumen;zusammen-raumen;;
 zusammen-gestrupft;zusammen-gestrupft;;
 zusammen-tuermeliern;zusammen-türmeliern;;
 zusammetle;Zusammet(l)e;;
-zusatze_2;Zusatz(e);;
+zusatze;Zusatz(e);;
 zusele;Zusele;;
 zu-strup;Zu-strup;;
 zu-taeppig;zu-täppig;;
