@@ -125,6 +125,7 @@ export const LABELS = {
   "place.variant-number": "Nummer einer Nebenform; der Ort hat eine andere Nummer",
   "place.unknown-number": "Nummer nicht in der Ortsliste",
   "place.other-place": "Text ist Kurzform eines anderen Orts",
+  "place.hs": "„hs.“ innerhalb der Ortsauszeichnung (handschriftlicher Beleg, gehört dahinter)",
   "place.region": "Landschaft als Ort ausgezeichnet (type=\"region\" verwenden)",
   "place.region-unknown": "Landschaft nicht in der Landschaftsliste",
   "place.name-key": "Name statt lfd-Nummer als Schlüssel",
@@ -331,8 +332,14 @@ function knowledge(artNode) {
   return k;
 }
 
+// "hs." after a place only says that a handwritten record from this place exists; it is not part of the name
+const HS = /^(.*?\S)(\s+hs\.?)$/;
+
 function checkPlace(p, know, enriched, add) {
-  const text = p.textContent, rawKey = p.getAttribute("key") || "", key = rawKey.trim(), type = p.getAttribute("type") || "";
+  let text = p.textContent;
+  const rawKey = p.getAttribute("key") || "", key = rawKey.trim(), type = p.getAttribute("type") || "";
+  const hs = text.match(HS);
+  if (hs) { add("place.hs", "fix", text, hs[1]); text = hs[1]; }
   if (rawKey !== key) add("place.key-space", "fix", `${text} → "${rawKey}"`, key);
   let k = keyOf(text);
   if (enriched && !know.place.has(k) && !know.unbekannt.has(k)) k = k.replace(/\.$/, "");
