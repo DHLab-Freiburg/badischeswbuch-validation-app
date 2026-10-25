@@ -126,6 +126,8 @@ export const LABELS = {
   "place.unknown-number": "Nummer nicht in der Ortsliste",
   "place.other-place": "Text ist Kurzform eines anderen Orts",
   "place.hs": "„hs.“ innerhalb der Ortsauszeichnung (handschriftlicher Beleg, gehört dahinter)",
+  "bibl.person-hs": "„X hs.“ als Quelle ausgezeichnet (gemeint ist die Person)",
+  "bibl.place-hs": "Ort mit „hs.“ als Quelle ausgezeichnet",
   "place.region": "Landschaft als Ort ausgezeichnet (type=\"region\" verwenden)",
   "place.region-unknown": "Landschaft nicht in der Landschaftsliste",
   "place.name-key": "Name statt lfd-Nummer als Schlüssel",
@@ -377,6 +379,17 @@ function checkPlace(p, know, enriched, add) {
 
 function checkBibl(b, know, enriched, add) {
   const text = b.textContent, key = nfc(b.getAttribute("key")).replace(/\s+/g, " ");
+  // "X hs." after a name means the person (handwritten records), not the source of the same short title,
+  // except short titles that themselves end in "hs." ("Albrecht hs.")
+  const after = b.nextSibling && b.nextSibling.nodeType === 3 ? b.nextSibling.nodeValue : "";
+  let withHs = HS.test(text) ? nfc(text) : /^\s*hs\.?/.test(after) ? `${nfc(text)} hs.` : null;
+  if (withHs) withHs = withHs.replace(/^[\s\/,;]+/, "").trim();
+  if (withHs && ![withHs, withHs.replace(/\.$/, ""), withHs + "."].some((f) => lists.sources.has(f))) {
+    const name = withHs.replace(/\s+hs\.?$/, "");
+    const place = lists.placeIndex.get(keyOf(name)) || lists.placeIndex.get(keyOf(name).replace(/\.$/, ""));
+    add(place ? "bibl.place-hs" : "bibl.person-hs", "review", withHs, place ? "place" : "person");
+    return;
+  }
   const known = enriched ? (know.bibl.get(keyOf(text)) || know.bibl.get(keyOf(text).replace(/\.$/, ""))) : null;
   let knownKey = known ? nfc(known.getAttribute("key")).replace(/\s+/g, " ") : null;
   if (!knownKey) {
