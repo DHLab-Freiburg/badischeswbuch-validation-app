@@ -128,6 +128,7 @@ export const LABELS = {
   "place.hs": "„hs.“ innerhalb der Ortsauszeichnung (handschriftlicher Beleg, gehört dahinter)",
   "bibl.person-hs": "„X hs.“ als Quelle ausgezeichnet (gemeint ist die Person)",
   "bibl.place-hs": "Ort mit „hs.“ als Quelle ausgezeichnet",
+  "place.source-hs": "Kurztitel mit „hs.“ als Ort ausgezeichnet (Quelle)",
   "place.region": "Landschaft als Ort ausgezeichnet (type=\"region\" verwenden)",
   "place.region-unknown": "Landschaft nicht in der Landschaftsliste",
   "place.name-key": "Name statt lfd-Nummer als Schlüssel",
@@ -340,6 +341,11 @@ const HS = /^(.*?\S)(\s+hs\.?)$/;
 function checkPlace(p, know, enriched, add) {
   let text = p.textContent;
   const rawKey = p.getAttribute("key") || "", key = rawKey.trim(), type = p.getAttribute("type") || "";
+  // "Neukirch hs." is a short title in the source list (a notebook), not the place Neukirch
+  const after = p.nextSibling && p.nextSibling.nodeType === 3 ? p.nextSibling.nodeValue : "";
+  const withHs = HS.test(text) ? nfc(text).trim() : /^\s*hs\.?/.test(after) ? `${nfc(text).trim()} hs.` : null;
+  const source = withHs && (lists.sources.get(withHs) || lists.sources.get(withHs.replace(/\.$/, "")));
+  if (source) { add("place.source-hs", "review", withHs, source); return; }
   const hs = text.match(HS);
   if (hs) { add("place.hs", "fix", text, hs[1]); text = hs[1]; }
   if (rawKey !== key) add("place.key-space", "fix", `${text} → "${rawKey}"`, key);
