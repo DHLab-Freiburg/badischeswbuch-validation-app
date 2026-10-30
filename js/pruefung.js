@@ -105,6 +105,7 @@ export const sourceTitle = (kurz) => lists.sources.get(nfc(kurz)) || null;
 export const LABELS = {
   "entry.missing": "Artikel fehlt im Ergebnis",
   "entry.unmatched": "Eintrag keinem Artikel zugeordnet",
+  "entry.subentry": "Artikel als Unterartikel eingeordnet",
   "lemma.changed": "Lemma verändert",
   "lemma.other": "Anderes Lemma",
   "id.not-in-register": "ID weder nach dem ID-Register noch nach Regel 1",
@@ -418,7 +419,7 @@ function checkXref(c, know, enriched, add) {
   else add("xref.missing", "review", `${key} ← ${text}`, alt.join(" | "));
 }
 
-function checkPair(src, entry, enriched, duplicateId) {
+function checkPair(src, entry, enriched, duplicateId, subentries = []) {
   const findings = [];
   const add = (code, kind, text = "", expected = "") => findings.push({ code, kind, text, expected });
   const e = entry.node;
@@ -442,7 +443,10 @@ function checkPair(src, entry, enriched, duplicateId) {
   for (const el of e.getElementsByTagName("*")) {
     for (const at of el.attributes) if (!["key", "guess", "confidence", "source", "n", "id", "type", "subtype", "lang", "subsense", "value"].includes(at.name)) attrs += at.value;
   }
-  for (const f of compareText(src.text, e.textContent, attrs)) add(f.code, f.kind, f.text);
+  // articles placed in this entry as subentries count for the text comparison
+  for (const a of subentries) add("entry.subentry", "info", a.lemma, entry.id);
+  const srcText = [src.text, ...subentries.map((a) => a.text)].join(" ");
+  for (const f of compareText(srcText, e.textContent, attrs)) add(f.code, f.kind, f.text);
   // entities
   const know = knowledge(src.node);
   for (const p of e.getElementsByTagName("place")) checkPlace(p, know, enriched, add);
@@ -461,9 +465,21 @@ export function check(srcXML, genXML) {
   const source = readSource(srcXML), result = readResult(genXML);
   const counts = new Map();
   for (const e of result) counts.set(e.id, (counts.get(e.id) || 0) + 1);
-  const { pairs, missing, unmatched } = align(source.articles, result);
+  const { pairs, missing: notFound, unmatched } = align(source.articles, result);
+  // an article that stands as <subentry> of another entry ("anscheinen" under "an-schein", note of the editors
+  // 30.10.2026) is not missing; its text belongs to that entry
+  const parentOf = new Map();
+  for (const r of result) for (const u of r.node.getElementsByTagName("subentry")) {
+    const l = [...u.children].find((c) => c.nodeName === "lemma");
+    if (l && !parentOf.has(lemmaKey(l.textContent))) parentOf.set(lemmaKey(l.textContent), r.node);
+  }
+  const subs = new Map(), missing = [];
+  for (const a of notFound) {
+    const parent = parentOf.get(lemmaKey(a.lemma));
+    if (parent) subs.set(parent, [...(subs.get(parent) || []), a]); else missing.push(a);
+  }
   const byEntry = new Map();
-  for (const [s, e] of pairs) byEntry.set(e.node, { source: s, ...checkPair(s, e, source.enriched, counts.get(e.id) > 1) });
+  for (const [s, e] of pairs) byEntry.set(e.node, { source: s, ...checkPair(s, e, source.enriched, counts.get(e.id) > 1, subs.get(e.node) || []) });
   for (const e of unmatched) byEntry.set(e.node, { source: null, findings: [{ code: "entry.unmatched", kind: "review", text: e.lemma, expected: "" }], verdict: "review-text" });
   const entries = result.map((e, index) => ({ index, id: e.id, lemma: e.lemma, entryNode: e.node, ...byEntry.get(e.node) }));
   const summary = { articles: source.articles.length, entries: result.length, enriched: source.enriched, verdicts: {}, codes: {},
