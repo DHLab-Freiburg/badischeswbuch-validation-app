@@ -446,7 +446,7 @@ sup.superscript {
 
 /* Optional tooltip styling */
 .place-reference::before {
-  content: "Click to find in XML";
+  content: "Klicken: im XML suchen";
   position: absolute;
   bottom: 100%;
   left: 50%;
@@ -491,3 +491,21 @@ sup.superscript {
     margin-left: 1rem;
   }
 }
+/* ---------- entry-view.js ---------- */
+.entry-id { font-size: .75rem; color: #888; margin-left: .5rem; font-family: monospace; }
+.markers .marker { margin-right: .25rem; }
+.sense { display: grid; grid-template-columns: auto 1fr; column-gap: .5rem; margin: .35rem 0; }
+.sense > .markers, .sense > .domain-badge { grid-column: 2; }
+.sense .sense-body { grid-column: 2; }
+.sense.depth-2, .sense.depth-3 { margin-left: .5rem; }
+.sense-number { font-weight: 700; grid-row: 1 / span 3; }
+.example, .attestation { margin: .15rem 0 .15rem .8rem; }
+.example-meta, .attestation-meta { font-size: .78rem; color: #777; }
+.place-reference.region { border-bottom: 1px dotted #3b7a57; }
+.place-reference.guess { font-style: italic; border-bottom: 1px dashed #b07000; }
+.place-reference.nokey, .bibl.nokey { border-bottom: 1px dashed #999; }
+[data-flag="review"] { background: #fde2df; outline: 1px solid #e0645a; border-radius: 2px; }
+[data-flag="fix"] { background: #e3f1ff; outline: 1px solid #7fb3e0; border-radius: 2px; }
+.xml-other { outline: 1px dotted #999; }
+.terminator { color: #777; }
+.subentries { margin-top: .6rem; padding-left: .6rem; border-left: 2px solid #ddd; }

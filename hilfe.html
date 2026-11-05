@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hilfe – XML-Prüfung Badisches Wörterbuch</title>
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    body { max-width: 980px; margin: 0 auto; padding: 1.5rem 1rem 3rem; line-height: 1.55; }
+    h1 { margin-bottom: .2rem; }
+    h2 { margin-top: 2.2rem; padding-bottom: .2rem; border-bottom: 1px solid #ddd; }
+    h3 { margin-top: 1.4rem; }
+    p, li { max-width: 75ch; }
+    nav.inhalt { background: #fff; border: 1px solid #ddd; border-radius: 4px; padding: .6rem 1rem; }
+    nav.inhalt ol { margin: .3rem 0; }
+    table.hilfe { border-collapse: collapse; width: 100%; font-size: .92rem; background: #fff; }
+    table.hilfe th, table.hilfe td { border-bottom: 1px solid #e3e3e3; padding: .35rem .5rem; text-align: left; vertical-align: top; }
+    table.hilfe th { background: #f0f3f6; }
+    .rand { display: inline-block; width: .35rem; height: 1.1rem; vertical-align: middle; margin-right: .4rem; }
+    .beispiel { display: inline-block; padding: .1rem .5rem; border-radius: 4px; font-size: .85rem; }
+    .zurueck { font-size: .9rem; }
+    code { background: #f3f3f3; padding: 0 .2rem; border-radius: 3px; }
+  </style>
+</head>
+<body>
+  <p class="zurueck"><a href="index.html">← zurück zur Prüfung</a></p>
+  <h1>Hilfe zur XML-Prüfung</h1>
+  <p>Die App vergleicht das Ergebnis der Transformation (<code>Lfg_N_claude.xml</code>) mit der Lieferung, aus der es entstanden ist.
+    Sie zeigt, was in Ordnung ist, was ein Reparaturwerkzeug später selbst berichtigen kann und was jemand nachsehen muss.
+    Sie läuft ganz im Browser; die Dateien verlassen den Rechner nicht.</p>
+
+  <nav class="inhalt" aria-label="Inhalt">
+    <b>Inhalt</b>
+    <ol>
+      <li><a href="#ablauf">So prüfen Sie eine Lieferung</a></li>
+      <li><a href="#quelle">Welche Quelldatei?</a></li>
+      <li><a href="#seite">Was steht wo auf der Seite</a></li>
+      <li><a href="#bericht">Der Bericht „Prüfung der ganzen Datei“</a></li>
+      <li><a href="#urteile">Die vier Urteile</a></li>
+      <li><a href="#arten">automatisch – nachsehen – zulässig</a></li>
+      <li><a href="#befunde">Alle Befunde, einzeln erklärt</a></li>
+      <li><a href="#stand">Datenstand der Prüflisten</a></li>
+      <li><a href="#fragen">Wenn etwas unklar bleibt</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="ablauf">1. So prüfen Sie eine Lieferung</h2>
+  <ol>
+    <li>Links unter <b>Quell-XML</b> mit „Datei öffnen …“ die Lieferung laden (siehe <a href="#quelle">Abschnitt 2</a>).</li>
+    <li>Rechts unter <b>Ergebnis-XML</b> das Ergebnis der Transformation laden, z. B. <code>Lfg_7_claude.xml</code>.</li>
+    <li><b>Transformation prüfen</b> klicken. Bei einer ganzen Lieferung dauert das je nach Rechner bis zu einer Minute.</li>
+    <li>Zuerst auf eine <b>rote Warnung</b> über dem Bericht achten: Dann fehlen Artikel im Ergebnis.</li>
+    <li>Im Bericht eine Befundart oder ein Urteil anklicken: Die Liste links zeigt dann nur die betroffenen Einträge.</li>
+    <li>Einen Eintrag links anklicken: In der Mitte steht der Eintrag, rechts stehen seine Befunde.</li>
+    <li>Mit <b>Befunde als CSV</b> lassen sich alle Befunde als Tabelle speichern (Excel, Trennzeichen Semikolon).</li>
+  </ol>
+  <p>„Alles leeren“ löscht beide Textfelder. „Kopieren“ kopiert den Inhalt eines Felds in die Zwischenablage.</p>
+
+  <h2 id="quelle">2. Welche Quelldatei?</h2>
+  <table class="hilfe">
+    <thead><tr><th>Datei</th><th>woher</th><th>was die App damit prüft</th></tr></thead>
+    <tbody>
+      <tr><td><b>angereichertes XML</b><br><code>Lfg_N_transformation.xml</code></td>
+        <td>aus dem Redaktionssystem; in diesem XML sind Orte, Quellen und Verweise schon aufgelöst</td>
+        <td>Stelle für Stelle: Jede Orts-, Quellen- und Verweisangabe im Ergebnis wird mit der Auflösung des Redaktionssystems verglichen. <b>Genauer – wenn vorhanden, diese Datei nehmen.</b></td></tr>
+      <tr><td><b>Lieferungs-XML</b><br><code>Lfg_N.xml</code></td>
+        <td>die bisherige Eingabe der Transformation</td>
+        <td>Wortlaut und Struktur wie oben; Orte und Quellen nur gegen die Listen der App (Ortsliste, Quellenliste, Landschaften, ID-Register).</td></tr>
+    </tbody>
+  </table>
+  <p>Mit beiden Dateien kommen leicht unterschiedliche Zahlen heraus, weil das angereicherte XML mehr weiß. Das ist kein Fehler.</p>
+
+  <h2 id="seite">3. Was steht wo auf der Seite</h2>
+  <table class="hilfe">
+    <thead><tr><th>Bereich</th><th>Inhalt</th></tr></thead>
+    <tbody>
+      <tr><td>oben links / rechts</td><td>die beiden Dateien (Quelle, Ergebnis), mit „Datei öffnen …“ und „Kopieren“</td></tr>
+      <tr><td><b>Schemaprüfung</b></td><td>Ist das Ergebnis nach dem RelaxNG-Schema des Korpus gültig? „Gültig“ heißt nur: Die Struktur ist erlaubt. Ob der Inhalt stimmt, zeigt der Bericht darunter. Bei „ungültig“ steht die Stelle mit Zeilennummer dabei.</td></tr>
+      <tr><td><b>Prüfung der ganzen Datei</b></td><td>der Bericht über alle Einträge, siehe <a href="#bericht">Abschnitt 4</a></td></tr>
+      <tr><td><b>Liste links</b></td><td>alle Einträge des Ergebnisses in ihrer Reihenfolge. Der farbige Rand zeigt das <a href="#urteile">Urteil</a>, die Zahl rechts die Befunde ohne die zulässigen; ✓ heißt: keine Befunde.</td></tr>
+      <tr><td><b>Mitte</b></td><td>der gewählte Eintrag, so wie das Ergebnis ihn auszeichnet (Lemma, Aussprache, Bedeutungen, Belege …). Darunter aufklappbar „Text der Quelle“: der Artikel aus der Lieferung zum Vergleich. Ein Klick auf einen Ort springt zur Stelle im Ergebnis-XML.</td></tr>
+      <tr><td><b>rechts</b></td><td>Urteil und ID des Eintrags, dann seine Befunde, gruppiert nach <a href="#arten">Nachsehen, Automatisch reparierbar, Zulässig</a>. Spalten: Befund · die Stelle im Ergebnis · nach „→“, was die App erwartet hätte.</td></tr>
+    </tbody>
+  </table>
+
+  <h2 id="bericht">4. Der Bericht „Prüfung der ganzen Datei“</h2>
+  <ul>
+    <li><b>Zählzeile:</b> „N Artikel in der Quelle, M Einträge im Ergebnis“ und welche Quelle verwendet wurde. Stimmen die Zahlen nicht überein, ist die Zeile <span style="color:#a3261e;font-weight:700">rot</span>.</li>
+    <li><b><span class="beispiel" style="background:#fdecea;border:2px solid #e74c3c;color:#8e1f17">⚠ Artikel fehlen im Ergebnis</span></b>: Artikel der Quelle ohne Eintrag im Ergebnis, mit Lemma. Sie stehen <i>nicht</i> in der Liste links, weil es keinen Eintrag gibt. Sie müssen nachtransformiert werden. Ein Artikel, der als Unterartikel (<code>&lt;subentry&gt;</code>) in einem anderen Eintrag steht, fehlt nicht.</li>
+    <li><b><span class="beispiel" style="background:#fff4e5;border:1px solid #f39c12;color:#7a4b00">Einträge ohne passenden Artikel</span></b>: Einträge im Ergebnis, zu denen kein Artikel der Quelle passt, meist doppelt transformiert, mit verändertem Lemma oder aus einem anderen Artikel herausgelöst. „Nur diese Einträge zeigen“ filtert die Liste links.</li>
+    <li><b>Urteile</b> (vier Schaltflächen mit Anzahl): Klick filtert die Liste links, siehe <a href="#urteile">Abschnitt 5</a>.</li>
+    <li><b>Befundtabelle</b>: jede Befundart mit ihrer Art (<a href="#arten">automatisch, nachsehen, zulässig</a>) und der Zahl der Fundstellen; Klick filtert die Liste links. Die Bedeutung jeder Zeile steht in <a href="#befunde">Abschnitt 7</a>.</li>
+    <li><b>Alle zeigen</b> hebt einen Filter wieder auf.</li>
+    <li><b>Befunde als CSV</b>: eine Zeile je Befund mit Eintrag, Bereich, Befund, Stelle, Erwartung und Art.</li>
+    <li>Ganz unten: der <a href="#stand">Datenstand der Prüflisten</a>.</li>
+  </ul>
+
+  <h2 id="urteile">5. Die vier Urteile</h2>
+  <p>Jeder Eintrag bekommt genau ein Urteil, nach dem schwersten seiner Befunde.</p>
+  <table class="hilfe">
+    <thead><tr><th>Urteil</th><th>heißt</th><th>was tun</th></tr></thead>
+    <tbody>
+      <tr><td><span class="rand" style="background:#2ecc71"></span>in Ordnung</td><td>keine Befunde oder nur zulässige</td><td>nichts</td></tr>
+      <tr><td><span class="rand" style="background:#3498db"></span>automatisch reparierbar</td><td>nur Befunde, die das geplante Reparaturwerkzeug selbst berichtigen kann</td><td>nichts von Hand ändern; die Reparatur setzt es einheitlich um</td></tr>
+      <tr><td><span class="rand" style="background:#f39c12"></span>nachsehen (Orte, Quellen, Verweise)</td><td>mindestens eine Angabe, die jemand prüfen muss (Ort, Quelle, Verweis, ID oder kleine Textabweichung)</td><td>die Befunde unter „Nachsehen“ ansehen</td></tr>
+      <tr><td><span class="rand" style="background:#e74c3c"></span>nachsehen (Text oder Lemma)</td><td>Text fehlt, ein anderes Lemma oder ein Eintrag, der sich nicht vergleichen lässt</td><td>vorrangig ansehen; oft muss der Eintrag neu transformiert werden</td></tr>
+    </tbody>
+  </table>
+
+  <h2 id="arten">6. automatisch – nachsehen – zulässig</h2>
+  <table class="hilfe">
+    <tbody>
+      <tr><td><span class="kind kind-fix">automatisch</span></td><td>Die richtige Lösung steht fest (meist hinter „→“). Ein Reparaturwerkzeug wird solche Stellen in allen Lieferungen gleich berichtigen. <b>Nicht von Hand ändern.</b></td></tr>
+      <tr><td><span class="kind kind-review">nachsehen</span></td><td>Die App kann es nicht entscheiden. Bitte die Stelle im Artikel ansehen und im Ergebnis berichtigen oder als offene Frage melden.</td></tr>
+      <tr><td><span class="kind kind-info">zulässig</span></td><td>Auffällig, aber erlaubt (z. B. eine Umstellung, die das Schema verlangt). Nichts zu tun.</td></tr>
+    </tbody>
+  </table>
+
+  <h2 id="befunde">7. Alle Befunde, einzeln erklärt</h2>
+  <p>Die Bezeichnungen sind genau die der App, damit Sie sie hier wiederfinden (Strg+F).</p>
+
+  <h3>Artikel, Einträge, Lemma</h3>
+  <table class="hilfe">
+    <thead><tr><th>Befund</th><th>Art</th><th>Bedeutung und was tun</th></tr></thead>
+    <tbody>
+      <tr><td>Artikel fehlt im Ergebnis</td><td><span class="kind kind-review">nachsehen</span></td><td>Ein Artikel der Quelle hat keinen Eintrag im Ergebnis (rote Warnung oben). Nachtransformieren.</td></tr>
+      <tr><td>Eintrag keinem Artikel zugeordnet</td><td><span class="kind kind-review">nachsehen</span></td><td>Zu diesem Eintrag findet die App keinen Artikel der Quelle: doppelt, Lemma stark verändert, aus einer anderen Lieferung. Prüfen und ggf. entfernen oder das Lemma berichtigen.</td></tr>
+      <tr><td>Artikel als Unterartikel eingeordnet</td><td><span class="kind kind-info">zulässig</span></td><td>Der Artikel steht als <code>&lt;subentry&gt;</code> in einem anderen Eintrag (z. B. <i>anscheinen</i> unter <i>an-schein</i>); sein Text wird dort mitgezählt.</td></tr>
+      <tr><td>Lemma verändert</td><td><span class="kind kind-review">nachsehen</span></td><td>Das Lemma weicht leicht vom Artikel ab (Schreibung, Bindestrich, Klammer). An den Artikel angleichen.</td></tr>
+      <tr><td>Anderes Lemma</td><td><span class="kind kind-review">nachsehen</span></td><td>Deutlich anderes Lemma als im Artikel: Wahrscheinlich ist der Eintrag dem falschen Artikel zugeordnet.</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Eintrags-IDs</h3>
+  <p>Die IDs kommen aus dem ID-Register: Jede ID wird einmal je Lemma vergeben und nie geändert; bei gleicher Grundform folgt <code>_2</code>, <code>_3</code> in der Reihenfolge des Wörterbuchs (z. B. <i>Au</i> → <code>au_2</code>, <i>I acht</i> → <code>acht.i_2</code>).</p>
+  <table class="hilfe">
+    <thead><tr><th>Befund</th><th>Art</th><th>Bedeutung und was tun</th></tr></thead>
+    <tbody>
+      <tr><td>ID weder nach dem ID-Register noch nach Regel 1</td><td><span class="kind kind-fix">automatisch</span> (bei mehreren möglichen IDs <span class="kind kind-review">nachsehen</span>)</td><td>Die ID passt zu keiner Regel. Hinter „→“ steht die richtige.</td></tr>
+      <tr><td>ID nach Regel 1; das ID-Register sieht eine andere vor (für später)</td><td><span class="kind kind-info">zulässig</span></td><td>Übergangsregel: Eine ID nach Regel 1 gilt vorerst als richtig; später wird sie auf die Register-ID gesetzt.</td></tr>
+      <tr><td>ID in dieser Datei mehrfach vergeben</td><td><span class="kind kind-info">zulässig</span> oder <span class="kind kind-review">nachsehen</span></td><td>Mehrere Einträge mit derselben ID, meist Groß/klein-Paare wie <i>Alt</i>/<i>alt</i>. Zulässig, wenn das Register die Unterscheidung schon vorsieht; sonst nachsehen.</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Text</h3>
+  <p>Grundsatz: Kein Zeichen des Artikels darf verloren gehen. Gliederungszeichen, Gedankenstriche und Satzzeichen bleiben als Text stehen; Anführungszeichen bleiben, wie sie im Artikel stehen.</p>
+  <table class="hilfe">
+    <thead><tr><th>Befund</th><th>Art</th><th>Bedeutung und was tun</th></tr></thead>
+    <tbody>
+      <tr><td>Text fehlt</td><td><span class="kind kind-review">nachsehen</span></td><td>Wörter des Artikels fehlen im Ergebnis. Nachtragen oder den Eintrag neu transformieren.</td></tr>
+      <tr><td>Text hinzugefügt</td><td><span class="kind kind-review">nachsehen</span></td><td>Wörter im Ergebnis, die es im Artikel nicht gibt. Entfernen.</td></tr>
+      <tr><td>Text umgestellt (Reihenfolge geändert, nichts verloren)</td><td><span class="kind kind-info">zulässig</span></td><td>Das Schema verlangt eine andere Reihenfolge (z. B. Bedeutung vor dem Zitat); kein Wort fehlt.</td></tr>
+      <tr><td>Text in ein Attribut verschoben</td><td><span class="kind kind-info">zulässig</span></td><td>Der Text steht jetzt in einem Attribut (z. B. <code>n="1a"</code>) und nicht verloren.</td></tr>
+      <tr><td>Gliederungszeichen nur im Attribut n</td><td><span class="kind kind-fix">automatisch</span></td><td>„1)“, „a)“ fehlen als Text; sie gehören an den Anfang der Bedeutung, <code>n</code> zusätzlich.</td></tr>
+      <tr><td>Gedankenstrich ‒ fehlt</td><td><span class="kind kind-fix">automatisch</span></td><td>Ein Gedankenstrich des Artikels fehlt.</td></tr>
+      <tr><td>Satzzeichen oder Ziffer fehlt</td><td><span class="kind kind-fix">automatisch</span></td><td>Meist „;“ oder „.“ zwischen Angaben.</td></tr>
+      <tr><td>Zeichen hinzugefügt</td><td><span class="kind kind-fix">automatisch</span></td><td>Ein Satzzeichen, das im Artikel nicht steht.</td></tr>
+      <tr><td>Anführungs- oder Auslassungszeichen ersetzt</td><td><span class="kind kind-fix">automatisch</span></td><td>z. B. ‚ ‘ „ “ ´ durch ' oder " ersetzt; sie bleiben wie im Artikel.</td></tr>
+      <tr><td>Hochstellung als Sonderzeichen geschrieben</td><td><span class="kind kind-fix">automatisch</span></td><td>z. B. ² statt <code>&lt;superscript&gt;2&lt;/superscript&gt;</code>.</td></tr>
+      <tr><td>Text weicht zu stark ab für einen Vergleich</td><td><span class="kind kind-review">nachsehen</span></td><td>Ergebnis und Artikel sind zu verschieden; meist falscher Artikel oder abgebrochene Transformation. Neu transformieren.</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Orte und Landschaften</h3>
+  <p>Orte haben als Schlüssel die Nummer der Ortsliste (<code>lfd_412</code>). Landschaften (Baar, Wiesental …) sind <code>&lt;place type="region"&gt;</code> mit der Langform der Landschaftsliste als Schlüssel. „hs.“ hinter einem Ort heißt: handschriftlicher Beleg aus diesem Ort; es gehört nicht in die Auszeichnung.</p>
+  <table class="hilfe">
+    <thead><tr><th>Befund</th><th>Art</th><th>Bedeutung und was tun</th></tr></thead>
+    <tbody>
+      <tr><td>Nummer einer Nebenform; der Ort hat eine andere Nummer</td><td><span class="kind kind-fix">automatisch</span></td><td>Eine Zusatznummer (z. B. aus der älteren Ortsreferenz) statt der Hauptnummer des Orts.</td></tr>
+      <tr><td>Text ist Kurzform eines anderen Orts</td><td><span class="kind kind-fix">automatisch</span></td><td>Der Text nennt einen anderen Ort als die Nummer.</td></tr>
+      <tr><td>Anderer Ort als im Redaktionssystem</td><td><span class="kind kind-fix">automatisch</span></td><td>Das Redaktionssystem kennt diese Stelle sicher als anderen Ort (nur mit angereichertem XML).</td></tr>
+      <tr><td>Ohne Schlüssel, das Redaktionssystem kennt den Ort</td><td><span class="kind kind-fix">automatisch</span></td><td>Der Schlüssel kann ergänzt werden.</td></tr>
+      <tr><td>Leerzeichen im Schlüssel</td><td><span class="kind kind-fix">automatisch</span></td><td>z. B. <code>lfd_ 412</code>.</td></tr>
+      <tr><td>Landschaft als Ort ausgezeichnet (type="region" verwenden)</td><td><span class="kind kind-fix">automatisch</span></td><td>Eine Landschaft steht als gewöhnlicher Ort da.</td></tr>
+      <tr><td>„hs.“ innerhalb der Ortsauszeichnung (handschriftlicher Beleg, gehört dahinter)</td><td><span class="kind kind-fix">automatisch</span></td><td><code>&lt;place&gt;Achern hs.&lt;/place&gt;</code> → <code>&lt;place&gt;Achern&lt;/place&gt; hs.</code></td></tr>
+      <tr><td>Als sicher ausgezeichnet, das Redaktionssystem vermutet nur</td><td><span class="kind kind-review">nachsehen</span></td><td>Mit <code>key</code> ausgezeichnet, das Redaktionssystem hat nur eine Vermutung. Wenn nicht sicher: <code>guess</code> statt <code>key</code>.</td></tr>
+      <tr><td>Als sicher ausgezeichnet, dem Redaktionssystem unbekannt</td><td><span class="kind kind-review">nachsehen</span></td><td>Das Redaktionssystem kennt die Angabe nicht (mehrdeutiger oder fehlender Ort). Ohne <code>key</code> oder mit <code>guess</code>.</td></tr>
+      <tr><td>Nummer nicht in der Ortsliste</td><td><span class="kind kind-review">nachsehen</span></td><td>Die Nummer gibt es nicht. Ort prüfen.</td></tr>
+      <tr><td>Name statt lfd-Nummer als Schlüssel</td><td><span class="kind kind-review">nachsehen</span></td><td>Als Schlüssel steht ein Name; richtig ist die Nummer.</td></tr>
+      <tr><td>Landschaft nicht in der Landschaftsliste</td><td><span class="kind kind-review">nachsehen</span></td><td>Ohne Schlüssel lassen; ob die Landschaft in die Liste kommt, wird entschieden.</td></tr>
+      <tr><td>Kurztitel mit „hs.“ als Ort ausgezeichnet (Quelle)</td><td><span class="kind kind-review">nachsehen</span></td><td>z. B. <i>Neukirch hs.</i> ist ein Heft im Quellenverzeichnis, kein Ort: als <code>bibl</code> auszeichnen.</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Quellen und Personen</h3>
+  <table class="hilfe">
+    <thead><tr><th>Befund</th><th>Art</th><th>Bedeutung und was tun</th></tr></thead>
+    <tbody>
+      <tr><td>Titel weicht von der Quellenliste ab</td><td><span class="kind kind-fix">automatisch</span></td><td>Der Kurztitel ist bekannt; als <code>key</code> gilt der Titel der Quellenliste.</td></tr>
+      <tr><td>Ohne Schlüssel, die Quelle ist bekannt</td><td><span class="kind kind-fix">automatisch</span></td><td>Der Schlüssel kann ergänzt werden.</td></tr>
+      <tr><td>Titel nicht in der Quellenliste</td><td><span class="kind kind-review">nachsehen</span></td><td>Oft Vergleichsliteratur mit vollem Titel im Artikel: Dann ist <code>&lt;bibl&gt;</code> <b>ohne</b> <code>key</code> richtig. Nicht nach einem ähnlichen Titel suchen.</td></tr>
+      <tr><td>„X hs.“ als Quelle ausgezeichnet (gemeint ist die Person)</td><td><span class="kind kind-review">nachsehen</span></td><td>„A. Waltz hs.“: handschriftliche Belege dieser Person, nicht die gleichnamige Quelle → <code>&lt;person&gt;</code>, „hs.“ dahinter. Ausnahme: Kurztitel, die selbst auf „hs.“ enden (<i>Albrecht hs.</i>, <i>Zimmerm. hs.</i>).</td></tr>
+      <tr><td>Ort mit „hs.“ als Quelle ausgezeichnet</td><td><span class="kind kind-review">nachsehen</span></td><td>„Heidelb. hs.“ ist ein Ort mit handschriftlichem Beleg → <code>&lt;place&gt;</code>, „hs.“ dahinter.</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Verweise</h3>
+  <table class="hilfe">
+    <thead><tr><th>Befund</th><th>Art</th><th>Bedeutung und was tun</th></tr></thead>
+    <tbody>
+      <tr><td>Ziel ohne Bindestriche geschrieben</td><td><span class="kind kind-fix">automatisch</span></td><td>Ältere Lieferungen schreiben Verweisziele ohne Bindestrich („anstellen“); das Ziel ist <code>an-stellen</code>.</td></tr>
+      <tr><td>Anderes Ziel als im Redaktionssystem</td><td><span class="kind kind-fix">automatisch</span></td><td>Das Redaktionssystem kennt das Ziel sicher anders (Homonym, Schreibung).</td></tr>
+      <tr><td>Ziel ist kein Lemma</td><td><span class="kind kind-review">nachsehen</span></td><td>Unter diesem Namen gibt es kein Lemma. Schreibung im Artikel prüfen; gibt es das Ziel wirklich nicht, den Text stehen lassen und als offene Frage melden.</td></tr>
+    </tbody>
+  </table>
+
+  <h2 id="stand">8. Datenstand der Prüflisten</h2>
+  <p>Ortsliste, Quellenliste, Landschaften und ID-Register liegen als feste Dateien in der App (<code>data/</code>). Unter dem Bericht steht, aus welchem Abzug des Altsystems sie stammen. Nach jedem neuen Abzug werden sie erneuert. Steht dort ein altes Datum, kann ein Befund schon überholt sein.</p>
+
+  <h2 id="fragen">9. Wenn etwas unklar bleibt</h2>
+  <p>Fragen zur Transformation bitte in die gemeinsame Liste der offenen Fragen eintragen (Formular „Neue Frage eintragen“):
+    <a href="https://claude.ai/artifact/AYfuu7b9Cj2D8AzfoRrtbb" target="_blank" rel="noopener">Offene Fragen der XML-Transformation</a>.
+    Dort stehen auch die Antworten auf häufige Fragen (z. B. Bühl, Simplic., fehlende Quellen).</p>
+  <p class="zurueck"><a href="index.html">← zurück zur Prüfung</a></p>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+    "erzeugt": "2026-11-05",
+    "hinweis": "Abzüge, nicht von Hand ändern; erzeugt mit neuaufbau/anwendung/bin/app_daten.php",
+    "dateien": {
+        "sources.csv": {
+            "herkunft": "Quellenliste des Redaktionssystems (Altsystem, ergänzt um quellen_neu.csv)",
+            "zeilen": 988
+        },
+        "regions.csv": {
+            "herkunft": "ABBR_geo_regions.md",
+            "zeilen": 69
+        },
+        "ids.csv": {
+            "herkunft": "ID-Register (neuaufbau/transformation/id_register.csv)",
+            "zeilen": 81515
+        }
+    },
+    "datenstand": "Abzug des Altsystems vom 04.11.2026"
+}

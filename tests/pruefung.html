@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Check runner</title>
+</head>
+<body>
+  <p>Runs js/pruefung.js without the user interface: <code>tests/pruefung.html?source=…&amp;result=…</code>
+    (URLs of the source XML and the generated XML). The summary appears below as JSON.</p>
+  <pre id="out">running…</pre>
+  <script type="module">
+    import * as p from "../js/pruefung.js";
+    const out = document.getElementById("out");
+    try {
+      const q = new URLSearchParams(location.search);
+      const lists = await p.loadLists("../data/");
+      const [src, gen] = await Promise.all([fetch(q.get("source")).then((r) => r.text()), fetch(q.get("result")).then((r) => r.text())]);
+      const t0 = performance.now();
+      const report = p.check(src, gen);
+      const examples = {};
+      for (const e of report.entries) for (const f of e.findings) {
+        (examples[f.code] ||= []);
+        if (examples[f.code].length < 3) examples[f.code].push(`${e.lemma}: ${f.text} | ${f.expected}`);
+      }
+      out.textContent = JSON.stringify({ lists, seconds: ((performance.now() - t0) / 1000).toFixed(1), summary: report.summary, examples }, null, 1);
+    } catch (e) {
+      out.textContent = "ERROR " + e.message + "\n" + e.stack;
+    }
+  </script>
+</body>
+</html>

@@ -1,5 +1,7 @@
 /* view.js – DOM work only, no data crunching */
 import * as data from "./data.js";
+import * as pruefung from "./pruefung.js";
+import { renderEntry } from "./entry-view.js";
 /* -------------------------------------------------- */
 /* cache frequently-used nodes                        */
 /* -------------------------------------------------- */
@@ -92,7 +94,7 @@ function initCopyButtons() {
           // Visual feedback
           btn.classList.add("copied");
           const originalText = btn.innerHTML;
-          btn.innerHTML = '<span class="copy-icon">✓</span> Copied!';
+          btn.innerHTML = '<span class="copy-icon">✓</span> Kopiert';
 
           // Reset after 2 seconds
           setTimeout(() => {
@@ -103,6 +105,25 @@ function initCopyButtons() {
         .catch((err) => {
           console.error("Failed to copy: ", err);
         });
+    });
+  });
+}
+
+/* -------------------------------------------------- */
+/* open files instead of pasting (a delivery has 2–3 MB) */
+/* -------------------------------------------------- */
+function initFileButtons() {
+  document.querySelectorAll('.file-btn input[type="file"]').forEach((input) => {
+    input.addEventListener("change", async () => {
+      const file = input.files && input.files[0];
+      if (!file) return;
+      const text = await file.text();
+      const editor = input.dataset.target === "source-xml" ? srcEditor : genEditor;
+      const ta = document.getElementById(input.dataset.target);
+      ta.value = text;
+      if (editor) editor.setValue(text);
+      input.closest(".file-btn").title = file.name;
+      input.value = "";
     });
   });
 }
@@ -168,10 +189,10 @@ function renderSchemaValidation(schemaValidation) {
       <div class="schema-status">
         <div class="schema-header">
           <span class="schema-icon">⏳</span>
-          <h3>Schema Validation</h3>
-          <span class="status-badge loading">Loading...</span>
+          <h3>Schemaprüfung</h3>
+          <span class="status-badge loading">lädt …</span>
         </div>
-        <p>Schema validation is initializing...</p>
+        <p>Die Schemaprüfung wird geladen …</p>
       </div>
     `;
     return;
@@ -181,22 +202,20 @@ function renderSchemaValidation(schemaValidation) {
     <div class="schema-status">
       <div class="schema-header">
         <span class="schema-icon">${isValid ? "✅" : "❌"}</span>
-        <h3>Schema Validation</h3>
+        <h3>Schemaprüfung</h3>
         <span class="status-badge ${isValid ? "valid" : "invalid"}">${
-    isValid ? "Valid" : "Invalid"
+    isValid ? "gültig" : "ungültig"
   }</span>
       </div>
   `;
 
   if (isValid) {
     html +=
-      '<p class="success-message">XML is valid according to the RelaxNG schema.</p>';
+      '<p class="success-message">Das XML ist nach dem RelaxNG-Schema gültig.</p>';
   } else {
     html += `
       <div class="error-summary">
-        <p><strong>${errors.length} validation error${
-      errors.length === 1 ? "" : "s"
-    } found:</strong></p>
+        <p><strong>${errors.length} Fehler im Schema gefunden:</strong></p>
         <div class="validation-errors">
     `;
 
@@ -211,8 +230,8 @@ function renderSchemaValidation(schemaValidation) {
             }</span>
             ${
               error.line
-                ? `<span class="error-location">Line ${error.line}${
-                    error.column ? `, Column ${error.column}` : ""
+                ? `<span class="error-location">Zeile ${error.line}${
+                    error.column ? `, Spalte ${error.column}` : ""
                   }</span>`
                 : ""
             }
@@ -252,248 +271,124 @@ function attachSchemaErrorClickHandlers(errors) {
 /* -------------------------------------------------- */
 /* sidebar list                                       */
 /* -------------------------------------------------- */
+let currentFilter = null;      // { verdict } or { code }
+
+function visible(r) {
+  if (!currentFilter) return true;
+  if (currentFilter.verdict) return r.verdict === currentFilter.verdict;
+  if (currentFilter.code) return r.findings.some((f) => f.code === currentFilter.code);
+  return true;
+}
+
 function renderSidebar(entries) {
   currentReport = entries;
   dom.sidebar.innerHTML = entries
-    .map(
-      (r, i) => `
-    <li data-idx="${i}" class="sidebar-row ${
-        r.stats.missing.length ? "fail" : "pass"
-      }">
+    .map((r, i) => {
+      if (!visible(r)) return "";
+      const n = r.findings.filter((f) => f.kind !== "info").length;
+      return `
+    <li data-idx="${i}" class="sidebar-row verdict-${r.verdict}" title="${escapeHtml(pruefung.VERDICTS[r.verdict] || "")}">
       <span class="idx">${i + 1}</span>
-      <span class="lemma">${r.lemma || r.id}</span>
-      <span class="perc">${r.stats.perc}%</span>
-    </li>`
-    )
+      <span class="lemma">${escapeHtml(r.lemma || r.id)}</span>
+      <span class="perc">${n || "✓"}</span>
+    </li>`;
+    })
     .join("");
+}
+
+/* -------------------------------------------------- */
+/* summary of the whole file, filters, CSV export     */
+/* -------------------------------------------------- */
+let currentFull = null;
+
+function renderSummary(report, listsInfo) {
+  currentFull = report;
+  const s = report.summary;
+  const box = document.getElementById("report-summary");
+  if (!box) return;
+  const kind = {};
+  for (const e of report.entries) for (const f of e.findings) kind[f.code] = f.kind;
+  if (s.missing.length) kind["entry.missing"] = "review";
+  const codes = Object.entries(s.codes).sort((a, b) => b[1] - a[1]);
+  const stand = listsInfo && listsInfo.stand ? `Prüflisten: Datenstand ${escapeHtml(listsInfo.stand.datenstand || "")}, erzeugt ${escapeHtml(listsInfo.stand.erzeugt || "")}` : "Prüflisten: data/stand.json fehlt";
+  // fehlende Artikel und Einträge ohne Artikel deutlich hervorheben (rot bzw. orange), nicht nur in der Tabelle
+  const extra = report.entries.filter((e) => e.findings.some((f) => f.code === "entry.unmatched")).map((e) => e.lemma || e.id);
+  const alarm = (s.missing.length ? `
+    <div class="summary-alarm" role="alert">
+      <strong>⚠ ${s.missing.length} ${s.missing.length === 1 ? "Artikel fehlt" : "Artikel fehlen"} im Ergebnis</strong>
+      <div>Diese Artikel der Quelle haben keinen Eintrag im Ergebnis. Sie erscheinen deshalb nicht in der Liste links. Bitte nachtransformieren.</div>
+      <div class="lemmata">${s.missing.map(escapeHtml).join(" · ")}</div>
+    </div>` : "") + (extra.length ? `
+    <div class="summary-alarm extra">
+      <strong>${extra.length} ${extra.length === 1 ? "Eintrag" : "Einträge"} im Ergebnis ohne passenden Artikel in der Quelle</strong>
+      <div>Meist doppelt transformiert, Lemma verändert oder Teil eines anderen Artikels. Bitte nachsehen.</div>
+      <div class="lemmata">${extra.map(escapeHtml).join(" · ")}</div>
+      <button type="button" data-code-filter="entry.unmatched">Nur diese Einträge zeigen</button>
+    </div>` : "");
+  const zahlen = `${s.articles} Artikel in der Quelle, ${s.entries} Einträge im Ergebnis`;
+  box.innerHTML = `
+    <div class="summary-head">
+      <h3>Prüfung der ganzen Datei</h3>
+      <span>${s.missing.length || extra.length ? `<span class="count-mismatch">${zahlen}</span>` : zahlen}${s.enriched ? " · Quelle: angereichertes XML des Redaktionssystems (Stelle für Stelle)" : " · Quelle: Lieferungs-XML"}</span>
+      <button id="csv-btn" type="button">Befunde als CSV</button>
+      <button id="filter-reset" type="button">Alle zeigen</button>
+      <a class="help-link" href="hilfe.html#bericht" target="_blank" rel="noopener">Was bedeutet das?</a>
+    </div>
+    ${alarm}
+    <div class="summary-verdicts">${Object.entries(pruefung.VERDICTS).map(([v, label]) =>
+      `<button type="button" class="verdict-chip verdict-${v}" data-verdict="${v}">${escapeHtml(label)}: <b>${s.verdicts[v] || 0}</b></button>`).join("")}</div>
+    <table class="summary-codes"><tbody>${codes.map(([c, n]) =>
+      `<tr data-code="${c}"><td><span class="kind kind-${kind[c] || "review"}">${kind[c] === "fix" ? "automatisch" : kind[c] === "info" ? "zulässig" : "nachsehen"}</span></td><td>${escapeHtml(pruefung.LABELS[c] || c)}</td><td class="num">${n}</td></tr>`).join("")}</tbody></table>
+    <p class="summary-stand">${stand}</p>`;
+  box.querySelector("[data-code-filter]")?.addEventListener("click", (ev) => setFilter({ code: ev.currentTarget.dataset.codeFilter }));
+  box.querySelectorAll("[data-verdict]").forEach((b) => b.addEventListener("click", () => setFilter({ verdict: b.dataset.verdict })));
+  box.querySelectorAll("tr[data-code]").forEach((t) => t.addEventListener("click", () => setFilter({ code: t.dataset.code })));
+  box.querySelector("#filter-reset").addEventListener("click", () => setFilter(null));
+  box.querySelector("#csv-btn").addEventListener("click", () => {
+    const blob = new Blob([pruefung.findingsCsv(report)], { type: "text/csv;charset=utf-8" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "befunde.csv";
+    a.click();
+    URL.revokeObjectURL(a.href);
+  });
+}
+
+function setFilter(f) {
+  currentFilter = f;
+  document.querySelectorAll("#report-summary .active").forEach((x) => x.classList.remove("active"));
+  if (f && f.verdict) document.querySelector(`#report-summary [data-verdict="${f.verdict}"]`)?.classList.add("active");
+  if (f && f.code) document.querySelector(`#report-summary tr[data-code="${f.code}"]`)?.classList.add("active");
+  renderSidebar(currentFull.entries);
+  const first = currentFull.entries.findIndex(visible);
+  if (first >= 0) renderPreview(currentFull.entries[first], first);
 }
 
 /* -------------------------------------------------- */
 /* PREVIEW – single central article                   */
 /* -------------------------------------------------- */
 function renderPreview(r, index) {
-  const parser = new DOMParser();
-  const doc = parser.parseFromString(r.entryNode.outerHTML, "text/xml");
-  const entry = doc.documentElement;
-
-  const lemma = entry.querySelector("lemma")?.textContent || "—";
-  const grammar = entry.querySelector("grammar")?.textContent || "";
-
-  let html = `
-    <div class="entry">
-      <div class="entry-header">
-        <span class="lemma">${lemma}</span>
-        ${grammar ? `<span class="grammar">${grammar}</span>` : ""}`;
-
-  // Add markers if present
-  const markers = entry.querySelectorAll("markers > marker");
-  if (markers.length > 0) {
-    markers.forEach((marker) => {
-      const type = marker.getAttribute("type") || "";
-      const value = marker.textContent;
-      html += `<span class="marker ${type}">${value}</span>`;
-    });
-  }
-
-  html += `</div>`; // Close entry-header
-
-  // Morphology - flexion forms
-  const morphology = entry.querySelector("morphology");
-  if (morphology) {
-    html += '<div class="morphology">';
-    html += '<span class="morphology-label">Forms: </span>';
-    const forms = morphology.querySelectorAll("form");
-    forms.forEach((form, idx) => {
-      const formAttrs = [];
-      if (form.getAttribute("person")) formAttrs.push(`${form.getAttribute("person")}. pers.`);
-      if (form.getAttribute("number")) formAttrs.push(form.getAttribute("number"));
-      if (form.getAttribute("tense")) formAttrs.push(form.getAttribute("tense"));
-      if (form.getAttribute("mood")) formAttrs.push(form.getAttribute("mood"));
-
-      const formText = processComplexContent(form);
-      const attrText = formAttrs.length ? ` (${formAttrs.join(', ')})` : '';
-
-      html += `<span class="morph-form">${formText}${attrText}</span>`;
-      if (idx < forms.length - 1) html += '<span class="separator">; </span>';
-    });
-    html += '</div>';
-  }
-
-  // Pronunciations
-  const pronunciations = entry.querySelector("pronunciations");
-  if (pronunciations) {
-    html += '<div class="pronunciations">';
-    pronunciations.querySelectorAll("variant").forEach((variant) => {
-      const phon = variant.querySelector("phon")?.textContent || "";
-      let geo = variant.querySelector("geo")?.innerHTML || "";
-      const terminator = variant.querySelector("terminator")?.textContent || "";
-
-      // Process place references in geo field
-      geo = processGeoContent(geo);
-
-      html += `<div class="variant">
-        <span class="phon">${phon}</span> 
-        <span class="geo">${geo}</span>
-        <span class="terminator">${terminator}</span>
-      </div>`;
-    });
-    html += "</div>";
-  }
-
-  // Senses
-  const senses = entry.querySelector("senses");
-  if (senses) {
-    html += '<div class="senses">';
-    senses.querySelectorAll("sense").forEach((sense, idx) => {
-      const defElement = sense.querySelector("def");
-      const def = defElement ? processComplexContent(defElement) : "";
-
-      const senseN = sense.getAttribute("n");
-      const domain = sense.getAttribute("domain");
-
-      html += `<div class="sense">`;
-
-      // Add sense number (use @n attribute if present, otherwise use index)
-      if (senses.querySelectorAll("sense").length > 1) {
-        html += `<span class="sense-number">${senseN || (idx + 1)}.</span>`;
-      }
-
-      // Add domain badge if present
-      if (domain) {
-        html += `<span class="domain-badge">${domain}</span>`;
-      }
-
-      html += `<span class="definition">${def}</span>`;
-
-      // Process attestations if present
-      const attestations = sense.querySelector("attestations");
-      if (attestations) {
-        html += `<div class="attestations">`;
-        html += `<span class="attestations-label">Historical attestations:</span>`;
-        attestations.querySelectorAll("attestation").forEach((attestation) => {
-          const date = attestation.getAttribute("date") || "";
-          const source = attestation.getAttribute("source") || "";
-          const location = attestation.getAttribute("location") || "";
-          const content = processComplexContent(attestation);
-
-          html += `<div class="attestation">`;
-          if (date) html += `<span class="attestation-date">${date}</span>`;
-          html += `<span class="attestation-text">${content}</span>`;
-          if (source || location) {
-            html += `<span class="attestation-meta">`;
-            if (source) html += `<span class="attestation-source">${source}</span>`;
-            if (location) html += `<span class="attestation-location">${location}</span>`;
-            html += `</span>`;
-          }
-          html += `</div>`;
-        });
-        html += `</div>`;
-      }
-
-      // Process examples if present
-      const examples = sense.querySelector("examples");
-      if (examples) {
-        html += `<div class="examples">`;
-        examples.querySelectorAll("example").forEach((example) => {
-          const exampleSource = example.getAttribute("source") || "";
-          const exampleLocation = example.getAttribute("location") || "";
-          const exampleContent = processComplexContent(example);
-
-          html += `<div class="example">`;
-          html += `<span class="example-text">${exampleContent}</span>`;
-          if (exampleSource || exampleLocation) {
-            html += ` <span class="example-meta">(`;
-            if (exampleSource) html += exampleSource;
-            if (exampleSource && exampleLocation) html += `, `;
-            if (exampleLocation) html += exampleLocation;
-            html += `)</span>`;
-          }
-          html += `</div>`;
-        });
-        html += `</div>`;
-      }
-
-      // Process subsenses if present
-      const subsenses = sense.querySelector("subsenses");
-      if (subsenses) {
-        html += `<div class="subsenses">`;
-        subsenses.querySelectorAll("subsense").forEach((subsense, subIdx) => {
-          const subDef = subsense.querySelector("def")?.textContent || "";
-          html += `
-            <div class="subsense">
-              <span class="subsense-letter">${String.fromCharCode(
-                97 + subIdx
-              )})</span>
-              <span class="definition">${processContent(subDef)}</span>
-            </div>`;
-        });
-        html += `</div>`;
-      }
-
-      html += `</div>`; // Close sense
-    });
-    html += "</div>"; // Close senses
-  }
-
-  // Etymology
-  const etymology = entry.querySelector("etymology");
-  if (etymology) {
-    html += `
-      <div class="etymology">
-        <span class="etymology-label">Etymology: </span>
-        ${processComplexContent(etymology)}
-      </div>`;
-  }
-
-  // References (cross-references)
-  const references = entry.querySelector("references");
-  if (references) {
-    html += `
-      <div class="references">
-        <span class="references-label">See also: </span>
-        ${processComplexContent(references)}
-      </div>`;
-  }
-
-  // Bibliography
-  const bibliography = entry.querySelector("bibliography");
-  if (bibliography) {
-    html += `
-      <div class="bibliography">
-        <span class="bibliography-label">Sources: </span>
-        ${processComplexContent(bibliography)}
-      </div>`;
-  }
-
-  // Problems - for editorial notes or issues
-  const problemsContainer = entry.querySelector("problems");
-  if (problemsContainer) {
-    const problems = problemsContainer.querySelectorAll("problem");
-    if (problems.length > 0) {
-      html += `<div class="problems-section">`;
-      html += `<span class="problems-label">Editorial Notes:</span>`;
-      problems.forEach((problem) => {
-        const severity = problem.getAttribute("severity") || "info";
-        const location = problem.getAttribute("location") || "";
-        html += `
-          <div class="problem ${severity}">
-            ${location ? `<span class="problem-location">[${location}]</span> ` : ""}
-            ${processContent(problem.textContent)}
-          </div>`;
-      });
-      html += `</div>`;
-    }
-  }
-
-  html += "</div>"; // Close entry
-  dom.previewPanel.innerHTML = html;
-
-  // Add click handlers to place references
+  document.querySelectorAll(".sidebar-row.selected").forEach((x) => x.classList.remove("selected"));
+  document.querySelector(`.sidebar-row[data-idx="${index}"]`)?.classList.add("selected");
+  dom.previewPanel.innerHTML = renderEntry(r.entryNode, r.findings) +
+    (r.source ? `<details class="source-text"><summary>Text der Quelle</summary><div>${escapeHtml(r.source.text)}</div></details>` : "");
   attachPlaceClickHandlers();
-
-  // Show validation section and render stats
   showValidationSection();
-  renderStats(r.stats);
+  renderFindings(r);
+}
+
+function renderFindings(r) {
+  const groups = { fix: [], review: [], info: [] };
+  for (const f of r.findings) groups[f.kind].push(f);
+  const block = (kind, title) => groups[kind].length ? `
+    <h4 class="kind-${kind}">${title} (${groups[kind].length})</h4>
+    <table class="findings"><tbody>${groups[kind].map((f) => `
+      <tr><td>${escapeHtml(pruefung.LABELS[f.code] || f.code)}</td><td class="f-text">${escapeHtml(f.text)}</td><td class="f-expected">${f.expected ? "→ " + escapeHtml(f.expected) : ""}</td></tr>`).join("")}
+    </tbody></table>` : "";
+  dom.statsPanel.innerHTML = `
+    <div class="card verdict-${r.verdict}"><span class="val">${escapeHtml(pruefung.VERDICTS[r.verdict] || r.verdict)}</span><span class="lbl">${escapeHtml(r.id)}</span></div>
+    ${block("review", "Nachsehen")}${block("fix", "Automatisch reparierbar")}${block("info", "Zulässig")}
+    ${r.findings.length ? "" : '<p class="success-message">Keine Befunde.</p>'}`;
 }
 
 /**
@@ -946,6 +841,9 @@ function resetUI() {
   // Clear the rest of the UI
   dom.sidebar.innerHTML = "";
   dom.previewPanel.innerHTML = "";
+  const summary = document.getElementById("report-summary");
+  if (summary) summary.innerHTML = "";
+  currentFilter = null;
   dom.statsPanel.innerHTML = "";
 
   if (dom.schemaValidationPanel) {
@@ -970,6 +868,7 @@ export {
   setGenXML,
   renderSidebar,
   renderPreview,
+  renderSummary,
   renderSchemaValidation,
   onValidate,
   onClear,
@@ -979,5 +878,6 @@ export {
   showValidationSection,
   initCodeEditors,
   initCopyButtons,
+  initFileButtons,
   attachPlaceClickHandlers,
 };

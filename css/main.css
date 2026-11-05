@@ -443,6 +443,8 @@ button:hover {
 }
 
 .copy-btn {
+  color: var(--primary); /* sonst weiß von der allgemeinen button-Regel: auf hellem Grund kaum lesbar */
+  font-weight: 600;
   background-color: #f5f5f5;
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -523,3 +525,47 @@ button:hover {
 .place-mismatch:hover {
   background-color: #ffcdd2 !important;
 }
+/* ---------- check report (pruefung.js) ---------- */
+.file-btn { cursor: pointer; font-size: .85rem; padding: .15rem .5rem; border: 1px solid #ccc; border-radius: var(--radius); background: #fff; margin-left: auto; }
+.textarea-header { display: flex; gap: .5rem; align-items: center; }
+.report-summary:empty { display: none; }
+.report-summary { background: #fff; border-radius: var(--radius); box-shadow: var(--shadow); padding: .75rem 1rem; margin: 1rem 0; }
+.summary-head { display: flex; flex-wrap: wrap; gap: .75rem; align-items: baseline; }
+.summary-head h3 { font-size: 1.05rem; }
+.summary-head button { margin-left: 0; padding: .2rem .6rem; font-size: .85rem; }
+.summary-verdicts { display: flex; flex-wrap: wrap; gap: .5rem; margin: .6rem 0; }
+.verdict-chip { padding: .25rem .6rem; font-size: .85rem; border: 1px solid #ccc; background: #fff; color: var(--primary); }
+.verdict-chip.active, .summary-codes tr.active { outline: 2px solid var(--accent); }
+.summary-codes { border-collapse: collapse; font-size: .85rem; }
+.summary-codes td { padding: .1rem .5rem; border-bottom: 1px solid #eee; cursor: pointer; }
+.summary-codes td.num { text-align: right; font-variant-numeric: tabular-nums; }
+.summary-codes tr:hover { background: #f0f6fb; }
+.summary-stand { font-size: .8rem; color: #666; margin-top: .4rem; }
+/* fehlende Artikel: nicht zu übersehen (Wunsch der Redaktion 05.11.2026) */
+.summary-alarm { margin: .6rem 0; padding: .7rem .9rem; border: 2px solid var(--danger); border-radius: var(--radius);
+  background: #fdecea; color: #8e1f17; }
+.summary-alarm strong { font-size: 1.05rem; }
+.summary-alarm .lemmata { margin-top: .3rem; font-family: var(--ipa-font); }
+.summary-alarm.extra { border-color: var(--warn); background: #fff4e5; color: #7a4b00; }
+.summary-alarm.extra button { margin: .35rem 0 0; padding: .2rem .6rem; font-size: .85rem; }
+.count-mismatch { color: #a3261e; font-weight: 700; }
+.help-link { color: var(--accent); font-size: .85rem; font-weight: 600; }
+.hilfe-kopf { display: inline-block; margin-top: .2rem; color: var(--accent); font-weight: 600; }
+.kind { display: inline-block; font-size: .72rem; padding: 0 .35rem; border-radius: 8px; }
+.kind-fix { background: #e3f1ff; color: #1f5c8b; }
+.kind-review { background: #fdecea; color: #a3261e; }
+.kind-info { background: #eef2ee; color: #4d5b4d; }
+h4.kind-fix, h4.kind-review, h4.kind-info { background: none; margin: .8rem 0 .3rem; font-size: .95rem; }
+h4.kind-review { color: #a3261e; } h4.kind-fix { color: #1f5c8b; } h4.kind-info { color: #4d5b4d; }
+.verdict-ok { border-left: 4px solid var(--success); }
+.verdict-fix { border-left: 4px solid var(--accent); }
+.verdict-review-data { border-left: 4px solid var(--warn); }
+.verdict-review-text { border-left: 4px solid var(--danger); }
+.sidebar-row.selected { background: #e8f1fb; }
+table.findings { border-collapse: collapse; font-size: .85rem; width: 100%; }
+table.findings td { padding: .15rem .4rem; border-bottom: 1px solid #eee; vertical-align: top; }
+table.findings td.f-text { font-family: var(--ipa-font); }
+table.findings td.f-expected { color: #555; }
+details.source-text { margin-top: 1rem; font-size: .9rem; }
+details.source-text div { font-family: var(--ipa-font); white-space: pre-wrap; padding: .5rem; background: #fafafa; border: 1px solid #eee; }
+.sidebar-row .lemma { font-size: .95rem; font-weight: 600; }
