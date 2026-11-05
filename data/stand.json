@@ -1,5 +1,5 @@
 {
-    "erzeugt": "2026-10-25",
+    "erzeugt": "2026-11-05",
     "hinweis": "Abzüge, nicht von Hand ändern; erzeugt mit neuaufbau/anwendung/bin/app_daten.php",
     "dateien": {
         "sources.csv": {
@@ -12,8 +12,8 @@
         },
         "ids.csv": {
             "herkunft": "ID-Register (neuaufbau/transformation/id_register.csv)",
-            "zeilen": 81513
+            "zeilen": 81515
         }
     },
-    "datenstand": "Abzug des Altsystems vom 24.10.2026"
+    "datenstand": "Abzug des Altsystems vom 04.11.2026"
 }
