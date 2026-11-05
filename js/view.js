@@ -311,19 +311,36 @@ function renderSummary(report, listsInfo) {
   if (s.missing.length) kind["entry.missing"] = "review";
   const codes = Object.entries(s.codes).sort((a, b) => b[1] - a[1]);
   const stand = listsInfo && listsInfo.stand ? `Prüflisten: Datenstand ${escapeHtml(listsInfo.stand.datenstand || "")}, erzeugt ${escapeHtml(listsInfo.stand.erzeugt || "")}` : "Prüflisten: data/stand.json fehlt";
+  // fehlende Artikel und Einträge ohne Artikel deutlich hervorheben (rot bzw. orange), nicht nur in der Tabelle
+  const extra = report.entries.filter((e) => e.findings.some((f) => f.code === "entry.unmatched")).map((e) => e.lemma || e.id);
+  const alarm = (s.missing.length ? `
+    <div class="summary-alarm" role="alert">
+      <strong>⚠ ${s.missing.length} ${s.missing.length === 1 ? "Artikel fehlt" : "Artikel fehlen"} im Ergebnis</strong>
+      <div>Diese Artikel der Quelle haben keinen Eintrag im Ergebnis. Sie erscheinen deshalb nicht in der Liste links. Bitte nachtransformieren.</div>
+      <div class="lemmata">${s.missing.map(escapeHtml).join(" · ")}</div>
+    </div>` : "") + (extra.length ? `
+    <div class="summary-alarm extra">
+      <strong>${extra.length} ${extra.length === 1 ? "Eintrag" : "Einträge"} im Ergebnis ohne passenden Artikel in der Quelle</strong>
+      <div>Meist doppelt transformiert, Lemma verändert oder Teil eines anderen Artikels. Bitte nachsehen.</div>
+      <div class="lemmata">${extra.map(escapeHtml).join(" · ")}</div>
+      <button type="button" data-code-filter="entry.unmatched">Nur diese Einträge zeigen</button>
+    </div>` : "");
+  const zahlen = `${s.articles} Artikel in der Quelle, ${s.entries} Einträge im Ergebnis`;
   box.innerHTML = `
     <div class="summary-head">
       <h3>Prüfung der ganzen Datei</h3>
-      <span>${s.articles} Artikel in der Quelle, ${s.entries} Einträge im Ergebnis${s.enriched ? " · Quelle: angereichertes XML des Redaktionssystems (Stelle für Stelle)" : " · Quelle: Lieferungs-XML"}</span>
+      <span>${s.missing.length || extra.length ? `<span class="count-mismatch">${zahlen}</span>` : zahlen}${s.enriched ? " · Quelle: angereichertes XML des Redaktionssystems (Stelle für Stelle)" : " · Quelle: Lieferungs-XML"}</span>
       <button id="csv-btn" type="button">Befunde als CSV</button>
       <button id="filter-reset" type="button">Alle zeigen</button>
+      <a class="help-link" href="hilfe.html#bericht" target="_blank" rel="noopener">Was bedeutet das?</a>
     </div>
+    ${alarm}
     <div class="summary-verdicts">${Object.entries(pruefung.VERDICTS).map(([v, label]) =>
       `<button type="button" class="verdict-chip verdict-${v}" data-verdict="${v}">${escapeHtml(label)}: <b>${s.verdicts[v] || 0}</b></button>`).join("")}</div>
     <table class="summary-codes"><tbody>${codes.map(([c, n]) =>
       `<tr data-code="${c}"><td><span class="kind kind-${kind[c] || "review"}">${kind[c] === "fix" ? "automatisch" : kind[c] === "info" ? "zulässig" : "nachsehen"}</span></td><td>${escapeHtml(pruefung.LABELS[c] || c)}</td><td class="num">${n}</td></tr>`).join("")}</tbody></table>
-    ${s.missing.length ? `<p class="summary-missing">Fehlen im Ergebnis: ${s.missing.map(escapeHtml).join(", ")}</p>` : ""}
     <p class="summary-stand">${stand}</p>`;
+  box.querySelector("[data-code-filter]")?.addEventListener("click", (ev) => setFilter({ code: ev.currentTarget.dataset.codeFilter }));
   box.querySelectorAll("[data-verdict]").forEach((b) => b.addEventListener("click", () => setFilter({ verdict: b.dataset.verdict })));
   box.querySelectorAll("tr[data-code]").forEach((t) => t.addEventListener("click", () => setFilter({ code: t.dataset.code })));
   box.querySelector("#filter-reset").addEventListener("click", () => setFilter(null));
