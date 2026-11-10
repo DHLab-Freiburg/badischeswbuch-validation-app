@@ -7,8 +7,8 @@
             "zeilen": 988
         },
         "regions.csv": {
-            "herkunft": "ABBR_geo_regions.md",
-            "zeilen": 69
+            "herkunft": "ABBR_geo_regions.md und neuaufbau/transformation/ABBR_geo_regions_ergaenzung.md",
+            "zeilen": 150
         },
         "ids.csv": {
             "herkunft": "ID-Register (neuaufbau/transformation/id_register.csv)",
