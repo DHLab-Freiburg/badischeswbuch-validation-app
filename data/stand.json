@@ -8,7 +8,7 @@
         },
         "regions.csv": {
             "herkunft": "ABBR_geo_regions.md und neuaufbau/transformation/ABBR_geo_regions_ergaenzung.md",
-            "zeilen": 158
+            "zeilen": 159
         },
         "places.csv": {
             "herkunft": "ABBR_places.md und neuaufbau/transformation/ABBR_places_ergaenzung.md (Orte des Redaktionssystems)",
