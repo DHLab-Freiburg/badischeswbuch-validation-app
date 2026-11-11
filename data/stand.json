@@ -1,5 +1,5 @@
 {
-    "erzeugt": "2026-11-10",
+    "erzeugt": "2026-11-11",
     "hinweis": "Abzüge, nicht von Hand ändern; erzeugt mit neuaufbau/anwendung/bin/app_daten.php",
     "dateien": {
         "sources.csv": {
@@ -8,7 +8,7 @@
         },
         "regions.csv": {
             "herkunft": "ABBR_geo_regions.md und neuaufbau/transformation/ABBR_geo_regions_ergaenzung.md",
-            "zeilen": 150
+            "zeilen": 158
         },
         "ids.csv": {
             "herkunft": "ID-Register (neuaufbau/transformation/id_register.csv)",

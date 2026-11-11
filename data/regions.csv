@@ -99,6 +99,8 @@ Dinkelsberg;Dinkelberg
 "Gegend von Überlgn a.B.";"Gegend von Überlingen a. B."
 "Gengenbacher Gegend u. ö.";"Gegend von Gengenbach"
 "Gengenbacher Gegend";"Gegend von Gengenbach"
+Harddörfer;"Untere Hardt"
+Hardt;Hardt
 Harmersbachtal;Harmersbachtal
 "Heidelberger Gegend";"Gegend von Heidelberg"
 "hinterer Odenwald";Odenwald
@@ -114,6 +116,7 @@ Harmersbachtal;Harmersbachtal
 "Lörracher Gegend";"Lörracher Gegend"
 "Markgräfler u. ö.";Markgräflerland
 Markgräfler;Markgräflerland
+Mittelland;Mittelbaden
 "Mosbacher Gegend";"Gegend von Mosbach"
 "Murgtal [Rast.";Murgtal
 "Münstertal (Staufen)";Münstertal
@@ -126,7 +129,9 @@ Nordrachtal;Nordrachtal
 "oberes Elsenztal";"oberes Elsenztal"
 "oberes Elztal";"oberes Elztal"
 "Obermarkgräfler Rebland";"Markgräfler Rebland"
+Oberrhein;Oberrhein
 "Offenburger Gegend";"Gegend von Offenburg"
+Pfalz;"badische Pfalz"
 "Pforzheimer Gegend u. ö.";"Gegend von Pforzheim"
 "Pforzheimer Gegend.";"Gegend von Pforzheim"
 "Pforzheimer Gegend";"Gegend von Pforzheim"
@@ -142,6 +147,9 @@ Taubergrund-Ost.;"östlicher Taubergrund"
 Taubergrund-Ost;"östlicher Taubergrund"
 Taubergrund-Süd;"südlicher Taubergrund"
 Taubergrundsüd;"südlicher Taubergrund"
+"untere Hardt";"Untere Hardt"
+"Untere Hardt";"Untere Hardt"
+"untere Markgräfler";"unteres Markgräflerland"
 "unteres Elsenztal";"unteres Elsenztal"
 "vorderes Wiesental";"vorderes Wiesental"
 Wiesentäler;Wiesental
