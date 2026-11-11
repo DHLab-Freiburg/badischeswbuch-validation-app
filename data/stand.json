@@ -10,6 +10,10 @@
             "herkunft": "ABBR_geo_regions.md und neuaufbau/transformation/ABBR_geo_regions_ergaenzung.md",
             "zeilen": 158
         },
+        "places.csv": {
+            "herkunft": "ABBR_places.md und neuaufbau/transformation/ABBR_places_ergaenzung.md (Orte des Redaktionssystems)",
+            "zeilen": 1932
+        },
         "ids.csv": {
             "herkunft": "ID-Register (neuaufbau/transformation/id_register.csv)",
             "zeilen": 81513

@@ -44,9 +44,9 @@ Snapshots with a date in `data/stand.json`. Do not edit them by hand.
 
 | File | Content | Maintained in |
 |---|---|---|
-| `places.csv` | lfd;Kurzform;Ortsname_BadWB;Lat;Lon | `ABBR_places.md` (copy) |
+| `places.csv` | lfd;Kurzform;Ortsname_BadWB;Lat;Lon | `ABBR_places.md` plus places of the editorial system that are not in it yet (`neuaufbau/transformation/ABBR_places_ergaenzung.md`, `app_daten.php`) |
 | `sources.csv` | Kurztitel;Titel | source list of the editorial system (`neuaufbau/anwendung/bin/app_daten.php`) |
-| `regions.csv` | Abkürzung;Langform | `ABBR_geo_regions.md` (`app_daten.php`) |
+| `regions.csv` | Abkürzung;Langform | `ABBR_geo_regions.md` plus the editors' supplement (`neuaufbau/transformation/ABBR_geo_regions_ergaenzung.md`, `app_daten.php`) |
 | `ids.csv` | ID;Stichwort;Homonym;Lieferung | ID register (`neuaufbau/anwendung/bin/id_register.php`, then `app_daten.php`) |
 
 `tests/pruefung.html?source=…&result=…` runs the checks without the user interface and prints the summary as JSON.

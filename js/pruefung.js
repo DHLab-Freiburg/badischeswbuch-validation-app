@@ -2,7 +2,7 @@
  *
  * Same rules as neuaufbau/anwendung/src/Daten/Transformationspruefung.php (see transformation/PLAN.md of the
  * editorial system). Data comes only from the files in data/ (snapshots with a date in data/stand.json):
- *   places.csv   lfd;Kurzform;Ortsname_BadWB;Lat;Lon   (copy of ABBR_places.md)
+ *   places.csv   lfd;Kurzform;Ortsname_BadWB;Lat;Lon   (ABBR_places.md + places of the editorial system not in it yet)
  *   sources.csv  Kurztitel;Titel                       (source list, authoritative titles)
  *   regions.csv  Abkürzung;Langform                    (ABBR_geo_regions.md)
  *   ids.csv      ID;Stichwort;Homonym;Lieferung        (ID register: IDs are assigned once and never change)
