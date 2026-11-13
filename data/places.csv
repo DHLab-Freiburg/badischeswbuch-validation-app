@@ -1327,7 +1327,7 @@ lfd;Kurzform;Ortsname_BadWB;Lat;Lon
 1328;Schlierst.;Schlierstadt;49.4549873;9.3668737
 1329;Schloßau;Schloßau;49.5389678;9.1533884
 1330;Schluchsee;Schluchsee;47.8185928;8.177035
-1331;Schluchtern;Schluchtern (Exklave!) ;49.148495;9.102715
+1331;Schluchtern;Schluchtern (Exklave!);49.148495;9.102715
 1332;Schluttenb.;Schluttenbach;48.8985052;8.4024783
 1333;Schmidhfn;Schmidhofen;47.8906308;7.6929768
 1334;Schmiehm;Schmieheim;48.2786884;7.8578952
@@ -1667,7 +1667,7 @@ lfd;Kurzform;Ortsname_BadWB;Lat;Lon
 1669;Wettersd.;Wettersdorf;49.6329693;9.3864044
 1670;Wieblgn;Wieblingen;49.423851;8.648492
 1671;Wiechs (Hegau);Wiechs (Hegau);47.815796;8.906483
-1672;Wiechs a. R.;Wiechs a. R.;47.7831764;8.6350312
+1672;Wiechs a. R.;Wiechs am Randen;47.7831764;8.6350312
 1673;Wiechs (Schopfh.);Wiechs (Schopfh.);47.63667;7.81339
 1674;Wieden;Wieden;47.8407841;7.880116
 1675;Wiedenfelsen;Wiedenfelsen;48.66069805;8.220515249
@@ -1748,7 +1748,7 @@ lfd;Kurzform;Ortsname_BadWB;Lat;Lon
 1750;Zusenhfn;Zusenhofen;48.5487338;8.0175996
 1751;Zuwald;Zuwald;48.397196;8.1821499
 1752;Zuzenhsn;Zuzenhausen;49.2967457;8.825661
-1753;Albert;Albert;47.586164;8.109444
+1753;Albert;Albert (Albbruck);47.586164;8.109444
 1754;Burkhm (Breis.);Burkheim;48.1013025;7.598503
 1755;Donauesch.;Donaueschingen;47.9534194;8.4959257
 1756;Ehrenst.;Ehrenstetten;47.9137674;7.7525887
@@ -1876,7 +1876,7 @@ lfd;Kurzform;Ortsname_BadWB;Lat;Lon
 1878;Schönau i. W.;Schönau im Wiesental;47.78667;7.89417
 1879;Oberschopf.;Oberschopfheim;48.3967513;7.9027713
 1880;Ambrgn;Ambringen (Ehrenkirchen);47.91862;7.74621
-1881;Zeilen (Engen); Zeilen (Emmingen-Liptingen);47.91204;8.86017
+1881;Zeilen (Engen);Zeilen (Emmingen-Liptingen);47.91204;8.86017
 1882;Neufreistett;Neufreistett (Rheinau);48.667838;7.935642
 1883;Schupfholz;Schupfholz (Vörstetten);48.07518;7.82108
 1884;Reilshm;Reilsheim (Bammental);49.348477;8.772141
@@ -1930,4 +1930,11 @@ lfd;Kurzform;Ortsname_BadWB;Lat;Lon
 1933;Höhreute (Pfullend.);Höhreute (Illmensee);47.8563;9.4101
 1934;Neidgn (Meßk.);Neidingen (Beuron);48.094678;9.058572
 1935;Staufen (Neumagen);Staufen (Breisg.);47.881675;7.731399
-2001;Unterglashütte (Meßk.);Unterglashütte;;
+2001;Unterglashütte (Meßk.);Unterglashütte;48.123056;9.077778
+2002;Oberschwarzach;Oberschwarzach;;
+2003;Kirnhalden;Kirnhalden (Kenzingen);;
+2004;Maisbach;Maisbach (Nußloch);;
+2005;Wimpfen;Bad Wimpfen;;
+2006;Lauchrgn;Lauchringen;;
+2007;Kurzenbach;Kurzenbach (Oberwolfach);;
+2008;Haft;Haft (Ottersweier);;
