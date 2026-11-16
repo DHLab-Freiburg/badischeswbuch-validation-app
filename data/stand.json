@@ -1,5 +1,5 @@
 {
-    "erzeugt": "2026-11-13",
+    "erzeugt": "2026-11-16",
     "hinweis": "Abzüge, nicht von Hand ändern; erzeugt mit neuaufbau/anwendung/bin/app_daten.php",
     "dateien": {
         "sources.csv": {
@@ -12,12 +12,12 @@
         },
         "places.csv": {
             "herkunft": "ABBR_places.md und neuaufbau/transformation/ABBR_places_ergaenzung.md (Orte des Redaktionssystems)",
-            "zeilen": 1939
+            "zeilen": 1949
         },
         "ids.csv": {
             "herkunft": "ID-Register (neuaufbau/transformation/id_register.csv)",
             "zeilen": 81507
         }
     },
-    "datenstand": "Abzug des Altsystems vom 12.11.2026"
+    "datenstand": "Abzug des Altsystems vom 15.11.2026"
 }
