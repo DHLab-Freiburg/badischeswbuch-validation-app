@@ -13,6 +13,12 @@
       <attribute name="id">
         <text/>
       </attribute>
+      <!-- Artikelnummer im Redaktionssystem (Entscheidung 5, 23.10.2026); freiwillig -->
+      <optional>
+        <attribute name="artikel">
+          <text/>
+        </attribute>
+      </optional>
       <!-- Using interleave pattern to allow flexible ordering -->
       <interleave>
         <!-- Required elements -->
@@ -175,6 +181,12 @@
       <attribute name="id">
         <text/>
       </attribute>
+      <!-- Artikelnummer, wenn ein eigener Artikel als Untereintrag steht (Nutzer 19.11.2026); freiwillig -->
+      <optional>
+        <attribute name="artikel">
+          <text/>
+        </attribute>
+      </optional>
       <interleave>
         <!-- Required elements -->
         <element name="lemma">
@@ -508,6 +520,13 @@
   
   <define name="place">
     <element name="place">
+      <!-- Landschaft statt Ort (Entscheidung 4, 23.10.2026): type="region", key = Langform aus ABBR_geo_regions.md;
+           ohne type ist place ein Ort mit lfd-Nummer -->
+      <optional>
+        <attribute name="type">
+          <value>region</value>
+        </attribute>
+      </optional>
       <choice>
         <group>
           <attribute name="key">
