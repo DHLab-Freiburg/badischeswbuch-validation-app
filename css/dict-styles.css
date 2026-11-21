@@ -98,11 +98,67 @@
 
 .morphology-label {
   font-weight: bold;
-  margin-right: 0.4rem;
+  margin-bottom: 0.2rem;
 }
 
+/* one line per <form>: label from the attributes, then the content */
 .morph-form {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0.1rem 0;
+  border-top: 1px solid #E6E6E6;
+}
+
+.morph-tags {
+  flex: 0 0 auto;
+  min-width: 7.5rem;
+  font-family: system-ui, sans-serif;
+  font-size: 0.8rem;
+  color: #2C3E50;
+  background-color: #E3E8EF;
+  border-radius: 3px;
+  padding: 0 0.35rem;
+  white-space: nowrap;
+  cursor: help;
+}
+
+.morph-tags.none {
+  color: #8E1F17;
+  background-color: #FDECEA;
+}
+
+.morph-n {
+  font-weight: bold;
   margin-right: 0.3rem;
+}
+
+.morph-body {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+/* text between the forms (mixed content, schema of 2026-11-20) */
+.morph-between {
+  padding: 0.1rem 0 0.1rem 8rem;
+  font-style: italic;
+  color: #666;
+}
+
+/* punctuation between two forms ("; ", ". –"): kept at the end of the form before */
+.morph-trail {
+  color: #666;
+}
+
+@media (max-width: 600px) {
+  .morph-form {
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+  .morph-between {
+    padding-left: 0;
+  }
 }
 
 .morph-form::before {

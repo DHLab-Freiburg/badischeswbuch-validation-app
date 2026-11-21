@@ -34,8 +34,13 @@ function flagAttrs(list) {
 
 /** inline content */
 function inline(node, ctx) {
+  return inlineNodes(kids(node), ctx);
+}
+
+/** inline content of a list of nodes (text and elements) */
+function inlineNodes(nodes, ctx) {
   let h = "";
-  for (const n of kids(node)) {
+  for (const n of nodes) {
     if (n.nodeType === 3) { h += esc(n.nodeValue); continue; }
     if (n.nodeType !== 1) continue;
     const inner = () => inline(n, ctx);
@@ -95,10 +100,7 @@ function blocks(el, ctx, depth) {
       case "pronunciations":
         h += `<div class="pronunciations">${[...c.children].map((v) => `<div class="variant">${inline(v, ctx)}</div>`).join("")}</div>`;
         break;
-      case "morphology":
-        h += `<div class="morphology"><span class="morphology-label">Formen:</span> ${[...c.children].map((f) =>
-          `<span class="morph-form" title="${esc(["n", "person", "number", "tense", "mood"].filter((a) => attr(f, a)).map((a) => `${a}=${attr(f, a)}`).join(", "))}">${inline(f, ctx)}</span>`).join(" ")}</div>`;
-        break;
+      case "morphology": h += morphology(c, ctx); break;
       case "grammar": h += `<div class="grammar">${inline(c, ctx)}</div>`; break;
       case "senses": case "subsenses":
         h += `<div class="${c.nodeName}">${[...c.children].map((s) => sense(s, ctx, depth + 1)).join("")}</div>`;
@@ -120,6 +122,62 @@ function blocks(el, ctx, depth) {
     }
   }
   return h;
+}
+
+/* Morphology: one line per <form>, its grammatical attributes as a short German label in front (hover: all
+ * attributes); text and markup between the forms (allowed since the schema of 2026-11-20) in a line of its own, so
+ * nothing in the file is hidden. A form without person/number/tense/mood/case/degree is marked "ohne Angaben". */
+const MORPH_WORDS = {
+  number: { sg: "Sg.", pl: "Pl." },
+  tense: { present: "Präs.", past: "Prät.", perfect: "Perf.", future: "Fut.", infinitive: "Inf.", participle: "Part." },
+  mood: { indicative: "Ind.", subjunctive: "Konj.", imperative: "Imp." },
+  case: { nominative: "Nom.", genitive: "Gen.", dative: "Dat.", accusative: "Akk." },
+  degree: { diminutive: "Dim.", comparative: "Komp.", superlative: "Sup." },
+};
+const MORPH_ATTRS = ["n", "person", "number", "tense", "mood", "case", "degree"];
+
+function morphLabel(form) {
+  const values = (a) => attr(form, a).trim().split(/\s+/).filter(Boolean);
+  const parts = [];
+  const person = values("person");
+  if (person.length) parts.push(person.map((p) => `${p}.`).join("/"));
+  for (const a of ["number", "case", "tense", "mood", "degree"]) {
+    const v = values(a).map((x) => MORPH_WORDS[a][x] || x);
+    if (v.length) parts.push(v.join("/"));
+  }
+  return parts.join(" ");
+}
+
+function morphology(m, ctx) {
+  const rows = [];   // {html, trail} per form, or {html} for text between the forms
+  let between = [];
+  const flush = () => {
+    const shown = between.some((n) => n.nodeType === 1 || n.nodeValue.trim());
+    const last = rows[rows.length - 1];
+    if (shown && last && last.form && between.every((n) => n.nodeType === 3 && !/\p{L}|\d/u.test(n.nodeValue))) {
+      last.trail += inlineNodes(between, ctx);          // only punctuation: to the end of the form before
+    } else if (shown) {
+      rows.push({ html: `<div class="morph-between" title="Text zwischen den Formen">${inlineNodes(between, ctx)}</div>` });
+    }
+    between = [];
+  };
+  for (const n of kids(m)) {
+    if (n.nodeType === 1 && n.nodeName === "form") {
+      flush();
+      const label = morphLabel(n), nr = attr(n, "n");
+      const tip = MORPH_ATTRS.filter((a) => attr(n, a)).map((a) => `${a}="${attr(n, a)}"`).join(" ") || "keine Attribute";
+      rows.push({ form: true, trail: "", html: `<span class="morph-tags${label ? "" : " none"}" title="${esc(tip)}">`
+        + `${nr ? `<span class="morph-n">${esc(nr)}</span>` : ""}${esc(label || "ohne Angaben")}</span>`
+        + `<span class="morph-body">${inline(n, ctx)}` });
+    } else if (n.nodeType === 1 || n.nodeType === 3) {
+      between.push(n);
+    }
+  }
+  flush();
+  const html = rows.map((r) => r.form
+    ? `<div class="morph-form">${r.html}${r.trail ? `<span class="morph-trail" title="Text zwischen den Formen">${r.trail}</span>` : ""}</span></div>`
+    : r.html).join("");
+  return `<div class="morphology"><div class="morphology-label">Formen</div>${html}</div>`;
 }
 
 function sense(s, ctx, depth) {
