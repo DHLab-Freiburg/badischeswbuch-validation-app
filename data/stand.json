@@ -1,5 +1,5 @@
 {
-    "erzeugt": "2026-11-20",
+    "erzeugt": "2026-11-22",
     "hinweis": "Abzüge, nicht von Hand ändern; erzeugt mit neuaufbau/anwendung/bin/app_daten.php",
     "dateien": {
         "sources.csv": {
@@ -19,5 +19,5 @@
             "zeilen": 81507
         }
     },
-    "datenstand": "Abzug des Altsystems vom 20.11.2026"
+    "datenstand": "Abzug des Altsystems vom 21.11.2026"
 }
