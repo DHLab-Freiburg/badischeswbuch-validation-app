@@ -4,7 +4,7 @@
     "dateien": {
         "sources.csv": {
             "herkunft": "Quellenliste des Redaktionssystems (Altsystem, ergänzt um quellen_neu.csv)",
-            "zeilen": 988
+            "zeilen": 989
         },
         "regions.csv": {
             "herkunft": "ABBR_geo_regions.md und neuaufbau/transformation/ABBR_geo_regions_ergaenzung.md",
