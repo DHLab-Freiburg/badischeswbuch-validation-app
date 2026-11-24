@@ -17,7 +17,7 @@
 /* ---------------------------------------------------------------- data */
 
 const lists = { places: new Map(), placeIndex: new Map(), canonical: new Map(), sources: new Map(), titles: new Set(),
-  regions: new Map(), ids: new Map(), idsNoHyphen: new Map(), idsByLemma: new Map(), stand: null };
+  regions: new Map(), ids: new Map(), idsNoHyphen: new Map(), idsByLemma: new Map(), idsByBase: new Map(), stand: null };
 
 /** CSV with ";" and quotes */
 export function parseCsv(text) {
@@ -86,6 +86,9 @@ export async function loadLists(base = "./data/") {
       const ohne = id.replace(/-/g, "");
       if (!lists.idsNoHyphen.has(ohne)) lists.idsNoHyphen.set(ohne, []);
       lists.idsNoHyphen.get(ohne).push(id);
+      const basis = id.split(".")[0].replace(/-/g, "");        // ohne Homonymzusatz: alle Homonyme eines Stichworts
+      if (!lists.idsByBase.has(basis)) lists.idsByBase.set(basis, []);
+      lists.idsByBase.get(basis).push(id);
       const lk = `${nfc(stichwort)}\u001f${homonym || ""}`;
       if (!lists.idsByLemma.has(lk)) lists.idsByLemma.set(lk, []);
       lists.idsByLemma.get(lk).push(id);
@@ -141,7 +144,8 @@ export const LABELS = {
   "bibl.title-unknown": "Titel nicht in der Quellenliste",
   "bibl.no-key-known": "Ohne Schlüssel, die Quelle ist bekannt",
   "xref.no-hyphens": "Ziel ohne Bindestriche geschrieben",
-  "xref.missing": "Ziel ist kein Lemma",
+  "xref.homonym": "Welches Homonym ist gemeint?",
+  "xref.missing": "Verweis ins Leere: Ziel gibt es nicht als Lemma",
   "xref.differs": "Anderes Ziel als im Redaktionssystem",
 };
 
@@ -415,8 +419,18 @@ function checkXref(c, know, enriched, add) {
   if (known && known.getAttribute("key") !== key) { add("xref.differs", "fix", `${key} ← ${text}`, known.getAttribute("key")); return; }
   if (known || !lists.ids.size || lists.ids.has(key)) return;
   const alt = lists.idsNoHyphen.get(key.replace(/-/g, "")) || [];
-  if (alt.length === 1) add("xref.no-hyphens", "fix", `${key} ← ${text}`, alt[0]);
-  else add("xref.missing", "review", `${key} ← ${text}`, alt.join(" | "));
+  if (alt.length === 1) { add("xref.no-hyphens", "fix", `${key} ← ${text}`, alt[0]); return; }
+  // Stichwort mit mehreren Homonymen (bock.i, bock.ii): welches gemeint ist, entscheidet der Artikel
+  const ROEM = ["", "I", "II", "III", "IV", "V", "VI"];
+  const hom = (lists.idsByBase.get(key.split(".")[0].replace(/-/g, "")) || []).filter(id => /\.[ivx]+$/.test(id));
+  if (hom.length > 1) {
+    add("xref.homonym", "review", `${key} ← ${text}`,
+      hom.map(id => { const l = lists.ids.get(id); return `${id} = ${ROEM[+l.homonym] || l.homonym} ${l.stichwort}`; }).join(" | "));
+    return;
+  }
+  if (hom.length === 1) { add("xref.no-hyphens", "fix", `${key} ← ${text}`, hom[0]); return; }
+  // es gibt kein Lemma dieses Namens: nichts zu tun (Liste „Verweise ins Leere“ der Redaktion)
+  add("xref.missing", "info", `${key} ← ${text}`, alt.join(" | "));
 }
 
 function checkPair(src, entry, enriched, duplicateId, subentries = []) {
