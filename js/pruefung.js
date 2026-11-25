@@ -461,7 +461,7 @@ function checkPair(src, entry, enriched, duplicateId, subentries = []) {
   // text
   let attrs = "";
   for (const el of ohneHinweise.getElementsByTagName("*")) {
-    for (const at of el.attributes) if (!["key", "guess", "confidence", "source", "n", "id", "type", "subtype", "lang", "subsense", "value"].includes(at.name)) attrs += at.value;
+    for (const at of el.attributes) if (!["key", "guess", "confidence", "source", "n", "id", "type", "subtype", "lang", "subsense", "value", "domain"].includes(at.name)) attrs += at.value;
   }
   // articles placed in this entry as subentries count for the text comparison
   for (const a of subentries) add("entry.subentry", "info", a.lemma, entry.id);
