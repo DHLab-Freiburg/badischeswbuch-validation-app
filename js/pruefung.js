@@ -125,6 +125,7 @@ export const LABELS = {
   "text.quote": "Anführungs- oder Auslassungszeichen ersetzt",
   "text.superscript": "Hochstellung als Sonderzeichen geschrieben",
   "text.too-different": "Text weicht zu stark ab für einen Vergleich",
+  "text.problems": "Hinweis der Transformation in <problems>: Inhalt prüfen",
   "place.key-space": "Leerzeichen im Schlüssel",
   "place.variant-number": "Nummer einer Nebenform; der Ort hat eine andere Nummer",
   "place.unknown-number": "Nummer nicht in der Ortsliste",
@@ -452,15 +453,20 @@ function checkPair(src, entry, enriched, duplicateId, subentries = []) {
     else add("id.not-in-register", expected.length === 1 || rule1 ? "fix" : "review", entry.id, expected.join(" | ") || rule1);
   }
   if (duplicateId) add("id.duplicate", expected.length === 1 && expected[0] !== entry.id ? "info" : "review", entry.id, expected.join(" | "));
+  // Hinweise der Transformation (<problems>): immer nachsehen. Dort stand schon Artikeltext, der an seiner Stelle fehlte
+  // (Lfg. 3, 25.11.2026); der Textvergleich lässt <problems> deshalb weg, damit solcher Text als „Text fehlt“ erscheint
+  for (const p of e.getElementsByTagName("problem")) add("text.problems", "review", cut(p.textContent.trim()), p.getAttribute("location") || "");
+  const ohneHinweise = e.cloneNode(true);
+  for (const p of [...ohneHinweise.getElementsByTagName("problems")]) p.parentNode.removeChild(p);
   // text
   let attrs = "";
-  for (const el of e.getElementsByTagName("*")) {
+  for (const el of ohneHinweise.getElementsByTagName("*")) {
     for (const at of el.attributes) if (!["key", "guess", "confidence", "source", "n", "id", "type", "subtype", "lang", "subsense", "value"].includes(at.name)) attrs += at.value;
   }
   // articles placed in this entry as subentries count for the text comparison
   for (const a of subentries) add("entry.subentry", "info", a.lemma, entry.id);
   const srcText = [src.text, ...subentries.map((a) => a.text)].join(" ");
-  for (const f of compareText(srcText, e.textContent, attrs)) add(f.code, f.kind, f.text);
+  for (const f of compareText(srcText, ohneHinweise.textContent, attrs)) add(f.code, f.kind, f.text);
   // entities
   const know = knowledge(src.node);
   for (const p of e.getElementsByTagName("place")) checkPlace(p, know, enriched, add);
@@ -470,7 +476,7 @@ function checkPair(src, entry, enriched, duplicateId, subentries = []) {
   const open = findings.filter((f) => f.kind === "review");
   const verdict = findings.every((f) => f.kind === "info") ? "ok"
     : !open.length ? "fix"
-    : open.some((f) => f.code === "text.lost" || f.code === "lemma.other" || f.code === "text.too-different") ? "review-text" : "review-data";
+    : open.some((f) => f.code === "text.lost" || f.code === "lemma.other" || f.code === "text.too-different" || f.code === "text.problems") ? "review-text" : "review-data";
   return { findings, verdict };
 }
 
