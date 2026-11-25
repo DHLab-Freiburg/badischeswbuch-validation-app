@@ -380,6 +380,13 @@
                   <text/>
                 </attribute>
               </optional>
+              <!-- Sprachbereich nur dieses Belegs (Entscheidung 25.11.2026), Werte wie sense/@domain aus ABBR_domains.md;
+                   gilt der Bereich für die ganze Bedeutung, steht er an sense -->
+              <optional>
+                <attribute name="domain">
+                  <text/>
+                </attribute>
+              </optional>
               <zeroOrMore>
                 <choice>
                   <ref name="inline-phon"/>
@@ -412,6 +419,13 @@
               </optional>
               <optional>
                 <attribute name="location">
+                  <text/>
+                </attribute>
+              </optional>
+              <!-- Sprachbereich nur dieses Belegs (Entscheidung 25.11.2026), Werte wie sense/@domain aus ABBR_domains.md;
+                   gilt der Bereich für die ganze Bedeutung, steht er an sense -->
+              <optional>
+                <attribute name="domain">
                   <text/>
                 </attribute>
               </optional>
